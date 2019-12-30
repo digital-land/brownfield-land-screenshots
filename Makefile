@@ -1,10 +1,22 @@
-.PHONY: init c text images index clobber black clean prune
+.PHONY: init c text images second-pass index clobber black clean prune
 .SECONDARY:
 .DELETE_ON_ERROR:
 
-all: text images index.html
+IMAGE_FILES:=$(wildcard images/*/*.png)
+CSV_FILES=\
+	../organisation-collection/collection/organisation.csv\
+	../brownfield-land-collection/dataset/brownfield-land.csv
 
-index.html:	index.py
+
+all: text images second-pass
+
+second-pass:
+	@make --no-print-directory index
+
+index:	index.html
+	@:
+
+index.html:	index.py $(IMAGE_FILES) $(CSV_FILES)
 	python3 index.py > $@
 
 images:
