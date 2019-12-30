@@ -59,6 +59,9 @@ figure {
  display: inline-block;
 }
 
+figcaption {
+    padding-top: 0.5em;
+}
 </style>
 <article>
 """
