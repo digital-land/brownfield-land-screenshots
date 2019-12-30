@@ -1,0 +1,376 @@
+<!DOCTYPE html><!--[if IE 6]><html class="ie6 no-js" lang="en"><![endif]--><!--[if IE 7]><html class="ie7 no-js" lang="en"><![endif]--><!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]--><!--[if IE 9]><html class="ie9 no-js" lang="en"><![endif]--><!--[if !IE]><--><html lang="en" class="js"><!--<![endif]--><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    <meta charset="utf-8"><script type="text/javascript" src="https://bam.nr-data.net/1/e6d99c34c8?a=7350278&amp;v=1153.61ee9ba&amp;to=ZVYEMkBUXRBVVkBYC1wcJwVGXFwNG1FRVwVHXxJJQlRUBhtWW18QV10SS0JUVAY%3D&amp;rst=2500&amp;ref=http://www.wiltshire.gov.uk/planning-brownfield-register&amp;ap=1314&amp;be=1422&amp;fe=2406&amp;dc=2007&amp;perf=%7B%22timing%22:%7B%22of%22:1577724303869,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:0,%22rp%22:0,%22rpe%22:1476,%22dl%22:1419,%22di%22:2006,%22ds%22:2006,%22de%22:2070,%22dc%22:2405,%22l%22:2406,%22le%22:2409%7D,%22navigation%22:%7B%7D%7D&amp;at=SREHRAhOTh4%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1153.min.js"></script><script type="text/javascript" async="" src="http://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-MMJLFN"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/mhgGrlTs_PbFQOW4ejlxlxZn/recaptcha__en.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"e6d99c34c8",applicationID:"7350278"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1153.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    
+    <title>Brownfield register  - Wiltshire Council</title><meta name="keywords" content="Brownfield, register, planning,Wiltshire Council">
+<meta name="description" content="Brownfield register">    <meta name="author" content="Wiltshire Council">
+       
+    
+        <meta name="viewport" content="initial-scale=1, user-scalable=yes">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes"><!-- try to forces full-screen for apple devices -->
+
+    <meta name="geo.region" content="gb">
+        
+    <link rel="shortcut icon" href="/img/f/favicon.ico"> 
+    <link href="/v1.8.14.2/css/screen.css" media="screen" rel="stylesheet" type="text/css">
+<!--[if IE]><link href="/v1.8.14.2/css/ie.css" media="screen" rel="stylesheet" type="text/css" ><![endif]-->
+        <script>
+            GA_UID = "UA-3240460-9";
+        </script>
+
+    <style type="text/css" media="screen">
+<!--
+.leaf-hero { background-image : url("/images/10201/scaledcropped/noupscale/1600x300/resources/10201/coombe-bissett-update-pic.jpg"); }
+-->
+</style><script type="text/javascript" src="/vendor/modernizr/2.7.1/modernizr.js"></script>    <!--[if lt IE 9]> 
+        <script type="text/javascript" src="/vendor/respond/respond.min.js"></script>   
+    <![endif]-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+<style type="text/css">#as-cookie-cutter{z-index:9999999;bottom:0;width:100%;font-size:12px;overflow:hidden;border-bottom:1px solid #a1a1a1;background:#efefef;padding:0 0 8px}#as-cookie-cutter.cover {position:absolute;} #as-cookie-cutter.fixed {position:fixed}#as-cookie-cutter a{color:#A7155D;display:inline-block}#as-cookie-cutter p{background:#efefef;text-align:center;margin:0 auto;padding:10px 10px 4px;font-size:1em}#as-cookie-cutter p span{display:inline-block;vertical-align:middle;font-size:1em}#as-cookie-cutter button{height:2em;font-size:1em;cursor:pointer;padding:0}#as-cookie-cutter button#cc-allow{width:8em;color:#044600;background-color:#b4ebb0;border-color:#0cbd00;border-style:solid;border-width:2px;margin:0 0 0 8px}#as-cookie-cutter button#cc-allow:hover{color:#fff;background-color:#0cbd00;border-color:#0cbd00}#as-cookie-cutter button#cc-deny{width:10.5em;color:#6c080e;background-color:#ebb0b4;border-color:#bd000c;border-style:solid;border-width:2px;margin:0 0 0 8px}#as-cookie-cutter button#cc-deny:hover{color:#fff;background-color:#bd000c;border-color:#bd000c}</style><style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+    <body class="" <a="" href="/accessibility/normal" bgcolor="white"><div id="as-cookie-cutter" class="fixed" style=""><p>This site uses cookies to enhance your experience, and help us improve our site. If you want to know more about cookies, please read <a id="as-cookie-link" href="/cookies">this page.</a> <span id="as-choices"><button id="cc-deny">Don't allow cookies</button><button id="cc-allow">Allow cookies</button></span></p></div>Exit Accessibility View <i class="fa fa-arrow-right"></i>
+        <header class="header page-header" id="page-header">
+    
+    <nav class="navbar navbar-fixed-top" role="navigation" id="slide-nav">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-target="navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <a class="logo" href="/"><img src="/img/f/logo.png" width="228" height="76" alt="wiltshire council logo"></a>
+            </div>
+            <div id="slidemenu">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pay <span class="caret"></span></a>
+                        <ul class="dropdown-menu container" role="menu">
+                            <li class="nav-menu-heading">Pay It Online</li><li><a href="/pay-online" title="Online payments portal">Online payments portal</a></li><li><a href="/housing-benefit-overpayment" title="Housing benefit overpayment">Housing benefit overpayment</a></li><li><a href="/pay-parking-ticket" title="Pay for a parking ticket online, by telephone with a debit or credit card, or by post.">Pay a parking ticket</a></li><li><a href="/pay-an-invoice" title="Pay an invoice online">Pay an invoice</a></li><li><a href="/pay-business-rates" title="Pay business rates.">Pay business rates</a></li><li><a href="/pay-car-park" title="Pay for car parking">Pay for car parking</a></li><li><a href="/pay-housing-rent" title="Pay your rent online or set up a standing order">Pay housing rent</a></li><li><a href="/pay-council-tax" title="Pay council tax">Pay your council tax</a></li><li><a href="/pay-garden-waste" title="Pay for garden waste.">Get garden waste collection</a></li><li><a href="/community-environment-fpn" title="Environmental FPNs Payment">Environmental FPNs Payment</a></li><li><a href="/submit-planning-application" title="Submit a planning application.">Submit a planning application</a></li><li><a href="/libraries-pay" title="Pay library charges">Pay library charges</a></li>                        <div id="navbar-height-col"></div></ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Report <span class="caret"></span></a>
+                        <ul class="dropdown-menu container" role="menu">
+                            <li class="nav-menu-heading">Report Something</li><li><a href="/rubbish-and-recycling-missed-bin-collection" title="Report a missed bin collection.">Missed bin collection</a></li><li><a href="/report-highways-problem" title="Report a highways problem">Report a highways problem</a></li><li><a href="/report-stray-dog" title="Report a Stray Dog">Report a stray dog</a></li><li><a href="/adult-care-safeguarding-concerns" title="Who to contact if you have concerns about a vulnerable adult">Report a vulnerable adult</a></li><li><a href="/vulnerable-children" title="Contact the Wiltshire multi agency safeguarding team.">Report a vulnerable child</a></li><li><a href="/report-antisocial-behaviour" title="Report anti-social behaviour problems that you are experiencing or have witnessed.">Report anti-social behaviour</a></li><li><a href="/report-benefit-fraud" title="Report benefit fraud">Report fraud</a></li><li><a href="/report-litter-flytipping" title="Report litter or flytipping">Report litter or flytipping</a></li><li><a href="/report-noise-pollution" title="Report Noise Pollution">Report noise pollution</a></li><li><a href="/mywiltshire-report-community-issue" title="Community Issue">Community Issue</a></li>                        <div id="navbar-height-col"></div></ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Apply <span class="caret"></span></a>
+                        <ul class="dropdown-menu container" role="menu">
+                            <li class="nav-menu-heading">Apply Online</li><li><a href="/blue-badge" title="Blue badges must be renewed every three years. Apply for a new badge at least 8 - 12 weeks before your current one runs out.">Apply for a blue badge</a></li><li><a href="/schools-learning-admissions-online" title="Apply for a school place">Apply for a school place</a></li><li><a href="/apply-council-tax-reduction" title="Council tax reduction">Council tax reduction</a></li><li><a href="/leisure-apply-recycling-permit" title="Recycling centre permits">Recycling centre permits</a></li><li><a href="/apply-housing-benefit" title="Apply for housing benefit.">Apply for housing benefit </a></li><li><a href="/apply-housing-register" title="Apply to get on the housing register.">Get on the housing register</a></li><li><a href="/transport-public-concessionary-fares" title="Older and disabled person's bus pass">Concessionary bus pass</a></li><li><a href="/apply-business-rates-relief" title="Apply for business rate relief.">Apply for business rate relief</a></li><li><a href="/jobs-wiltshire-council" title="Apply for a Job at Wiltshire Council.">Apply for a job</a></li><li><a href="/schools-learning-education-grants" title="Education grants">Education grants</a></li><li><a href="/libraries-join-the-library" title="Join the library">Join the library</a></li>                        <div id="navbar-height-col"></div></ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services <span class="caret"></span></a>
+                        <ul class="dropdown-menu container" role="menu">
+                            <li class="menu-group">
+                                <ul class="group">
+                                    <li class="nav-menu-heading">In Your Community</li><li><a href="/adult-care" title="Helping adults with disabilities, keeping healthy, support and social care, info for carers.">Adult care</a></li><li><a href="/adoption" title="Do something remarkable, change a child's future">Adoption</a></li><li><a href="/museums-history-heritage" title="Advice to help researching your ancestors, the history of your town or parish and more.">Archives, heritage and conservation</a></li><li><a href="/arts-galleries" title="Art services, resources, funding. Arts health and education and our service database">Arts</a></li><li><a href="/children-young-people" title="We protect, care for and support vulnerable children and young people in the community.">Children and young people</a></li><li><a href="/cse" title="CSE and County Lines information, help and advice for young people, parents and professionals.">Child sexual exploitation (CSE)</a></li><li><a href="/community-environment" title="Allotments, street markets, Coroner service, cemeteries, volunteering, Your Wiltshire magazine">Community and environment</a></li><li><a href="/community-safety" title="Help and advice on safety, including how to get help and report problems.">Community safety</a></li><li><a href="/council-democracy" title="Find a councillor, council meeting agendas and minutes, consultations, area boards.">Council and democracy  and elections</a></li><li><a href="/skills" title="Courses, qualifications and skills">Courses, qualifications and skills</a></li><li><a href="/child-care" title="Childcare jobs and training; plus free funding, information for professionals and more.">Early years and childcare</a></li><li><a href="/economic-regeneration" title="Economic Regeneration">Economic Regeneration</a></li><li><a href="/children-young-people-fact" title="Families And Children Transformation programme (FACT)">FACT - Families And Children's Transformation</a></li><li><a href="/fostering" title="Can you provide a safe, secure, nurturing home where children and young people's needs are met?">Fostering</a></li><li><a href="/gypsies-travellers" title="Gypsies and Travellers">Gypsies and Travellers</a></li><li><a href="/leisure-and-sports-centres" title="Find your nearest leisure centre and swimming pool, latest activities and events.">Leisure and sports centres</a></li><li><a href="/libraries-home" title="Library services, news, events and more">Libraries</a></li><li><a href="/army-basing" title="Discover more about Wiltshire's military presence and its communities.">Military Civilian Integration (MCI)/Army basing</a></li><li><a href="/public-health" title="Working to improve the wellbeing and quality of life of Wiltshire’s population">Public health</a></li><li><a href="/recreation" title="Parks, open spaces, countryside, rights of way, travel, tourism and much more.">Recreation</a></li><li><a href="/schools-learning" title="Find a school, term dates, apply for a school place, early years, education grants.">Schools and colleges</a></li><li><a href="/virtual-school" title="Virtual School">Virtual School</a></li><li><a href="/wiltshire-online" title="Improving broadband access, better access to digital services, using technology.">Wiltshire online</a></li>                                </ul>
+                            </li>
+                            <li class="menu-group">
+                                <ul class="group">
+                                    <li class="nav-menu-heading">Services For You</li><li><a href="/civil-emergencies" title="Here you can find essential advice and contact details in case of an emergency.">Civil emergencies</a></li><li><a href="/benefits" title="Find out about council tax, housing benefit, help in a crisis and more.">Council tax and benefits</a></li><li><a href="/env-health-protection" title="Information about noise, air quality, drainage, permits, water, bonfires and more.">Environmental protection</a></li><li><a href="/env-health" title="Food business advice, inspections, safety, hygiene course and more.">Food safety and standards</a></li><li><a href="/gardenwaste" title="Register to have your garden waste collected.">Garden waste collections</a></li><li><a href="/env-health-safety" title="Health and safety">Health and safety</a></li><li><a href="/health-social-care" title="Supporting healthy living in Wiltshire, adult care, family support.">Health and social care</a></li><li><a href="/housing-home" title="Information and advice about council housing, sheltered accommodation and more.">Housing</a></li><li><a href="/highways" title="Roads closures and disruptions, streets and road care, freight, gritting, snow clearance and more">Highways</a></li><li><a href="/local-offer" title="Services for young people up to age 25 with special educational needs and/or disabilities.">Local Offer</a></li><li><a href="/parking-home" title="Car parks, parking tickets, blue badges, restrictions, permits and general parking information">Parking</a></li><li><a href="/planning" title="Search planning applications, submit and comment.">Planning</a></li><li><a href="/planning-building-control" title="Find information on Building Control and the application process.">Building control</a></li><li><a href="/planning-neighbourhood" title="Neighbourhood planning">Neighbourhood planning</a></li><li><a href="/civil-emergencies-planning-for-an-emergency" title="Prepare for emergencies including floods, power cuts and flu.">Planning for an emergency </a></li><li><a href="/registrations" title="Register a birth or death, or arrange a ceremony at your local registration office.">Registration service</a></li><li><a href="/rubbish-and-recycling" title="Bin collections, sign up for garden waste, recycling centres.">Rubbish and recycling</a></li><li><a href="/trading-standards" title="Protecting the interests of Wiltshire consumers and businesses.">Trading standards</a></li><li><a href="/transport" title="Find public transport, bus, coach, train and park and ride services">Transport</a></li><li><a href="/family-learning" title="Wiltshire Family and Community Learning">Wiltshire Family and Community Learning </a></li>                                </ul>
+                            </li>
+                            <li class="menu-group">
+                                <ul class="group">
+                                    <li class="nav-menu-heading">Business Advice</li><li><a href="/business-advice-support" title="Supporting local businesses, partnerships, networking, local events">Businesses</a></li><li><a href="/business-rates" title="Pay your business rates online, information on how to pay, apply for business rate relief.">Business rates</a></li><li><a href="/jobs-hr-services" title="HR &amp; Organisational Development services">HR &amp; Organisational Development services</a></li><li><a href="/licences-permits" title="Licences for nightclubs, taxis, cinemas, street trading, pet shops and more.">Licences and permits</a></li><li><a href="/economic-regeneration" title="Economic Regeneration">Economic Regeneration</a></li><li><a href="/pest-control" title="Pest inspections, treatments, and advice on keeping your home or business pest-free.">Pest control</a></li><li><a href="/community-environment-street-markets" title="Information for traders and shoppers, market times and locations.">Street markets</a></li><li><a href="/green-economy" title="Climate change">Climate change</a></li>                                </ul>
+                            </li>
+                        <div id="navbar-height-col"></div></ul>
+                    </li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/salisbury">Salisbury</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/accessibility">Accessibility</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        <div id="navbar-height-col"></div></div>
+            </nav>
+</header>
+
+        <div id="wrapper">
+            <section class="leaf-hero">
+    <div class="container">
+        <div class="row">
+            <div class="global-search-container col-sm-12">
+    <form action="http://search.wiltshire.gov.uk/" accept-charset="utf-8" method="get" enctype="multipart/form-data" class="search-site no-quick-search">
+        <input title="Search for what you would like to do" class="form-field" type="text" placeholder="What would you like to do?" id="term" name="term" value="">
+        <button class="btn" type="submit"><span class="hidden-xs">Search</span></button>
+    </form>
+</div>
+        </div>
+        <div class="row">
+            <section class="box-container">
+
+
+                    <div class="branding-header">
+                         
+                        <div class="svg-container">
+
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="189 380.8 973 75.9" style="enable-background:new 189 380.8 973 75.9;" xml:space="preserve" class="svg-content">
+                                <style type="text/css">
+                                    .st0{fill:#006F51;}
+                                    .st1{fill:#004331;}
+                                </style>
+                                <g>
+                                    <g id="Page-2">
+                                        <path id="Fill-9" class="st0" d="M188,411.1c371.4,91.5,678.1-116.2,973,24.8C788,329.7,506.5,545.4,188,411.1z"></path>
+                                    </g>
+                                    <g stroke="null" id="Page-1" fill="none" fill-rule="evenodd">
+                                        <path class="st1" d="M191.7,410.9c-1.8-0.5-2.7-0.7-2.7-0.7v107.5h974v-85.8c0,0-3.7-0.9-10-2.5c3.3,1.5,6.7,3,10,4.6
+            C790.7,329.1,509.4,540.7,191.7,410.9L191.7,410.9z"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </div>
+                        <header class="branded-header ">
+                            <h1>Brownfield register </h1>
+                        </header>
+                    </div>
+                    <div class="box-content col-sm-12">
+                        <nav role="navigation" class="breadcrumbs"><a title="Return to homepage" href="/">Home</a><i class="fa fa-chevron-right"></i><a title="Planning Services" href="/planning-new">Planning Services</a><i class="fa fa-chevron-right"></i><a title="Planning policy" href="/planning-policy">Planning policy</a><i class="fa fa-chevron-right"></i>Brownfield register                         </nav>                    </div>            </section>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div>
+    <div class="row">
+        <div class="col-sm-8">
+            <section class="primary-container">
+                <section class="block-container block-section" id="primary"><div class="block block-text">
+    <h3>What is the Brownfield Land Register?</h3><p>Local planning authorities, including Wiltshire Council, are required to publish a brownfield land register for their area and to maintain and review it at least annually. A brownfield land register sets out previously developed land that a local planning authority considers appropriate for residential development.</p><p>The register is an information set whose content and format are prescribed by government. Such information helps provide certainty for developers and communities and encourages the development of appropriate sites.&nbsp; Sites meeting the criteria are:</p><ul><li>Sites with planning permission as at 31 March 2018; or</li><li>Adopted allocations in a Local Plan; or</li><li>Allocations in a made Neighbourhood Plan, or</li><li>Submitted available sites that the Council considers appropriate.</li></ul><h4>The register must be kept in two parts:</h4><ol><li><strong>Part 1</strong> (published below) is for sites categorised as previously developed (brownfield) land which are assessed as ‘suitable', ‘available' and ‘achievable'&nbsp;for residential development. These terms are explained below.</li><li><strong>Part 2</strong> is optional and a sub-set of Part 1.&nbsp;Wiltshire Council is allowed to select sites from Part 1 and grant ‘permission in principle' for housing-led development subject to undertaking requirements for publicity, notification and consultation as set out in legislation. At present Wiltshire Council has not selected any sites for Part 2 of the Register.<br></li></ol><p>Permission in principle (PiP) is an alternative way of securing planning permission which separates the consideration of matters in principle for proposed development from the technical detail of the development. A PiP establishes the principles of development in terms of the use, location and amount of development on a site. However, planning permission is not granted until technical details consent is sought and approved.</p><h4>Do you have a brownfield site for the Register?</h4><p>If you have a site that you wish to submit to subsequent editions of the Register please follow the following guidelines:</p><p style="margin-left:25px;">i.&nbsp;Check whether the site meets the criteria in <a href="http://www.legislation.gov.uk/uksi/2017/403/regulation/4/made" target="_blank">regulation 4 of the Town and Country Planning (Brownfield Land Register) Regulations 2017</a></p><p style="margin-left:25px;">ii.&nbsp;If deemed suitable submit using our <a href="http://www.wiltshire.gov.uk/planning-policy-monitoring-evidence" target="_blank">‘call for sites' form <br></a></p></div><div class="block block-downloads">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Brownfield Land Register (Part 1) 2018</h3>
+        </div>
+               
+
+        
+                    
+                <div class="col-sm-12 download-items-container">
+                        <div class="download-item">
+                        <div class="download-icon">                                    <div class="block-downloads-list-item-icon v2">
+                                    <img src="/images/scaled/42x0/img/f/file_icons/set1/default.png" alt="csv icon">                                        
+                                    </div>                            </div>
+                        <div class="download-information">  
+                                <div class="block-downloads-list-item-info">
+                                <h4 class="list-group-item-heading">Brownfield Land Register (Part 1) 2018</h4>
+                                        <p class="list-group-item-text">Brownfield Land Register (Part 1) 2018</p>
+                                <p class="file-size">Size 34kb</p>
+                                    </div>
+                                    </div>
+                        <div class="download-cta">
+                            <a target="_blank" href="/downloads/15681" class="list-group-item block-downloads-list-item btn gaDownload" data-download="Brownfield Land Register (Part 1) 2018">Download <i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                        </div>
+</div>
+
+<div class="block block-faqs">        <div class="description"><p><br></p></div>
+    <div class="faqs">            
+            <div class="faq-question" id="accordion_0_795887">
+                <p id="faq_0_795887">
+                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion_0" href="#collapse0_795887">
+                        <span class="fa fa-chevron-down fa-lg"></span>
+                        <span class="question">What is brownfield land?</span>
+                    </a>
+                </p>
+            </div>
+            <div id="collapse0_795887" class="panel-collapse collapse">
+                <div class="answer">
+                    <p>Brownfield - also known as previously developed - land is defined in Annex Two of the National Planning Policy Framework (2012) as:</p><p><em>Land which is or was occupied by a permanent structure, including the curtilage of the developed land (although it should not be assumed that the whole of the curtilage should be developed) and any associated fixed surface infrastructure. This excludes: land that is or was last occupied by agricultural or forestry buildings; land that has been developed for minerals extraction or waste disposal by landfill, where provision for restoration has been made through development management procedures; land in built-up areas such as residential gardens, parks, recreation grounds and allotments; and land that was previously developed but where the remains of the permanent structure or fixed surface structure have blended into the landscape.</em></p>                    <a href="#collapse0_795887" data-toggle="collapse" data-parent="faq_0_795887" class="btn collapsable closepanel">Close <i class="fa fa-chevron-up"></i></a>
+                </div>
+            </div>            
+            <div class="faq-question" id="accordion_1_795887">
+                <p id="faq_1_795887">
+                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion_1" href="#collapse1_795887">
+                        <span class="fa fa-chevron-down fa-lg"></span>
+                        <span class="question">What do 'suitable', 'available' and 'achievable' mean?</span>
+                    </a>
+                </p>
+            </div>
+            <div id="collapse1_795887" class="panel-collapse collapse">
+                <div class="answer">
+                    <p>Sites on the register need to meet the definition of brownfield land (NPPF) and be:</p><ul><li><strong>Suitable</strong>: the site is allocated in a development plan document (e.g. a local plan), benefiting from planning permission, or the council considers it suitable for residential development;</li><li><strong>Available</strong>: the owners of the site or the developer in control of the land have expressed an intention to develop, and that the council considers that there are no ownership or other legal matters that might prevent residential development; and</li><li><strong>Achievable</strong>: based on publically-available information and any relevant representations, the council’s opinion is that the site can come forward within 15 years.</li></ul><p>Importantly, a site’s Part 1 listing does not automatically mean that planning permission will be granted. Sites listed in the register will be subject to normal planning application processes and the approval of further details prior to development taking place.<br></p>                    <a href="#collapse1_795887" data-toggle="collapse" data-parent="faq_1_795887" class="btn collapsable closepanel">Close <i class="fa fa-chevron-up"></i></a>
+                </div>
+            </div>            
+            <div class="faq-question" id="accordion_2_795887">
+                <p id="faq_2_795887">
+                    <a data-toggle="collapse" class="collapsed" data-parent="#accordion_2" href="#collapse2_795887">
+                        <span class="fa fa-chevron-down fa-lg"></span>
+                        <span class="question">What information does the register contain?</span>
+                    </a>
+                </p>
+            </div>
+            <div id="collapse2_795887" class="panel-collapse collapse">
+                <div class="answer">
+                    <p>The brownfield register is essentially a spreadsheet whose form and contents have been <a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard" target="_blank">prescribed by government</a>.</p><p>Typical users of the register are likely to be most interested in the following areas of information:</p><ul><li>Column C&nbsp;Sites are denoted according to planning application number, development plan allocation (be that local or neighbourhood) or strategic housing &amp; employment land availability assessment (‘SHELAA’) reference</li><li>Col. E&nbsp;Site name</li><li>Col. F&nbsp;Site map</li><li>Col. H &amp; I&nbsp;Site map coordinates</li><li>Col. J&nbsp;Site size (in hectares)</li><li>Col. R&nbsp;Minimum number of new homes anticipated</li><li>Col. S&nbsp;Other details regarding any proposed development<br></li></ul>                    <a href="#collapse2_795887" data-toggle="collapse" data-parent="faq_2_795887" class="btn collapsable closepanel">Close <i class="fa fa-chevron-up"></i></a>
+                </div>
+            </div>    </div>
+</div><div class="block block-faqs">        <h3>Archive</h3>        <div class="description"><p>Previous brownfield land registers for Wiltshire may be viewed here.<br></p></div>
+    <div class="faqs">    </div>
+</div><div class="block block-downloads">
+    <div class="panel">
+        <div class="panel-heading">
+            <h3 class="panel-title">Brownfield Land Register (Part 1) 2017</h3>
+        </div>
+               
+
+        
+                    
+                <div class="col-sm-12 download-items-container">
+                        <div class="download-item">
+                        <div class="download-icon">                                    <div class="block-downloads-list-item-icon v2">
+                                    <img src="/images/scaled/42x0/img/f/file_icons/set1/default.png" alt="csv icon">                                        
+                                    </div>                            </div>
+                        <div class="download-information">  
+                                <div class="block-downloads-list-item-info">
+                                <h4 class="list-group-item-heading">Brownfield Land Register (Part 1)</h4>
+                                        <p class="list-group-item-text">Brownfield Land Register 2017</p>
+                                <p class="file-size">Size 51kb</p>
+                                    </div>
+                                    </div>
+                        <div class="download-cta">
+                            <a target="_blank" href="/downloads/10793" class="list-group-item block-downloads-list-item btn gaDownload" data-download="Brownfield Land Register (Part 1)">Download <i class="fa fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>   
+                        </div>
+</div>
+
+</section>
+            </section>
+            <div class="sharethis-large"><p>Share this page</p><span class="st_sharethis_large" displaytext="ShareThis"></span>
+<span class="st_facebook_large" displaytext="Facebook"></span>
+<span class="st_twitter_large" displaytext="Tweet"></span>
+<span class="st_linkedin_large" displaytext="LinkedIn"></span>
+<span class="st_email_large" displaytext="Email"></span></div>
+        </div>
+        <div class="col-sm-4">
+                                <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">In Brownfield register </h3>
+                        </div>
+                        <ul class="list-unstyled list-group">
+    <li>
+        <a title="Wiltshire Core Strategy" href="/planning-policy-core-strategy">Wiltshire Core Strategy</a>
+    </li>
+    <li>
+        <a title="Saved policies from District Local Plans" href="/planning-policy-saved-policies">Saved policies from District Local Plans</a>
+    </li>
+    <li>
+        <a title="Chippenham Site Allocations Plan" href="/planning-policy-site-allocation-plan-chippenham">Chippenham Site Allocations Plan</a>
+    </li>
+    <li>
+        <a title="Minerals and Waste" href="/planning-policy-minerals-waste">Minerals and Waste</a>
+    </li>
+    <li>
+        <a title="Local Plan Review" href="/planning-policy-local-plan-review">Local Plan Review</a>
+    </li>
+    <li>
+        <a title="Wiltshire Housing Site Allocations Plan" href="/planning-whsap">Wiltshire Housing Site Allocations Plan</a>
+    </li>
+    <li>
+        <a title="Neighbourhood Planning" href="/planning-policy-neighbourhood-link">Neighbourhood Planning</a>
+    </li>
+    <li>
+        <a title="Monitoring and Evidence" href="/planning-policy-monitoring-evidence">Monitoring and Evidence</a>
+    </li>
+    <li>
+        <a title="Local Development Scheme" href="/planning-policy-lds">Local Development Scheme</a>
+    </li>
+    <li>
+        <a title="Community Infrastructure Levy" href="/planning-policy-community-infrastructure-levy">Community Infrastructure Levy</a>
+    </li>
+    <li class="active">
+        <a title="Brownfield register" href="/planning-brownfield-register">Brownfield register </a>
+    </li>
+    <li>
+        <a title="Statement of Community Involvement " href="/planning-policy-sci">Statement of Community Involvement </a>
+    </li>
+    <li>
+        <a title="Gypsy and Travellers " href="/planning-gypsy-travellers">Gypsy and Travellers</a>
+    </li>
+    <li>
+        <a title="Gypsy and Traveller DPD" href="/planning-policy-contact">Contact Us</a>
+    </li>
+    <li>
+        <a title="Privacy notice" href="/planning-privacy-notice">Privacy notice</a>
+    </li>
+</ul>                    </div>
+                            <section class="block-container block-section" id="secondary"></section>
+        </div>
+    </div>
+</div>
+            Last updated: 20 December 2018                | Last reviewed: 20 December 2018    </div>        </div>        
+        <section class="page-footer">        <div class="latest-tweets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 header">
+                        <h2 class="pull-left">Latest Tweets</h2>
+                        <div class="social-links pull-right">
+                            <a href="javascript:void(0)" id="newsletterpop"><i class="fa fa-envelope fa-lg"></i> Sign up </a>
+                            <a href="https://twitter.com/wiltscouncil"><i class="fa fa-twitter fa-lg"></i> Follow us on Twitter</a>
+                            <a href="https://www.facebook.com/WiltshireCouncil"><i class="fa fa-facebook-official fa-lg"></i> Like us on Facebook</a>
+                            <a href="https://www.youtube.com/user/wiltshirecouncil"><i class="fa fa-youtube fa-lg"></i> Watch our YouTube Channel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="async-twitter" data-source="L6oSC2_XJHXOaDlVpwZx06pqHQ62Y7bI4woYWhtbEQeROmk6liO9pqgmzYAMJ_howqZv0bHlcnQGW5uR9mQeQg,,">
+                <div class="col-sm-4 bubble-container">
+                <div class="bubble">
+                    <p class="status async-twitter-text"><a href="http://www.twitter.com/VBS001" target="_blank">@VBS001</a> Hi Guy, the problem is down to your own anti-virus software unfortunately. Our anti-virus and security syst… <a href="https://t.co/EN2hUfZPP4" target="_blank">https://t.co/EN2hUfZPP4</a></p>
+                    <p class="time async-twitter-timeago">6 Minutes ago</p>
+                </div>
+                <a class="user async-twitter-screenname async-twitter-userurl" rel="nofollow" target="_blank" href="//twitter.com/wiltscouncil">@wiltscouncil</a>
+            </div>
+                        <div class="col-sm-4 bubble-container">
+                <div class="bubble">
+                    <p class="status async-twitter-text"><a href="http://www.twitter.com/theaddiction_uk" target="_blank">@theaddiction_uk</a> Hi, Wiltshire Council only get involved with water supply issues if there is a private supply, suc… <a href="https://t.co/CCdilult4h" target="_blank">https://t.co/CCdilult4h</a></p>
+                    <p class="time async-twitter-timeago">19 Minutes ago</p>
+                </div>
+                <a class="user async-twitter-screenname async-twitter-userurl" rel="nofollow" target="_blank" href="//twitter.com/wiltscouncil">@wiltscouncil</a>
+            </div>
+                        <div class="col-sm-4 bubble-container">
+                <div class="bubble">
+                    <p class="status async-twitter-text"><a href="http://www.twitter.com/janerrr_" target="_blank">@janerrr_</a> Hi Jane, I have sent this onto our Leisure Centre team and I will tweet back shortly when I have a response. ^TH</p>
+                    <p class="time async-twitter-timeago">26 Minutes ago</p>
+                </div>
+                <a class="user async-twitter-screenname async-twitter-userurl" rel="nofollow" target="_blank" href="//twitter.com/wiltscouncil">@wiltscouncil</a>
+            </div>
+            </div>
+                </div>
+            </div>
+        </div>    <div class="footer-nav">
+        <div class="container">
+            <ul class="navigation">
+    <li>
+        <a title="Contact Wiltshire Council. Online, by phone, in writing." href="/contact">Contact</a>
+    </li>
+    <li>
+        <a title="Freedom of Information" href="/data-protection-foi">Freedom of Information</a>
+    </li>
+    <li>
+        <a title="Wiltshire Council website privacy and cookies policy" href="/privacy">Privacy notice</a>
+    </li>
+    <li>
+        <a title="Data protection" href="/data-protection-foi-data-protection">Data protection </a>
+    </li>
+    <li>
+        <a title="Request Wiltshire Council information in different languages." href="/translate">Translate</a>
+    </li>
+</ul>        </div>
+    </div>
+    <div class="credits">
+        <div class="container">
+            <p><span>© Wiltshire Council 2015</span><span>© Crown Copyright and Database Rights 2015</span><span>Ordnance Survey 100049050</span></p>
+        </div>
+    </div>
+</section>         
+        <script src="/v1.8.14.2/js/main.min.js"></script>    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e6d99c34c8","applicationID":"7350278","transactionName":"ZVYEMkBUXRBVVkBYC1wcJwVGXFwNG1FRVwVHXxJJQlRUBhtWW18QV10SS0JUVAY=","queueTime":0,"applicationTime":1314,"atts":"SREHRAhOTh4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+    
+
+<noscript>&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-MMJLFN"
+                  height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript></body></html>

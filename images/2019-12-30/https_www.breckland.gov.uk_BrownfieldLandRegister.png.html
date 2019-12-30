@@ -1,0 +1,1292 @@
+<!DOCTYPE html><html lang="en"><head>
+		<!-- Google Tag Manager -->
+			<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-KNXFR6L"></script><script>
+		(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+		'gtm.start':
+		new Date().getTime(), event: 'gtm.js'
+		}); var f = d.getElementsByTagName(s)[0],
+		j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+		'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KNXFR6L');</script>
+		<!-- End Google Tag Manager -->
+
+
+
+	<base href="https://www.breckland.gov.uk/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Breckland - Brownfield Land Register</title>
+		<link href="https://www.breckland.gov.uk/dynamic.css?v=637112193124300000" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://www.breckland.gov.uk/dynamic.js?v=637124525504100000"></script>
+
+
+		
+				<script src="//api.reciteme.com/asset/js?key=1fe8b9d28584b7a5e5a9ddb40cdb5e1f5e789af3" type="text/javascript"></script> <!-- this is the reciteme script call-->
+		
+		<script>
+			window.addEventListener("load", function () {
+				window.cookieconsent.initialise({
+					"palette": {
+						"popup": {
+							"background": "#fff",
+							"text": "#444444"
+						},
+						"button": {
+							"background": "#ef8213",
+							"text": "#fff"
+						}
+
+					}
+				})
+			})
+		</script>
+		
+		<script type="text/javascript">
+			Recite.load({
+				enableButton: '.reciteme'
+			})
+		</script>
+
+		
+		<!--[if lte IE 8]>
+			<script src="scripts/html5.js"></script>
+		<![endif]-->
+		
+	<style type="text/css"></style><style></style></head>
+	<body data-template="faq" class="js" bgcolor="white"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-710620945 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="http://cookiesandyou.com" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+			<!-- Google Tag Manager (noscript) -->
+			<noscript>
+				&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNXFR6L"
+						height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;
+			</noscript>
+			<!-- End Google Tag Manager (noscript) -->
+		
+		
+
+
+<header class="no-print  ">
+    <div class="blur"></div>
+    <div class="wrapper wide">
+
+
+<div class="logo">
+		<a href="https://www.breckland.gov.uk/" accesskey="1">
+
+		<img src="https://www.breckland.gov.uk/media/2774/Breckland-Logo/image/logo_and_breckland_council_text.png?m=636205221466630000" alt="Breckland">
+
+		</a>
+</div>
+
+        <a class="menu-toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </a>
+        <nav>
+	<div class="user">
+			<img src="./images/user.png" srcset="./images/user@2x.png 2x" alt="User profile">
+			<a class="log-in" href="https://www.breckland.gov.uk/login?returnurl=aHR0cHM6Ly93d3cuYnJlY2tsYW5kLmdvdi51ay9Ccm93bmZpZWxkTGFuZFJlZ2lzdGVy">Log in<span class="mobile-only"> to My Account</span></a>
+			<a class="register" href="https://www.breckland.gov.uk/login?action=register">Register</a>
+	</div>
+
+            
+
+
+	<form class="search" action="https://www.breckland.gov.uk/article/2852/Search" method="get">
+		<fieldset>
+			<label for="topsearch"><span>Search</span></label>
+<input data-dataurl="https://www.breckland.gov.uk/article/2852/Search" id="topsearch" class="" placeholder="I'm searching the Breckland website for..........." name="q" value="" type="text" maxlength="100" autocomplete="off">
+
+<script>
+	var autocomplete = new SearchSuggestion({
+		element: 'input[id="topsearch"]',
+		minimum: 1,
+		modifier: "",
+		select: function (value, element, item) {
+			var link = item.getAttribute('data-link');
+			if (link) {
+				window.location = link;
+			} else {
+				window.location = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + item.getAttribute("data-val");
+			}
+		},
+		source: function (value, element, render) {
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == XMLHttpRequest.DONE) {
+					if (this.status == 200) {
+						var data = JSON.parse(this.responseText);
+						if (data) {
+							render(data.results.splice(0, 5));
+						}
+					}
+				}
+			};
+
+			var url = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + value + "&amp;ajax=true&amp;t=" + new Date().getTime();
+			xhr.open("GET", url, true);
+			xhr.setRequestHeader("Content-type", "application/json");
+			xhr.setRequestHeader("Accept", "application/json");
+			xhr.send();
+		}
+	});
+</script>
+			<input type="image" src="./images/search-icon.png" alt="Search">
+			<span class="close">[x]</span>
+		</fieldset>
+	</form>
+            
+
+	<ul class="site">
+			<li>
+<a class="has-children" href="https://www.breckland.gov.uk/residents">Residents</a>					<div class="dropdown-toggle"></div>
+					<ul class="sub-menu">
+							<li>
+<a class="" href="https://www.breckland.gov.uk/planningbuildingcontrol">Planning &amp; Building Control</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/rubbish">Rubbish &amp; Recycling</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/yourcounciltax">Council Tax &amp; Benefits</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/housing">Housing</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/armed-forces-community">Armed Forces Community</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/environmentalhealth">Your Environment</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/foodsafety">Food Safety</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/communications">Communications</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/communities">Community &amp; Wellbeing</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/healthandsafetyforresidents">Health &amp; Safety</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/doitonline">Do It Online</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/Brexit">Brexit guidance</a>							</li>
+					</ul>
+			</li>
+			<li>
+<a class="has-children" href="https://www.breckland.gov.uk/business">Business</a>					<div class="dropdown-toggle"></div>
+					<ul class="sub-menu">
+							<li>
+<a class="" href="https://www.breckland.gov.uk/businessrates">Business Rates</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/businesssupport">Business Support</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/licensing">Licensing</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/healthandsafety">Health &amp; Safety</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/commercialproperty">Commercial Property</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/foodsafetyforbusiness">Food Safety for Business</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/thetfordriverside">Thetford Riverside Leisure Complex</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/ehcuk">Training Courses</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/sellingtothecouncil">Selling to the Council</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/roombookings">Meeting Room Hire</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/9731/Development-Partnerships">Development Partnerships</a>							</li>
+					</ul>
+			</li>
+			<li>
+<a class="has-children" href="https://www.breckland.gov.uk/yourcouncil">Your Council</a>					<div class="dropdown-toggle"></div>
+					<ul class="sub-menu">
+							<li>
+<a class="" href="https://www.breckland.gov.uk/findyourcouncillor">Find your Councillor</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/councilandelections">Council &amp; Elections</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/spendingperformanceandtransparency">Information &amp; Governance</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/careers">Career Information</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/developmentpartnerships">Development Partnerships</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7165/Calendar-of-Meetings">Calendar of Meetings</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7167/Latest-Publications">Latest Publications</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7168/Search-Docs">Search Docs</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7169/Meetings">Meetings</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7170/Decisions">Decisions</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7171/Plans">Plans</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7172/Your-Councillors">Your Councillors</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7173/Committees">Committees</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7174/Parish-Councils">Parish Councils</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7175/Outside-Bodies">Outside Bodies</a>							</li>
+					</ul>
+			</li>
+			<li>
+<a class="has-children" href="https://www.breckland.gov.uk/visitors">Visitors &amp; Leisure</a>					<div class="dropdown-toggle"></div>
+					<ul class="sub-menu">
+							<li>
+<a class="" href="https://www.breckland.gov.uk/whatson">What's On</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/artsandleisure">Leisure</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/visitingbreckland">Visiting Breckland</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/article/7991/Meeting-Room-Hire">Meeting Room Hire</a>							</li>
+							<li>
+<a class="" href="https://www.breckland.gov.uk/carparks">Car Parks</a>							</li>
+					</ul>
+			</li>
+			<li>
+<a class="" href="https://www.breckland.gov.uk/article/7099/My-Breckland">My Breckland</a>			</li>
+	</ul>
+
+        </nav>
+    </div>
+</header><div class="search-suggestion" style="left: 1159px; top: 47px; width: 37px;"></div>
+
+
+
+
+		
+
+			<div class="breadcrumb">
+				<ol class="breadcrumb no-print">
+					<li><span class="label">You are here:</span></li>
+							<li><a href="https://www.breckland.gov.uk/">Breckland Council</a></li>
+							<li class="seperator">/</li>
+							<li><a href="https://www.breckland.gov.uk/residents">Residents</a></li>
+							<li class="seperator">/</li>
+							<li><a href="https://www.breckland.gov.uk/planningbuildingcontrol">Planning &amp; Building Control</a></li>
+							<li class="seperator">/</li>
+							<li><a href="https://www.breckland.gov.uk/planningpolicy">Planning Policy</a></li>
+							<li class="seperator">/</li>
+							<li><span>Brownfield Land Register</span></li>
+				</ol>
+			</div>
+		
+
+		
+						<main>
+			<!--PAGEWATCH-->
+			<a id="SkipNavigation" href="https://www.breckland.gov.uk/BrownfieldLandRegister#SkipNavigation" class="hidden" accesskey="s">Skip Navigation</a>
+
+			<article>
+				<div class="wrapper">
+
+	<div class="a-heading a-heading--faq">
+		<h1 class="a-heading__title">Brownfield Land Register</h1>
+	</div>
+
+
+
+	<div class="a-body a-body--faq">
+
+<p>The Government is committed to maximising the number of new homes built on suitable brownfield land and has set out its intention to ensure that 90 per cent of suitable brownfield sites have planning permission for housing by 2020.</p><p><a class="a-body__link a-body__link--external" href="http://www.legislation.gov.uk/uksi/2017/403/made" target="_blank" title="The Town and Country Planning (Brownfield Land Register) Regulations 2017 : opens on new browser window or tab">The Housing and Planning Act, 2016 (opens in a new window)</a>&nbsp;makes provision for local authorities to prepare, maintain and publish a register of brownfield land. The register should identify previously developed sites in the district that we have assessed as being suitable for housing.</p><p>Further information can be found within national Planning Practice Guidance regarding the&nbsp;<a class="a-body__link a-body__link--external" href="https://www.gov.uk/guidance/brownfield-land-registers" target="_blank" title="Government guidance: Brownfield Land Registers : opens on new browser window or tab">Brownfield Land Register (opens in a new window)</a>and <a class="a-body__link a-body__link--external" href="https://www.gov.uk/guidance/permission-in-principle" target="_blank" title="Government guidance: Permission in Principle : opens on new browser window or tab">Permission in Principle (opens in a new window)</a>.</p><p><strong>The Brownfield Register can be downloaded and viewed here:</strong> <span class="embeddoc"><img class="embeddoc__image" src="images/media/csvicon.gif" alt="Icon for csv">
+<a class="embeddoc__link" href="https://www.breckland.gov.uk/media/7298/Brownfield-Land-Register/CSV/Brownfield_Land_Register.csv?m=637056892232270000" target="_blank" title="Brownfield Land Register : opens on new browser window or tab">Brownfield Land Register [22.68KB] (opens in a new window)</a></span>&nbsp;(Last Modified: 23 February 2018)</p><p>* If the land is entered in Part 2 of the Brownfield Land Register it will be granted permission in principle, which establishes the suitability, in principle, of land for housing-led development.</p><p>Information regarding all the sites will be updated in the following PDF document following each stage (i.e. Planning Committee, consultation etc.): <span class="embeddoc"><img class="embeddoc__image" src="images/media/pdficon.gif" alt="Icon for pdf">
+<a class="embeddoc__link" href="https://www.breckland.gov.uk/media/7885/Brownfield-land-sites/pdf/Brownfield_Land_Sites_.pdf?m=637056892570300000" target="_blank" title="Brownfield land sites : opens on new browser window or tab">Brownfield Land Sites [120.41KB] (opens in a new window)</a></span></p><hr><p><strong>The following sites&nbsp;have been&nbsp;subject to a 42 consultation&nbsp;for consideration to be placed on&nbsp;Part 2 of the register:</strong></p><p>BLR_03: 'The Necton Diner, Necton' (Planning Reference: BLR/2017/0001/PIP) - Undecided</p><p>BLR_04: 'Former VA Infant School, Necton' (Planning Reference: BLR/2017/0002/PIP) - Placed on Part 2 of the register</p><p>BLR_20: 'The Old Maltings, Norwich Road, Dereham' (Planning Reference: BLR/2017/0003/PIP) - Placed on Part 2 of the register</p><p>BLR_21: 'Hamilton Acorn Ltd. Halford Road, Attleborough' (Planning Reference: BLR/2017/0004/PIP) - Placed on Part 2 of the register</p><hr><p><a class="a-body__link" href="https://www.breckland.gov.uk/article/7236/How-to-submit-sites-to-the-Brownfield-Land-Register">Submit Sites to the Brownfield Land Register for consideration</a>&nbsp;</p>
+	</div>
+
+
+
+	<div class="faq">
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What is Brownfield Land (Also known as Previously Developed Land)? </span>
+					<div class="faq__panel">
+
+<p>Previously developed land is defined in the NPPF as: <em>"Land which is or was occupied by a permanent structure, including the curtilage of the developed land (although it should not be assumed that the whole of the curtilage should be developed) and any associatedfixed surface infrastructure. This excludes: land that is or has been occupied by agricultural or forestry buildings; land that has been developed for minerals extraction or waste disposal by landfill purposes where provision for restoration has been made through development control procedures; land in built-up areas such as private residential gardens, parks, recreation grounds and allotments; and land that was previously-developed but where the remains of the permanent structure or fixed surface structure have blended into the landscape in the process of time."</em></p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What sites are eligible to be placed on the register? </span>
+					<div class="faq__panel">
+
+<p>Brownfield land sites above 0.25ha or those capable of providing for 5 or more dwellings considered to be suitable, available and achievable.</p><p><strong>Suitable</strong>: Has been allocated in a local development plan document for residential development; has planning permission for residential development; has a grant of permission in principle for residential development; or, is in the opinion of the local planning authority, appropriate for residential development, having regard to -</p><p>Any adverse impact on -</p><ol><li><p>The natural environment;</p></li><li><p>the local built environment, including in particular on heritage assets;</p></li><li><p>any adverse impact on the local amenity which such development might cause for intended occupiers of the development or for occupiers of neighbouring properties; and</p></li><li><p>any relevant representations received.</p></li></ol><p><strong>Available</strong>: The relevant owner (owners)/ developer, has expressed an intention to sell or develop the land at a date not more than 21 days before the entry date there I no evidence indicating a change to that intention. in the opinion of the local authority there are no issues relating to the ownership of the land or other legal impediments which might prevent residential development of the land taking place, having regard to -</p><ol><li><p>Any information publicly available on that date; and</p></li><li><p>any relevant representations received.</p></li></ol><p><strong>Achievable</strong>: The development is likely to take place within 15 years of the entry date, having regard to -</p><ol><li><p>Any information publicly available; and</p></li><li><p>any relevant representations received.</p></li></ol>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What sites are eligible for Part 2 of the register? </span>
+					<div class="faq__panel">
+
+<p>Sites will be included in Part 2 of the register where:</p><ul><li><p>The requirements of a site being on Part 1 of the register have been met; and</p></li><li><p>The authority has decided to allocate the land residential development, having followed the publicity and notification (regulations 6 to 9) and consultation (regulations 10 to 13) procedures of the Brownfield Land Register Regulations, 2017.</p></li></ul>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">How were sites initially added to the register? </span>
+					<div class="faq__panel">
+
+<p>The initial register was compiled from brownfield sites that meet the criteria as set out in the regulations. These included:</p><ul><li><p>Sites that received a positive assessment through the Strategic Housing Land Availability Assessment (SHLAA);</p></li><li><p>Sites submitted through the Local Plan site selection process;</p></li><li><p>Sites were subject to a live planning permission granted within the past three years (01/04/2014 - 31/08/2017); and</p></li><li><p>Sites allocated through the Site Specific Policies &amp; Proposals Development Plan Document.</p></li></ul><p>Where sites were only partially on brownfield land only the part included on brownfield land was included within the register.</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What is Permission in Principle? </span>
+					<div class="faq__panel">
+
+<p>The&nbsp;Permission in Principle&nbsp;(PIP)&nbsp;consent route is an alternative way of obtaining planning permission which separates the consideration of matters of principle for proposed development form the technical detail of the development.</p><p>PIP is available for housing or housing-led development on suitable sites entered on brownfield registers only. The scope of permission in principle is limited to location, land use and amount of development.</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What is expected from the Technical Details Consent? </span>
+					<div class="faq__panel">
+
+<p>Following a grant of permission in principle, the site must receive a grant of technical details consent before development can proceed. The granting of technical details consent has the effect of granting planning permission for the development and other statutory requirements may apply at this stage e.g. relating to protected species or listed buildings. Technical details consent can be obtained following submission of a valid application to the local planning authority. An application for technical details consent must be in accordance with the permission in principle that is specified by the applicant (e.g. by giving the reference number from the planning register) in the technical details consent application form.</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">Can conditions be attached to Permission in Principle or Technical Details Consent applications? </span>
+					<div class="faq__panel">
+
+<p>Planning Practice Guidance states that "it is not possible for conditions to be attached to a Permission in Principle and its terms only include the site location, the type of development and amount of development. Local Planning authorities can inform applicants about what they expect to see at the technical details consent stage". However, conditions can be attached to a technical details consent.</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">Planning Fees?</span>
+					<div class="faq__panel">
+
+<p>&nbsp; National Planning Practice Guidance states that a fee is payable for Technical Details Consent.</p><p>&nbsp;</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">What is the consultation process? </span>
+					<div class="faq__panel">
+
+<p>A 42 day consultation period would be undertaken prior to a site being granted Permission in Principle. A further consultation period will be held on the Technical Details Consent in line with planning practice guidance, which states that this will be not less than 21 days for the site notice and 14 days for the online notice.</p>					</div>
+				</div>
+			</div>
+			<div class="faq__item">
+				<div class="faq__link">
+					<span class="faq__title">How to submit sites to the Brownfield Land Register</span>
+					<div class="faq__panel">
+							<p>To submit a site to the Brownfield Register please complete our on-line form</p>
+<a class="faq__panel__link" href="https://www.breckland.gov.uk/article/7236/How-to-submit-sites-to-the-Brownfield-Land-Register">									Read more &gt;
+</a>					</div>
+				</div>
+			</div>
+	</div>
+
+				</div>
+
+				
+				<p width="100%" style="text-align: center">Last updated: 23/02/2018 10:31:43</p>
+				<!--govdelivery overlay here -->
+				<script src="https://content.govdelivery.com/overlay/js/6427.js"></script>
+			</article>
+
+			
+			<div class="related wrapper no-print">
+
+			</div>
+
+			
+
+			<!--/PAGEWATCH-->
+		</main>
+
+		
+
+
+
+
+		
+
+
+<footer class="no-print">
+	<div class="wrapper wide">
+
+
+	<div class="grid grid--4col">
+
+
+
+<div class="grid__cell grid__cell--cols1" data-grid-colspan="1">
+	<div class="grid__cellwrap">		<ul class="utilities no-style">
+				<li>
+<a class="" href="https://www.breckland.gov.uk/article/8402/Was-this-page-useful-">Was this page useful?</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/contactus">Contact us </a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/accessibility">Accessibility</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/customer-charter">Customer Charter</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/article/6938/Terms-and-Conditions">Terms and Conditions</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/privacypolicy">Privacy Policy</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/dataprotectionpolicy">Data Protection Policy</a>				</li>
+				<li>
+<a class="" href="https://www.breckland.gov.uk/article/10078/Sign-up-for-regular-email-updates">Sign up for regular email updates</a>				</li>
+		</ul>
+
+</div></div>
+
+
+<div class="grid__cell grid__cell--cols1" data-grid-colspan="1">
+	<div class="grid__cellwrap">		<div class="address">
+ Breckland Council <br>
+Elizabeth House <br>
+Walpole Loke <br>
+Dereham <br>
+Norfolk <br>
+United Kingdom <br>
+NR19 1EE <br>
+		</div>
+
+</div></div>
+<div class="grid__cell grid__cell--cols1" data-grid-colspan="1">
+	<div class="grid__cellwrap">			<div class="contact">
+
+
+
+			</div>
+
+</div><p><a href="/11660"><img src="media/13182/image/image/image class=" armed_forces_footer_image="" alt="Visit the Armed Forces page"></a></p></div>
+<div class="grid__cell grid__cell--cols1" data-grid-colspan="1">
+	<div class="grid__cellwrap">
+
+
+	<div class="icons">
+		<span>Follow us:</span>
+		<ul class="inline-list">
+					<li>
+						<a href="https://twitter.com/BreckCouncil" title="Breckland Council Twitter page">
+							<img src="https://www.breckland.gov.uk/image/2666/Twitter/icon.png?m=636924693307130000" alt="Twitter Icon">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/BreckCouncil/" title="Breckland Facebook Page">
+							<img src="https://www.breckland.gov.uk/image/2665/Facebook/icon.png?m=636924690849370000" alt="Facebook Icon Link">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/company/breckland-council" title="LinkedIn">
+							<img src="https://www.breckland.gov.uk/image/11754/LinkedIn/icon.png?m=637081140257530000" alt="LinkedIn">
+						</a>
+					</li>
+		</ul>
+	</div>
+
+
+
+<span>© 2019 Breckland</span><a class="powered-by-goss" href="https://www.gossinteractive.com" target="_blank" title="Web content management by GOSS iCM">Powered by GOSS iCM (opens in a new window)</a>
+</div></div>
+</div>	</div>
+</footer>
+
+
+
+	
+<div style="width: 500px; position: fixed; top: 50%; left: 50%; margin-top: -250px; margin-left: -250px; z-index: 10001;" id="scopedByScopedPolyfill_1">
+  <style scoped="">
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/*
+OVERLAY MODAL
+=============================================================================================
+GovDelivery
+*/
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+#prefix-overlay-outer p {
+  margin:0;
+  padding:0;
+}
+
+#prefix-overlay-outer {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding:0px;
+  padding-bottom:15px;
+  text-align:center;
+  -webkit-box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+  border-radius:10px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0) !important;
+  -webkit-focus-ring-color: rgba(255, 255, 255, 0) !important;
+  outline: 0 !important;
+}
+
+#prefix-overlay-header {
+  font: normal 24px 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  padding-bottom:0px;
+  padding-top:15px;
+  display:block;
+}
+
+#prefix-overlay-header img {
+  vertical-align:middle;
+}
+
+#prefix-overlay-header button.prefix-overlay-close {
+  padding: 0;
+  position: absolute;
+  top: -12.5px;
+  right: -12.5px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: none;
+  text-indent: -9999px;
+  cursor:pointer;
+  background: url(data:image/png;base64,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) no-repeat 0 0;
+}
+
+.prefix-overlay-content {
+  color:#343D47;
+  text-align:center;
+  display:block;
+  font-weight:bold;
+  font-size:22px;
+  margin:0px;
+  line-height:26px;
+  padding:10px 15px;
+}
+
+#prefix-overlay-form-div form {
+  margin:0 auto;
+  padding-top:9px;
+}
+
+#prefix-overlay-form-div input {
+  margin:0 auto;
+  display:block;
+}
+
+#prefix-error-outer {
+  clear: both;
+  font-size:14px;
+  line-height: 1.2em;
+  color:#ff2222;
+  padding-top:10px;
+}
+
+.prefix-overlay-button-panel {
+  padding-top:10px;
+  line-height:20px;
+  font-size:12px;
+  line-height:20px;
+}
+
+#prefix-overlay-outer .prefix-overlay-button-panel button {
+  background-color:transparent;
+  border:none;
+  line-height:16px;
+  font-size:12px;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#prefix-overlay-outer .prefix-overlay-button-panel button:hover, #prefix-overlay-outer  .prefix-overlay-button-panel button:focus {
+  cursor:pointer;
+  color:#43526C;
+  text-decoration:underline;
+}
+
+#prefix-overlay-outer .prefix-overlay-button-panel button:active { }
+
+#prefix-overlay-outer input[type='email'] {
+  width: 275px;
+  padding:7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  text-align:center;
+  box-sizing: border-box;
+  line-height: 1.4;
+  display: block;
+  outline: 0;
+  box-shadow: inset 0px 1px 4px rgba(0,0,0,.2);-moz-box-shadow:inset 0px 1px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0px 1px 4px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip:padding-box;
+  text-shadow: 0 1px 0 #ffffff;
+  background:#ffffff;
+}
+
+#prefix-overlay-outer input[type='tel'] {
+  width: 275px;
+  padding:7px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:16px;
+  text-align:center;
+  box-sizing: border-box;
+  line-height: 1.4;
+  display: block;
+  outline: 0;
+  box-shadow: inset 0px 1px 4px rgba(0,0,0,.2);-moz-box-shadow:inset 0px 1px 4px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0px 1px 4px rgba(0,0,0,.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip:padding-box;
+  text-shadow: 0 1px 0 #ffffff;
+  background:#ffffff;
+}
+
+#prefix-overlay-outer input[type='submit'], #prefix-overlay-outer button.prefix-big {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-transform:uppercase;
+  width:175px;
+  padding:6px;
+  color:#ffffff;
+  cursor:pointer;
+  *padding:7px;
+  *border:none;
+  margin-top:7px;
+  font-size:17px;
+  font-weight: 400;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -ms-transition-property: background-color;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-timing-function: linear;
+  -o-transition-property: background-color;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: linear;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+#prefix-overlay-outer input[type='submit']:hover, #prefix-overlay-outer button.prefix-big:hover {
+  cursor:pointer;
+}
+
+#prefix-overlay-outer input[type='submit']:active, #prefix-overlay-outer button.prefix-big:active {
+  -webkit-box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.22);
+  box-shadow: inset 0 0 10px 4px rgba(0, 0, 0, 0.22);
+}
+
+#prefix-overlay-outer input[type='submit']::-moz-focus-inner{
+  border:0;
+  padding:0;
+}
+
+
+/* OVERRIDES */
+
+      #prefix-overlay-outer { background-color: #ffffff;}
+
+      #prefix-overlay-outer input[type='email'] {
+        border: 1px solid #e1e1e1;
+        color: #000000;
+      }
+
+      #prefix-overlay-outer input[type='tel'] {
+        border: 1px solid #e1e1e1;
+        color: #000000;
+      }
+
+      #prefix-overlay-outer input[type='email']::-webkit-input-placeholder {
+        color: #000000;
+      }
+
+      #prefix-overlay-outer input[type='tel']::-webkit-input-placeholder {
+        color: #000000;
+      }
+
+      #prefix-overlay-outer input[type='email']:-moz-placeholder {
+        /*Firefox 18- */ color: #000000;
+        opacity: 1;
+      }
+
+      #prefix-overlay-outer input[type='tel']:-moz-placeholder {
+        /*Firefox 18- */ color: #000000;
+        opacity: 1;
+      }
+
+      #prefix-overlay-outer input[type='email']::-moz-placeholder {
+        /*Firefox 19+ */ color: #000000;
+        opacity: 1;
+      }
+
+      #prefix-overlay-outer input[type='tel']::-moz-placeholder {
+        /*Firefox 19+ */ color: #000000;
+        opacity: 1;
+      }
+
+      #prefix-overlay-outer input[type='submit'], #prefix-overlay-outer button.prefix-big {
+        background-color: #00967f;
+        border:1px solid #00967f;
+      }
+
+      #prefix-overlay-outer input[type='submit']:hover, #prefix-overlay-outer button.prefix-big:hover {
+        background-color: #007d69;
+        border:1px solid #007d69;
+      }
+
+      #prefix-overlay-outer input[type='submit']:active, #prefix-overlay-outer button.prefix-big:active {
+        background-color: #007d69;
+        border:1px solid #007d69;
+      }
+
+      #prefix-overlay-outer #prefix-overlay-step1 p { color: #444444;}
+
+      #prefix-overlay-outer .prefix-overlay-button-panel button {
+        color : #00967f;
+      }
+
+
+#prefix-overlay-header button.prefix-overlay-close {
+  top: 10px;
+  right: 10px;
+  width: 37px;
+  height: 37px;
+  background: url('https://content.govdelivery.com/attachments/fancy_images/UKBRECKLAND/2018/09/2167697/x_original.png') no-repeat 0 0;
+}
+
+#prefix-overlay-outer {
+  border-radius:0px;
+  background: url('https://content.govdelivery.com/attachments/fancy_images/UKBRECKLAND/2018/09/2167704/overlaybg_original.png') no-repeat;
+}
+
+#prefix-overlay-step1 {
+  margin-top:263px;
+  padding:0px 45px;
+}
+
+#prefix-overlay-step1 p {
+  font-size:18px;
+}
+
+#prefix-overlay-step2 {
+  margin-top:263px;
+  padding:0px 45px;
+}
+
+#prefix-overlay-step2 button.prefix-big {
+  float:none !important;
+  text-transform:none;
+}
+
+#prefix-overlay-outer input[type='email'] {
+  width:410px;
+  background:#e1e1e1;
+  box-shadow: inset 0px 0px 0px rgba(0,0,0,.2);-moz-box-shadow:inset 0px 1px 4px rgba(0,0,0,.0);
+  -webkit-box-shadow: inset 0px 0px 0px rgba(0,0,0,.0);
+}
+
+#prefix-overlay-outer input[type='submit'], #prefix-overlay-outer button.prefix-big {
+  float:right;
+  text-transform:none;
+}
+
+#prefix-overlay-outer .prefix-overlay-button-panel button:hover, #prefix-overlay-outer  .prefix-overlay-button-panel button:focus {
+  color: #00967f;
+}
+
+.prefix-overlay-button-panel {
+  float:right;
+  margin-top:40px;
+
+}
+
+#prefix-error-outer {
+   float:right;
+   height:26px !important;
+}
+
+#prefix-dismissButton {
+  color:#fe001e !important;
+  font-size:16px !important;
+}
+
+#prefix-laterButton {
+  font-size:16px !important;
+}
+
+  </style>
+
+
+<div id="prefix-webfonts"><link href="https://fonts.googleapis.com/css?family=Open+Sans:800,400" rel="stylesheet" type="text/css"></div><div id="prefix-overlay-outer" tabindex="0" role="dialog" aria-labelledby="#prefix-overlay-header" aria-describedby="#prefix-overlay-step1" style="height: 500px;">
+  <div class="prefix-overlay-inner">
+    <div id="prefix-overlay-header" rel="toggle">
+      <button class="prefix-overlay-close prefix-overlay-action-later" title="Close subscription dialog"></button>
+    </div>
+
+    <div id="prefix-overlay-step1"><p>Want to stay connected? Sign up for email alerts</p>
+      <div id="prefix-overlay-form-div">
+        <form novalidate="">
+          <input placeholder="Enter your email address" name="e" type="email" required="" id="prefix-emailInput" title="Enter your email address">
+          <input type="submit" value="Subscribe" id="prefix-submitButton">
+        </form>
+      </div>
+      <div id="prefix-error-outer">
+        <span style="display:none"></span>
+      </div>
+      <div class="prefix-overlay-button-panel">
+        <button class="prefix-overlay-action-dismiss" id="prefix-dismissButton">No thanks</button>
+        <button class="prefix-overlay-action-later" id="prefix-laterButton">Remind me later</button>
+      </div>
+    </div>
+
+    <!-- step2 is the success confirmation page -->
+    <div id="prefix-overlay-step2" style="display:none;"><p>Thank you for subscribing!</p><p><button class="prefix-big" rel="dismiss" title="Close overlay and go to site">Continue</button></p>
+    </div>
+    <div id="prefix-overlay-formStep" style="display:none;">
+      <div id="prefix-overlay-form-div">
+        <form id="prefix-formStepForm" novalidate="">
+          <input type="submit" value="Continue" id="prefix-formStep-submitButton">
+        </form>
+      </div>
+      <div id="prefix-error-outer">
+        <span style="display:none"></span>
+      </div>
+    </div>
+
+    <div id="prefix-overlay-footer"></div>
+  </div>
+</div>
+
+</div><div style="top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%; position: fixed; z-index: 10000; background-color: rgb(0, 0, 0); opacity: 0.5; background-position: initial initial; background-repeat: initial initial;"></div></body></html>

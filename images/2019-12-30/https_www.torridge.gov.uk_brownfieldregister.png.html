@@ -1,0 +1,1191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb"><head id="Head1"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:20px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative !important;}.swal-button{background-color:#7cd1f9 !important;color:#222; border-color:#ccc !important;box-shadow:none !important;border-radius:5px !important;font-weight:600 !important;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<iframe id="pxcelframe" src="//t.sharethis.com/a/t_.htm?ver=0.345.16845&amp;cid=c010#rnd=1577724227638&amp;cid=c010&amp;dmn=www.torridge.gov.uk&amp;tt=t.dhj&amp;dhjLcy=96&amp;lbl=pxcel&amp;flbl=pxcel&amp;ll=d&amp;ver=0.345.16845&amp;ell=d&amp;cck=__stid&amp;pn=%2Fbrownfieldregister&amp;qs=na&amp;rdn=www.torridge.gov.uk&amp;rpn=%2F&amp;rqs=na&amp;cc=GB&amp;cont=EU&amp;ipaddr=" style="display: none;"></iframe><script src="https://connect.facebook.net/en_US/sdk.js?hash=9321fa322e6dcfd0a417af73b6498ad7" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript" id="async-buttons" src="https://ws.sharethis.com/button/async-buttons.js"></script><script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/mhgGrlTs_PbFQOW4ejlxlxZn/recaptcha__en.js"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-11792103-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11792103-1');
+</script>
+
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+			
+<title>
+	Torridge District Council
+</title>
+					<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+					<meta http-equiv="Content-Style-Type" content="text/css">
+					<meta http-equiv="Content-Script-Type" content="text/javascript">
+					
+						<meta name="description" content="Councils are required by Government to prepare and publish a Brownfield Land Register ('the Register') by 31 December 2017. The Register provides details of previously developed sites that are available and potentially suitable for residential development. ">
+					
+					<meta name="generator" content="GOSS iCM - Intelligent Content Management">
+					<meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=yes">
+
+					<base href="https://www.torridge.gov.uk/">
+
+					
+						<link rel="canonical" href="https://www.torridge.gov.uk/brownfieldregister">
+						<link href="./themes/torridgeTopTasks/css/editor.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/css/colours.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/css/flick/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/css/styleprint.css" rel="stylesheet" type="text/css" media="print">
+<!--[if IE 8]> 
+<link href="./themes/torridgeTopTasks/css/iefallback.css" rel="stylesheet" type="text/css" media="all" />
+ <![endif]-->
+<!--[if IE 7]> 
+<link href="./themes/torridgeTopTasks/css/ie7.css" rel="stylesheet" type="text/css" media="all" />
+ <![endif]-->
+<!--[if IE 9]> 
+<link href="./themes/torridgeTopTasks/css/ie9.css" rel="stylesheet" type="text/css" media="all" />
+ <![endif]-->
+<link href="./themes/torridgeTopTasks/css/cookieconsent.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/template/download/css/download.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/torridgeTopTasks/css/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 1000px)">
+
+
+						
+
+						
+								<script type="text/javascript" src="./themes/torridgeTopTasks/scripts/javascripts.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/jquery/jquery-1.10.2.min.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/jquery/jquery-ui-1.10.4.custom.min.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/json.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/jquery/json-rpc.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/analytics.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/jquery/jquery.jpanelmenu.min.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/jRespond.min.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/cookieconsent.js"></script><script type="text/javascript" src="./themes/torridgeTopTasks/scripts/sweetalert.js"></script>
+							
+
+					
+				
+
+			<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', '<!--#TheSubsite.SubsiteSettings[GoogleAnalyticsID]-->']);
+				_gaq.push(['_setDomainName', '.torridge.gov.uk']);
+				_gaq.push(['_setAllowHash', false]);
+				
+						_gaq.push(['_setCustomVar', 1, 'L1', 'Residents', 3]);
+					
+						_gaq.push(['_setCustomVar', 2, 'L2', 'Planning and Building Control', 3]);
+					
+						_gaq.push(['_setCustomVar', 3, 'L3', 'Planning Policy', 3]);
+					
+				_gaq.push(['_trackPageview']);
+
+				(function() {
+					var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+				})();
+			</script>
+			<!--Share this -->
+			<script type="text/javascript" src="https://ws.sharethis.com/button/buttons.js"></script>
+			<script type="text/javascript">				stLight.options({ publisher: "006f4a28-86ad-4451-98f8-2f80404c4c5a", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+
+			
+			
+			
+				
+            <script>
+			window.addEventListener("load", function(){
+			window.cookieconsent.initialise({
+			    "palette": {
+			    "popup": {
+			    "background": "#252e39",
+			    },
+			    "button": {
+			    "background": "#14a7d0"
+			    }
+			    },
+			    "theme": "classic",
+			    "position": "bottom-left",
+				"content": {
+			    "message": "Our website uses cookies to help us to ensure you get the best experience on our website.  By continuing we will assume that you accept this.",
+			    "href": "https://www.torridge.gov.uk/privacypolicy_cookies"
+			    }
+			    })});
+            </script>
+			
+		<link rel="stylesheet" type="text/css" href="https://ws.sharethis.com/button/css/buttons-secure.css"><script type="text/javascript" src="https://count-server.sharethis.com/v2.0/get_counts?url=https%3A%2F%2Fwww.torridge.gov.uk%2Fbrownfieldregister&amp;cb=stButtons.processCB&amp;wd=true"></script><style></style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style></head>
+		
+				
+					<body onload="pageLoaded();" class="active-tab0 active-tab0-first" id="template-download" bgcolor="white" style=""><div id="slidenavigationtoggle"><div id="mobmenu"></div></div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-floating cc-type-info cc-theme-classic cc-bottom cc-left cc-color-override-530831885 " style=""><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">Our website uses cookies to help us to ensure you get the best experience on our website.  By continuing we will assume that you accept this. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.torridge.gov.uk/privacypolicy_cookies" rel="noopener noreferrer nofollow" target="_blank">Learn more</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">I'm OK with this!</a></div><!--googleon: all--></div>
+						<div id="pagewrapper">
+							
+
+
+		<div id="toputilnav">
+			<ul>
+				<li class="even first"><div class="reciteme"></div></li>
+				<li class="odd skipnavigation">
+					<a accesskey="s" href="https://www.torridge.gov.uk/brownfieldregister#centrecolumn">Skip Navigation</a>
+				</li>
+				<li class="even">
+					<a href="https://www.torridge.gov.uk/article/12058/Torridge-District-Council-Home-Page">Home</a>
+				</li>
+	
+		
+				<li class="even">
+					<a href="https://www.torridge.gov.uk/article/12295/Search">Search</a>
+				</li>
+			
+	
+		
+				<li class="odd">
+					<a href="https://www.torridge.gov.uk/article/15133/About-Cookies">About Cookies</a>
+				</li>
+			
+	
+		
+				<li class="even last">
+					<a href="https://www.torridge.gov.uk/article/14346/Login">Login</a>
+				</li>
+			
+	
+			</ul>
+		</div>
+	
+							
+									<div id="topbanner">
+								
+
+							<div id="toplogo">
+								
+								
+									<a href="https://www.torridge.gov.uk/article/12058/Torridge-District-Council-Home-Page" title="Link to homepage">
+								
+								
+										<img id="headerlogo" alt="Link to homepage" src="./themes/torridgeTopTasks/images/toplogo.png">
+									
+								
+									</a>
+								
+								
+	<div id="toplevelsearch">
+		<form action="https://www.torridge.gov.uk/article/12295/Search" method="get" onsubmit="return searchpagevalidate(this.q.value, 'Search');">
+			<fieldset>
+				<legend>Search site</legend>
+				<label for="q">Search</label>
+				<input type="submit" name="go" id="go" value="Search" title="Search for entered keyword" class="btntext">
+				<input type="text" name="q" id="q" class="searchkeyword" value="Search" onfocus="focustextfield(this,'Search')" onblur="blurtextfield(this,'Search')">
+				
+				
+			</fieldset>
+		</form>
+	</div>
+
+							</div>
+
+							
+
+
+
+		<ul id="topatoznav">
+	
+		<li class="even first">
+			<a href="https://www.torridge.gov.uk/article/12214/A">A</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14548/B">B</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14549/C">C</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14550/D">D</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14551/E">E</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14552/F">F</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14553/G">G</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14554/H">H</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14555/I">I</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14556/J">J</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14557/K">K</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14558/L">L</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14559/M">M</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14560/N">N</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14561/O">O</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14562/P">P</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14563/Q">Q</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14564/R">R</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14565/S">S</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14566/T">T</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14567/U">U</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14568/V">V</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14569/W">W</a>
+		</li>
+	
+		<li class="odd">
+			<a href="https://www.torridge.gov.uk/article/14570/X">X</a>
+		</li>
+	
+		<li class="even">
+			<a href="https://www.torridge.gov.uk/article/14571/Y">Y</a>
+		</li>
+	
+		<li class="odd last">
+			<a href="https://www.torridge.gov.uk/article/14572/Z">Z</a>
+		</li>
+	
+		</ul>
+	
+
+
+						</div>
+						<div id="toplevel">
+							
+
+	
+	<div id="toplevelnav">
+	
+			<ul>
+		
+			<li class="active-tab0 active-tab0-first">
+				<a href="https://www.torridge.gov.uk/article/12059/Residents">Residents</a>
+			</li>
+		
+			<li class="tab1 tab1">
+				<a href="https://www.torridge.gov.uk/article/12060/Business">Business</a>
+			</li>
+		
+			<li class="tab2 tab2">
+				<a href="https://www.torridge.gov.uk/article/12061/Your-Council">Your Council</a>
+			</li>
+		
+			<li class="tab3 tab3">
+				<a href="https://www.torridge.gov.uk/elections19">Elections</a>
+			</li>
+		
+			<li class="tab0 tab0-last">
+				<a href="https://www.torridge.gov.uk/Consultations">Consultations</a>
+			</li>
+		
+			</ul>
+		
+	</div>
+
+						</div>
+						
+
+		<div id="secondlevel" class="active-tab0 active-tab0-first">
+			<ul class="nav">
+	
+		<li class="nav item0 ">
+			
+					<a href="https://www.torridge.gov.uk/plans" class="onpath">Planning and Building Control</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/planningonline">View and Comment on a Planning Application</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/11074/Do-I-need-planning-permission">Do I need planning permission?</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/planningforms">Apply for Planning Permission</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/11248/Policies--Guidance">Policies &amp; Guidance</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/speakplanning">Plans Committee</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/11079/Doing-Work-Without-Permission">Doing Work Without Permission </a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item1 ">
+			
+					<a href="https://www.torridge.gov.uk/article/14375/Refuse-and-Recycling">Refuse and Recycling</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/new-waste-services">Refuse and Recycling Waste Services</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/16997/Chargeable-Garden-Waste-Service">Chargeable Garden Waste Service</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/15037/Request-It">Request It</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/14532/Report-It">Report It</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/16975/Residents-RefuseRecycling-Guide">Residents Refuse/Recycling Guide</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/collectiondates">Collection Dates</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item2 ">
+			
+					<a href="https://www.torridge.gov.uk/article/14447/Council-Tax-and-Benefits">Council Tax and Benefits</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/14537/Council-Tax">Council Tax</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/14538/Housing-Benefit--Council-Tax-Support">Housing Benefit &amp; Council Tax Support</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item3 ">
+			
+					<a href="https://www.torridge.gov.uk/housing">Housing</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/11065/Grants-and-Loans">Grants and Loans</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/11063/Finding-a-home">Finding a home</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/11064/Homeless-or-threatened-with-homelessness">Homeless or threatened with homelessness?</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/17380/Making-a-referral---Professionals-only">Making a referral - Professionals only</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/11066/Housing-Advice">Housing Advice</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/11068/Private-Sector-renting">Private Sector renting</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item4 ">
+			
+					<a href="https://www.torridge.gov.uk/article/14449/Environmental">Environmental</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/11236/Pollution">Pollution</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/10718/Dogs-and-fouling">Dogs and fouling</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/559/Noise-and-other-nuisances">Noise and other nuisances</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/10732/Water-Quality">Water Quality</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/10724/Report-it">Report it!</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/11783/Fees-and-Charges">Fees and Charges</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item5 ">
+			
+					<a href="https://www.torridge.gov.uk/article/14450/Parking">Parking</a>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/12475/Public-car-park-locations-within-Torridge">Public car park locations within Torridge</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/12474/Parking-Charges-Payment-Methods--Parking-Permits">Parking Charges, Payment Methods &amp; Parking Permits</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/12513/Parking-safely-and-legally">Parking safely and legally</a>
+					</li>
+				
+					<li class="odd">
+						<a href="https://www.torridge.gov.uk/article/12643/Help-with-Penalty-Charge-Notices">Help with Penalty Charge Notices</a>
+					</li>
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/12505/Pay-your-Penalty-Charge-Notice">Pay your Penalty Charge Notice</a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/12556/Holding-an-event-in-a-Council-car-park">Holding an event in a Council car park</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+		<li class="nav item6 last">
+			
+					<span class="more">More...</span>
+				
+			
+					<ul class="menu">
+				
+					<li class="even">
+						<a href="https://www.torridge.gov.uk/article/14480/Leisure">Leisure </a>
+					</li>
+				
+					<li class="odd last">
+						<a href="https://www.torridge.gov.uk/article/14932/Community-Development">Community Development</a>
+					</li>
+				
+					</ul>
+				
+		</li>
+	
+			</ul>
+		</div>
+	
+
+						
+
+
+	
+			<div id="breadcrumb">
+				<ol>
+					<li>
+						You are here:&nbsp;
+					</li>
+		
+					<li>
+						<a href="https://www.torridge.gov.uk/article/12059/Residents">Residents</a>
+					</li>
+					
+						<li class="separator">-</li>
+					
+		
+					<li>
+						<a href="https://www.torridge.gov.uk/plans">Planning and Building Control</a>
+					</li>
+					
+						<li class="separator">-</li>
+					
+		
+					<li>
+						<a href="https://www.torridge.gov.uk/planningpolicy">Planning Policy</a>
+					</li>
+					
+						<li class="separator">-</li>
+					
+		
+					<li>
+						<span>Brownfield Land Register</span>
+					</li>
+					
+		
+				</ol>
+			</div>
+		
+
+
+				
+			
+		<div id="maincolumnwrapper">
+			
+				
+						<div id="leftcolumnmobile" class="expand">»</div>
+					
+			
+			<div id="contentwrap">
+		
+			<div id="contentfullwidth">
+		
+
+		<div id="centrecolumn">
+			
+					
+					
+						
+
+<div id="headingtext">
+	<h1>Brownfield Land Register</h1>
+</div>
+						<div style="clear:both;"></div>
+					
+
+                    
+
+					
+						
+					
+				
+
+			
+			
+
+	
+	
+	
+    
+	        
+	            
+
+		
+			
+
+<div id="introtext">
+	<h2>Councils are required by Government to prepare and publish a Brownfield Land Register ('the Register') by 31 December 2017. The Register provides details of previously developed sites that are available and potentially suitable for residential development. </h2>
+</div>
+
+		
+		
+
+<div class="textblock ">
+	
+			
+		    
+			    <div id="bodytext">
+				    
+				    <p>The preparation of the Brownfield Land Register is governed by <a href="http://www.legislation.gov.uk/uksi/2017/403/contents/made">The Town and Country Planning (Brownfield Land Register) Regulations 2017 </a>and the Government has published a series of <a href="https://www.gov.uk/government/publications/brownfield-registers-and-permission-in-principle/brownfield-registers-and-permission-in-principle-frequently-asked-questions">frequently asked questions </a>to help people understand their purpose and how they will operate.</p><p>The Register is kept in two parts:</p><ul><li><strong>Part One </strong>of the register is now available to view and shows sites categorised as previously developed land which are suitable, available and achievable for residential development. The site plan for each site can be viewed by copying and pasting the url contained in the spreadsheet into a new web page or by clicking on the download links at the bottom of this page.<br><br><img src="./images/media/default.gif" style="border: none; vertical-align: middle;" alt="csv icon" title="">&nbsp;<a class="strong inlinemedia id19719 typecsv" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=19719&amp;p=0" title="Brownfield Register 04/12/2019">Brownfield Register 04/12/2019 [15kb]</a><br>&nbsp;</li><li><strong>Part Two </strong>of the Register is optional and allows local planning authorities to select sites from Part One and grant permission in principle (PiP) for housing-led development. PiP will establish the fundamental principles of development in terms of the use, location and amount of development. However, planning permission is not granted until Technical Details Consent is applied for and approved by the local planning authority.</li></ul><p>The Register will be maintained and reviewed at least once a year to make sure it is kept up to date. The register has been updated on the 4th Decemember 2019.</p><h1>What is brownfield land?</h1><p>'Brownfield Land' (previously developed land) is defined in Annex 2 of the National Planning Policy Framework (2012) as:</p><blockquote><p>"Land which is or was occupied by a permanent structure, including the curtilage of the developed land (although it should not be assumed that the whole of the curtilage should be developed) and any associated fixed surface infrastructure. This excludes land that is or has been occupied by agricultural or forestry buildings; land that has been developed for minerals extraction or waste disposal by landfill purposes where provision for restoration has been made through development control procedures; land in built-up areas such as private residential gardens, parks, recreation grounds and allotments; and land that was previously-developed, but where the remains of the permanent structure have blended into the landscape in the process of time."</p></blockquote><h1>Call for Sites</h1><p>To help populate Part One of the Register we are carrying out a 'call for sites'. If you have an interest in previously developed land or buildings which you think has the potential to be used for housing in the future and meets the NPPF definition of 'brownfield land' (above) we would like to hear from you. This information will then be added to information we already have in our Strategic Housing Land Availability Assessment (SHLAA) and identified from other sources.</p><p>This will allow us to gain a full and comprehensive understanding of the extent of available and suitable previously developed land in the area. It will also help with any future review of the Local Plan or inform a Neighbourhood Plan.</p><p>The initial Brownfield Land Register Call for Sites exercise ran&nbsp;between 20th July 2017 and 1st September 2017 but we would still like to hear about potential sites and these will be considered for the next update of the register. Information about potential sites should be provided by completing and returning a site submission form. The form can be&nbsp;downloaded or alternatively paper versions can be made available on request from the council offices. You are asked to use the form to provide details of sites to ensure consistency of information.</p><p>In accordance with the regulations, sites should ideally be 0.25 hectares or larger, or capable of providing at least 5 dwellings. Site submissions must also include a map, plan or aerial photograph clearly showing the site's boundaries. A separate form and map are required for each site being submitted. Where it is not possible to complete a form in full or you are unsure as to whether the above criteria would be met, any details of potential sites will be welcomed.&nbsp; Please fill out the form to the best of your abilities and if you require help in submitting information about a site please get in touch and we will aim to assist in any way we can.</p><p><strong>By Email / Post</strong></p><p>Details of sites may also be provided by completing a form, which is available in both paper and electronic formats.&nbsp; Copies can be downloaded below or alternatively paper versions can be made available on request from the council offices.</p><ul><li>&nbsp;&nbsp;&nbsp; <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="strong inlinemedia id17855 typepdf" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=17855&amp;p=0" rel="external" title="Form for providing details of a site to allow its consideration of entry onto the Brownfield Land Register" target="_blank">Site Submission Form [700kb]</a> (Adobe PDF)</li><li>&nbsp;&nbsp;&nbsp; <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="strong inlinemedia id17856 typepdf" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=17856&amp;p=0" rel="external" title="Form for submitting details of multiple landowners when providing information on sites to be considered for entry onto the Brownfield Land Register" target="_blank">Additional Landowner Form [47kb]</a>&nbsp;(Adobe PDF)</li></ul><p>The form has been prepared so that it can be filled out on the computer and saved electronically for submission by email, or alternatively, it is suitable for printing, filling out by hand and sending back by post.</p><p>Submissions can be provided:</p><ul><li>by email to: <a href="mailto:localplan@torridge.gov.uk">localplan@torridge.gov.uk</a></li><li>by post or in person to: Planning Policy, Torridge District Council, Riverbank House, Bideford, EX39 2QG</li></ul><h1>What happens next?</h1><p>Sites put forward which meet the definition of brownfield (above) will be assessed in terms of whether they are:</p><ul><li>Suitable (appropriate for residential development)</li><li>Achievable (development is likely to take place within 15 years of the entry date on the register)</li></ul><p>We may then need to contact you for additional information. Sites listed within the Brownfield Land Register are expected to be subject to the approval of further details prior to development taking place.</p><p>As part of any future reviews of the Brownfield Land Register, we would welcome the submission of information to update the Councils on a site(s) already included on the Registers. For example, if the boundary has changed then please provide an up-to-date map and a brief explanation of any amendments as relevant. Also, if the site is no longer available, then please let us know so that we can remove it from the relevant Register.</p><p>If there are any changes to a site following its submission please let us know and provide a brief explanation of any changes. If the boundary of a site changes we would be grateful for an up-to-date map and a brief explanation of any differences. We also need to know if the site is no longer available so it can be removed from the register. This can be done by contacting us using the details shown below.</p><p>The Brownfield Land Register is&nbsp;a public document and is published on the Council website. The information you provide about sites may therefore be made public.</p><p>If details of a site are provided it doesn't automatically mean that it will be added to the register or granted planning permission in the future.</p><h1>Get in touch</h1><p>If you have any questions or queries please get in touch using the details shown below:</p><p>Planning Policy<br>Torridge District Council<br>Riverbank House<br>Bideford<br>EX39 2QG</p><p>01237 428700</p><p><a href="mailto:localplan@torridge.gov.uk">localplan@torridge.gov.uk</a></p><p>&nbsp;</p>
+			    </div>
+		    
+		    
+		    
+		
+</div>
+	
+
+	        
+	    
+    
+    
+	        <div id="download">
+		        <h2>Downloads</h2>
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=17855&amp;p=0" rel="external" target="_blank">Site Submission Form [700kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=17855&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Site Submission Form">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=17856&amp;p=0" rel="external" target="_blank">Additional Landowner Form [47kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=17856&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Additional Landowner Form">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18219&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-108 [900kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18219&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-108">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18211&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-18 [2Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18211&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-18">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18212&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-29 [472kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18212&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-29">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18213&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-38 [1Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18213&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-38">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18214&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-49 [1Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18214&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-49">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18216&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-52 [1Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18216&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-52">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18217&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-66 [1Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18217&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-66">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18218&amp;p=0" rel="external" target="_blank">Brownfield Land Register - BID-72 [754kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18218&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - BID-72">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18224&amp;p=0" rel="external" target="_blank">Brownfield Land Register - GTT-36 [223kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18224&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - GTT-36">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18245&amp;p=0" rel="external" target="_blank">Brownfield Land Register - GTT-56 [3Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18245&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - GTT-56">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=19052&amp;p=0" rel="external" target="_blank">Brownfield Land Register - GTT-59 [1Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=19052&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - GTT-59">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18225&amp;p=0" rel="external" target="_blank">Brownfield Land Register - LAN-11 [242kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18225&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - LAN-11">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18227&amp;p=0" rel="external" target="_blank">Brownfield Land Register - NOR-115 [2Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18227&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - NOR-115">subscribe</a>]
+</div>
+
+	        </div>
+	        
+        
+	        
+	        
+		        <div class="even">
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18230&amp;p=0" rel="external" target="_blank">Brownfield Land Register - PAR-4 [129kb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18230&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - PAR-4">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        
+	        <div class="pairwrap">
+		        <div class="odd">
+	        
+	        
+            
+
+<img src="./images/media/pdficon.gif" alt="">
+<div class="mediatext">
+	<a class="media" href="https://www.torridge.gov.uk/CHttpHandler.ashx?id=18231&amp;p=0" rel="external" target="_blank">Brownfield Land Register - SHB-8 [2Mb]</a>
+	[<a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=media&amp;contentid=18231&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register - SHB-8">subscribe</a>]
+</div>
+
+	        </div>
+	        
+	        </div>
+	        
+        
+	        </div>
+        
+
+
+			
+
+	
+
+				</div>
+				
+		
+							<div id="rightcolumn">
+								<div class="related">
+									
+
+		
+		
+	
+
+
+									
+									
+
+		
+
+
+	
+
+									
+									
+
+
+
+
+		
+
+
+
+
+									
+
+
+		
+	
+									
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+									
+
+		
+
+
+
+
+
+
+	<div class="container ">
+		
+		<h2>Related Links</h2>
+			<ul>
+		
+			<li class="even first last">
+				<span class="square">■</span>
+				<a rel="external" href="https://consult.torridge.gov.uk/portal/planning/localplan/draft" title="Link to Draft North Devon and Torridge Local Plan on the Consultation Portal" target="_blank">Consultation Portal</a>
+			</li>
+		
+			</ul>	</div>
+
+	
+
+								</div>
+							</div>
+				
+
+				</div>
+			</div>
+				
+			
+
+
+	
+		<div id="contentlinks">
+			<ul>
+				
+					
+						<li class="subscribe padding">
+							<img src="./themes/torridgeTopTasks/images/chainlink.png" alt="suscription link">&nbsp; <a href="https://www.torridge.gov.uk/article/14346/Login?articleaction=subscribe&amp;contenttype=article&amp;contentid=16764&amp;returnarticleid=16764" class="subscribe" title="Subscribe to Brownfield Land Register">Subscribe to this page</a>
+						</li>
+					
+				
+			</ul>
+		</div>
+	
+
+
+			</div>
+
+						
+				
+			</div>
+						
+					
+
+						<div id="footer" class="active-tab0 active-tab0-first">
+							
+
+
+		<div id="bottomutilnav">
+			<ul>
+	
+				<li class="even first">
+					<a href="https://www.torridge.gov.uk/article/14975/Terms-and-conditions">Terms and conditions</a>
+				</li>
+	
+				<li class="odd">
+					<a href="https://www.torridge.gov.uk/article/14976/SiteMap">SiteMap</a>
+				</li>
+	
+				<li class="even">
+					<a href="https://www.torridge.gov.uk/article/14977/Contact-us">Contact us</a>
+				</li>
+	
+				<li class="odd">
+					<a href="https://www.torridge.gov.uk/article/14978/Translation">Translation</a>
+				</li>
+	
+				<li class="even">
+					<a href="https://www.torridge.gov.uk/article/14979/Accessibility" accesskey="0">Accessibility</a>
+				</li>
+	
+				<li class="odd">
+					<a href="https://www.torridge.gov.uk/privacypolicy">Privacy Policy</a>
+				</li>
+	
+				<li class="even last">
+					<a href="https://www.torridge.gov.uk/article/14981/Equality-and-Diversity">Equality and Diversity</a>
+				</li>
+	
+			</ul>
+			<span id="sharethis">
+				<span class="st_fblike_hcount" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;position:relative;margin:3px 3px 0;padding:0px;font-size:11px;line-height:0px;vertical-align:bottom;overflow:visible;"><div data-action="" data-send="false" data-layout="button_count" data-show-faces="false" class="fb-like fb_iframe_widget" data-href="https://www.torridge.gov.uk/brownfieldregister" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fwww.torridge.gov.uk%2Fbrownfieldregister&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 73px; height: 20px;"><iframe name="f3c641f82c" width="1000px" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.0/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D44%23cb%3Df29f3d2fc%26domain%3Dwww.torridge.gov.uk%26origin%3Dhttps%253A%252F%252Fwww.torridge.gov.uk%252Ff2adffb7ac%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.torridge.gov.uk%2Fbrownfieldregister&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;send=false&amp;show_faces=false" style="border: none; visibility: visible; width: 73px; height: 20px;" class=""></iframe></span></div></span></span>
+				<span class="st_twitter_hcount" st_processed="yes"><span style="text-decoration:none;color:#000000;display:inline-block;cursor:pointer;" class="stButton"><span><span class="stMainServices st-twitter-counter" style="background-image: url(https://ws.sharethis.com/images/2017/twitter_counter.png);">&nbsp;</span><span class="stArrow"><span class="stButton_gradient stHBubble" style="display: inline-block;"><span class="stBubble_hcount">0</span></span></span></span></span></span>
+			</span>
+		<select class="mobutilnav"><option selected="selected" value="">Go to...</option><option value="https://www.torridge.gov.uk/article/14975/Terms-and-conditions">Terms and conditions</option><option value="https://www.torridge.gov.uk/article/14976/SiteMap">SiteMap</option><option value="https://www.torridge.gov.uk/article/14977/Contact-us">Contact us</option><option value="https://www.torridge.gov.uk/article/14978/Translation">Translation</option><option value="https://www.torridge.gov.uk/article/14979/Accessibility">Accessibility</option><option value="https://www.torridge.gov.uk/privacypolicy">Privacy Policy</option><option value="https://www.torridge.gov.uk/article/14981/Equality-and-Diversity">Equality and Diversity</option></select></div>
+	
+							
+
+
+		<ul id="iconlinks">
+	
+		<li>
+			<a href="https://www.facebook.com/torridgedc/" title="Torridge Corporate Facebook">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/c/9/facebook.png" alt="Torridge Corporate Facebook">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/j/h/facebook_invert.png" alt="Torridge Corporate Facebook">
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://twitter.com/torridgedc?lang=en-gb" title="Torridge Corporate Twitter Feed">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/c/k/Twitter_Social_Icon_Rounded_Square_Color4.png" alt="Torridge Corporate Twitter Feed">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/k/4/twitter_invert1.png" alt="Torridge Corporate Twitter Feed">
+			</a>
+		</li>
+	
+		<li>
+			<a href="https://www.gov.uk/" title="GOV.UK">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/7/4/gov_uk1.png" alt="GOV.UK">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/r/o/gov_uk_inv.png" alt="GOV.UK">
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://www.cab-bideford.co.uk/" title="Bideford CAB">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/8/n/cab.png" alt="Bideford CAB">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/q/f/cab_inv.png" alt="Bideford CAB">
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://www.devon.gov.uk/" title="Devon County Council">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/a/4/devonCounty_logo.png" alt="Devon County Council">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/q/h/devonCounty_logo_inv.png" alt="Devon County Council">
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://ratings.food.gov.uk/authority-search/en-GB/%5E/%5E/%5E/0/080/%5E/1/1/10" title="Food Hygiene Ratings">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/g/8/Food_Hygiene.png" alt="Food Hygiene Ratings">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/r/3/Food_Hygiene_inv.png" alt="Food Hygiene Ratings">
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://www.devon-cornwall.police.uk/find-team" title="Devon &amp; Cornwall Police">
+				<img class="normal" src="https://www.torridge.gov.uk/media/icon_link/h/g/devonandcornwall.png" alt="Devon &amp; Cornwall Police">
+				<img class="highlight" src="https://www.torridge.gov.uk/media/icon_link/q/d/devonandcornwall_inv.png" alt="Devon &amp; Cornwall Police">
+			</a>
+		</li>
+	
+			<li><a href="https://www.torridge.gov.uk/brownfieldregister?formid=47905"><img class="normal" src="../themes/torridgeTopTasks/images/feedbackimg.gif" alt="feedback icon"><img class="highlight" src="../themes/torridgeTopTasks/images/feedbackimg.gif" alt="feedback icon"></a></li>
+		</ul>
+	
+							
+								<p id="copyright">
+									Copyright © 2019 Torridge District Council -  Riverbank House, Bideford, Devon EX39 2QG<br>Tel: 01237 428700 Email: customer.services@torridge.gov.uk									<span id="powered">
+										<a rel="external" title="Web content management by GOSS iCM" href="http://www.gossinteractive.com" target="_blank">Powered by GOSS iCM</a>
+									</span>
+								</p>
+							
+						</div>
+
+					
+				
+
+		   <script type="text/javascript">
+                var serviceUrl = "//api.reciteme.com/asset/js?key=";
+                var serviceKey = "5917567fba61744b314354df50362671731adea0";
+                var options = {Tracker:{Ga:{enabled: true}}};  // Options can be added as needed
+                var autoLoad = false;
+                var enableFragment = "#reciteEnable";
+
+                var loaded=[],frag=!1;window.location.hash===enableFragment&&(frag=!0);function loadScript(c,b){var a=document.createElement("script");a.type="text/javascript";a.readyState?a.onreadystatechange=function(){if("loaded"==a.readyState||"complete"==a.readyState)a.onreadystatechange=null,void 0!=b&&b()}:void 0!=b&&(a.onload=function(){b()});a.src=c;document.getElementsByTagName("head")[0].appendChild(a)}function _rc(c){c+="=";for(var b=document.cookie.split(";"),a=0;a<b.length;a++){for(var d=b[a];" "==d.charAt(0);)d=d.substring(1,d.length);if(0==d.indexOf(c))return d.substring(c.length,d.length)}return null}function loadService(c){for(var b=serviceUrl+serviceKey,a=0;a<loaded.length;a++)if(loaded[a]==b)return;loaded.push(b);loadScript(serviceUrl+serviceKey,function(){"function"===typeof _reciteLoaded&&_reciteLoaded();"function"==typeof c&&c();Recite.load(options);Recite.Event.subscribe("Recite:load",function(){Recite.enable()})})}"true"==_rc("Recite.Persist")&&loadService();(autoLoad&&"false"!=_rc("Recite.Persist")||frag)&&loadService();
+
+            </script>
+            <script type="text/javascript">
+                jQuery(".reciteme").click(function(i,e){
+                    loadService();
+                    ga('create','UA-11792103-1','www.torridge.gov.uk') 
+                    return false;                
+                });
+            </script> 
+
+	
+	
+<iframe src="https://c.sharethis.mgr.consensu.org/portal.html" id="st_gdpr_iframe" title="GDPR Consent Management" style="width: 0px; height: 0px; position: absolute; left: -5000px;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://staticxx.facebook.com/connect/xd_arbiter.php?version=44#channel=f2adffb7ac&amp;origin=https%3A%2F%2Fwww.torridge.gov.uk" style="border: none;"></iframe></div><div></div></div></div><div id="stcpDiv" style="position: absolute; top: -1999px; left: -1988px;">ShareThis Copy and Paste</div></body></html>

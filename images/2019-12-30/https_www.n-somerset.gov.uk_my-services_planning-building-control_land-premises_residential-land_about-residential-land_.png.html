@@ -1,0 +1,747 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+	<meta name="google-site-verification" content="zvytgMhBVpwwK-MD72BgyMuRA378Oy3WMP-pCD-zz2o">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8"><script type="text/javascript" src="https://bam.nr-data.net/1/7aacc3fd16?a=271117564&amp;v=1158.afc605b&amp;to=YVUBNxZYChACWhJdWVgfIgAQUAsNTE0DWUZaURcGSVoLDRdcCEA%3D&amp;rst=1997&amp;ref=https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/&amp;ap=852&amp;be=1180&amp;fe=1891&amp;dc=1606&amp;perf=%7B%22timing%22:%7B%22of%22:1577723880634,%22n%22:0,%22f%22:0,%22dn%22:0,%22dne%22:0,%22c%22:0,%22ce%22:0,%22rq%22:0,%22rp%22:0,%22rpe%22:1250,%22dl%22:1178,%22di%22:1605,%22ds%22:1605,%22de%22:1642,%22dc%22:1890,%22l%22:1891,%22le%22:1898%7D,%22navigation%22:%7B%7D%7D&amp;at=TRICQV5CGR4%3D&amp;jsonp=NREUM.setToken"></script><script src="https://js-agent.newrelic.com/nr-1158.min.js"></script><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-P6NLFGM"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"7aacc3fd16",applicationID:"271117564"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About residential land - North Somerset Council</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+
+	
+<!-- MapPress Easy Google Maps Version:2.53.3 (http://www.mappresspro.com/mappress) -->
+<script type="text/javascript">mapp = window.mapp || {}; mapp.data = [];</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v12.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical" href="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="About residential land - North Somerset Council">
+<meta property="og:description" content="Residential land survey and five year supply position Our annual residential land&nbsp;monitoring reports on residential developments and housing completion rates across the district. We also monitor land available for housing to ensure a readily available supply. Housing Delivery Test Action Plan We have produced a Housing Delivery Test Action Plan, which was published on the ... Read more">
+<meta property="og:url" content="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/">
+<meta property="og:site_name" content="North Somerset Council">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:description" content="Residential land survey and five year supply position Our annual residential land&nbsp;monitoring reports on residential developments and housing completion rates across the district. We also monitor land available for housing to ensure a readily available supply. Housing Delivery Test Action Plan We have produced a Housing Delivery Test Action Plan, which was published on the ... Read more">
+<meta name="twitter:title" content="About residential land - North Somerset Council">
+<script type="application/ld+json" class="yoast-schema-graph yoast-schema-graph--main">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://www.n-somerset.gov.uk/#website","url":"https://www.n-somerset.gov.uk/","name":"North Somerset Council","potentialAction":{"@type":"SearchAction","target":"https://www.n-somerset.gov.uk/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/#webpage","url":"https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/","inLanguage":"en-GB","name":"About residential land - North Somerset Council","isPartOf":{"@id":"https://www.n-somerset.gov.uk/#website"},"datePublished":"2015-11-25T17:02:48+00:00","dateModified":"2019-12-20T09:08:35+00:00"}]}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="//www.n-somerset.gov.uk">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="alternate" type="application/rss+xml" title="North Somerset Council » Feed" href="https://www.n-somerset.gov.uk/feed/">
+<link rel="alternate" type="application/rss+xml" title="North Somerset Council » Comments Feed" href="https://www.n-somerset.gov.uk/comments/feed/">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.10.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_version         = '7.10.0';
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-745223-8';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-745223-8', 'auto');
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('send','pageview');
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.n-somerset.gov.uk\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="https://www.n-somerset.gov.uk/wp-includes/js/wp-emoji-release.min.js?ver=5.3" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://www.n-somerset.gov.uk/wp-includes/css/dist/block-library/style.min.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="cookie-css-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/axs-cookie-alert/css/style.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="bc-style-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/bin-collection/css/style.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="fn-style-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/find-nearest/style.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="mappress-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/mappress-google-maps-for-wordpress/css/mappress.css?ver=2.53.3" type="text/css" media="all">
+<link rel="stylesheet" id="menu-image-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/menu-image/includes/css/menu-image.css?ver=2.9.5" type="text/css" media="all">
+<link rel="stylesheet" id="plugins-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/plugins.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="main-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/main.css?ver=2.3" type="text/css" media="all">
+<link rel="stylesheet" id="council-child-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/css/main.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="media-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/media.css?ver=2.1" type="text/css" media="all">
+<link rel="stylesheet" id="council-child-media-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/css/media.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="council-style-css" href="https://www.n-somerset.gov.uk/wp-content/themes/nsc/style.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="print-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/print.css?ver=1.3" type="text/css" media="all">
+<link rel="stylesheet" id="common-css-css" href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/common.css?ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C300%2C800italic%2C800%2C700italic%2C700%2C600italic%2C600%2C400italic%2C300italic&amp;ver=5.3" type="text/css" media="all">
+<link rel="stylesheet" id="tablepress-default-css" href="https://www.n-somerset.gov.uk/wp-content/plugins/tablepress/css/default.min.css?ver=1.10" type="text/css" media="all">
+<style id="tablepress-default-inline-css" type="text/css">
+.tablepress thead th,.tablepress tfoot th{background-color:#464749}
+</style>
+<script type="text/javascript">
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.n-somerset.gov.uk","hash_tracking":"false"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend.min.js?ver=7.10.0"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js?ver=5.3"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/plugins/axs-cookie-alert/js/script.js?ver=1.0.2"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/plugins/bin-collection/js/script.js?ver=5.3"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/js/plugins.js?ver=5.3"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var Council = {"ajaxurl":"https:\/\/www.n-somerset.gov.uk\/wp-admin\/admin-ajax.php","toggle_categories_expand":"Show more","toggle_categories_contract":"Show less","slider_args":{"navigationText":["",""]}};
+var MyAccount = {"tooltip_title":"Sign up in minutes","tooltip_text":"Creating an account gives you quick and secure access to council services.","api_nonce":"c4541d2bad"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/js/main.js?ver=1.4"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/js/main.js?ver=5.3"></script>
+<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/js/min/jquery.browser.min.js?ver=5.3"></script>
+<link rel="https://api.w.org/" href="https://www.n-somerset.gov.uk/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.n-somerset.gov.uk/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.n-somerset.gov.uk/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.3">
+<link rel="shortlink" href="https://www.n-somerset.gov.uk/?p=6091">
+<link rel="alternate" type="application/json+oembed" href="https://www.n-somerset.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.n-somerset.gov.uk%2Fmy-services%2Fplanning-building-control%2Fland-premises%2Fresidential-land%2Fabout-residential-land%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.n-somerset.gov.uk/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.n-somerset.gov.uk%2Fmy-services%2Fplanning-building-control%2Fland-premises%2Fresidential-land%2Fabout-residential-land%2F&amp;format=xml">
+<link rel="shortcut icon" href="https://www.n-somerset.gov.uk/wp-content/themes/nsc/favicon.ico">
+        <!--[if lt IE 9]>
+       	 	<script src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/js/base/html5shiv.min.js"></script>
+        	<script src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/js/base/respond.min.js"></script>
+        <![endif]-->
+
+
+        <!--[if lt IE 8]>
+		    <link href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/ie/bootstrap-ie7.php" rel="stylesheet">
+		    <link href="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/css/ie/ie7.css" rel="stylesheet">
+		<![endif]-->
+
+        	
+	<!-- Hotjar Tracking Code for www.n-somerset.gov.uk -->
+	<script>
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:449922,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script><script async="" src="https://static.hotjar.com/c/hotjar-449922.js?sv=6"></script>
+	<!-- End Hotjar Tracking Code for www.n-somerset.gov.uk -->
+	
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-P6NLFGM');</script>
+	<!-- End Google Tag Manager -->
+<script async="" src="https://script.hotjar.com/modules.297b225e0b92ebb96f25.js" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style><script type="text/javascript" src="https://nsc.logo-net.co.uk/Delivery/TBURT.php?SDTID=89&amp;PURL=https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/&amp;CMS=1577723882239"></script><script src="https://websurveys2.servmetric.com//js/client/gm_intro.js?v=2.2.0"></script><link rel="stylesheet" type="text/css" href="https://websurveys2.servmetric.com//css/modal2/modal.css?v=2.2.0"><script type="text/javascript" src="https://nsc.logo-net.co.uk/Log/LGN_GetSignsForDiv18.php?SID=188&amp;T=2019-12-30-16-38-02&amp;DVNM=LGNSIGNDiv7x7"></script><link id="engageGDPRcss" rel="stylesheet" type="text/css" href="https://nsc.logo-net.co.uk/Delivery/engagecookiebar_3_0_3.min.css" media="all"></head>
+
+<body class="page-template page-template-template-content page-template-template-content-php page page-id-6091 page-child parent-pageid-1276" bgcolor="white">
+<div id="page" class="hfeed site" style="margin-top: 113px;">
+
+	
+		<script>window.twttr = (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0],
+		    t = window.twttr || {};
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s);
+		  js.id = id;
+		  js.src = "https://platform.twitter.com/widgets.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+
+		  t._e = [];
+		  t.ready = function(f) {
+		    t._e.push(f);
+		  };
+
+		  return t;
+		}(document, "script", "twitter-wjs"));</script>
+
+		
+	<!-- StartOfHeader -->
+	
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6NLFGM"
+	height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	
+	<header id="masthead" class="site-header" role="banner">
+
+		<nav id="site-navigation" class="main-navigation navbar navbar-default" role="navigation" aria-label="Primary Menu">
+	
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header-nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					
+					<button type="button" class="search-toggle btn visible-xs" data-toggle="collapse" data-target="#search-collapse">
+						<span class="sr-only">Toogle Search</span>
+						<img src="https://www.n-somerset.gov.uk/wp-content/themes/council/assets/imgs/icon-search-white.png" alt="Toggle Search">
+					</button>
+					
+					<h1 class="navbar-brand logo">
+						<a href="https://www.n-somerset.gov.uk" rel="home">
+							<img src="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/imgs/logo-white.png" alt="North Somerset Council">
+				      	</a>
+				     </h1>
+			    </div>
+		
+
+		    
+
+	   
+								
+			    
+			    <div class="collapse navbar-collapse navbar-left" id="header-nav">
+			    	<ul class="nav navbar-nav">
+			    	
+				      	<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor nav-menu-column-1 menu-item-408"><a href="https://www.n-somerset.gov.uk/my-services/">My services</a></li>
+<li id="menu-item-406" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-2 menu-item-406"><a href="https://www.n-somerset.gov.uk/my-business/">My business</a></li>
+<li id="menu-item-407" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-3 menu-item-407"><a href="https://www.n-somerset.gov.uk/my-council/">My council</a></li>
+<li id="menu-item-409" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-4 menu-item-409"><a href="https://www.n-somerset.gov.uk/do-it-online/">Do it online</a></li>
+					
+			      	</ul>
+			
+			      
+			    </div><!-- /.navbar-collapse -->
+			    			    
+			    			    
+
+
+			    <div class="navbar-right search-action-group">
+				  	<div id="search-collapse" class="navbar-collapse collapse">
+				    	<form role="search" method="get" class="navbar-search search-form" action="https://www.n-somerset.gov.uk">
+		<label><span class="sr-only">Search</span><input type="search" class="search-field" placeholder="Search" name="s" title="Search"></label><label class="sr-only" for="submit-search">Search button</label><input type="image" src="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/imgs/icon-search.png" class="submit-search" id="submit-search" alt="Search">
+</form>				    </div>
+				    
+				    				    						<div class="account-actions">
+							<a href="https://myaccount.n-somerset.gov.uk/web/IL1_Login.aspx" class="btn btn-primary">Sign in</a><a href="https://myaccount.n-somerset.gov.uk/web/PublicPages/IR1_Register.aspx" class="btn btn-primary">Register</a>
+							<span class="fa fa-question tooltip-question" data-original-title="" title=""></span>
+						</div>
+										<!--  <span class="fa fa-question tooltip-question"></span> -->
+				</div>
+	
+
+				    
+			    
+			</div>
+	
+		</nav>
+	</header>
+	
+
+		<div class="breadcrumbs-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 has-tri-arrow">
+					<ol class="breadcrumb no-list"><li><a href="https://www.n-somerset.gov.uk/my-services/">My services</a></li><li><a href="https://www.n-somerset.gov.uk/my-services/planning-building-control/">Planning and building control</a></li><li><a href="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/">Land use monitoring</a></li><li><a href="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/">Residential land</a></li><li>About residential land</li></ol>				</div>
+			</div>
+		</div>
+	</div>
+		
+	
+	
+
+	<div id="content" class="site-content">
+
+<div class="container main-container generic-content">
+
+	<div class="row">
+		<div class="col-md-2 content-left">
+			
+			
+				<img width="95" height="96" src="https://www.n-somerset.gov.uk/wp-content/uploads/2016/02/planning-building-control-lg.png" class="post-thumb img-responsive auto-margin wp-post-image" alt="Planning and building control icon" srcset="https://www.n-somerset.gov.uk/wp-content/uploads/2016/02/planning-building-control-lg.png 95w, https://www.n-somerset.gov.uk/wp-content/uploads/2016/02/planning-building-control-lg-24x24.png 24w, https://www.n-somerset.gov.uk/wp-content/uploads/2016/02/planning-building-control-lg-36x36.png 36w, https://www.n-somerset.gov.uk/wp-content/uploads/2016/02/planning-building-control-lg-48x48.png 48w" sizes="(max-width: 95px) 100vw, 95px">			
+								
+				<h2 class="category-title">Residential land</h2>
+				
+				<nav>
+					<ul class="generic-content-menu no-list">
+
+												
+							<li><a href="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/" class="active">About residential land</a>
+										
+					</li></ul>
+				</nav>
+				
+				
+				
+				
+		</div>
+		<div class="col-md-8 main-content" style="min-height: 961px;">
+                        <div id="engagewebchat" class="pull-right"></div>
+			<h1>About residential land</h1>
+
+            <div class="row action-container">
+                            </div>
+
+            <div class="row tile-container">
+                            </div>
+
+            <h3>Residential land survey and five year supply position</h3>
+<p>Our annual residential land&nbsp;monitoring reports on residential developments and housing completion rates across the district.</p>
+<p>We also monitor land available for housing to ensure a readily available supply.</p>
+
+
+	<div class="decor decor-attachments">
+
+					<div class="decor-attachment clearfix">
+				<a href="https://www.n-somerset.gov.uk/wp-content/uploads/2019/12/Residential-Land-Survey-and-Five-Year-Supply-Position-Statement-April-2019.pdf">
+					Residential Land Survey and Five Year Supply Position Statement April 2019 (PDF, 136.12 KB)
+					<span class="fa fa-cloud-download fa-2x pull-right" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+					<div class="decor-attachment clearfix">
+				<a href="https://www.n-somerset.gov.uk/wp-content/uploads/2019/12/April-2019-housing-trajectory.pdf">
+					April 2019 housing trajectory (PDF, 38.73 KB)
+					<span class="fa fa-cloud-download fa-2x pull-right" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+			</div>
+
+	
+<h3>Housing Delivery Test Action Plan</h3>
+<p>We have produced a Housing Delivery Test Action Plan, which was published on the 19 August 2019.</p>
+
+
+	<div class="decor decor-attachments">
+
+					<div class="decor-attachment clearfix">
+				<a href="https://www.n-somerset.gov.uk/wp-content/uploads/2019/08/North-Somerset-Council-Housing-Delivery-Test-Action-Plan-19-August-2019.pdf">
+					North Somerset Council Housing Delivery Test Action Plan 19 August 2019 (PDF, 89.94 KB)
+					<span class="fa fa-cloud-download fa-2x pull-right" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+			</div>
+
+	
+<h3>Brownfield Register</h3>
+<p>Through the Housing and Planning Bill the government have set out a commitment to ensure that 90% of suitable brownfield sites have planning permission for housing by 2020.&nbsp; Councils are required to create and keep up to date a register of local sites that have been previously developed and are suitable for housing development.</p>
+<p>Our brownfield register has been produced in accordance with the Government’s data standard and is available to download in the prescribed format.</p>
+
+
+	<div class="decor decor-attachments">
+
+					<div class="decor-attachment clearfix">
+				<a href="https://www.n-somerset.gov.uk/wp-content/uploads/2019/12/brownfield-sites.csv">
+					brownfield-sites (CSV, 26.65 KB)
+					<span class="fa fa-cloud-download fa-2x pull-right" aria-hidden="true"></span>
+				</a>
+
+			</div>
+
+			</div>
+
+	
+<p>We have also produced a map showing all of the sites on our register.</p>
+
+	<div class="decor decor-info">
+					<a href="http://map.n-somerset.gov.uk/map/Aurora.svc/run?embedded=true&amp;nocache=0.6117992756442091&amp;script=%5cAurora%5cBrownfieldSiteRegister.AuroraScript%24&amp;x=344906.442&amp;y=169131.830&amp;scale=131072">Brownfield register sites map</a>	</div>
+
+
+
+	
+<p>&nbsp;</p>
+<p><strong>&nbsp;</strong></p>
+
+            
+            <div class="row related-container">
+                            </div>
+
+    <div class="book-nav">
+
+            <ul class="nav-sub-pages">
+
+                
+                    <li class="col-xs-12 col-sm-6 col-md-4">
+                        <a href="https://www.n-somerset.gov.uk/my-services/planning-building-control/land-premises/residential-land/about-residential-land/" class="active">About residential land</a>
+                    </li>
+                
+            </ul>
+    </div>
+
+
+		</div>
+
+		
+		
+	<div class="sidebar col-md-2 col-sm-12 clearfix" style="min-height: 961px;">
+
+		<div id="secondary" class="widget-area" role="complementary">
+				
+			
+<aside id="widget-14092" class="widget">
+	
+			
+					<h2 class="widget-title">
+				You may also like…			</h2>
+		    
+	
+					
+		<div id="useful-links" class="useful-links"> <div style="overflow:hidden;   "><div id="LGNSIGNDiv7x7"><b>You may like</b><ul><li><a target="_self" title="Councillors and committees " alt="Councillors and committees " href="https://www.n-somerset.gov.uk/my-council/councillors/?LGNTF=188">Councillors and committees </a></li><li><a target="_self" title="Care jobs in North Somerset " alt="Care jobs in North Somerset " href="https://www.n-somerset.gov.uk/my-services/jobs/care-jobs/proud-to-care/?LGNTF=188">Care jobs in North Somerset </a></li><li><a target="_self" title="2018-19 term dates " alt="2018-19 term dates " href="https://www.n-somerset.gov.uk/my-services/schools-learning/local-schools/school-term-dates/2018-19-term-dates/?LGNTF=188">2018-19 term dates </a></li><li><a target="_self" title="Log in" alt="Log in" href="https://myaccount.n-somerset.gov.uk/web/il1_login.aspx?returnurl=/web/pages/ihbv_hbsummaryview.aspx&amp;LGNTF=188">Log in</a></li></ul></div></div> </div>
+
+				
+			
+</aside>
+<aside id="widget-8538" class="widget">
+	
+			
+					<h2 class="widget-title">
+				Find my nearest			</h2>
+		    
+	
+			<p>Find local council services and schools.</p>
+		<form method="get" action="https://www.n-somerset.gov.uk/services/" class="form-inline fmn-widget-form" role="form">
+			<input type="hidden" name="nearest" value="true">
+							<div class="form-group">
+					<p>
+						<label class="sr-only" for="cat-services">Service category</label>
+						<select name="cat-services" id="cat-services" class="form-control">
+							<option value="">All services</option>
+																						<option value="benefit-surgeries">Benefit surgeries</option>
+															<option value="community-venues">Community venues</option>
+															<option value="council-car-parks">Council car parks</option>
+															<option value="leisure-centres">Leisure centres</option>
+															<option value="libraries">Libraries</option>
+															<option value="public-toilets">Public toilets</option>
+															<option value="pupil-referral-unit-and-tuition">Pupil referral unit and tuition</option>
+															<option value="green-waste-bag-retailers">Recycling box net retailers</option>
+															<option value="recycling-facilities">Recycling facilities</option>
+															<option value="schools">Schools</option>
+													</select>
+					</p>
+				</div>
+				<div class="form-group near-me_location">
+					<div class="input-group">
+						<label class="sr-only" for="location">Postcode</label>
+						<input type="text" name="location" id="location" placeholder="Postcode" class="form-control">
+						<div class="input-group-addon btn-addon">
+							<button type="submit" value="Go" class="btn cta cta-primary">Go</button>
+						</div>
+					</div>
+				</div>
+			
+
+			
+
+			
+
+
+					</form>
+
+
+			
+</aside>		</div><!-- #secondary -->
+        
+	</div>
+	
+	<script type="text/javascript">
+		match_content_sidebar_height();
+	</script>
+	
+	
+	</div>
+
+</div>
+
+
+
+
+
+	</div><!-- #content -->
+
+
+	<footer id="footer" class="site-footer clearfix" role="contentinfo">
+		<div class="container">
+			<div class="row footer-top">
+			
+				<nav class="footer-nav" role="navigation" aria-label="Footer Menu">
+				
+				<ul class="menu-footer-nav menu"><li id="menu-item-718" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-has-children nav-menu-column-1 col-xs-12 col-sm-4"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/">My services</a>
+<div class="list-container"><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_first"><li id="menu-item-11594" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/benefits-and-support/">Benefits and support</a></li><li id="menu-item-1515" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/waste/">Bins and recycling</a></li><li id="menu-item-1516" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/births-marriages-deaths/">Birth, marriages and deaths</a></li><li id="menu-item-1520" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/children-young-people-families/">Children, young people and families</a></li><li id="menu-item-1518" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/community-safety-crime/">Community safety and crime</a></li><li id="menu-item-1517" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/counciltax/">Council Tax</a></li><li id="menu-item-1519" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/socialcare/">Health and social care</a></li></ul><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_last"><li id="menu-item-1547" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/housing/">Housing</a></li><li id="menu-item-1521" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/jobs/">Jobs, careers and training</a></li><li id="menu-item-1545" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/leisure/">Leisure, libraries and open spaces</a></li><li id="menu-item-1523" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/environmentalprotection/">Nuisances, pollution and environmental protection</a></li><li id="menu-item-1522" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/parking-travel-roads/">Parking, travel and roads</a></li><li id="menu-item-1524" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/planning-building-control/">Planning and building control</a></li><li id="menu-item-1525" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-services/schools-learning/">Schools and learning</a></li></ul></div>
+</li>
+<li id="menu-item-720" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nav-menu-column-2 col-xs-12 col-sm-4"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/">My business</a>
+<div class="list-container"><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_first"><li id="menu-item-1530" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/business-rates-payments/">Business rates and payments</a></li><li id="menu-item-1533" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/business-support-advice/">Business support and advice</a></li><li id="menu-item-1529" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/environmental-health/">Environmental health</a></li><li id="menu-item-1532" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/hs/">Health and safety</a></li></ul><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_last"><li id="menu-item-1526" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/licensing/">Licences and permits</a></li><li id="menu-item-1531" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/regeneration/">Regeneration and development</a></li><li id="menu-item-1528" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/tenders-procurement/">Tenders and procurement</a></li><li id="menu-item-1527" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-business/tradingstandards/">Trading standards</a></li></ul></div>
+</li>
+<li id="menu-item-719" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children nav-menu-column-3 col-xs-12 col-sm-4"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/">My council</a>
+<div class="list-container"><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_first"><li id="menu-item-1537" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/complaints/">Complaints and feedback</a></li><li id="menu-item-1538" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/councillors/">Councillors and committees</a></li><li id="menu-item-1542" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/data-protection-foi/">Data protection and freedom of information</a></li><li id="menu-item-14713" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/equalities/">Equalities</a></li><li id="menu-item-1543" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/communityinvolvement/">Get involved</a></li></ul><ul class="list-column sub-menu col-xs-6 col-sm-12 list-column_last"><li id="menu-item-1544" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/news-media/">News and media</a></li><li id="menu-item-1540" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/performance/">Performance and spending</a></li><li id="menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/policies/">Priorities and strategies</a></li><li id="menu-item-1541" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/statistics-data/">Statistics and data</a></li><li id="menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page"><a target="_top" href="https://www.n-somerset.gov.uk/my-council/voting/">Voting and elections</a></li></ul></div>
+</li>
+</ul>				
+				</nav>
+	
+			</div>
+
+			
+		</div>
+
+
+
+        <div class="container">
+            <div class="row footer-feedback">
+                <div class="feedback">
+                    <div class="title">Rate this page</div>
+                    <p>Was this webpage helpful?</p>
+                    <div class="smileys">
+                        <div class="smile">
+                            <a href="https://websurveys2.govmetric.com/theme/gm/1696?Q_RATINGID=4" class="gm_sidebar_anchor" title="Please rate this page" target="_blank" rel="nofollow">
+                                <img src="https://websurveys2.servmetric.com/imgs/smileys/large/poor/smiley.png" title="Rate as Poor" alt="Rate as Poor">
+                                <span class="tt">Poor</span>
+                            </a>
+                        </div>
+                        <div class="smile">
+                            <a href="https://websurveys2.govmetric.com/theme/gm/1696?Q_RATINGID=2" class="gm_sidebar_anchor" title="Please rate this page" target="_blank" rel="nofollow">
+                                <img src="https://websurveys2.servmetric.com/imgs/smileys/large/average/smiley.png" title="Rate as Average" alt="Rate as Average">
+                                <span class="tt">Average</span>
+                            </a>
+                        </div>
+                        <div class="smile">
+                            <a href="https://websurveys2.govmetric.com/theme/gm/1696?Q_RATINGID=3" class="gm_sidebar_anchor" title="Please rate this page" target="_blank" rel="nofollow">
+                                <img src="https://websurveys2.servmetric.com/imgs/smileys/large/good/smiley.png" title="Rate as Good" alt="Rate as Good">
+                                <span class="tt">Good</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <link rel="stylesheet" type="text/css" href="https://wsstatic.govmetric.com/css/client/gm_sidebar_rh.css">
+                <script type="text/javascript" src="https://wsstatic.govmetric.com/js/client/gm_sidebar.js"></script>
+                <script type="text/javascript" src="https://hitcounter.govmetric.com/1071"></script>
+                <!-- WebMetric snippet ends here -->
+
+            </div>
+        </div>		
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="pull-right col-xs-6 col-sm-4 col-md-4">
+						<a class="logo pull-right" href="https://www.n-somerset.gov.uk" rel="home">
+							<img class="img-responsive" src="https://www.n-somerset.gov.uk/wp-content/themes/nsc/assets/imgs/logo-white.png" alt="North Somerset Council">
+						</a>
+					</div>
+					<div class="col-md-8">
+					
+												
+						
+						<div class="social-icons show-text">
+													
+																	<a href="https://twitter.com/NorthSomersetC" class="network" target="_blank">
+										<span class="icon icon-twitter" aria-hidden="true"></span><span class="desc-icon">Twitter</span></a>
+																
+													
+																	<a href="https://www.facebook.com/northsomersetcouncil" class="network" target="_blank">
+										<span class="icon icon-facebook" aria-hidden="true"></span><span class="desc-icon">Facebook</span></a>
+																
+													
+																
+													
+																
+													
+																	<a href="http://www.linkedin.com/company/north-somerset-council" class="network" target="_blank">
+										<span class="icon icon-linkedin" aria-hidden="true"></span><span class="desc-icon">LinkedIn</span></a>
+																
+													
+						</div>
+								
+						
+						<nav class="meta-nav" role="navigation" aria-label="Meta Menu">
+
+						<ul class="menu-meta-nav menu delimited"><li id="menu-item-13511" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-1 menu-item-13511"><a href="https://www.n-somerset.gov.uk/sitemap/">Site map</a></li>
+<li id="menu-item-1587" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-2 menu-item-1587"><a href="https://www.n-somerset.gov.uk/terms/">Terms</a></li>
+<li id="menu-item-1588" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-3 menu-item-1588"><a href="https://www.n-somerset.gov.uk/privacy-cookies/">Privacy and cookies</a></li>
+<li id="menu-item-1591" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-4 menu-item-1591"><a href="https://www.n-somerset.gov.uk/contact-us/">Contact us</a></li>
+<li id="menu-item-13525" class="menu-item menu-item-type-custom menu-item-object-custom nav-menu-column-5 menu-item-13525"><a href="//www.n-somerset.gov.uk/news/">News</a></li>
+<li id="menu-item-1590" class="menu-item menu-item-type-post_type menu-item-object-page nav-menu-column-6 menu-item-1590"><a href="https://www.n-somerset.gov.uk/support/">Support</a></li>
+</ul>						
+						</nav>
+						
+
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</footer>
+	
+	
+	<div class="site-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					North Somerset Council										© 2019. All rights reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div><!-- #page -->
+
+
+  
+
+		<script type="text/javascript">
+
+			jQuery.post(Council.ajaxurl, { action: 'is_user_logged_in' }, function(response) {
+			    if (response == 'yes') {
+
+			    	if (!jQuery('body').hasClass('logged-in')) {
+						window.location.href = updateQueryString('loggedin', 'true');
+			    	}
+
+					jQuery('a').attr('href', function(index, href) {
+						return updateQueryString('loggedin', 'true', href);
+					});
+			    }
+			});
+
+		</script>
+
+			
+		
+		<div class="cookie-alert" style="display: block; top: 0px;">
+			<!-- 
+			<div class="cookie-close cookie-cross">
+			    <img src="https://www.n-somerset.gov.uk/wp-content/plugins/axs-cookie-alert/imgs/cookie-close.png" width="30" height="30" alt="Close cookies consent">
+			</div>
+			-->
+		
+		    <div class="container">
+		    	<div class="row">
+					<div class="col-sm-8">
+			             <!--<p class="cookie-msg">We use cookies to provide the best possible service on our website. You can change your cookie settings at any time. Otherwise, we'll assume you're okay to continue.</p>-->
+						<p class="cookie-msg">We use Cookies to provide you with the best possible service on our website.  For details of how we use Cookies, <a href="/privacy-cookies/cookies-on-our-website/cookies/" style="color: white;text-decoration:underline;">please click here</a>. You can change your Cookie settings in your browser settings at any time.</p>
+			        </div>
+			        <div class="col-sm-4">
+			            <button class="btn cookie-close cookie-continue pull-right"><span class="glyphicon glyphicon-ok"></span>I have read and understood</button>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+
+
+		<script type="text/javascript" src="https://www.n-somerset.gov.uk/wp-includes/js/wp-embed.min.js?ver=5.3"></script>
+		
+		<!-- <div class="links-inner"> -->
+			
+
+
+			
+		
+		<!-- </div> -->
+		
+		
+		<script language="javascript">
+			if(location.protocol=="https:")
+			{
+			var dplat = "https://nsc.logo-net.co.uk/Delivery/TBURT.php";
+			}
+			else
+			{
+			var dplat = "http://nsc.logo-net.co.uk/Delivery/TBURT.php";
+			}
+			var strPURL = parent.document.URL;
+			strPURL = strPURL.replace(/&/g, "^");
+			strPURL = strPURL.toLowerCase();
+			strPURL = strPURL.replace(/</g, "-1");
+			strPURL = strPURL.replace(/>/g, "-2");
+			strPURL = strPURL.replace(/%3c/g, "-1");
+			strPURL = strPURL.replace(/%3e/g, "-2");
+			var T = new Date();
+			var cMS = T.getTime();
+			var src = dplat + '?SDTID=89&PURL=' + strPURL + '&CMS='+cMS;
+			var headID = document.getElementsByTagName("head")[0];
+			var newScript = document.createElement('script');
+			newScript.type = 'text/javascript';
+			newScript.src = src;
+			headID.appendChild(newScript);
+		</script>
+
+		
+	<!-- Website Developed by Andy Lobel (Contentive) -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"7aacc3fd16","applicationID":"271117564","transactionName":"YVUBNxZYChACWhJdWVgfIgAQUAsNTE0DWUZaURcGSVoLDRdcCEA=","queueTime":0,"applicationTime":852,"atts":"TRICQV5CGR4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.69e02060c7c44baddf1b5629549acc0c.html?origin=https%3A%2F%2Fwww.n-somerset.gov.uk" title="Twitter settings iframe" style="display: none;"></iframe><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="https://vars.hotjar.com/box-b736908ce6b0e933fad3a2e45df61b38.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>

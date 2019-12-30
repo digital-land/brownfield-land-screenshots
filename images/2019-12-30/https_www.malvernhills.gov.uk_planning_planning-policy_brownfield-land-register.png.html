@@ -1,0 +1,429 @@
+<!DOCTYPE html><html xml:lang="en-gb" lang="en-gb"><head>
+  		<base href="https://www.malvernhills.gov.uk/planning/planning-policy/brownfield-land-register">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="generator" content="Malvern Hills District Council">
+	<title>Brownfield Land Register - Malvern Hills District Council</title>
+	<link href="https://www.malvernhills.gov.uk/planning/planning-policy/brownfield-land-register" rel="canonical">
+	<link href="/media/koowa/com_files/css/plyr.css" rel="stylesheet" type="text/css">
+	<link href="/media/modals/css/bootstrap.min.css?v=11.5.7.p" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/media/plg_jchoptimize/cache/css/efa3f9a507cf890472a45d21077fd1ab_0.css">
+	<link href="/media/com_finder/css/finder.css?c3911488c9f63d1239e90c9ff4aa1406" rel="stylesheet" type="text/css">
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//siteimproveanalytics.com/js/siteanalyze_298491.js"></script><script type="application/json" class="joomla-script-options loaded">{"csrf.token":"b5e1aff2badf81b2cac51953c7a9ac39","system.paths":{"root":"","base":""},"rl_modals":{"class":"modal_link","defaults":{"opacity":"0.8","maxWidth":"95%","maxHeight":"95%","current":"{current} \/ {total}","previous":"previous","next":"next","close":"close","xhrError":"This content failed to load.","imgError":"This image failed to load."},"auto_correct_size":1,"auto_correct_size_delay":0,"disable_background_scrolling":0,"disable_on_mobile":0,"disable_on_mobile_splash":0,"mobile_max_width":767,"open_by_url":null}}</script>
+	
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/6f35e9ff89d0d38c8ffee86e29b5bc74_0.js"></script>
+	<script src="/media/koowa/framework/js/koowa.kquery.js?04e0c297" type="text/javascript"></script>
+	<script src="/media/koowa/framework/js/min/koowa.js?04e0c297" type="text/javascript"></script>
+	<script src="/media/koowa/com_files/js/plyr/plyr.js" type="text/javascript"></script>
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/6f35e9ff89d0d38c8ffee86e29b5bc74_1.js"></script>
+	<script src="/media/modals/js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+	<script src="/media/modals/js/jquery.modals.min.js?v=11.5.7.p" type="text/javascript"></script>
+	<script src="/media/modals/js/script.min.js?v=11.5.7.p" type="text/javascript"></script>
+	
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/6f35e9ff89d0d38c8ffee86e29b5bc74_2.js"></script>
+	<script type="text/javascript">
+kQuery(function($){
+        var recorded_plays = [];
+
+        plyr.setup();
+
+        $(document).on('playing', function(event) {
+            if (typeof event.detail !== 'undefined' && typeof event.detail.plyr !== 'undefined') {
+                var plyr = event.detail.plyr;
+
+                // If they've played over 3 seconds, then consider it played
+                // This is the same timing convention used by Facebook, Instagram, and Twitter
+                setTimeout(function() {
+                    if (!plyr.isPaused()) {
+                        var media = $(plyr.getMedia());
+
+                        var category = media.data('category');
+                        var action = 'Play ' + plyr.getType();
+
+                        var title = media.data('title') || '';
+                        var id = parseInt(media.data('media-id'), 10) || 0;
+
+                        if (recorded_plays.indexOf(title) === -1) {
+                            recorded_plays.push(title);
+
+                            if (typeof window.GoogleAnalyticsObject !== 'undefined' && typeof window[window.GoogleAnalyticsObject] !== 'undefined') {
+                                window[window.GoogleAnalyticsObject]('send', 'event', category, action, title, id);
+                            }
+                            else if (typeof _gaq !== 'undefined' && typeof _gat !== 'undefined') {
+                                if (_gat._getTrackers().length) {
+                                    _gaq.push(function () {
+                                        var tracker = _gat._getTrackers()[0];
+                                        tracker._trackEvent(category, action, title, id);
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }, 3000);
+            }
+        });
+    });
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find(".advancedSelect").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"Select an option","no_results_text":"No results match"});
+		}
+	});
+	
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+jQuery(document).ready(function() {
+	var value, searchword = jQuery('#mod-finder-searchword111');
+
+		// Get the current value.
+		value = searchword.val();
+
+		// If the current value equals the default value, clear it.
+		searchword.on('focus', function ()
+		{
+			var el = jQuery(this);
+
+			if (el.val() === 'Search ...')
+			{
+				el.val('');
+			}
+		});
+
+		// If the current value is empty, set the previous value.
+		searchword.on('blur', function ()
+		{
+			var el = jQuery(this);
+
+			if (!el.val())
+			{
+				el.val(value);
+			}
+		});
+
+		jQuery('#mod-finder-searchform111').on('submit', function (e)
+		{
+			e.stopPropagation();
+			var advanced = jQuery('#mod-finder-advanced111');
+
+			// Disable select boxes with no value selected.
+			if (advanced.length)
+			{
+				advanced.find('select').each(function (index, el)
+				{
+					var el = jQuery(el);
+
+					if (!el.val())
+					{
+						el.attr('disabled', 'disabled');
+					}
+				});
+			}
+		});
+	var suggest = jQuery('#mod-finder-searchword111').devbridgeAutocomplete({
+		serviceUrl: '/component/finder/?task=suggestions.suggest&amp;format=json&amp;tmpl=component',
+		paramName: 'q',
+		minChars: 1,
+		maxHeight: 400,
+		zIndex: 9999,
+		deferRequestBy: 500,
+        triggerSelectOnValidInput: false,
+        onSelect: function (suggestion) {
+       		jQuery('#mod-finder-searchform111').submit();
+   		}	
+	});});
+	</script>
+
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Shortcut Icon" href="/templates/mhdc_theme/images/logo/mhdc-favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/media/plg_jchoptimize/cache/css/efa3f9a507cf890472a45d21077fd1ab_1.css">
+        <!--[if lt IE 9]>
+               <script src="/templates/mhdc_theme/js/html5shiv.js"></script>
+	           <script src="/templates/mhdc_theme/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="static" bgcolor="white">
+        <div class="holder">
+            <div id="header" class="block">
+                <div class="header-background max-height-banner col-xs-12">
+                    <div class="container">
+                    	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 nopadding">
+                        	<a href="/"> <img class="main-logo" src="/templates/mhdc_theme/images/logo/mhdc-logoPNG.png" alt="Malvern Hills District Council logo"> </a>
+                        </div>	
+          				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hidden-xs nopadding">
+							<a href="https://public.govdelivery.com/accounts/UKMHDC/subscriber/new" target="_blank"> <img class="social-logo-header pull-right" src="/templates/mhdc_theme/images/logo/email-icon.gif" alt="Gov Delivery Email icon - link to sign up for email alerts from Malvern Hills District Council"> </a>
+          				</div>
+                    </div>
+                </div>
+                <div id="main-nav-wrapper" class="nav-wrapper" style="height: 41px;">
+          			<div id="menus-con" class="full-width navbar-static-top z-index-5 affix-top" style="top:0px;">
+                                                <nav id="nav" class="navbar navbar-default navbar-static-top">
+                            <div class="navbar-header">
+                                <button type="button" id="mobile-menu-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="navbar-brand mobile-link-colour visible-xs">
+                                    <a href="/">
+                                        <strong>Navigation Menu</strong>
+                                    </a>
+                                </div>
+                            </div>
+                                                                <div class="container">
+                                        <div id="mob-menu" class="collapse navbar-collapse navbar-ex1-collapse nav-item-align">
+                                                
+  <ul id="navbar" class="nav  mod-list navbar-nav navbar-left">
+  <li class="item-101 default"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li><li class="item-529"><a href="/about-your-council">About your council</a></li><li class="item-530"><a href="/pay-it">Pay it</a></li><li class="item-531"><a href="/report-it">Report it</a></li><li class="item-532"><a href="/request-it">Request it</a></li><li class="item-533"><a href="/news-alerts">News</a></li><li class="item-534"><a href="http://www.wmjobs.co.uk/our-employers/malvern-hills-district-council/">Jobs</a></li><li class="item-535"><a href="/contact-us" class="hidden-md hidden-sm">Contact us</a></li><li class="item-536 dropdown parent"><a href="/information">More <span class="caret more-caret-icon"></span></a><ul class="dropdown-menu" role="menu"><li class="item-537"><a href="/council-tax-and-benefits">Benefits and Council Tax</a></li><li class="item-538"><a href="/business-support-and-jobs">Business Support and Jobs</a></li><li class="item-539"><a href="/community">Community</a></li><li class="item-540"><a href="/environmental-health">Environmental Health</a></li><li class="item-541"><a href="/housing">Housing</a></li><li class="item-542"><a href="/licensing">Licensing</a></li><li class="item-545"><a href="/parking-and-streets">Parking and Streets</a></li><li class="item-543 alias-parent-active"><a href="/planning">Planning</a></li><li class="item-544"><a href="/refuse-and-recycling">Refuse and Recycling</a></li></ul></li></ul>
+
+
+ 
+                                            
+<div class="finder pull-right navbar-search hidden-xs hidden-sm">
+	<form id="mod-finder-searchform111" action="/search" method="get" class="form-search" role="search">
+  		<div class="input-group">
+          <input type="text" class="form-control" name="q" aria-label="Search" id="mod-finder-searchword111" value="" placeholder="Search ..." autocomplete="off"><span class="input-group-btn"><button class="btn btn-success finder" type="submit" title="Go"><span class="glyphicon glyphicon-search"></span></button></span>        </div>
+
+							</form>
+</div>
+ 
+                                        </div>
+                                    </div>
+                                                    </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="block push">
+					<div class="container app_holder">        <div class="col-md-9 col-md-push-3 main-col-right">
+        	<div aria-label="breadcrumbs" role="navigation">
+	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li>
+				You are here: &nbsp;
+			</li>
+		
+						<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/" class="pathway"><span itemprop="name">Malvern Hills District Council</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/planning" class="pathway"><span itemprop="name">Planning</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="2">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/planning/planning-policy" class="pathway"><span itemprop="name">Planning Policy</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="3">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+					<span itemprop="name">
+						Brownfield Land Register					</span>
+					<meta itemprop="position" content="4">
+				</li>
+				</ul>
+</div>
+
+          	<div id="system-message-container">
+	</div>
+
+            <div class="item-page" itemscope="" itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+	
+		
+			<div class="page-header">
+					<h1 itemprop="headline">
+				Brownfield Land Register			</h1>
+									</div>
+					
+		
+	
+	
+		
+					<!--  -->
+			<div itemprop="articleBody">
+		<p>The&nbsp;<a href="http://www.legislation.gov.uk/uksi/2017/403/contents/made" target="_blank" rel="noopener noreferrer">Town and Country Planning (Brownfield Land Register) Regulations 2017</a>, which came into force on 16 April 2017, require Local Planning Authorities to prepare, maintain and publish registers of previously developed (brownfield) land. &nbsp;Brownfield land registers are intended to provide up-to-date and consistent information on sites that local authorities consider to be appropriate for residential development.</p>
+<p>The Register can consist of two parts:</p>
+<ul>
+<li>part 1 is a list of all sites considered to be appropriate for residential development</li>
+<li>part 2 is made up of sites which have been taken forward from Part 1 of the Register and given Planning Permission in Principle (PIP)</li>
+</ul>
+<p>The Council is required to publish Part 1 of its Register by 31 December 2017.</p>
+<p>In order for sites to be included in Part 1 of the Register, i.e. appropriate for residential development, they must meet the following criteria:</p>
+<ul>
+<li>the site must be classified as Previously Developed Land, as defined by the glossary to the&nbsp;<a href="https://www.gov.uk/government/publications/national-planning-policy-framework--2" target="_blank" rel="noopener noreferrer">National Planning Policy Framework</a> (NPPF)</li>
+<li>the site should be at least 0.25 hectares in size or capable of supporting at least 5 dwellings</li>
+<li>the land is suitable for residential development;</li>
+<li>the land is available for residential development</li>
+<li>residential development of the land is achievable within 15 years</li>
+</ul>
+<p>Detailed guidance on brownfield land registers was published on 28 July 2017 through&nbsp;<a href="https://www.gov.uk/government/collections/planning-practice-guidance" target="_blank" rel="noopener noreferrer">National Planning Practice Guidance&nbsp;</a>(NPPG). The format of the brownfield land register is set out in the&nbsp;<a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard" target="_blank" rel="noopener noreferrer">Brownfield Land Registers Data Standard</a>&nbsp;published by the Department for Communities and Local Government (DCLG).</p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MalvernHillsBrownfieldLandRegister2017csv.csv&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">Malvern Hills District Brownfield Land Register (CSV)</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MalvernHillsBrownfieldLandRegister2017.xls&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">Malvern Hills District Brownfield Land Register (Excel Spreadsheet)</a></p>
+<p>Sites that have been included on Malvern Hills District Council’s Brownfield land Register can be viewed or downloaded in PDF format:</p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0001%20Walsh%20Yard%2C%20Common%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0001 - Walsh’s Yard, 190 Poolbrook&nbsp;Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0002%20Portland%20House%2C%20Church%20Street%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0002 - Portland House, 129 Church Street, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0003%20Former%20Hospital%2C%20Landsdowne%20Crescent%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0003 - Former Hospital, Landsdowne Crescent, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0004%20Pickersleigh%20Grove%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0004 - Pickersleigh Grove, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0005%20Former%20Railway%20Sidings%2C%20Peachfield%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0005 - Former Railway Sidings, Peachfield Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0006%20Victoria%20Road%20Car%20Park%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0006 - Victoria Road Car Park, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0007%20Barracks%20Store%2C%20Court%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0007 - Barracks Store, Court Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0008%20Malvern%20Technology%20Centre%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0008 - Malvern Technology Centre, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0014%20125%20Church%20Street%2CMalvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0014 - 125 Church Street, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0017%20Priors%20Croft%2C%20Grange%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0017 - Priors Croft, Grange Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0018%2020%20Belle%20Vue%20Terrace%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0018 - 20 Belle Vue Terrace, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0019%20Salvation%20House%2C%20Ranelagh%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0019 - Salvation House, Ranelagh Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0020%2016%20Victoria%20Road%2C%20Malvern.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0020 - 16 Victoria Road, Malvern</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0011%20Land%20adj%20Henwick%20Mill%20House%2C%20Martley%20Road%2C%20Lower%20Broadheath.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0011 - Land adj Henwick Mill House, Martley Road, Lower Broadheath</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0012%20Land%20adj%20former%20Pheasant%20Inn%2C%20Welland.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0012 - Land adj. former Pheasant Inn, Welland</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0013%20Land%20at%20Wheatfield%20Court%2C%20Callow%20End.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0013 - Land at Wheatfield Court, Callow End</a></p>
+<p><a href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=MHDCBLR0016%20Clay%20Green%20Farm%2C%20Folly%20Road%2C%20Alfrick.pdf&amp;folder=Documents%2FPlanning%2FPlanning%20Policy%2FBrownfield%20Land%20Register%20Plans&amp;container=fileman-files">MHDCBLR/0016 - Clay Green Farm, Folly Road, Alfrick</a></p>
+<p>Under legislative instruction the register will be reviewed annually. In the meantime if you wish to see a site included onto the Brownfield Land Register or have any other queries please contact: <a href="http://wychavon.gov.uk/" target="_blank" rel="noopener noreferrer"><u><span id="cloak434aadb8c0600587c78babe99d80b960"><a href="mailto:policy.plans@wychavon.gov.uk">policy.plans@wychavon.gov.uk</a></span><script type="text/javascript">
+				document.getElementById('cloak434aadb8c0600587c78babe99d80b960').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addy434aadb8c0600587c78babe99d80b960 = 'p&#111;l&#105;cy.pl&#97;ns' + '&#64;';
+				addy434aadb8c0600587c78babe99d80b960 = addy434aadb8c0600587c78babe99d80b960 + 'wych&#97;v&#111;n' + '&#46;' + 'g&#111;v' + '&#46;' + '&#117;k';
+				var addy_text434aadb8c0600587c78babe99d80b960 = 'p&#111;l&#105;cy.pl&#97;ns' + '&#64;' + 'wych&#97;v&#111;n' + '&#46;' + 'g&#111;v' + '&#46;' + '&#117;k';document.getElementById('cloak434aadb8c0600587c78babe99d80b960').innerHTML += '<a ' + path + '\'' + prefix + ':' + addy434aadb8c0600587c78babe99d80b960 + '\'>'+addy_text434aadb8c0600587c78babe99d80b960+'<\/a>';
+		</script></u></a></p> 	</div>
+
+	
+							</div>    
+        </div>
+        <div class="col-md-3 col-md-pull-9 main-col-left">
+            <div class="sidenav-panel panel panel-default">
+<ul id="sidenav" class="nav menu mod-list">
+  <li class="catItem">
+  	<a href="/planning">Planning</a>
+  </li>
+<li class="item-278"><a href="https://plan.malvernhills.gov.uk/">Search for Applications</a></li><li class="item-280"><a href="/planning/planning-application-forms">Planning Application Forms</a></li><li class="item-284 deeper parent"><a href="/planning/making-a-planning-application">Making a Planning Application</a><ul class="side-sub-menu"><li class="item-629"><a href="/planning/making-a-planning-application/design-and-access-statements">Design and Access Statements</a></li><li class="item-630"><a href="/planning/making-a-planning-application/assessment-of-significance">Statement&nbsp;of Significance - Applications affecting Heritage Assets</a></li><li class="item-631"><a href="/planning/making-a-planning-application/water-management-advisory-note">Water Management Advisory Note for&nbsp;Residential and other Developments</a></li><li class="item-632"><a href="/planning/making-a-planning-application/biodiversity">Bio-Diversity</a></li></ul></li><li class="item-290"><a href="/planning/amending-your-planning-application">Amending Your Planning Application</a></li><li class="item-295"><a href="/planning/planning-weekly-list">Planning Weekly List</a></li><li class="item-300"><a href="/planning/planning-history-search">Planning History Search</a></li><li class="item-313"><a href="/planning/the-planning-process">The Planning Process</a></li><li class="item-316"><a href="/planning/community-infrastructure-levy">Community Infrastructure Levy</a></li><li class="item-320"><a href="/planning/section-106-obligations">Section 106 Obligations</a></li><li class="item-322"><a href="/planning/planning-conditions-and-fees">Planning Conditions and Fees</a></li><li class="item-323"><a href="/planning/advice-and-guidance">Advice and Guidance</a></li><li class="item-324"><a href="/planning/planning-appeals">Planning Appeals</a></li><li class="item-325"><a href="/planning/planning-committee-and-meetings">Planning Committee and Meetings</a></li><li class="item-327"><a href="/planning/planning-enforcement">Planning Enforcement</a></li><li class="item-329 deeper parent"><a href="/planning/heritage-and-conservation">Heritage and Conservation</a><ul class="side-sub-menu"><li class="item-636"><a href="/planning/heritage-and-conservation/the-historic-environment">The Historic Environment</a></li><li class="item-637"><a href="/planning/heritage-and-conservation/the-natural-environment">The Natural Environment</a></li><li class="item-638"><a href="/planning/heritage-and-conservation/conservation-area-appraisals">Conservation Area Appraisals</a></li></ul></li><li class="item-332 deeper parent"><a href="/planning/local-land-charges">Local Land Charges</a><ul class="side-sub-menu"><li class="item-681"><a href="/planning/local-land-charges/submission-of-searches">Submission of Searches</a></li><li class="item-682"><a href="/planning/local-land-charges/personal-search-and-con-29">Personal Search and CON 29</a></li><li class="item-683"><a href="/planning/local-land-charges/local-land-charges-search-fees">Local Land Charges Search Fees</a></li><li class="item-684"><a href="/planning/local-land-charges/llc-frequently-asked-questions">Frequently Asked Questions  </a></li></ul></li><li class="item-337 active deeper parent"><a href="/planning/planning-policy">Planning Policy</a><ul class="side-sub-menu"><li class="item-571"><a href="/planning/planning-policy/enplanner">Interim Guidance Note on the Application of SWDP 27 (Renewable and Low Carbon Energy)</a></li><li class="item-575 current active"><a href="/planning/planning-policy/brownfield-land-register">Brownfield Land Register</a></li><li class="item-567 deeper parent"><a href="/planning/planning-policy/the-planning-policy-framework">Planning Policy Framework</a><ul class="side-sub-menu"><li class="item-609"><a href="/planning/planning-policy/the-planning-policy-framework/local-development-scheme">Local Development Scheme (LDS)</a></li><li class="item-669 deeper parent"><a href="/planning/planning-policy/the-planning-policy-framework/authorities-monitoring-reports">Authorities' Monitoring Reports</a><ul class="side-sub-menu"><li class="item-671"><a href="/planning/planning-policy/the-planning-policy-framework/authorities-monitoring-reports/housing-land-monitoring">Housing Land Supply Monitoring</a></li><li class="item-672"><a href="/planning/planning-policy/the-planning-policy-framework/authorities-monitoring-reports/employment-land-monitoring">Employment Land Monitoring</a></li></ul></li><li class="item-670"><a href="/planning/planning-policy/the-planning-policy-framework/community-involvement">Statement of Community Involvement (SCI)</a></li><li class="item-635"><a href="/planning/planning-policy/the-planning-policy-framework/supplementary-guidance">Supplementary Planning Documents (SPD)</a></li></ul></li><li class="item-610"><a href="/planning/planning-policy/enplanner-low-carbon-planning-toolkit1">Enplanner Low Carbon Planning Toolkit</a></li><li class="item-611 deeper parent"><a href="/planning/planning-policy/neighbourhood-planning">Neighbourhood Planning</a><ul class="side-sub-menu"><li class="item-614"><a href="/planning/planning-policy/neighbourhood-planning/designated-neighbourhood-areas">Designated Neighbourhood Areas</a></li><li class="item-619"><a href="/planning/planning-policy/neighbourhood-planning/broadwas-and-cotheridge">Broadwas and Cotheridge Neighbourhood Plan</a></li><li class="item-593"><a href="/planning/planning-policy/neighbourhood-planning/malvern-town-neighbourhood-plan">Malvern Town Neighbourhood Plan</a></li><li class="item-591"><a href="/planning/planning-policy/neighbourhood-planning/hanley-castle">Hanley Castle Parish Neighbourhood Plan</a></li><li class="item-616"><a href="/planning/planning-policy/neighbourhood-planning/clifton-upon-teme">Clifton upon Teme Neighbourhood Plan</a></li><li class="item-673"><a href="/planning/planning-policy/neighbourhood-planning/kempsey">Kempsey Neighbourhood Plan</a></li><li class="item-674"><a href="/planning/planning-policy/neighbourhood-planning/martley-knightwick-doddenham">Martley, Knightwick&nbsp;and&nbsp;Doddenham Neighbourhood Plan</a></li></ul></li><li class="item-622"><a href="/planning/planning-policy/self-build-register">Self-Build and Custom&nbsp;Housebuilding&nbsp;Register</a></li></ul></li><li class="item-617"><a href="/planning/footpath-diversions">Footpath Diversions (S257)</a></li><li class="item-552"><a href="/planning/street-naming-and-numbering">Street Naming and Numbering</a></li></ul>
+</div>
+
+        </div>
+    
+                </div>
+            </div>
+            <div id="footer" class="block">
+                <div id="footer-bar">
+                    &nbsp;
+                </div>
+                <div class="footer-background1">
+                    <div class="container">
+                        <div class="visible-xs">
+                            <h4 class="spaced-text footer-heading-pad white-text"><strong>Follow us on...</strong></h4>
+                                
+  <ul id="social-bottom-nav" class="nav  mod-list ">
+  <li class="item-129"><a href="https://www.facebook.com/MalvernHillsUK" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/facebook-logo.png" alt="Facebook" class="social-logos-navbar"></a></li><li class="item-130"><a href="https://www.instagram.com/malvernhillsdistrictcouncil/" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/instagram-sq-logo.png" alt="Instagram" class="social-logos-navbar"></a></li><li class="item-131"><a href="https://twitter.com/MalvernHills_DC" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/twitter-logo.png" alt="Twitter" class="social-logos-navbar"></a></li><li class="item-132"><a href="https://www.youtube.com/channel/UCL-C-fgcehHzMYyxqgp414g" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/youtube-logo.png" alt="YouTube" class="social-logos-navbar"></a></li></ul>
+
+
+ 
+                        </div>
+                        <div id="footer-info-module">
+                        	
+
+<div class="custom">
+	<p><span style="color: #ffffff;"><strong>Malvern Hills District Council, Council House, Avenue Road, Malvern, WR14 3AF -&nbsp;</strong><a class="green-text" href="/driving-directions">Directions to Council Offices</a></span></p>
+<p><a class="white-link" href="https://www.gov.uk/" target="_blank" rel="noopener noreferrer">GOV.UK - For more Government Services and information</a></p></div>
+ 
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-background2">
+                    <div class="container">
+                    	    
+  <ul id="footer-nav" class="spaced-text list-inline mobile-inline-menu no-left-margin ">
+  <li class="item-641"><a href="/privacy-policy" class="white-link white-text">Legal &amp; privacy</a></li><li class="item-642"><a href="/accessibility" class="white-link white-text">Accessibility</a></li><li class="item-640"><a href="/councillor-access" class="white-link white-text">Councillor Access</a></li><li class="item-643"><a href="/contact-us" class="white-link white-text">Contact Us</a></li><li class="item-124"><a href="/sitemap" class="white-link white-text">Sitemap</a></li></ul>
+
+
+
+
+<div class="custom">
+	<p><!-- START: Modals --><a href="#modal-login" class="modal_link rl_modals_element" data-modal-inline="true" data-modal-class-name="no_title" data-modal-done="1">Login</a><!-- END: Modals --> <!-- START: Modals --></p><div style="display:none;"><div id="modal-login"> <!-- START: Modules Anywhere --><form action="/planning/planning-policy/brownfield-land-register" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<label for="modlgn-username">Username</label>
+					<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Username">
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<label for="modlgn-passwd">Password</label>
+					<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Password">
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Remember Me</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes">
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Log in</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+							<li>
+					<a href="/component/users/?view=remind&amp;Itemid=101">
+					Forgot your username?</a>
+				</li>
+				<li>
+					<a href="/component/users/?view=reset&amp;Itemid=101">
+					Forgot your password?</a>
+				</li>
+			</ul>
+		<input type="hidden" name="option" value="com_users">
+		<input type="hidden" name="task" value="user.login">
+		<input type="hidden" name="return" value="aHR0cHM6Ly93d3cubWFsdmVybmhpbGxzLmdvdi51ay9wbGFubmluZy9wbGFubmluZy1wb2xpY3kvYnJvd25maWVsZC1sYW5kLXJlZ2lzdGVy">
+		<input type="hidden" name="b5e1aff2badf81b2cac51953c7a9ac39" value="1">	</div>
+	</form>
+<!-- END: Modules Anywhere --> </div></div><!-- END: Modals --><p></p></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>              
+        <script src="/templates/mhdc_theme/js/bootstrap.min.js"></script>
+        <script src="/templates/mhdc_theme/js/jquery-ui.min.js"></script>
+        <script src="/templates/mhdc_theme/js/custom.js"></script>
+                                  
+        <!-- Anayltics code goes here -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-141494547-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-141494547-1');
+		</script>
+              
+        <!-- Siteimprove -->
+        <script type="text/javascript">
+		/*<![CDATA[*/
+        (function() {
+         var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+         sz.src = '//siteimproveanalytics.com/js/siteanalyze_298491.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+        </script>
+		
+	
+<div id="rl_modals_overlay" style="display: none;"></div><div id="rl_modals" role="dialog" aria-hidden="true" aria-labelledby="rl_modals_title" aria-describedby="rl_modals_current" style="display: none;"><div id="rl_modals_wrapper"><div><div id="rl_modals_top_left" style="float: left;"></div><div id="rl_modals_top_center" style="float: left;"></div><div id="rl_modals_top_right" style="float: left;"></div></div><div style="clear: left;"><div id="rl_modals_middle_left" style="float: left;"></div><div id="rl_modals_content" style="float: left;"><div id="rl_modals_title" aria-live="polite" style="float: left;"></div><div id="rl_modals_current" style="float: left;"></div><button type="button" id="rl_modals_previous" aria-hidden="true">previous</button><button type="button" id="rl_modals_next" aria-hidden="true">next</button><button type="button" id="rl_modals_slideshow" aria-hidden="true">start slideshow</button><div id="rl_modals_loading_overlay" style="float: left;"></div><div id="rl_modals_loading_graphic" style="float: left;"></div></div><div id="rl_modals_middle_right" style="float: left;"></div></div><div style="clear: left;"><div id="rl_modals_bottom_left" style="float: left;"></div><div id="rl_modals_bottom_center" style="float: left;"></div><div id="rl_modals_bottom_right" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"></div></body></html>
