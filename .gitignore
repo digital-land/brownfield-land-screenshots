@@ -11,3 +11,6 @@ var
 tmp
 var
 node_modules
+
+# avoid committing Derby's API key
+images/*/https_www.derby.gov.uk_environment-and-planning_planning_brownfield-register_.png.html
