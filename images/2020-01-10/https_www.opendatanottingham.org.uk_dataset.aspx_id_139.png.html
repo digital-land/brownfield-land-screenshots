@@ -1,0 +1,687 @@
+<!DOCTYPE html><html><head><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta http-equiv="cleartype" content="on"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  
+    <!--link rel="shortcut icon" href="favicon.ico"-->
+    <!--link rel="apple-touch-icon" href="/link/to/apple-touch-icon.png"-->
+
+    <!-- Google web fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"><link rel="stylesheet" href="Styles/global.css" media="all"><link rel="stylesheet" href="Styles/layout.css" media="all and (min-width: 560px)">
+    <!-- 30em + (1.618em * 2) = 33.236em / Eliminates potential of horizontal scrolling in most cases -->
+
+    <!-- This forces IE to use the large stylesheet regardless. -->
+    <!--[if (lt IE 9) & (!IEMobile)]>
+    <link rel="stylesheet" href="Styles/layout.css" media="all" />
+    <![endif]-->
+
+    <!-- Main, modern browsers -->
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css">
+    
+    <!-- IE (all) -->
+    <!--[if IE]>
+        <link href="Styles/ie.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!-- IE 678 -->
+    <!--[if lte IE 8]>
+        <link href="Styles/ie678.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    
+    <!-- SlickGrid in Recline requires 1.7 and fails miserably with newer versions. Could load 1.12.x here and load 1.7 in the data viewer page with jQuery.noConflict(true) - probably a waste of time. -->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.min.js"></script>-->
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="Scripts/recline/vendor/slickgrid/2.2.2/lib/jquery-1.11.2.js"></script>
+
+    <!--link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" /-->
+    <!--link rel="stylesheet" type="text/css" href="Scripts/jquery.ui.menubar.css" /-->
+
+    <!-- Cloud, now on all pages via dropdown -->
+    <!-- To be removed -->
+    <!--link rel="stylesheet" type="text/css" href="Scripts/jqcloud.css" />
+    <script type="text/javascript" src="Scripts/jqcloud-1.0.2.min.js"></script-->
+    
+    
+    <!-- UI for dropdown menu -->
+    <!--script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.ui.menubar.js"></script-->
+    
+
+    <script type="text/javascript">
+        var globals = {};
+        globals.headerSearch = true;
+        var srch = function (e) {
+            var q = $("#q").val();
+            if (q && globals.headerSearch) {
+                document.location.href = "search.aspx?q=" + q;
+            } else {
+                q = $("#defaultSearch").val();
+                if (q) {
+                    document.location.href = "search.aspx?q=" + q;
+                }
+            }
+            return false;
+        }
+        $(function () {
+
+            // Attach some handlers to elements within the default template
+            var handleFocus = function (obj, initVal) {
+                if (obj.val() == initVal) {
+                    obj.val('');
+                }
+            }
+            var handleBlur = function (obj, initVal) {
+                if (obj.val() == '') {
+                    obj.val(initVal);
+                }
+            }
+            $("#q").bind("focus", function (e) {
+                handleFocus($(this), "Search for Data...");
+            }).bind("blur", function (e) {
+                handleBlur($(this), "Search for Data...");
+            });
+            $("#searchGo").bind('click', srch);
+            // Vile hack.
+            $('#q').keydown(function (e) {
+                if (e.keyCode == 13) {
+                    srch();
+                    return false;
+                }
+            });
+            $("#moreLink").bind("click", toggleSubmenu);
+            $("#interactLink").bind("click", toggleSubmenu);
+
+        });
+
+        globals.nav = {};
+        //globals.nav.visible = false;
+        globals.nav.visibleElement = null;
+        
+        // TODO: expand this to show/hide different submenus
+        
+        function showNavigation() {
+            if (globals.nav.visible) {
+                $("#moreMenu").animate({ "height": "0px" }, 450);
+                //$("#popupTags").fadeOut(500);
+                //$("#tagLink").css({ "background-image": "url(images/components/arrows/arrowMenu.png)" });
+            } else {
+                $("#moreMenu").animate({ "height": "38px" }, 450);
+
+                setTimeout(function () {
+                    $("#moreMenu").css({ "height": "auto" });
+                }, 550);
+                //$("#tagLink").css({ "background-image": "url(images/components/arrows/arrowMenuUp.png)" });
+            }
+            globals.nav.visible = !globals.nav.visible;
+        }
+
+        function toggleSubmenu(e) {
+
+            // "#" + e.currentTarget.id + "Submenu"
+            var end = false, caller = "#" + e.currentTarget.id + "Submenu";
+
+            if (globals.nav.visibleElement) {
+                if (caller != globals.nav.visibleElement) {
+                    // Replace
+                    end = false;
+                } else {
+                    end = true;
+                }
+                $(globals.nav.visibleElement).animate({ "height": "0px" }, 450);
+                globals.nav.visibleElement = null;
+            }
+
+            if (globals.nav.visibleElement == null && end == false) {
+                
+                globals.nav.visibleElement = "#" + e.currentTarget.id + "Submenu";
+                $(globals.nav.visibleElement).animate({ "height": "38px" }, 450);
+
+                setTimeout(function () {
+                    $(globals.nav.visibleElement).css({ "height": "auto" });
+                }, 550);
+            }
+        }
+        
+
+    </script>
+
+    
+    
+
+    <title></title>
+    
+    <script type="text/javascript" src="Scripts/jquery.cookie.js"></script>
+    <script type="text/javascript">
+        var chosenId = null; var discussTitle = "Open Data Nottingham general discussion";
+    </script>
+    <script type="text/javascript">chosenId=139;discussTitle="Dataset: Brownfield Register - Parts 1 and 2";</script>
+    <script type="text/javascript">
+
+        var voted = false;
+        var votedDatasets = null;
+
+        $(function () {
+            votedDatasets = $.cookie('OpenDataVotes'); // => "the_value"
+            //console.log('votedDatasets', votedDatasets);
+            if (votedDatasets !== null) {
+                var ds = votedDatasets.split('|');
+                for (var i = 0; i < ds.length; i++) {
+                    //console.log(ds[i], chosenId, ds[i] == chosenId);
+                    if (ds[i] == chosenId) {
+                        voted = true;
+                        break;
+                    }
+                }
+                //console.log(voted);
+                if (voted) { greyArrows(); }
+            }
+
+            $("#emailThisPage").attr("href", "mailto:?subject=Open Data Nottingham&body=I thought you might be interested in this dataset - \n" + document.location.href);
+
+        });
+
+        //$("#voteUp").bind("click", null, function () {
+        function voteUp() {
+            if (!voted) {
+
+                cook();
+                var d = new Date();
+
+                $.ajax({
+                    url: "handler/vote.ashx?id=" + chosenId + "&value=up&d=" + d.getTime()
+                }).done(function (data) {
+                    //console.log(data, data.Value);
+                    $('#ctl00_MainContent_upVotes').html(parseInt(data["Value"]));
+                });
+                voted = true;
+                greyArrows();
+            }
+
+            return false;
+        }
+        //});
+        //$("#voteDown").bind("click", null, function () {
+        function voteDown() {
+            if (!voted) {
+
+                cook();
+                var d = new Date();
+
+                $.ajax({
+                    url: "handler/vote.ashx?id=" + chosenId + "&value=down&d=" + d.getTime()
+                }).done(function (data) {
+                    //console.log(data, data.Value);
+                    $('#ctl00_MainContent_downVotes').html(parseInt(data["Value"]));
+                });
+                voted = true;
+                greyArrows();
+            }
+            return false;
+        }
+        //});
+        function greyArrows() {
+            //console.log('greyarrows');
+            $("#Applaud").css("background-image", "url(images/components/arrows/arrowUpGrey.png)");
+            $("#Smite").css("background-image", "url(images/components/arrows/arrowDownGrey.png)");
+            $("#voteThanks").css("display", "block");
+        }
+
+        function cook() {
+            // Interact with cookie...
+            var vds = votedDatasets || "";
+            vds += "|" + chosenId;
+
+            $.removeCookie('OpenDataVotes');
+            $.cookie('OpenDataVotes', vds, { expires: 7, path: '/' });
+        }
+        
+
+
+    </script>
+    
+    <style type="text/css">
+        /** Chrome appears to strip the ctl100? **/
+        #vote
+        {
+        	overflow:auto;
+        }
+        div.voteContainer
+        {
+        	display:block;width:28px;height:18px;float:left;margin-right:5px;
+        }
+        a.voteLink
+        {
+        	display:block;width:20px;height:18px;float:left;
+        }
+        #Applaud
+        {
+        	background-image:url(images/components/arrows/arrowUp.png);
+        	background-position: center center;
+        	background-repeat:no-repeat;
+        }
+        #Smite
+        {
+        	background-image:url(images/components/arrows/arrowDown.png);
+        	background-position: center center;
+        	background-repeat:no-repeat;
+        }
+        a.licenseImageLink
+        {
+        	display:block;margin:5px 0px;
+        }
+        div.foiFlag
+        {
+        	border-radius:3px;
+        	margin:0.5em 0;
+        	padding:0.25em 0.5em;
+        	color:#666;
+        	border:1px solid #b9ebb9;
+        	background:#eaffea;
+        	/**box-shadow:1px 1px 3px #ccc;**/
+        }
+
+        #ctl00_MainContent_txtTags, #MainContent_txtTags
+        {
+        	overflow:hidden;
+        }
+        
+        #ctl00_MainContent_txtTags a, #MainContent_txtTags a
+        {
+        	display:block;padding:0.3em;margin:0.3em;float:left;
+        }
+        
+        
+        /** Small images for download icon **/
+        a.CSV, a.Shapefile, a.XML, a.JSON, a.KML, a.PDF, a.XLS, a.URL, a.GeoJSON
+        {
+        	display:block;
+        	padding-left:27px;min-height:24px;
+        	background-position:2px 2px;
+        	padding-top:4px;
+        	background-repeat:no-repeat;
+        }
+        a.CSV
+        {
+        	background-image:url(images/components/colour-filetype/excel22.png);
+        }
+        a.Shapefile
+        {
+        	background-image:url(images/components/colour-filetype/link22.png);
+        }
+        a.XML
+        {
+        	background-image:url(images/components/colour-filetype/excel22.png);
+        }
+        a.JSON
+        {
+        	background-image:url(images/components/colour-filetype/link22.png);
+        }
+        a.KML
+        {
+        	background-image:url(images/components/colour-filetype/link22.png);
+        }
+        a.PDF
+        {
+        	background-image:url(images/components/colour-filetype/pdf22.png);
+        }
+        a.XLS
+        {
+        	background-image:url(images/components/colour-filetype/excel22.png);
+        }
+        a.URL
+        {
+        	background-image:url(images/components/colour-filetype/link22.png);
+        }
+        a.GeoJSON
+        {
+        	background-image:url(images/components/colour-filetype/link22.png);
+        }
+        
+        
+    </style>
+
+<title>
+
+</title><script type="text/javascript" async="" src="http://opendatanottingham.disqus.com/embed.js"></script><link rel="prefetch" href="https://c.disquscdn.com/next/embed/styles/lounge.91c71242b4acaa0ee7f9db125ef21f90.css"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/common.bundle.b3d69807fc8989b3511a4e0bb0652899.js"><link rel="prefetch" href="https://c.disquscdn.com/next/embed/lounge.bundle.b87d1e5d969b251bfca86778cc3ad1b7.js"><link rel="prefetch" href="https://disqus.com/next/config.js"><script src="https://c.disquscdn.com/next/embed/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+<body bgcolor="white">
+    
+    <div id="headerContain">
+    </div>
+
+    <form name="aspnetForm" method="post" action="./dataset.aspx?id=139" id="aspnetForm" style="width:100%;height:100%;padding:0;margin:0;">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNTc0OTM3NTAPZBYCZg9kFgQCAQ9kFgICEQ9kFgICBA8WAh4EVGV4dAVxPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPmNob3NlbklkPTEzOTtkaXNjdXNzVGl0bGU9IkRhdGFzZXQ6IEJyb3duZmllbGQgUmVnaXN0ZXIgLSBQYXJ0cyAxIGFuZCAyIjs8L3NjcmlwdD5kAgMPZBYCAgUPZBYqAgEPZBYEZg8WAh8ABUE8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+dmFyIGN1cnJlbnRJbWFnZU51bSA9IDI2Ozwvc2NyaXB0PmQCAg8WAh4Dc3JjBRouLi9JbWFnZXMvaGVhZGVyMTYwLzI2LmpwZ2QCAw8WAh4JaW5uZXJodG1sBSNCcm93bmZpZWxkIFJlZ2lzdGVyIC0gUGFydHMgMSBhbmQgMmQCBQ8WAh8CBeICVGhlIEdvdmVybm1lbnQgaGFzIHNldCBvdXQgaXRzIGNvbW1pdG1lbnQgdG8gaW50cm9kdWNlIGEgc3RhdHV0b3J5IGJyb3duZmllbGQgcmVnaXN0ZXIgYW5kIGVuc3VyZSB0aGF0IDkwJSBvZiBzdWl0YWJsZSBicm93bmZpZWxkIHNpdGVzIGhhdmUgcGxhbm5pbmcgcGVybWlzc2lvbiBmb3IgaG91c2luZyBieSAyMDIwLiBUaGUgcmVnaXN0ZXJzIGFyZSBpbnRlbmRlZCB0byBzZXQgb3V0IGluZm9ybWF0aW9uIG9uIGJyb3duZmllbGQgc2l0ZXMgd2hpY2ggYXJlIHN1aXRhYmxlIGZvciBob3VzaW5nIGRldmVsb3BtZW50IHVzaW5nIGEgY29uc2lzdGVudCBzZXQgb2YgaW5mb3JtYXRpb24gYWNyb3NzIGNvdW5jaWwgYXJlYXMuZAIJDxYCHwAF1hM8cD5UaGUgZ292ZXJubWVudCByZXF1aXJlcyBsb2NhbCBwbGFubmluZyBhdXRob3JpdGllcyBpbiBFbmdsYW5kIHRvIHByZXBhcmUsIG1haW50YWluIGFuZCBwdWJsaXNoIHJlZ2lzdGVycyBvZiBwcmV2aW91c2x5IGRldmVsb3BlZCAoYnJvd25maWVsZCkgbGFuZCB1bmRlciA8YSBocmVmPSJodHRwOi8vd3d3LmxlZ2lzbGF0aW9uLmdvdi51ay91a3NpLzIwMTcvNDAzL3JlZ3VsYXRpb24vMy9tYWRlIiB0YXJnZXQ9Il9ibGFuayI+UmVndWxhdGlvbiAzIG9mIHRoZSBUb3duIGFuZCBDb3VudHJ5IFBsYW5uaW5nIChCcm93bmZpZWxkIExhbmQgUmVnaXN0ZXIpIFJlZ3VsYXRpb25zIDIwMTc8L2E+LiBCcm93bmZpZWxkIHNpdGVzIHRoYXQgbWVldCB0aGUgcmVsZXZhbnQgPGEgaHJlZj0iaHR0cDovL3d3dy5sZWdpc2xhdGlvbi5nb3YudWsvdWtzaS8yMDE3LzQwMy9yZWd1bGF0aW9uLzQvbWFkZSIgdGFyZ2V0PSJfYmxhbmsiPmNyaXRlcmlhPC9hPiBhcmUgZW50ZXJlZCBpbiBQYXJ0IDEgb2YgYnJvd25maWVsZCBsYW5kIHJlZ2lzdGVycy4gU2l0ZXMgZW50ZXJlZCBpbiBQYXJ0IDIgb2YgdGhlIGJyb3duZmllbGQgbGFuZCByZWdpc3RlcnMgYXJlIGdyYW50ZWQgPGEgaHJlZj0iaHR0cHM6Ly93d3cuZ292LnVrL2d1aWRhbmNlL3Blcm1pc3Npb24taW4tcHJpbmNpcGxlIiB0YXJnZXQ9Il9ibGFuayI+cGVybWlzc2lvbiBpbiBwcmluY2lwbGU8L2E+LiBUaGUgcmVnaXN0ZXJzIGFyZSByZXZpZXdlZCBhbm51YWxseS48L3A+Cgo8aDM+UHJldmlvdXNseSBEZXZlbG9wZWQgKGJyb3duZmllbGQpIExhbmQgRGVmaW5pdGlvbjwvaDM+CjxwPkxhbmQgd2hpY2ggaXMgb3Igd2FzIG9jY3VwaWVkIGJ5IGEgcGVybWFuZW50IHN0cnVjdHVyZSwgaW5jbHVkaW5nIHRoZSBjdXJ0aWxhZ2Ugb2YgdGhlIGRldmVsb3BlZCBsYW5kIChhbHRob3VnaCBpdCBzaG91bGQgbm90IGJlIGFzc3VtZWQgdGhhdCB0aGUgd2hvbGUgb2YgdGhlIGN1cnRpbGFnZSBzaG91bGQgYmUgZGV2ZWxvcGVkKSBhbmQgYW55IGFzc29jaWF0ZWQgZml4ZWQgc3VyZmFjZSBpbmZyYXN0cnVjdHVyZS4gVGhpcyBleGNsdWRlczogbGFuZCB0aGF0IGlzIG9yIGhhcyBiZWVuIG9jY3VwaWVkIGJ5IGFncmljdWx0dXJhbCBvciBmb3Jlc3RyeSBidWlsZGluZ3M7IGxhbmQgdGhhdCBoYXMgYmVlbiBkZXZlbG9wZWQgZm9yIG1pbmVyYWxzIGV4dHJhY3Rpb24gb3Igd2FzdGUgZGlzcG9zYWwgYnkgbGFuZGZpbGwgcHVycG9zZXMgd2hlcmUgcHJvdmlzaW9uIGZvciByZXN0b3JhdGlvbiBoYXMgYmVlbiBtYWRlIHRocm91Z2ggZGV2ZWxvcG1lbnQgY29udHJvbCBwcm9jZWR1cmVzOyBsYW5kIGluIGJ1aWx0LXVwIGFyZWFzIHN1Y2ggYXMgcHJpdmF0ZSByZXNpZGVudGlhbCBnYXJkZW5zLCBwYXJrcywgcmVjcmVhdGlvbiBncm91bmRzIGFuZCBhbGxvdG1lbnRzOyBhbmQgbGFuZCB0aGF0IHdhcyBwcmV2aW91c2x5LWRldmVsb3BlZCBidXQgd2hlcmUgdGhlIHJlbWFpbnMgb2YgdGhlIHBlcm1hbmVudCBzdHJ1Y3R1cmUgb3IgZml4ZWQgc3VyZmFjZSBzdHJ1Y3R1cmUgaGF2ZSBibGVuZGVkIGludG8gdGhlIGxhbmRzY2FwZSBpbiB0aGUgcHJvY2VzcyBvZiB0aW1lPC9wPgoKPGgzPlBhcnQgMSBhbmQgUGFydCAyIG9mIHRoZSBSZWdpc3RlcjwvaDM+CjxwPlBhcnQgMSBvZiBhIGJyb3duZmllbGQgbGFuZCByZWdpc3RlciBjb21wcmlzZXMgYWxsIGJyb3duZmllbGQgc2l0ZXMgdGhhdCBOb3R0aW5naGFtIENpdHkgQ291bmNpbCBoYXMgYXNzZXNzZWQgYXMgYXBwcm9wcmlhdGUgZm9yIHJlc2lkZW50aWFsIGRldmVsb3BtZW50LiBJdCBpbmNsdWRlIHNpdGVzIHdpdGggZXh0YW50IGZ1bGwgcGxhbm5pbmcKcGVybWlzc2lvbiwgb3V0bGluZSBwbGFubmluZyBwZXJtaXNzaW9uIGFuZCBwZXJtaXNzaW9uIGluIHByaW5jaXBsZSBhcyB3ZWxsIGFzIHNpdGVzIHdpdGhvdXQgcGxhbm5pbmcgcGVybWlzc2lvbi48L3A+Cgo8cD5UaGUgcmVnaXN0ZXIgY29uc2lzdHMgb2YgaW5mb3JtYXRpb24gZW50ZXJlZCBpbiBhIG51bWJlciBvZiBwcmVzY3JpYmVkIGNvbHVtbnM8L3A+CjxwPlBhcnQgMiBvZiBhIGJyb3duZmllbGQgbGFuZCByZWdpc3RlciBpcyBhIHN1YnNldCBvZiBQYXJ0IDEuIEl0IGNvbXByaXNlcyBvbmx5IHRob3NlIHNpdGVzIGluIFBhcnQgMSB0aGF0IHRoZSBsb2NhbCBwbGFubmluZyBhdXRob3JpdHkgaGFzIGRlY2lkZWQgdGhhdCB0aGUgbGFuZCB3b3VsZCBiZSBzdWl0YWJsZSBmb3IgYSBncmFudCBvZiBwZXJtaXNzaW9uIGluIHByaW5jaXBsZSBmb3IgcmVzaWRlbnRpYWwgZGV2ZWxvcG1lbnQuPC9wPgoKPHA+U2l0ZXMgaW5jbHVkZWQgb24gdGhlIFJlZ2lzdGVyIGFyZSBsb2NhdGVkIG9uIGJyb3duZmllbGQgbGFuZCwgYXJlIGNvbnNpZGVyZWQgc3VpdGFibGUgZm9yIHJlc2lkZW50aWFsIGRldmVsb3BtZW50LCBhbmQgYmUgYWJsZSB0byBzdXBwb3J0IGF0IGxlYXN0IDUgcmVzaWRlbnRpYWwgZHdlbGxpbmdzIChuZXQpIGFuZC9vciBiZSBsYXJnZXIgdGhhbiAwLjI1IGhlY3RhcmVzLjwvcD4gZAILDxYCHwIFCjA4LzAxLzIwMjBkAg0PFgIfAgUIQW5udWFsbHlkAg8PFgIfAgUKMjkvMDYvMjAxNmQCEQ8WAh8CBRdOb3R0aW5naGFtIENpdHkgQ291bmNpbGQCEw8WAh8CZGQCFQ8WAh8CBRNObyBDb25kaXRpb25zIEFwcGx5ZAIXDxYCHwIFCk5vdHRpbmdoYW1kAhkPFgIfAgVSPGEgaHJlZj0ibWFpbHRvOm9wZW5kYXRhQG5vdHRpbmdoYW1jaXR5Lmdvdi51ayI+b3BlbmRhdGFAbm90dGluZ2hhbWNpdHkuZ292LnVrPC9hPmQCGw8WAh8CBcECPGEgaHJlZj0iaHR0cHM6Ly93d3cubm90dGluZ2hhbWNpdHkuZ292LnVrL2luZm9ybWF0aW9uLWZvci1idXNpbmVzcy9wbGFubmluZy1hbmQtYnVpbGRpbmctY29udHJvbC9wbGFubmluZy1wb2xpY3kvdGhlLWxvY2FsLXBsYW4tYW5kLXBsYW5uaW5nLXBvbGljeS9vdGhlci1sb2NhbC1wbGFuLXJlbGF0ZWQtZG9jdW1lbnRzLyIgdGFyZ2V0PSJfYmxhbmsiPkhvdXNpbmcgTGFuZCBBdmFpbGFiaWxpdHkgUmVwb3J0LCBTdHJhdGVnaWMgSG91c2luZyBMYW5kIEF2YWlsYWJpbGl0eSBBc3Nlc3NtZW50IGFuZCBvdGhlciBwbGFubmluZyBkb2N1bWVudHM8L2E+PGJyIC8+ZAIfDxYCHgRocmVmBRNjb250YWN0LmFzcHg/ZHM9MTM5ZAIjDxYCHwIFATBkAiUPFgIfAgUBM2QCJw8WAh8ABcgUPHRyIGNsYXNzPSJvZGQiPjx0ZD5NZXRhZGF0YTwvdGQ+PHRkPjxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vZ2Vvc2VydmVyLm5vdHRpbmdoYW1jaXR5Lmdvdi51ay9vcGVuZGF0YS9tZXRhZGF0YS9JTlNQSVJFL09ETjEzOV9Ccm93bmZpZWxkX1JlZ2lzdGVyX21ldGFkYXRhLnhtbD90PTYzNzE0MjU2MzAxODY1NjA5MyIgY2xhc3M9Ik1ldGFkYXRhIiB0aXRsZT0iRG93bmxvYWQgdGhpcyI+QnJvd25maWVsZCBSZWdpc3RlciAoVUsgR2VtaW5pKTwvYT48L3RkPjwvdHI+PHRyIGNsYXNzPSIiPjx0ZD5DU1Y8L3RkPjx0ZD48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2dlb3NlcnZlci5ub3R0aW5naGFtY2l0eS5nb3YudWsvb3BlbmRhdGEvY3N2L3NwYXRpYWwvbmNjX0Jyb3duZmllbGRfUmVnaXN0ZXIuY3N2P3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iQ1NWIiB0aXRsZT0iRG93bmxvYWQgdGhpcyI+QnJvd25maWVsZCBSZWdpc3RlciAtIE5vdHRpbmdoYW0gQ2l0eSBDb3VuY2lsPC9hPjwvdGQ+PC90cj48dHIgY2xhc3M9Im9kZCI+PHRkPlNoYXBlZmlsZTwvdGQ+PHRkPjxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vZ2Vvc2VydmVyLm5vdHRpbmdoYW1jaXR5Lmdvdi51ay9vcGVuZGF0YS9zaGFwZWZpbGUvbmNjX0Jyb3duZmllbGRfUmVnaXN0ZXIuemlwP3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iU2hhcGVmaWxlIiB0aXRsZT0iRG93bmxvYWQgdGhpcyI+QnJvd25maWVsZCBSZWdpc3RlciAtIE5vdHRpbmdoYW0gQ2l0eSBDb3VuY2lsPC9hPjwvdGQ+PC90cj48dHIgY2xhc3M9IiI+PHRkPlhMUzwvdGQ+PHRkPjxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vZ2Vvc2VydmVyLm5vdHRpbmdoYW1jaXR5Lmdvdi51ay9vcGVuZGF0YS94bHMvQnJvd25maWVsZF9TaGFwZWZpbGVfU2NoZW1hLnhsc3g/dD02MzcxNDI1NjMwMTg2NTYwOTMiIGNsYXNzPSJYTFMiIHRpdGxlPSJEb3dubG9hZCB0aGlzIj5TaGFwZWZpbGUgU2NoZW1hPC9hPjwvdGQ+PC90cj48dHIgY2xhc3M9Im9kZCI+PHRkPktNTDwvdGQ+PHRkPjxhIHRhcmdldD0iX2JsYW5rIiBocmVmPSJodHRwOi8vZ2Vvc2VydmVyLm5vdHRpbmdoYW1jaXR5Lmdvdi51ay9vcGVuZGF0YS9rbWwvbmNjX0Jyb3duZmllbGRfUmVnaXN0ZXIua21sP3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iS01MIiB0aXRsZT0iRG93bmxvYWQgdGhpcyI+QnJvd25maWVsZCBSZWdpc3RlciAtIE5vdHRpbmdoYW0gQ2l0eSBDb3VuY2lsPC9hPjwvdGQ+PC90cj48dHIgY2xhc3M9IiI+PHRkPkdlb0pTT048L3RkPjx0ZD48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2dlb3NlcnZlci5ub3R0aW5naGFtY2l0eS5nb3YudWsvb3BlbmRhdGEvZ2VvanNvbi9uY2NfQnJvd25maWVsZF9SZWdpc3Rlci5qc29uP3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iR2VvSlNPTiIgdGl0bGU9IkRvd25sb2FkIHRoaXMiPkJyb3duZmllbGQgUmVnaXN0ZXIgLSBOb3R0aW5naGFtIENpdHkgQ291bmNpbDwvYT48L3RkPjwvdHI+PHRyIGNsYXNzPSJvZGQiPjx0ZD5DU1Y8L3RkPjx0ZD48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2dlb3NlcnZlci5ub3R0aW5naGFtY2l0eS5nb3YudWsvb3BlbmRhdGEvY3N2L3NwYXRpYWwvbmNjX0Jyb3duZmllbGRfUmVnaXN0ZXJfUGFydDIuY3N2P3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iQ1NWIiB0aXRsZT0iRG93bmxvYWQgdGhpcyI+QnJvd25maWVsZCBSZWdpc3RlciBQYXJ0IDIgLSBOb3R0aW5naGFtIENpdHkgQ291bmNpbDwvYT48L3RkPjwvdHI+PHRyIGNsYXNzPSIiPjx0ZD5TaGFwZWZpbGU8L3RkPjx0ZD48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2dlb3NlcnZlci5ub3R0aW5naGFtY2l0eS5nb3YudWsvb3BlbmRhdGEvc2hhcGVmaWxlL25jY19Ccm93bmZpZWxkX1JlZ2lzdGVyX1BhcnQyLnppcD90PTYzNzE0MjU2MzAxODY1NjA5MyIgY2xhc3M9IlNoYXBlZmlsZSIgdGl0bGU9IkRvd25sb2FkIHRoaXMiPkJyb3duZmllbGQgUmVnaXN0ZXIgUGFydCAyIC0gTm90dGluZ2hhbSBDaXR5IENvdW5jaWw8L2E+PC90ZD48L3RyPjx0ciBjbGFzcz0ib2RkIj48dGQ+S01MPC90ZD48dGQ+PGEgdGFyZ2V0PSJfYmxhbmsiIGhyZWY9Imh0dHA6Ly9nZW9zZXJ2ZXIubm90dGluZ2hhbWNpdHkuZ292LnVrL29wZW5kYXRhL2ttbC9uY2NfQnJvd25maWVsZF9SZWdpc3Rlcl9QYXJ0Mi5rbWw/dD02MzcxNDI1NjMwMTg2NTYwOTMiIGNsYXNzPSJLTUwiIHRpdGxlPSJEb3dubG9hZCB0aGlzIj5Ccm93bmZpZWxkIFJlZ2lzdGVyIFBhcnQgMiAtIE5vdHRpbmdoYW0gQ2l0eSBDb3VuY2lsPC9hPjwvdGQ+PC90cj48dHIgY2xhc3M9IiI+PHRkPkdlb0pTT048L3RkPjx0ZD48YSB0YXJnZXQ9Il9ibGFuayIgaHJlZj0iaHR0cDovL2dlb3NlcnZlci5ub3R0aW5naGFtY2l0eS5nb3YudWsvb3BlbmRhdGEvZ2VvanNvbi9uY2NfQnJvd25maWVsZF9SZWdpc3Rlcl9QYXJ0Mi5qc29uP3Q9NjM3MTQyNTYzMDE4NjU2MDkzIiBjbGFzcz0iR2VvSlNPTiIgdGl0bGU9IkRvd25sb2FkIHRoaXMiPkJyb3duZmllbGQgUmVnaXN0ZXIgUGFydCAyIC0gTm90dGluZ2hhbSBDaXR5IENvdW5jaWw8L2E+PC90ZD48L3RyPmQCKw8WAh8ABaACPHRkIHN0eWxlPSJ0ZXh0LWFsaWduOmxlZnQ7Ij48YSBpZD0ic2ltcGxlTWFwTGluayIgdGFyZ2V0PSJfYmxhbmsiIGhyZWY9Imh0dHA6Ly9nZW9zZXJ2ZXIubm90dGluZ2hhbWNpdHkuZ292LnVrL2xpdmUvc2ltcGxlX2xpdmUvbmNjL21hcC1xdWVyeXN0cmluZy5odG0/c2VydmljZT1PcGVuRGF0YSZsYXllcj01OSZpZGVudGlmeT10cnVlIj5NYXA8L2E+PC90ZD48dGQgc3R5bGU9InRleHQtYWxpZ246bGVmdDsiPlZpZXcgYSB3ZWIgbWFwIGRyaXZlbiBieSB0aGUgdW5kZXJseWluZyBkYXRhc2V0LjwvdGQ+ZAItDxYCHwIFkAI8YSBocmVmPSJ0YWcuYXNweD90YWc9cmVnaXN0ZXIiPnJlZ2lzdGVyPC9hPiZuYnNwOyZuYnNwOzxhIGhyZWY9InRhZy5hc3B4P3RhZz1TSExBQSI+U0hMQUE8L2E+Jm5ic3A7Jm5ic3A7PGEgaHJlZj0idGFnLmFzcHg/dGFnPWJyb3duZmllbGQiPmJyb3duZmllbGQ8L2E+Jm5ic3A7Jm5ic3A7PGEgaHJlZj0idGFnLmFzcHg/dGFnPWxvY2FscGxhbiI+bG9jYWxwbGFuPC9hPiZuYnNwOyZuYnNwOzxhIGhyZWY9InRhZy5hc3B4P3RhZz1sYW5kIj5sYW5kPC9hPiZuYnNwOyZuYnNwO2QCLw8WAh8CBX08YSBocmVmPSJsaWNlbnNpbmcuYXNweCNPU09wZW5Hb3Zlcm5tZW50IiB0YXJnZXQ9Il9ibGFuayIgdGl0bGU9IiI+T3BlbiBHb3Zlcm5tZW50IExpY2VuY2UgKE9yZG5hbmNlIFN1cnZleSBkZXJpdmVkIGRhdGEpPC9hPmQCMQ8WAh8CBfEBV2hlcmUgZGF0YSBpcyBkZXJpdmVkIGZyb20gT3JkbmFuY2UgU3VydmV5IGRhdGEgYW5kIGhhcyBiZWVuIG1hZGUgYXZhaWxhYmxlIHVuZGVyIHRoZSBPR0wsIGFuIGFkZGl0aW9uYWwgYXR0cmlidXRpb24gc3RhdGVtZW50IGlzIHJlcXVpcmVkOg0KPGJyLz48YnIvPkNvbnRhaW5zIE9TIGRhdGEgJmNvcHk7IENyb3duIGNvcHlyaWdodCBbYW5kIGRhdGFiYXNlIHJpZ2h0c10gW3llYXIgb2YgaXNzdWVdLjxici8+PGJyLz4NCmRkYR007Iy4k2DANdhH3lzZDnEWXv5z3MrQPeV7dHgRTXQ=">
+</div>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="9AAC85BE">
+</div>
+    
+    <div id="container" class="cf">
+        
+
+            <!--div class="page"-->
+                
+            
+                <div class="header">
+                    
+                    <a id="city-logo" href="http://www.nottinghamcity.gov.uk/" target="_blank" style="position:absolute;top:3px;right:0;">
+			            <img src="Images/components/logo-grey-bg.png" id="ctl00_citylogoimg">
+		            </a>
+                    <div style="position:absolute;top:4px;right:220px;font-size:8pt;font-weight:normal;color:#fff;"><a href="http://nottinghamcity.gov.uk/index.aspx?articleid=18534" target="_blank" style="color:#eee;text-decoration:none;">Cookie Policy</a></div>
+                    <div id="floatingSearch">
+                        <div class="searchContainer" style="position:relative;">
+                            <input autofocus="autofocus" id="q" type="text" value="">
+                            <a href="#" id="searchGo">Search</a>
+                            <div class="cb"></div>
+                        </div>
+                        <!--img id="searchClose" style="cursor:pointer;position:absolute;top:-18px;right:-18px;display:none;" src="Images/components/close-button.png"-->
+                    </div>
+                    <!--a href="#" id="searchButton" style="display:none;">
+                        Search
+                    </a--> 
+                    
+
+
+                </div>
+                
+        
+                <div id="navContain">
+                    <div id="navBarContain">
+                        <div id="navigationBar" class="navigation" style="position:relative;z-index:9999999;">
+                            <ul class="navigationList" id="navigationList">
+                                <li><a class="navbarLink" id="homeNavLink" href="Default.aspx">Home</a></li>
+                                <li><a class="navbarLink" id="datasetLink" href="catalogue.aspx">Data</a></li>
+                                <li><a class="navbarLink" id="atpLink" href="guide-to-information.aspx">Publication Scheme</a></li>
+                                <li><a class="navbarLink" id="licensingLink" href="licensing.aspx">Licensing</a></li>
+                                <li><a class="navbarLink" href="about.aspx">About</a></li>
+                                <li><a class="navbarLink odarrow" id="interactLink" href="#">Interact</a></li>
+                                <li><a class="navbarLink odarrow" id="moreLink" href="#">More</a></li>
+                            </ul>
+                            <div class="cb"></div>
+                        </div>
+                    </div>
+            
+                </div>
+                <div id="interactLinkSubmenu" class="secondaryNav">
+                    <div class="navigation">
+                        <ul class="navigationList">
+                            <li><a id="A10" href="contact.aspx">Feedback</a></li>
+                            <!--<li><a id="A3" href="forum.aspx">Forums</a></li>-->
+                        </ul>
+                    </div>                    
+                </div>
+                <div id="moreLinkSubmenu" class="secondaryNav">
+                    <div class="navigation">
+                        <ul class="navigationList">
+                            <li><a id="A4" href="tagcloud.aspx">Tag cloud</a></li>
+                            <li><a id="A5" href="gallery.aspx">Application gallery</a></li>
+                            <li><a id="A6" href="filetypes.aspx">File types in use</a></li>
+                            <li><a id="A2" href="testimonials.aspx">Testimonials</a></li>
+                            <li><a id="A1" href="other-providers.aspx">Other open data providers</a></li>
+                        </ul>
+                    </div>                    
+                </div>
+                
+                <div class="main" style="position:relative;overflow:hidden;">
+            
+                    
+
+                    <!--div id="floatingNav" style="position:absolute;display:none;padding:8px 0px;top:0px;left:0px;width:100%;background-color:#dedede;">
+                
+                    </div-->
+                    
+    <div class="rotatorContain">
+        <script type="text/javascript">var currentImageNum = 26;</script>
+<script type="text/javascript">
+    // Link to the location of this image
+    /**
+    $(function () {
+        if (currentImageNum && locations) {
+            if (locations[currentImageNum]) {
+                
+            }
+        }
+    });
+    **/
+</script>
+<img src="Images/header160/26.jpg" id="ctl00_MainContent_rt1_imgRotator" alt="Banner image" style="width:100%">
+    </div>
+    <div style="padding:10px;background-image: url(Images/components/shadow-top-5px.png);background-position: left top;background-repeat: repeat-x;background-color:#fff;overflow:auto;">
+        
+        <div id="leftColumn">
+        
+            <h2 id="ctl00_MainContent_txtDatasetName">Brownfield Register - Parts 1 and 2</h2>
+            <div id="description" style="margin-bottom:15px;">
+                <!--h3 class="bannerHeading">Description</h3-->
+                <p id="ctl00_MainContent_txtDescription">The Government has set out its commitment to introduce a statutory brownfield register and ensure that 90% of suitable brownfield sites have planning permission for housing by 2020. The registers are intended to set out information on brownfield sites which are suitable for housing development using a consistent set of information across council areas.</p>
+                
+            </div>
+            
+            <h3 class="bannerHeading">Technical description</h3>
+            <div class="mainTextContain">
+                <p>
+                    </p><p>The government requires local planning authorities in England to prepare, maintain and publish registers of previously developed (brownfield) land under <a href="http://www.legislation.gov.uk/uksi/2017/403/regulation/3/made" target="_blank">Regulation 3 of the Town and Country Planning (Brownfield Land Register) Regulations 2017</a>. Brownfield sites that meet the relevant <a href="http://www.legislation.gov.uk/uksi/2017/403/regulation/4/made" target="_blank">criteria</a> are entered in Part 1 of brownfield land registers. Sites entered in Part 2 of the brownfield land registers are granted <a href="https://www.gov.uk/guidance/permission-in-principle" target="_blank">permission in principle</a>. The registers are reviewed annually.</p>
+
+<h3>Previously Developed (brownfield) Land Definition</h3>
+<p>Land which is or was occupied by a permanent structure, including the curtilage of the developed land (although it should not be assumed that the whole of the curtilage should be developed) and any associated fixed surface infrastructure. This excludes: land that is or has been occupied by agricultural or forestry buildings; land that has been developed for minerals extraction or waste disposal by landfill purposes where provision for restoration has been made through development control procedures; land in built-up areas such as private residential gardens, parks, recreation grounds and allotments; and land that was previously-developed but where the remains of the permanent structure or fixed surface structure have blended into the landscape in the process of time</p>
+
+<h3>Part 1 and Part 2 of the Register</h3>
+<p>Part 1 of a brownfield land register comprises all brownfield sites that Nottingham City Council has assessed as appropriate for residential development. It include sites with extant full planning
+permission, outline planning permission and permission in principle as well as sites without planning permission.</p>
+
+<p>The register consists of information entered in a number of prescribed columns</p>
+<p>Part 2 of a brownfield land register is a subset of Part 1. It comprises only those sites in Part 1 that the local planning authority has decided that the land would be suitable for a grant of permission in principle for residential development.</p>
+
+<p>Sites included on the Register are located on brownfield land, are considered suitable for residential development, and be able to support at least 5 residential dwellings (net) and/or be larger than 0.25 hectares.</p> 
+                <p></p>
+            </div>
+
+            <div id="further">
+                <h3 class="bannerHeading">Further information</h3>
+            
+                <table cellpadding="0" cellspacing="0" class="dataTable">
+                    <tbody><tr class="odd">
+                        <td class="name">Date last updated</td>
+                        <td id="ctl00_MainContent_txtLastUpdated">08/01/2020</td>
+
+                    </tr>
+                    <tr>
+                        <td class="name">Frequency of update</td>
+                        <td id="ctl00_MainContent_txtUpdateFrequency">Annually</td>
+
+                    </tr>
+                    <tr class="odd">
+                        <td class="name">Date added</td>
+                        <td id="ctl00_MainContent_txtDateAdded">29/06/2016</td>
+
+                    </tr>
+                    <tr>
+                        <td class="name">Resource owner</td>
+                        <td id="ctl00_MainContent_txtResourceOwner">Nottingham City Council</td>
+
+                    </tr>
+                    <tr class="odd">
+                        <td class="name">Temporal extent</td>
+                        <td id="ctl00_MainContent_txtTemporalExtent"></td>
+
+                    </tr>
+                    <tr>
+                        <td class="name">Use constraints</td>
+                        <td id="ctl00_MainContent_txtUseConstraints">No Conditions Apply</td>
+
+                    </tr>
+                    <tr class="odd">
+                        <td class="name">Geographic extent</td>
+                        <td id="ctl00_MainContent_txtGeographicExtent">Nottingham</td>
+
+                    </tr>
+                    <tr>
+                        <td class="name">Contact</td>
+                        <td id="ctl00_MainContent_txtContactDetails"><a href="mailto:opendata@nottinghamcity.gov.uk">opendata@nottinghamcity.gov.uk</a></td>
+
+                    </tr>
+                    <tr class="odd">
+                        <td class="name">Additional Information</td>
+                        <td id="ctl00_MainContent_txtAdditionalInfo"><a href="https://www.nottinghamcity.gov.uk/information-for-business/planning-and-building-control/planning-policy/the-local-plan-and-planning-policy/other-local-plan-related-documents/" target="_blank">Housing Land Availability Report, Strategic Housing Land Availability Assessment and other planning documents</a><br></td>
+
+                    </tr>
+                    
+                </tbody></table>
+                
+            </div>
+
+            <h3 class="bannerHeading">Share this link...</h3>
+            <div class="mainTextContain" style="overflow:hidden;">
+                <a id="emailThisPage" class="tag" href="mailto:?subject=Open Data Nottingham&amp;body=I thought you might be interested in this dataset - 
+https://www.opendatanottingham.org.uk/dataset.aspx?id=139">Email this page to a friend...</a>
+            </div>
+
+            
+
+            <!--div class="contactUs" style="padding:5px;margin-top:10px;">
+                Any questions? See something you don't think is quite right? <a href="contact.aspx?ds=139" id="ctl00_MainContent_lnkContactLink">Let us know</a>!
+            </div-->
+
+
+            <h3 class="bannerHeading">Rate and discuss</h3>
+            <div id="discuss" class="mainTextContain">
+                
+                <div id="vc" style="overflow:auto;margin:3px 0px;">
+                    <div style="float:left;width:340px;height:auto;font-size:9pt;margin-right:10px;">
+                        We'd like to know what you think. Click the arrows to rate this dataset, leave us a comment, or <a href="contact.aspx" id="ctl00_MainContent_blech">send us an email</a>!
+                    </div>
+                    
+                    <a class="voteLink" href="#" onclick="javascript:voteUp();return false;" id="Applaud"></a>
+                    <div class="voteContainer">
+                        <span id="ctl00_MainContent_upVotes">0</span> 
+                    </div>
+                
+                    <a class="voteLink" href="#" onclick="javascript:voteDown();return false;" id="Smite"></a>
+                    <div class="voteContainer">
+                        <span id="ctl00_MainContent_downVotes">3</span>
+                    </div>
+                    <div id="voteThanks" class="voteContainer" style="font-size:8pt;display:none;width:90px;color:#6F7396;padding-top:3px;height:15px;">
+                        Rated - thanks!
+                    </div>
+                </div>
+
+                <div id="disqus_thread" style="padding:5px;"><iframe id="dsq-app8792" name="dsq-app8792" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="https://disqus.com/embed/comments/?base=default&amp;f=opendatanottingham&amp;t_i=dataset_01_139&amp;t_u=https%3A%2F%2Fwww.opendatanottingham.org.uk%2Fdataset.aspx%3Fid%3D139&amp;t_e=Dataset%3A%20Brownfield%20Register%20-%20Parts%201%20and%202&amp;t_d=&amp;t_t=Dataset%3A%20Brownfield%20Register%20-%20Parts%201%20and%202&amp;s_o=default#version=628b6417a65008f761f2933339274e3b" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 0px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+                <script type="text/javascript">
+                    var disqus_shortname = 'opendatanottingham';
+                    var disqus_identifier = 'dataset_01_' + chosenId;
+                    //var disqus_identifier = 'dataset_01_DEBUG' + chosenId;
+                    var disqus_title = discussTitle;
+
+                    //console.log('disqus_identifier', disqus_identifier, disqus_title);
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */ // Commented for debug purposes
+                    (function () {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the &lt;a href="http://disqus.com/?ref_noscript"&gt;comments powered by Disqus.&lt;/a&gt;</noscript>
+                
+            </div>
+           
+        </div>
+        
+        <div id="rightColumn">
+            
+            <div id="downloads">
+            
+                <h3 class="bannerHeading dark">Downloads</h3>
+                <table class="downloadTable" cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tbody><tr class="odd"><td>Metadata</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/metadata/INSPIRE/ODN139_Brownfield_Register_metadata.xml?t=637142563018656093" class="Metadata" title="Download this">Brownfield Register (UK Gemini)</a></td></tr><tr class=""><td>CSV</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/csv/spatial/ncc_Brownfield_Register.csv?t=637142563018656093" class="CSV" title="Download this">Brownfield Register - Nottingham City Council</a></td></tr><tr class="odd"><td>Shapefile</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/shapefile/ncc_Brownfield_Register.zip?t=637142563018656093" class="Shapefile" title="Download this">Brownfield Register - Nottingham City Council</a></td></tr><tr class=""><td>XLS</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/xls/Brownfield_Shapefile_Schema.xlsx?t=637142563018656093" class="XLS" title="Download this">Shapefile Schema</a></td></tr><tr class="odd"><td>KML</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/kml/ncc_Brownfield_Register.kml?t=637142563018656093" class="KML" title="Download this">Brownfield Register - Nottingham City Council</a></td></tr><tr class=""><td>GeoJSON</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/geojson/ncc_Brownfield_Register.json?t=637142563018656093" class="GeoJSON" title="Download this">Brownfield Register - Nottingham City Council</a></td></tr><tr class="odd"><td>CSV</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/csv/spatial/ncc_Brownfield_Register_Part2.csv?t=637142563018656093" class="CSV" title="Download this">Brownfield Register Part 2 - Nottingham City Council</a></td></tr><tr class=""><td>Shapefile</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/shapefile/ncc_Brownfield_Register_Part2.zip?t=637142563018656093" class="Shapefile" title="Download this">Brownfield Register Part 2 - Nottingham City Council</a></td></tr><tr class="odd"><td>KML</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/kml/ncc_Brownfield_Register_Part2.kml?t=637142563018656093" class="KML" title="Download this">Brownfield Register Part 2 - Nottingham City Council</a></td></tr><tr class=""><td>GeoJSON</td><td><a target="_blank" href="http://geoserver.nottinghamcity.gov.uk/opendata/geojson/ncc_Brownfield_Register_Part2.json?t=637142563018656093" class="GeoJSON" title="Download this">Brownfield Register Part 2 - Nottingham City Council</a></td></tr>
+                </tbody></table>
+
+                <h3 class="bannerHeading dark">
+                    Filetypes
+                </h3>
+                <div class="sidebarContain">
+                    More information on these filetypes is available on our <a href="filetypes.aspx">about file types</a> page.
+                </div>
+
+                <!-- Extras, not sure we'll have these at launch -->
+                <!--h3 class="bannerHeading dark" style="background-color:#7579A0;color:#fff;">Live links</h3>
+                <table class="downloadTable" cellpadding="0" cellspacing="0" style="width:100%;">
+                    
+                </table-->
+
+                <!-- This is now overkill. Was formerly 'examples' -->
+                <h3 class="bannerHeading dark" style="">Map view</h3>
+                <table class="downloadTable" cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tbody><tr class="odd">
+                        <td style="text-align:left;"><a id="simpleMapLink" target="_blank" href="http://geoserver.nottinghamcity.gov.uk/live/simple_live/ncc/map-querystring.htm?service=OpenData&amp;layer=59&amp;identify=true">Map</a></td><td style="text-align:left;">View a web map driven by the underlying dataset.</td>
+                    </tr>
+                </tbody></table>
+
+                <h3 class="bannerHeading dark">Tags</h3>
+                <div class="sidebarContain">
+                    <div id="ctl00_MainContent_txtTags" style="overflow:hidden;"><a href="tag.aspx?tag=register">register</a>&nbsp;&nbsp;<a href="tag.aspx?tag=SHLAA">SHLAA</a>&nbsp;&nbsp;<a href="tag.aspx?tag=brownfield">brownfield</a>&nbsp;&nbsp;<a href="tag.aspx?tag=localplan">localplan</a>&nbsp;&nbsp;<a href="tag.aspx?tag=land">land</a>&nbsp;&nbsp;</div>
+                </div>
+            
+                <h3 class="bannerHeading dark">Licensing</h3>
+                <div id="licensing" class="sidebarContain">
+                    
+                    <p>This resource is licensed under the <span id="ctl00_MainContent_txtLicenseLink"><a href="licensing.aspx#OSOpenGovernment" target="_blank" title="">Open Government Licence (Ordnance Survey derived data)</a></span>.</p>
+                    <p id="ctl00_MainContent_txtLicenseText">Where data is derived from Ordnance Survey data and has been made available under the OGL, an additional attribution statement is required:
+<br><br>Contains OS data © Crown copyright [and database rights] [year of issue].<br><br>
+</p>
+                    <p>For more information, see our <a href="licensing.aspx">licensing page</a>.</p>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+            
+                    <!--div style="width:100%;background-color:#2A0D44;height:5px;"></div-->
+                </div>
+            <!--/div-->
+            <div id="footerContain">
+                <div class="footer">
+                    <a href="http://www.nottinghamcity.gov.uk/"><img style="display:block;float:right;margin-right:0px;" src="images/components/city.gif"></a>
+                    <p>
+                        GIS, Data and Information Team<br>
+                        Nottingham City Council<br>
+                        Floor 4, Loxley House<br>
+                        Nottingham, NG2 3NG
+                    </p>
+                    <p>
+                        <span style="color:#222;">Terms of Use:</span><br>
+                        Data published here is open to use; you do not have to apply or ask for permission, but you do have to adhere to the terms of the Open Government Licence or equivalent terms. See our <a href="licensing.aspx">Licensing page</a> for information.
+                    </p>
+                    <p>
+                        <a href="http://www.nottinghamcity.gov.uk/cookies" target="_blank">Cookie Policy</a><br>
+                        This site uses cookies. Please view our <a href="http://www.nottinghamcity.gov.uk/cookies" target="_blank">policy</a> on their use.
+                        <br><br>
+                        <a href="https://www.nottinghamcity.gov.uk/privacy-statement" target="_blank">Privacy statement</a>
+                    </p>
+
+                    <p>
+                        
+                    </p>
+            
+                    
+
+                    <div class="cb"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <!--Google analytics-->
+    <script type="text/javascript">
+        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-33643635-1']); _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+
+
+<iframe style="display: none;"></iframe></body></html>

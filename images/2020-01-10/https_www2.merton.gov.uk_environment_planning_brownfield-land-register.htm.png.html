@@ -1,0 +1,2911 @@
+<!DOCTYPE html><html dir="ltr" lang="en-GB"><head><meta http-equiv="X-UA-Compatible" content="IE=10"><meta name="GENERATOR" content="Microsoft SharePoint"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="Expires" content="0"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"><meta name="msapplication-TileImage" content="/_layouts/15/images/SharePointMetroAppTile.png"><meta name="msapplication-TileColor" content="#0072C6"><title>
+	
+            
+            
+            Brownfield Land Register
+            
+        
+</title><link rel="shortcut icon" href="/Style Library/Merton-Branding/SP-BluePrint/img/favicon.ico" type="image/vnd.microsoft.icon" id="favicon"><link rel="stylesheet" type="text/css" href="/_layouts/15/1033/styles/Themable/corev15.css?rev=6Sql1EmwCaINeA8g4c%2BkFA%3D%3D">
+<link rel="stylesheet" type="text/css" href="/Style%20Library/Merton-Branding-Debug/vendors/Foundation-6/foundation.min.css">
+<link rel="stylesheet" type="text/css" href="/Style%20Library/Merton-Branding-Debug/vendors/JQuery/jquery-ui.min.css">
+<link rel="stylesheet" type="text/css" href="/Style%20Library/Merton-Branding-Debug/css/Merton-branding-ui.css">
+<link rel="stylesheet" type="text/css" href="/Style%20Library/en-US/Themable/Core%20Styles/pagelayouts15.css">
+
+        <!-- Core SP Scripts -->
+        <script async="" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="/_layouts/15/init.js?rev=RIl4brNTuKjQszVd%2Bc1CnQ%3D%3D"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/vendors/jquery/jquery-1.12.1.min.js"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/vendors/jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/vendors/foundation-6/foundation.min.js"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/js/merton.branding.js"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/js/cookieconsent.min.js"></script>
+<script type="text/javascript" src="/style%20library/merton-branding-debug/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/_layouts/15/merton.sharepoint.public.ribbon/merton.ribbon.js"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=UfhooeuSiuJ338PVFc_mVtPqaED7pU_bZ2DhtyWdJhhWb3PUOR_hih6XtWq1-TbIybf_ASwMme6pU3ZIpCPicYfP6wS-i9E7ILpP8pIFc6iZgERAaKh8hSNE5sfbC4iL03OkerVCgr5p1HBD-DCd5dwe7qZPxSttRbN26TLB1FxSNc49qz6FnlMdnKcHbJVM0&amp;t=ffffffff999c3159"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=a4bLfRUUkob0QnWdJX9d3oFyf9EZVesX_6eRnSk2ONK6uuNDKIQ5DtC0GRrZCnZePfbD1ZsOy31bIHQNMmtFrhGyMuIWuo1yh8uQG0DvnLMf40LjA_mVR5hCgfUJqUVByjiukQAckEOSEhQ2GGyHUPTHEEdiKO-64GxjMS6CkW0Q019LtQktm9_N__iW4KBx0&amp;t=ffffffff999c3159"></script>
+<script type="text/javascript">RegisterSod("initstrings.js", "\u002f_layouts\u002f15\u002f1033\u002finitstrings.js?rev=LC1Bzxuq1OgwSU9UxShpsg\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f1033\u002fstrings.js?rev=cG2ZohQxWuyz1\u00252BF2exRTjA\u00253D\u00253D");RegisterSodDep("strings.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=jvJC3Kl5gbORaLtf7kxULQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=SP\u00252ERes\u0026rev=yNk\u00252FhRzgBn40LJVP\u00252BqfgdQ\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=3Oh2QbaaiXSb7ldu2zd6QQ\u00253D\u00253D");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=LRiXwLWSJUxKuVCrXa3yDg\u00253D\u00253D");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=cXv35JACAh0ZCqUwKU592w\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=VYAJYBo5H8I3gVSL3MzD6A\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=ryx2n4ePkYj1\u00252FALmcsXZfA\u00253D\u00253D");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=Jag4MFLS29DncNGO7OxlDg\u00253D\u00253D");RegisterSodDep("clienttemplates.js", "initstrings.js");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=XxxHIxIIc8BsW9ikVc6dgA\u00253D\u00253D");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=REwVU5jSsadDdOZlCx4wpA\u00253D\u00253D");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=5f2WkYJoaxlIRdwUeg4WEg\u00253D\u00253D");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=NF5DkMtNTsJGx3\u00252FlhisNqA\u00253D\u00253D");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=p5tCOm\u00252FlHUwcfll7W3pKNw\u00253D\u00253D");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=jWqEDmcjCSPmnQw2ZIfItQ\u00253D\u00253D");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002fScriptResx.ashx?culture=en\u00252Dus\u0026name=ProfileBrowserScriptRes\u0026rev=J5HzNnB\u00252FO1Id\u00252FGI18rpRcw\u00253D\u00253D");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=Ua8qmZSU9nyf53S7PEyJwQ\u00253D\u00253D");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fie55up.js?rev=0R4dbpInVlmjoVSw2Gglmw\u00253D\u00253D");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=epvG4Woq0Zz1KJ\u00252Bjlg1e1w\u00253D\u00253D");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "sp.js");</script>
+
+        <!-- End Core SP Scripts -->
+        <!-- Custom Scripts -->
+        
+        <!-- End Custom Scripts -->
+        <link type="text/xml" rel="alternate" href="/_vti_bin/spsdisco.aspx">
+            
+            
+            
+            
+            
+            
+            
+        
+            <!-- _lcid="1033" _version="15.0.4893" _dal="1" -->
+<!-- _LocalBinding -->
+
+<link rel="canonical" href="https://www.merton.gov.uk:443/planning-and-buildings/planning/brownfield-land-register">
+            
+            
+        
+        <!-- Core SP CSS -->
+        
+        <!-- End Core SP CSS -->
+        <!-- Custom CSS -->
+        
+        <!-- End Custom CSS -->
+        <script type="text/javascript" src="/_layouts/15/1033/initstrings.js?rev=LC1Bzxuq1OgwSU9UxShpsg%3D%3D"></script><script type="text/javascript" src="/_layouts/15/1033/strings.js?rev=cG2ZohQxWuyz1%2BF2exRTjA%3D%3D"></script><script type="text/javascript" src="/_layouts/15/core.js?rev=LRiXwLWSJUxKuVCrXa3yDg%3D%3D"></script><link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/light-top.css"></head><body onhashchange="if (typeof(_spBodyOnHashChange) != 'undefined') _spBodyOnHashChange();" class=" ms-backgroundImage" bgcolor="white"><div class="cc_banner-wrapper "><div class="cc_banner cc_container cc_container--open"><a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">Accept</a><p class="cc_message">We use cookies to improve your experience on this site. To change your cookie settings or learn more please see our <a href="/cookies">Cookies Policy</a> </p><a class="cc_logo" target="_blank" href="http://silktide.com/cookieconsent">Cookie Consent plugin for the EU cookie law</a></div></div><span id="DeltaSPWebPartManager">
+        
+        </span>
+        <!-- Google Analytics -->
+        <script type="text/javascript">//<![CDATA[
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-4297489-12', 'auto');
+  ga('send', 'pageview');
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+		
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        //]]></script>
+        <!-- End Google Analytics -->
+        
+        
+    <div id="imgPrefetch" style="display:none">
+<img src="/Style Library/Merton-Branding/SP-BluePrint/img/favicon.ico?rev=23">
+<img src="/assets/publishingimages/merton/Merton-Logo.png?rev=23">
+</div>
+<form method="post" action="/planning-and-buildings/planning/brownfield-land-register" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="">
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="">
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="">
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="">
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0">
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False">
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="">
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="">
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="0xA086B9ACCC072E8AF89C5135C6F554F3BCEC615078CB9E7E7C30480CB36F8810B127179F46F21CA88DFBE51BC9BE4060FABD9E590A4709F08BCDF56F1737A774,10 Jan 2020 12:31:13 -0000">
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse">
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false">
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="">
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="">
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="">
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="">
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="">
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse">
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false">
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIBD2QWBAIBD2QWBAIHD2QWAmYPZBYCAgEPFgIeE1ByZXZpb3VzQ29udHJvbE1vZGULKYgBTWljcm9zb2Z0LlNoYXJlUG9pbnQuV2ViQ29udHJvbHMuU1BDb250cm9sTW9kZSwgTWljcm9zb2Z0LlNoYXJlUG9pbnQsIFZlcnNpb249MTUuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49NzFlOWJjZTExMWU5NDI5YwFkAh0PZBYCAgMPZBYCAgEPZBYCZg88KwAGAGQCBQ9kFgQCAg9kFgICAQ9kFgICAg9kFgICBQ9kFgICAw8WAh4HVmlzaWJsZWgWAmYPZBYEAgIPZBYGAgEPFgIfAWhkAgMPFgIfAWhkAgUPFgIfAWhkAgMPDxYCHglBY2Nlc3NLZXkFAS9kZAIMD2QWAgICD2QWBAIDDxYCHwALKwQBZAIJDxYCHwALKwQBZGT5EUAebYMTWvjKz9iZ0VctjVme0sG5aWA2dYGGzAi1eg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=2levZwfyxRB-JtcGO8kFafBjjaaAJZxEGQZ2-MRMtk2CuMrCmQ5tTQKw-aVUlepTRKRL5oLw9qk2A1fxXnRZbDT8qIiR0ppSXX92jp27IOk1&amp;t=636765463264470882" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaLCID = 1033;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'BLANKINTERNET#0';
+var _fV4UI=true;var _spPageContextInfo = {webServerRelativeUrl: "\u002f", webAbsoluteUrl: "https:\u002f\u002fwww.merton.gov.uk", siteAbsoluteUrl: "https:\u002f\u002fwww.merton.gov.uk", serverRequestPath: "\u002fPages\u002fPlanning-and-buildings\u002fPlanning\u002fBrownfield-Land-Register.aspx", layoutsUrl: "_layouts\u002f15", webTitle: "Merton Council", webTemplate: "53", tenantAppVersion: "0", isAppWeb: false, webLogoUrl: "\u002fassets\u002fpublishingimages\u002fmerton\u002fMerton-Logo.png", webLanguage: 1033, currentLanguage: 1033, currentUICultureName: "en-US", currentCultureName: "en-GB", clientServerTimeDelta: new Date("2020-01-10T12:31:12.5671987Z") - new Date(), siteClientTag: "10951$$15.0.4893.1000", crossDomainPhotosEnabled:false, webUIVersion:15, webPermMasks:{High:16,Low:196673},pageListId:"{52d152e2-175b-4cb1-aaac-6c51ea7842f0}",pageItemId:2738, pagePersonalizationScope:1, alertsEnabled:true, siteServerRelativeUrl: "\u002f", allowSilverlightPrompt:'True'};var L_Menu_BaseUrl="";
+var L_Menu_LCID="1033";
+var L_Menu_SiteTheme="null";
+document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)};//]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=ZaOXZEobVwykPO9g8hq%2F8A%3D%3D" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (Merton) { Merton.RibbonActions.init(); }(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+
+            if (typeof(SPClientTemplates) === 'undefined' || SPClientTemplates === null || (typeof(APD_InAssetPicker) === 'function' && APD_InAssetPicker())) {
+                return;
+            }
+
+            var renderFollowFooter = function(renderCtx,  calloutActionMenu)
+            {
+                if (renderCtx.ListTemplateType == 700) 
+                    myDocsActionsMenuPopulator(renderCtx, calloutActionMenu);
+                else
+                    CalloutOnPostRenderTemplate(renderCtx, calloutActionMenu);
+
+                var listItem = renderCtx.CurrentItem;
+                if (typeof(listItem) === 'undefined' || listItem === null) {
+                    return;
+                }
+                if (listItem.FSObjType == 0) {
+                    calloutActionMenu.addAction(new CalloutAction({
+                        text: Strings.STS.L_CalloutFollowAction,
+                        tooltip: Strings.STS.L_CalloutFollowAction_Tooltip,
+                        onClickCallback: function (calloutActionClickEvent, calloutAction) {
+                            var callout = GetCalloutFromRenderCtx(renderCtx);
+                            if (!(typeof(callout) === 'undefined' || callout === null))
+                                callout.close();
+                            SP.SOD.executeFunc('followingcommon.js', 'FollowSelectedDocument', function() { FollowSelectedDocument(renderCtx); });
+                        }
+                    }));
+                }
+            };
+
+            var registerOverride = function(id) {
+                var followingOverridePostRenderCtx = {};
+                followingOverridePostRenderCtx.BaseViewID = 'Callout';
+                followingOverridePostRenderCtx.ListTemplateType = id;
+                followingOverridePostRenderCtx.Templates = {};
+                followingOverridePostRenderCtx.Templates.Footer = function(renderCtx) {
+                    var  renderECB;
+                    if (typeof(isSharedWithMeView) === 'undefined' || isSharedWithMeView === null) {
+                        renderECB = true;
+                    } else {
+                        var viewCtx = getViewCtxFromCalloutCtx(renderCtx);
+                        renderECB = !isSharedWithMeView(viewCtx);
+                    }
+                    return CalloutRenderFooterTemplate(renderCtx, renderFollowFooter, renderECB);
+                };
+                SPClientTemplates.TemplateManager.RegisterTemplateOverrides(followingOverridePostRenderCtx);
+            }
+            registerOverride(101);
+            registerOverride(700);
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() 
+        {
+          ExecuteOrDelayUntilScriptLoaded(
+            function()
+            {
+              var pairs = SP.ScriptHelpers.getDocumentQueryPairs();
+              var followDoc, itemId, listId, docName;
+              for (var key in pairs)
+              {
+                if(key.toLowerCase() == 'followdocument') 
+                  followDoc = pairs[key];
+                else if(key.toLowerCase() == 'itemid') 
+                  itemId = pairs[key];
+                else if(key.toLowerCase() == 'listid') 
+                  listId = pairs[key];
+                else if(key.toLowerCase() == 'docname') 
+                  docName = decodeURI(pairs[key]);
+              } 
+
+              if(followDoc != null && followDoc == '1' && listId!=null && itemId != null && docName != null)
+              {
+                SP.SOD.executeFunc('followingcommon.js', 'FollowDocumentFromEmail', function() 
+                { 
+                  FollowDocumentFromEmail(itemId, listId, docName);
+                });
+              }
+
+            }, 'SP.init.js');
+
+        });
+    })();if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002f', 1440000);if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="BAB98CB3">
+</div><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="skip">
+            <a class="skip-navigation" href="#maincontent">
+                <!--style=display:none-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+				
+				
+
+
+
+
+
+
+Skip to main content                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </a>
+        </div>
+        <!--<div>Skip to Main content</div>-->
+        <div id="ms-designer-ribbon">
+            
+            <!--removed TurnOn/TurnOff Access-->
+            <!-- OOTB Ribbon Bar #AuthenticationRestrictions="AuthenticatedUsersOnly"# #PermissionsString="AddAndCustomizePages, ManageLists"#-->
+            
+            <!-- End OOTB Ribbon Bar -->
+            
+        </div>
+        <!-- Container Page -->
+        <div id="s4-workspace">
+            <div id="s4-bodyContainer" class="">
+                <!-- Container-Header -->
+                <div class="container-header ms-dialogHidden">
+                    <div class="header-area">
+                        <div class="row collapse">
+                            <div class="small-6 medium-8 large-8 column header-icon">
+                                <div id="siteIcon">
+                                    <div id="DeltaSiteLogo">
+	
+                                        <a id="ctl00_onetidProjectPropertyTitleGraphic" class="ms-siteicon-a" href="/">
+                                            <img id="ctl00_onetidHeadbnnr2" class="ms-siteicon-img" name="onetidHeadbnnr0" src="/assets/publishingimages/merton/Merton-Logo.png" alt="Merton Council">
+                                        </a>
+                                    
+</div>
+                                </div>
+                            </div>
+                            <div class="small-6 medium-4 large-4 small-centered column header-controls text-right">
+                                <ul>
+                                    <li class="header-icon-search">
+                                        <a href="#" id="open-search-area">
+                                            <!--<img src="/Style%20Library/Merton-Branding-Debug/images/header-icon-search.png" alt="Search" class="img-search" id="search-toggle"/>-->
+                                            <span class="offset-for-small-only">search
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+											
+											
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <!--<li class="header-icon-my-account">
+                                        <a href="http://www2.prospect.eu/v4/11.htm">
+										    <img src="/Style%20Library/Merton-Branding-Debug/images/header-icon-myaccount.png" alt="My Account" class="img-myaccount" id="my-account-toggle"/>
+                                            <span class="hide-for-small-only">my<br/>account                                            
+                                           </span>
+                                        </a>
+                                    </li>-->
+                                    <!--<li class="header-icon-search_">
+                                        <a href="/search" id="open-search-area_">
+                                            <span class="hide-for-small-only">
+                                                <br/>search
+                                            </span>
+                                        </a>
+                                    </li>-->
+                                    <li class="header-icon-menu">
+                                        <a href="#" id="open-mega-menu">
+                                            <!--<img src="/Style%20Library/Merton-Branding-Debug/images/header-icon-menu.png" alt="Menu" class="img-menu" id="menu-toggle"/>-->
+                                            <span class="offset-for-small-only">menu
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+											
+											
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-alert" style="display:none;">
+                            <div class="row column">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Container-Header -->
+                <!-- Container Search Panel-->
+                <div class="container-search-panel ms-dialogHidden" style="display:none;">
+                    <div class="row column collapse">
+                        <div id="ContainerSearchContainer">
+                            <div class="container-search">
+                                <br>
+                                <br>
+                                <div class="search-inner">
+                                    <div class="small-12 medium-12 large-12 column">
+                                        <a href="#" id="close-search-overlay" class="close-search-overlay" style="float: right">
+                                            <img src="/Style%20Library/Merton-Branding-Debug/images/btn-search-panel-close.png" alt="Close search panel">
+                                        </a>
+                                    </div>
+                                    <div class="small-12 medium-12 large-12 column">
+                                        <!-- <ul class="search-nav">
+                                            <li style="display: block">
+                                                <label for="searchBox">Search by name, title or service</label>
+                                            </li>
+                                            <li>
+                                                <input value="" maxlength="2048" accesskey="S" title="Search..." id="searchBox" autocomplete="off" autocorrect="off" class="ms-srch-sb-prompt ms-helperText" type="text"/>
+                                            </li>
+                                            <li>
+                                                <a title="Search" class="button" id="SearchLink" onclick="javascript:executeSearch(document.getElementById('searchBox').value);" href="javascript: {}">Search</a>
+                                            </li>
+                                        </ul> -->
+                                        <div class="googlesearch">
+                                            <p>
+                                                <label for="gsc-i-id1">Search for
+                                                
+                                                
+                                                </label>
+                                            </p>
+                                            <div class="gcse-searchbox-only">
+                                                <input autocomplete="off" type="text" id="gsc-i-id1" placeholder="Type keywords" spellcheck="false" style="width: 70%; display: inline; font-size: 120%; height: 50px !important; margin-right: 1em;">
+                                                <a href="/search" class="button" id="search-go" onclick="event.preventDefault(); doMertonSearch(); return false;">Go
+                                                
+                                                
+                                                </a>
+                                                <script>//<![CDATA[
+												
+												
+												// When search box has focus, hitting Enter doesn't submit form but clicks Go
+												$( "#gsc-i-id1" ).focus(function() {
+													  $(window).keydown(function(event){
+														if(event.keyCode == 13) {
+														  event.preventDefault();
+														  $('#search-go').click();
+														  return false;
+														}
+													  });
+												});
+												
+												function doMertonSearch() {
+													var searchTermsRaw = $('#gsc-i-id1').val();
+													var searchTermsEncoded = encodeURIComponent(searchTermsRaw);
+													var newURL = '/search?k='+searchTermsEncoded;
+													window.location.href = newURL;
+													return false;
+												}
+
+												
+												
+                                                
+                                                
+                                                //]]></script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Container Search -->
+                <!-- Container MegaMenu -->
+                <div class="container-megamenu ms-dialogHidden" style="display:none;">
+                    <div class="row column collapse">
+                        <div id="MegaMenuContainer">
+                            <div class="mega-menu">
+                                <br>
+                                <div class="mega-menu-inner">
+                                    <br>
+                                    <div class="small-12 medium-6 large-6 column">
+                                        <ul class="mega-menu-nav">
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/births-marriages-and-deaths">Births, marriages and deaths
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/business-and-consumers">Business and consumers
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/council-tax-benefits-and-housing">Benefits, council tax and housing
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/communities-and-neighbourhoods">Communities and neighbourhoods   
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/council-and-local-democracy">Council and local democracy    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/education-and-learning">Education and learning
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/healthy-living">Healthy living
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/leisure-recreation-and-culture">Leisure, libraries and culture
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/planning-and-buildings">Planning and buildings
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/rubbish-and-recycling">Rubbish and recycling
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/social-care">Social care
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <span class="arrow">›
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </span>
+                                                <a href="/streets-parking-transport">Streets, parking and transport
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="small-12 medium-5 large-5 column">
+                                        <div class="menu-container-activities">
+                                            </div>
+                                    </div>
+                                    <div class="small-12 medium-1 large-1 column">
+                                        <a href="#" id="close-menu-overlay" class="close-overlay" style="float: right">
+                                            <img src="/Style%20Library/Merton-Branding-Debug/images/btn-menu-panel-close.png" alt="Close menu panel">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Container MegaMenu -->
+                <!-- Start of Notification-->
+                
+                
+                <div id="ctl00_NotificationWP1">
+	
+
+
+
+
+</div>
+                
+                <!-- End of Notification-->
+                <!-- Container message -->
+                <!--<div class="maintenance-message">
+                    <div class="row">
+                        <div class="small-12 medium-12 columns">
+                            <div id="main-content" tabindex="-1">
+                                <div class="container-text">
+                                    <strong>
+									This website will be unavailable tonight between 10pm and midnight for planned maintenance work. We are sorry for the inconvenience.
+                                    
+                                    </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!-- End Container message -->
+                <!-- Container Title Area -->
+                <div class="container-title-area ms-dialogHidden">
+                    <div class="container-title-breadcrumb">
+                        <div class="row column collapse">
+                            <div id="SiteMap">
+	
+                                <span id="ctl00_SiteContentMap"><a href="#ctl00_SiteContentMap_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=mzb_O1pp5INg-N9ao2CyEttd-ujWIZu6SqA225-0d1kLh6KCL_fn3AixPa0D8AmB6vMAbM_8A2_3QyjJsPMXikrpH2uswY58XecNhHWyOXA1&amp;t=636765463264470882" width="0" height="0" style="border-width:0px;"></a><span><a href="/">Merton Council</a></span><span>&nbsp;❮&nbsp;</span><span><a href="/planning-and-buildings">Planning and buildings</a></span><span>&nbsp;❮&nbsp;</span><span><a href="/planning-and-buildings/planning">Planning</a></span><a id="ctl00_SiteContentMap_SkipLink"></a></span>
+                                
+</div>
+                            </div>
+                        </div>
+                        <a name="maincontent" id="maincontent">
+                        </a>
+                        <div class="container-title">
+                            <div class="row">
+                                <div class="column">
+                                    <h1 class="page-title">
+                                        <span id="DeltaPlaceHolderPageTitleInTitleArea">
+                                            
+            
+            
+        
+                                        </span>
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Container Title Area -->
+                    <!-- Start PlaceHolderMain -->
+                    <div class="row">
+                        <div class="columns">
+                            
+                            
+                            <span id="DeltaPlaceHolderMain">
+                                
+            <div>
+                <div class="row-full-width">
+                    <div class="container-rule column">
+                        <div class="row large-collapse medium-collapse small-collapse">
+                            
+                            <div class="small-12 medium-8 large-8 columns">
+                                <div class="container-title">
+                                    <div class="row">
+                                        <div class="column">
+                                            <h1 class="page-title">
+                                                <span id="DeltaPlaceHolderPageTitleInTitleArea">
+                                                    
+                                                    Brownfield Land Register
+                                                </span>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div>
+                
+                
+                
+                
+                
+            </div>
+            <div class="container-article-page">
+                <div class="article-body">
+                    <div class="row">
+                        <div class="main-col small-12 medium-8 large-8 columns">
+                            
+                            
+                            <div id="ctl00_PlaceHolderMain_ctl02_label" style="display:none">Page Content</div><div id="ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField" class="ms-rtestate-field" style="display:inline" aria-labelledby="ctl00_PlaceHolderMain_ctl02_label"><p>Brownfield land registers provide information on sites that local authorities consider to be appropriate for residential development.</p><p>Brownfield sites that meet the criteria set out in&nbsp;<a href="http://www.legislation.gov.uk/uksi/2017/403/regulation/4/made"><span style="text-decoration:underline;">regulation 4 of the Town and Country Planning (Brownfield Land Register) Regulations 2017</span></a>&nbsp;must be entered in Part 1 of brownfield land registers.</p><p>These criteria are that sites should be at least 0.25 hectares or capable of supporting at least 5 dwellings and they are suitable, available and achievable.</p><p>Sites entered in Part 2 of the brownfield land registers are granted&nbsp;<a href="https://www.gov.uk/guidance/permission-in-principle"><span style="text-decoration:underline;">permission in principle</span></a>. Regulation 17 requires local planning authorities to review their registers at least once a year. At present, the Council has included sites only in Part 1. No sites have been granted permission in principle and therefore none are included in Part 2 of the brownfield land register.</p><p>The Brownfield Register is updated annually.</p><p> 
+   <a href="https://maps.london.gov.uk/brownfield-site-register/">Interactive map of Brownfield Land Registers of London Boroughs</a></p><p>&nbsp;</p><h2>Brownfield Land Register 2017</h2><ul><li><a href="/assets/Documents/Merton%20Brownfield%20Register%202017%20Web%20Ready%20CSV%20Version.csv">Merton's Brownfield Land Register 2017 (CSV file)</a><br></li><li><a title="Excel file" href="/assets/Documents/www2/Merton-Brownfield-Register-2017-Excel.xlsx" class="was-www2" style="font-size:inherit;">Merton's Brownfield Land Register 2017 (Excel file)</a></li><li> 
+      <a title="PDF document" href="/assets/Documents/www2/Merton%20Brownfield%20Register%202017%20Web%20Ready.pdf" class="was-www2">Merton's Brownfield Land Register 2017 (PDF file)</a></li></ul><p>&nbsp;</p><h2>Brownfield Land Register 2018</h2><ul><li>
+      <a href="/assets/Documents/BrownfieldLandRegister2018.csv">Merton's Brownfield Land Register 2018 (CSV file)</a></li><li>
+      <a title="Excel file" href="/assets/Documents/BrownfieldLandRegister2018Excel.xlsx">Merton's Brownfield Land Register 2018 (Excel file)</a></li><li>
+      <a title="PDF document" href="/assets/Documents/BrownfieldLandRegister2018.pdf">Merton's Brownfield Land Register 2018 (PDF file)</a></li></ul><p>&nbsp;</p><h2>Find out more</h2><p> 
+   <a href="https://www.gov.uk/guidance/brownfield-land-registers">Information and guidance on Brownfield Land Registers (GOV.UK website)</a></p></div>
+                            
+                        </div>
+                        <div class="main-col small-12 medium-4 large-4 columns">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div style="display:none" id="hidZone"><menu class="ms-hide">
+	<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute('helpLink'), MenuWebPart.getAttribute('helpMode'))" text="Help" type="option" style="display:none">
+
+	</ie:menuitem>
+</menu></div>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <!-- End PlaceHOlderMain -->
+                    <!-- Container Footer -->
+                    <footer>
+                        <div class="container-footer ms-dialogHidden text-left">
+                            <!--Begin Container footer message -->
+                            <div class="row large-collapse medium-collapse">
+                                <div class="columns">
+                                    <div class="container-footer-message">
+                                        <div class="small-12 medium-12 columns">
+                                            <div id="main-content" tabindex="-1">
+                                                <div class="container-text">
+                                                    <strong>How useful was our website? Please give us your feedback so we can improve it.
+                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </strong>
+                                                    <a class="button em6-5 button-feedback" href="/feedback">Feedback 
+                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End Container message-->
+                            <hr>
+                            <div class="row ">
+                                <div class="medium-8 column">
+                                    <p style="color: #000">Main sections
+						             
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    </p>
+                                    <div class="row">
+                                        <div id="footerRowElements">
+                                            <div class="medium-6 column">
+                                                <ul style="margin-bottom:0 !important;">
+                                                    <li>
+                                                        <a href="/births-marriages-and-deaths">Births, marriages and deaths
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/business-and-consumers">Business and consumers
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/council-tax-benefits-and-housing">Benefits, council tax and housing
+                                                       
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/communities-and-neighbourhoods">Communities and neighbourhoods   
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/council-and-local-democracy">Council and local democracy    
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/education-and-learning">Education and learning
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="medium-6 column">
+                                                <ul>
+                                                    <li>
+                                                        <a href="/healthy-living">Healthy living
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/leisure-recreation-and-culture">Leisure, libraries and culture
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/planning-and-buildings">Planning and buildings
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/rubbish-and-recycling">Rubbish and recycling
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/social-care">Social care
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/streets-parking-transport">Streets, parking and transport
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="medium-4 column">
+                                    <!--<p style="color: #000">Stay up-to-date</p>
+                                    <p>Sign up to receive email or text alerts and updates from Merton Council</p>
+                                    <a class="button">Sign up for alerts</a>-->
+                                    <br>
+                                    <a href="https://www.facebook.com/mertoncouncil" class="icon-facebook">
+                                        <img src="/Style%20Library/Merton-Branding/Custom-UI/Images/icon-facebook.png" alt="Facebook">
+                                    </a>
+                                    <a href="https://twitter.com/merton_council" class="icon-twitter">
+                                        <img src="/Style%20Library/Merton-Branding/Custom-UI/Images/icon-twitter.png" alt="Twitter">
+                                    </a>
+                                    <a href="https://www.youtube.com/user/MertonCouncil" class="icon-youtube">
+                                        <img src="/Style%20Library/Merton-Branding/Custom-UI/Images/icon-youtube.png" alt="Youtube">
+                                    </a>
+                                    <a href="https://www.linkedin.com/company/london-borough-of-merton?trk=top_nav_home" class="icon-linkedin">
+                                        <img src="/Style%20Library/Merton-Branding/Custom-UI/Images/icon-linkedin.png" alt="LinkedIn">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row column">
+                                <ul class="footer-globals">
+                                    <li>
+                                        <a href="/a-z">Services A-Z
+                                       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/jobs-and-careers">Jobs
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/contact-us">Contact us
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/legal">Legal
+                                       
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/cookies">Cookies
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/accessibility">Accessibility
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li class="site-hide">
+                                        <a href="#">Site Map
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/legal/privacy-and-cookies">Privacy Notice
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li class="site-hide">
+                                        <a href="#">Website Terms
+                                          
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/council-and-local-democracy/staff-login">Staff Login
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        </a>
+                                        <!--<a href="/Council-and-local-democracy/Staff-login">Staff Login</a>-->
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row column">
+                                <hr>
+                                <div class="copyright">© Merton Council   
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <span id="copyrightyear">2020</span>
+
+
+
+
+
+
+
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+All rights reserved.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              </div>
+                            </div>
+                            <br>
+                        </div>
+                    </footer>
+                    <!-- End Container Footer -->
+                    <div id="DeltaFormDigest">
+	
+                    
+                    <script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0xA086B9ACCC072E8AF89C5135C6F554F3BCEC615078CB9E7E7C30480CB36F8810B127179F46F21CA88DFBE51BC9BE4060FABD9E590A4709F08BCDF56F1737A774,10 Jan 2020 12:31:13 -0000';
+            g_updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+                    
+                    
+</div>
+                    <div class="ms-hide">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End Container Page -->
+            <script>//<![CDATA[
+            function masterpageInit(){
+            	//console.log('masterpageInit');
+		//SP.SOD.executeOrDelayUntilScriptLoaded(function() {
+			//console.log(_spPageContextInfo);
+			//GDIT.SP.Taxonomy.LoadTerms('Managed Metadata Service Application Proxy', '2342a441-26ee-40a9-aeac-048baf4c407b','#MegaMenuContainer', 'MegaMenu');
+			//GDIT.SP.Taxonomy.LoadTerms('Managed Metadata Service Application Proxy', '2342a441-26ee-40a9-aeac-048baf4c407b','#footerRowElements', 'FooterRow');
+			//jQuery(document).foundation();
+			//},'core.js');
+			//SP.SOD.executeFunc('core.js',null,null);			
+			jQuery("#copyrightyear").text(new Date().getFullYear());
+			};
+			_spBodyOnLoadFunctionNames.push("masterpageInit");
+		
+			/*function masterpageInitComplete(){
+				$(document).foundation();
+				console.log('masterpageInitComplete');
+				
+			};*/
+           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //]]></script>
+            <script type="text/javascript">//<![CDATA[
+			    if (ExecuteOrDelayUntilScriptLoaded && _spBodyOnLoadFunctionNames) {
+			        _spBodyOnLoadFunctionNames.push("masterpageInitComplete"
+			        	//ExecuteOrDelayUntilScriptLoaded(
+			        	//	function () { 
+			        	//		console.log('SP.JS Loaded');
+			        	//	}, "sp.js"
+			        	//)
+			        );
+			    }
+			    
+				jQuery(document).on("SharePointBodyLoaded", function () {
+                	// code
+                	console.log('Page Footer End.');
+                	//$(document).foundation();  	 
+            	});
+             
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            //]]></script>
+            
+            
+        
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 1440000;window.g_updateFormDigestPageLoaded = new Date(); window.g_updateFormDigestPageLoaded.setDate(window.g_updateFormDigestPageLoaded.getDate() -5);var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{52d152e2-175b-4cb1-aaac-6c51ea7842f0}",itemId: 2738,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: true,forceCheckout: true,rootFolderUrl: "\u002fPages",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';function _cUpdonetidHeadbnnr2(){var myd = null; if (typeof(dataonetidHeadbnnr2) != 'undefined') {myd = dataonetidHeadbnnr2;} var myc = document.getElementById('ctl00_onetidHeadbnnr2');_cUpdconetidHeadbnnr2(myd, myc);}function _cUpdconetidHeadbnnr2(data, ctrl){SiteLogoImagePageUpdate(ctrl, data);}var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderPageTitleInTitleArea = "DeltaPlaceHolderPageTitleInTitleArea";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+//]]>
+</script>
+</form><span id="DeltaPlaceHolderUtilityContent"></span>
+    </body></html>

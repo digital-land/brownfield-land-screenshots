@@ -1,0 +1,590 @@
+<!DOCTYPE html><html lang="en" style="height: 100%;"><head>
+<!-- noindex -->
+<!-- PageId: 18434 -->
+<!-- /noindex -->
+<!-- noindex -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <![endif]-->
+    <meta name="apple-mobile-web-app-capable" content="yes"><meta name="Robots" content="INDEX, FOLLOW"><meta name="dcterms.creator" content="Slough Borough Council"><meta name="dcterms.publisher" content="Slough Borough Council"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link type="text/css" rel="stylesheet" href="/SBCMaster/css/iconsSBC.min.css" media="screen"><link type="text/css" rel="stylesheet" href="/SBCMaster/css/foundation.min.css" media="screen"><link type="text/css" rel="stylesheet" href="/SBCMaster/css/foundation_plus.min.css" media="screen and (min-device-width : 721px)">
+    <!--[if !IEMobile&(lt IE 9)]>
+    <link type="text/css" rel="stylesheet" href="/SBCMaster/css/foundation_plus.css" media="screen" />
+    <![endif]-->
+    <!--[if !IEMobile&(IE)]>
+    <link type="text/css" rel="stylesheet" href="/SBCMaster/css/ie.min.css" media="screen" />
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="/SBCMaster/css/print.min.css" media="print">
+
+
+    <script type="text/javascript" src="/ajax/libs/headjs/1.0.3/head.load.min.js"></script>
+    <script type="text/javascript" src="/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/ajax/libs/jquery.migrate/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        DelayedLoad();
+    });
+    function DelayedLoad() {
+        $(window).load(function () {
+            head.load('/ajax/libs/jquery.hoverintent/2013.03.11/hoverintent.min.js', '/SBCMaster/scripts/megaMenus.min.js', function () { applyMegaMenus(); });
+            if ($('.slidesjs').length || ($('#home_news_slider').length) && $('.slideitem').length > 1) {
+                head.load('/ajax/libs/slidesjs/3.0/jquery.slides.edited.min.js', function () {
+                    $(".slidesjs").each(function () {
+                        var width = $(this).find('img').first().attr('width');
+                        var height = $(this).find('img').first().attr('height');
+                        $(this).find('img').each(function () {
+                            $(this).attr('width', '100%');
+                            $(this).removeAttr('height');
+                        });
+                        $(this).slidesjs({
+                            width: width,
+                            height: height,
+                            play: { active: false, auto: true, pauseOnHover: true },
+                            pagination: { active: true },
+                            navigation: { active: false }
+                        });
+                    });
+                    if ($('#home_news_slider').length) {
+                        $("#slides").slidesjs({ height: 235, width: 100, navigation: { active: true, effect: "slide" }, pagination: { active: false} });
+                    }
+                });
+            }
+            if ($('#DateCountdown').length) {
+                head.load('/ajax/libs/countdown/TimeCircles_1.5.3.min.js', function () {
+                    $("#DateCountdown").TimeCircles({ "animation": "ticks", "fg_width": 0.03 });
+                });
+            }            
+            if ($('#busTableRows').length) {
+                head.load('/SbcServices/scripts/Sbc.TfS.min.js', function () {
+                    TfS.Bus.BusInit($('#busTableRows'));
+                    TfS.TfL.TubeInit($('#tubeStatus'));
+                    TfS.Train.TrainInit($('#trainTableRows'));
+                });
+            }
+            if ($('#twitterFeedHolder').length) { head.load('/SBCMaster/scripts/twWidget.min.js', '/SBCMaster/scripts/twitterWidget.min.js', function () { displayTwitterWidget(); }); }
+            if ($('.colorBox').length) { head.load('/SBCMaster/scripts/jflickrfeed.min.js', '/ajax/libs/jquery.colorbox/1.4.33/jquery.colorbox.min.js'); }
+
+            var EUcookie = getCookie("EUcookie");
+            if (EUcookie == null) {
+                $('body').prepend("<div class=\"cookieDiv\">"
+                    + "<p>Slough.gov.uk uses <a href=\"/help/cookies.aspx\">cookies</a>. "
+                    + "If you continue to use the site, we'll assume you're happy to accept the cookies. "
+                    + "<button onClick=\"setEUCookie();\" onKeyPress=\"if (event.which == 13) {setEUCookie();}\" >Ok</button></p>"
+                    + "</div>");
+            }
+
+            $(".content").each(function (i) {
+                $(this).find("a[href*='.pdf']").not("[class*='download']").addClass("downloadIcon pdf");
+                $(this).find("a[href*='.doc']").not("[class*='download']").addClass("downloadIcon doc");
+                $(this).find("a[href*='.xls']").not("[class*='download']").addClass("downloadIcon xls");
+                $(this).find("a[href*='.zip']").not("[class*='download']").addClass("downloadIcon zip");
+                $(this).find("a[href*='.txt']").not("[class*='download']").addClass("downloadIcon txt");
+                $(this).find("a[href*='.csv']").not("[class*='download']").addClass("downloadIcon csv");
+            });
+
+            head.load(
+                    '//www.google-analytics.com/analytics.js',
+                    ('https:' == document.location.protocol ? 'https://' : 'http://') + 'translate.google.com/translate_a/element.js?cb=googleTranslateElementInit',
+                    function () {
+                        ga('create', 'UA-25904134-1', 'auto');
+                        ga('send', 'pageview');
+                    });
+
+            /* track MegaMenu link clicks TODO: add 'MegaMenuLink' class */
+            $(".MegaMenuLink").each(function (index) {
+                addTracking(this, 'MegaMenu', 'Click', this.href);
+            });
+            /* track MegaMenu task clicks TODO: add 'MegaMenuTask' class */
+            $(".MegaMenuTask").each(function (index) {
+                addTracking(this, 'MegaMenu', 'Task', this.href);
+            });
+            /* callToActionButton */
+            $(".callToActionButton").each(function (index) {
+                addTracking(this, 'CallToAction', 'StraightTo', this.href);
+            });
+            /* callToAction */
+            $(".callToAction").each(function (index) {
+                addTracking(this, 'CallToAction', 'StraightTo', this.href);
+            });
+            /* Track external links */
+            $('a').each(function () {
+                if (this.host.indexOf('slough.gov.uk') == -1) {
+                    $(this).addClass('ExternalLink');
+                }
+            });
+            $(".ExternalLink").each(function (index) {
+                addTracking(this, 'ExternalLink', 'Click', this.href);
+            });
+            /* track downloads */
+            $(".downloadIcon").each(function (index) {
+                addTracking(this, 'Download', 'Click', this.href);
+            });
+
+        });
+    }
+
+    function addTracking(link, category, action, label) {
+        $(link)
+                .on("click", function () {
+                    ga('send', 'event', category, action, label);
+                })
+                .on("keypress", function () {
+                    if (event.which == 13) {
+                        ga('send', 'event', category, action, label);
+                    }
+                });
+    }
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL, gaTrack: true, gaId: 'UA-25904134-1' }, 'google_translate_element');
+    }
+    function setCookie(c_name, value, exdays) {
+        var exdate = new Date();
+        exdate.setDate(exdate.getDate() + exdays);
+        var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString() + ";path=/;domain=.slough.gov.uk");
+        document.cookie = c_name + "=" + c_value;
+    }
+    function getCookie(c_name) {
+        var i, x, y, ARRcookies = document.cookie.split(";");
+        for (i = 0; i < ARRcookies.length; i++) {
+            x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+            y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+            x = x.replace(/^\s+|\s+$/g, "");
+            if (x == c_name) {
+                return unescape(y);
+            }
+        }
+    }
+    function setEUCookie() {
+        setCookie('EUcookie', 'true', 365);
+        $('.cookieDiv').remove();
+        return false;
+    }
+
+</script>
+
+
+     <!-- /noindex -->
+ 
+
+<link type="text/css" rel="stylesheet" href="/SBCMaster/css/council.css" media="screen"><title>
+	Brownfield register - Slough Borough Council
+</title><meta name="dcterms.title" content="Brownfield register"><meta name="keywords" content="Brownfield, "><meta name="dcterms.date" content="20 December 2017 15:15"><meta name="dcterms.identifier" content="/council/strategies-plans-and-policies/brownfield-register.aspx"><script type="text/javascript" src="/ajax/libs/jquery.hoverintent/2013.03.11/hoverintent.min.js"></script><script type="text/javascript" src="/SBCMaster/scripts/megaMenus.min.js"></script><script type="text/javascript" src="//www.google-analytics.com/analytics.js"></script><script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><meta name="description" content="Brownfield register."><link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20190916_00/e/js/element/element_main.js"></script></head>
+
+<!--[if lt IE 7 ]> <body class="ie6 ieA"> <![endif]-->
+<!--[if IE 7 ]>    <body class="ie7 ieA"> <![endif]-->
+<!--[if IE 8 ]>    <body class="ie8 ieA"> <![endif]-->
+<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+<!--[if gt IE 9]>  <body>             <![endif]-->
+<!--[if !IE]><!--> <body bgcolor="white" style="position: relative; min-height: 100%; top: 0px;"><div class="cookieDiv"><p>Slough.gov.uk uses <a href="/help/cookies.aspx">cookies</a>. If you continue to use the site, we'll assume you're happy to accept the cookies. <button onclick="setEUCookie();" onkeypress="if (event.which == 13) {setEUCookie();}">Ok</button></p></div>         <!--<![endif]-->
+
+
+<!-- noindex -->
+    <div id="outer" class="container_12">
+        <div class="container_12">
+            <div class="header">
+                <div class="mobileOnly">
+                    <a href="/" class="dotgovlogo" title="slough.gov.uk">slough.gov.uk</a>
+                    <div class="searchBox">
+                        <form method="get" id="mobileSearchForm" action="/search">
+                        <input type="text" title="Search text" name="q" placeholder="Enter Search Text" value="Enter Search Text" autocomplete="on" onfocus="JavaScript:if (this.value=='Enter Search Text')this.value=this.value.substring(0,0)">
+                        <label class="hidden" for="mobileSearchButton">Search</label> <input id="mobileSearchButton" type="image" alt="search" src="/SBCMaster/images/srchbtn.gif">
+                        </form>
+                    </div>
+                </div>
+                <div class="noMobile">
+                    <div class="grid_6">
+                        <div class="tools">
+                            <ul class="clean smallnav">
+                                <li><a href="/help/accessibility.aspx">Accessibility</a></li>
+                                <li><a href="/help/cookies.aspx">Cookies</a></li>
+                                <li><a href="/help/">Help</a></li>
+                            </ul>
+                        </div>
+                        <a href="/" class="dotgovlogo" title="slough.gov.uk">slough.gov.uk</a>
+                    </div>
+                    <div class="grid_6">
+                        <div class="logo noMobile">
+                            <a href="/" title="Slough Borough Council">
+                                <img src="/SBCMaster/images/sbc-logo.jpg" width="170" height="62" alt="SBC"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+<!-- /noindex -->
+ 
+<!-- noindex -->
+    <div id="hiddenShortcuts">
+      <ul>
+        <li>
+          <a href="#skipToContent" title="Skip to content">Skip to content</a>
+        </li>
+        <li>
+          <a href="#txtsearch" title="Skip to search">Skip to search</a>
+        </li>
+      </ul>
+    </div>
+<!-- /noindex -->
+<!-- noindex -->
+
+            <div class="container_12" id="topbar">
+                <!-- Inter-Site Nav -->
+                <div class="nav grid_6" id="interSiteNav">
+                    <ul>
+
+                        <li><a class="tab-citizen" href="/">Resident</a></li>
+            
+
+                        <li><a class="tab-business" href="/business/">Business</a></li>
+            
+
+                        <li class="selected"><a class="tab-council" href="/council/">About the Council</a></li>
+            
+                    </ul>
+                </div>
+                <!-- Search -->
+                <div class="grid_6">
+
+                    <div class="searchBox noMobile">
+                        <form method="get" id="searchForm" action="/search">
+                        <input type="text" title="Search text" name="q" placeholder="Enter Search Text" value="Enter Search Text" autocomplete="on" onfocus="JavaScript:if (this.value=='Enter Search Text')this.value=this.value.substring(0,0)">
+                        <label class="hidden" for="searchsubmit">Search</label> <input type="image" id="searchsubmit" alt="search" src="/SBCMaster/images/srchbtn.gif">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+ 
+<!-- Menu -->
+            <div class="clear">
+            </div>
+            <div class="container_12 councilMenu" id="menucontainer">
+                <div id="menu" class="nav grid_12">
+                    <ul id="topnav">
+<li>
+<a href="/council/councillors-committees-and-meetings/" class="top"><span class="link">Councillors &amp; committees</span></a>
+
+
+
+</li>
+ <li>
+<a href="/council/voting-and-elections/" class="top"><span class="link">Voting &amp; elections</span></a>
+
+
+
+</li>
+ <li>
+<a href="/council/complaints-and-feedback/" class="top"><span class="link">Complaints &amp; feedback</span></a>
+
+
+
+</li>
+ <li>
+<a href="/council/strategies-plans-and-policies/" class="top"><span class="link">Strategies, plans &amp; policies</span></a>
+
+
+
+</li>
+ <li>
+<a href="/council/performance-and-spending/" class="top"><span class="link">Performance &amp; spending</span></a>
+
+
+
+</li>
+ 
+
+                        <li><a href="#" class="top"><span class="link">More&nbsp;▼</span></a>
+                            <div class="sub flip" style="opacity: 0;">
+                                <ul>
+                                    <li><a href="/council/data-protection-and-foi/">Data protection &amp; FOI</a></li><li><a href="/council/key-statistics-and-data/">Key statistics &amp; data</a></li><li><a href="/council/consultation/">Consultations</a></li><li><a href="/council/service-standards/">Service standards</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+ <!-- /noindex -->
+ 
+<!-- noindex -->
+        </div>
+<!-- /noindex -->
+
+<!-- noindex -->
+
+<!-- /noindex -->
+<!-- noindex --> 
+
+    <div class="container_12">
+    <div class="clear"></div>
+    <div class="grid_12">
+        <div class="nav">
+            <ul class="pageBreadCrumb">
+                
+          <li class="breadcrumbFolder"><a href="/">Home</a></li>
+      
+          <li class="breadcrumbFolder"><a href="/council/">Council information</a></li>
+      
+          <li class="breadcrumbFolder"><a href="/council/strategies-plans-and-policies/">Strategies, plans &amp; policies</a></li>
+      
+          <li class="breadcrumbFolder"><a href="/council/strategies-plans-and-policies/environment-and-planning.aspx">Environment &amp; planning</a></li>
+      
+          <li class="breadcrumbFolder"><a href="/council/strategies-plans-and-policies/local-planning-policy.aspx">Local planning policy</a></li>
+       
+          <li class="breadcrumbPage">Brownfield register</li>
+       
+       
+       
+       
+       
+       
+            </ul>
+        </div>
+    </div>
+<!-- /noindex --> 
+
+        <div class="grid_12" id="skipToContent">
+            <div class="printOnly">
+                <img class="logo" src="/SBCMaster/images/sbc-logo.jpg" alt="SBC" height="62" width="170">
+            </div>
+            <h1>Brownfield register</h1>
+        </div>
+        
+
+
+
+
+
+
+    <div class="grid_3">
+        <!-- noindex -->
+<div class="noMobile">
+
+    <div class="nav lhsubnav">
+    <h2>Navigation</h2>
+    <ul class="parentList">
+
+                        
+                        
+                        
+                        
+    <li class="parentFolder"><a href="/council/strategies-plans-and-policies/local-planning-policy.aspx">Local planning policy</a></li>
+                
+                        
+                    <li class="page"><a href="/council/strategies-plans-and-policies/the-local-plan-for-slough.aspx">The Local Plan for Slough</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/the-emerging-local-plan-for-slough-2016-2036.aspx">The Emerging Local Plan for Slough 2016-2036</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/emerging-local-plan---statutory-process.aspx">Emerging Local Plan - Statutory Process</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/about-planning-policy.aspx">About Planning Policy</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/annual-monitoring-report.aspx">Annual monitoring report</a></li>            
+                
+    <li class="page current"><a href="/council/strategies-plans-and-policies/brownfield-register.aspx">Brownfield register</a></li>
+        
+                    <li class="page"><a href="/council/strategies-plans-and-policies/register-for-a-self-build-home.aspx">Register for a self-build home</a></li>            
+                
+                
+                
+                
+                
+                
+    </ul>
+    </div>
+
+
+</div>
+<!-- /noindex -->
+    </div>
+
+
+
+
+    <div class="grid_6 page_Content">
+        
+ <div class="standardContentDetail">
+
+    
+
+    <div class="content imagesRight">                    
+        <p>Councils are required to maintain a public register of previously developed land or ‘brownfield sites’ that the Council considers appropriate for residential development.</p>
+<p>The register has two parts. The first part includes all sites that meet the criteria to be considered appropriate for residential development. You can view this list below.</p>
+<p>The second part of the register includes only sites that have been granted ‘Permission in Principle’ for housing-led development. This section of the register is optional, and as such, Slough Borough Council has not currently created this list.</p>
+<p>For more information about the Brownfield Register, please see:</p>
+<ul>
+    <li><a href="http://www.legislation.gov.uk/uksi/2017/403/made" class="ExternalLink">The Town and Country Planning (Brownfield Land Register) Regulations 2017</a>.</li>
+    <li><a href="https://www.gov.uk/guidance/brownfield-land-registers" class="ExternalLink">Brownfield land registers</a>.</li>
+</ul>
+<p></p>
+If you have any queries or would like to submit a site to be included in the Brownfield Register, please email PlanningPolicy@slough.gov.uk.
+<h2>Key Documents</h2>
+<h3>Licence</h3>
+<p>The brownfield register is published under the Open Government Licence (OGL) (vs). You can view details of the license here:</p>
+<ul>
+    <li> <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" class="ExternalLink">Open Government Licence (OGL) (v3)</a>.</li>
+</ul>
+<h3></h3>
+<h3>List of locations (Public Register)</h3>
+<div>The register is also available to download as:</div>
+<ul>
+    <li><a href="/downloads/slough_brownfield_land_register_2019.csv" class="downloadIcon csv">Schedule of Part 1 Slough Brownfield&nbsp;Sites</a></li>
+    <li><a href="/downloads/slough_brownfield_land_register_2019.geojson">Schedule of Part 1 Slough Brownfield Sites</a>(Spatial file)</li>
+</ul>
+<p>Please note where no figure is in the "MinimumNetDwellings" column please see the Council’s <a href="http://www.slough.gov.uk/council/strategies-plans-and-policies/annual-monitoring-report.aspx">trajectory of housing sites</a>. The trajectory list has a broad estimate of site capacity but as the figure has not been tested it is not repeated in the brownfield register as a minimum capacity figure.</p>
+<h3>Location Plans</h3>
+<p>Site boundaries for land on the register can be viewed on our&nbsp;<a href="http://www.slough.gov.uk/connect/analyst/mobile/#/main?mapcfg=public_brownfield_register">online Brownfield Register map</a>.</p>
+    </div>
+</div>
+<div class="clear">
+                </div> 
+ 
+    </div>
+
+    <div class="grid_3">
+        <!-- noindex -->
+
+
+<div class="relatedContentDetailHolder">
+    <div class="relatedContentDetail">
+        <h2>Contact us</h2>
+        <p><strong>Online</strong><br>
+<a href="https://slough-self.achieveservice.com/service/Contact_planning_policy" class="ExternalLink">Contact Planning Policy form</a></p>
+<p><strong>Telephone</strong><br>
+01753 477340</p>
+<p><strong>Address</strong><br>
+Planning Policy<br>
+Slough Borough Council<br>
+Observatory House<br>
+25 Windsor Road<br>
+Slough<br>
+SL1 2EL</p>
+
+    </div>
+</div>
+
+<!-- /noindex -->
+    </div>
+
+
+
+    
+<div class="grid_3 mobileOnly">
+<!-- noindex -->
+
+    <div class="nav lhsubnav">
+    <h2>Navigation</h2>
+    <ul class="parentList">
+
+                        
+                        
+                        
+                        
+    <li class="parentFolder"><a href="/council/strategies-plans-and-policies/local-planning-policy.aspx">Local planning policy</a></li>
+                
+                        
+                    <li class="page"><a href="/council/strategies-plans-and-policies/the-local-plan-for-slough.aspx">The Local Plan for Slough</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/the-emerging-local-plan-for-slough-2016-2036.aspx">The Emerging Local Plan for Slough 2016-2036</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/emerging-local-plan---statutory-process.aspx">Emerging Local Plan - Statutory Process</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/about-planning-policy.aspx">About Planning Policy</a></li>            
+                
+                    <li class="page"><a href="/council/strategies-plans-and-policies/annual-monitoring-report.aspx">Annual monitoring report</a></li>            
+                
+    <li class="page current"><a href="/council/strategies-plans-and-policies/brownfield-register.aspx">Brownfield register</a></li>
+        
+                    <li class="page"><a href="/council/strategies-plans-and-policies/register-for-a-self-build-home.aspx">Register for a self-build home</a></li>            
+                
+                
+                
+                
+                
+                
+    </ul>
+    </div>
+
+<!-- /noindex -->
+</div>
+
+
+    </div>
+    <div class="clear"></div>
+
+
+
+
+<!-- noindex -->
+<!-- Footer -->
+        <div class="footer container_12" id="sectionFooter">
+            <h2>a to z of services</h2>
+            <div class="nav" id="atoz">
+                <ul class="clean" id="az">
+                    <li><a href="/atoz/?letter=a">A</a></li>
+                    <li><a href="/atoz/?letter=b">B</a></li>
+                    <li><a href="/atoz/?letter=c">C</a></li>
+                    <li><a href="/atoz/?letter=d">D</a></li>
+                    <li><a href="/atoz/?letter=e">E</a></li>
+                    <li><a href="/atoz/?letter=f">F</a></li>
+                    <li><a href="/atoz/?letter=g">G</a></li>
+                    <li><a href="/atoz/?letter=h">H</a></li>
+                    <li><a href="/atoz/?letter=i">I</a></li>
+                    <li><a href="/atoz/?letter=j">J</a></li>
+                    <li><a href="/atoz/?letter=k">K</a></li>
+                    <li><a href="/atoz/?letter=l">L</a></li>
+                    <li><a href="/atoz/?letter=m">M</a></li>
+                    <li><a href="/atoz/?letter=n">N</a></li>
+                    <li><a href="/atoz/?letter=o">O</a></li>
+                    <li><a href="/atoz/?letter=p">P</a></li>
+                    <li><a href="/atoz/?letter=q">Q</a></li>
+                    <li><a href="/atoz/?letter=r">R</a></li>
+                    <li><a href="/atoz/?letter=s">S</a></li>
+                    <li><a href="/atoz/?letter=t">T</a></li>
+                    <li><a href="/atoz/?letter=u">U</a></li>
+                    <li><a href="/atoz/?letter=v">V</a></li>
+                    <li><a href="/atoz/?letter=w">W</a></li>
+                    <li><a href="/atoz/?letter=x">X</a></li>
+                    <li><a href="/atoz/?letter=y">Y</a></li>
+                    <li><a href="/atoz/?letter=z">Z</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer container_12" id="siteFooter">
+            <div class="nav" id="siteFooterNav">
+                <div class="grid_2 sitFooterNav">
+                    <ul>
+                        <li><a href="/sitemap/">sitemap</a></li><li><a href="/contact-us/">contact</a></li><li><a href="/news/">news</a></li>
+                    </ul>
+                </div>
+                <div class="grid_2 sitFooterNav">
+                    <div class="mobileOnly">
+                        <ul>
+                            <li><a href="/help/accessibility.aspx">accessibility</a></li><li><a href="/help/cookies.aspx">cookies</a></li><li><a href="/help/">help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_8">
+
+                <ul class="ftr-img-links">
+                    <li><a href="/help/interpretation-and-translation-service.aspx">translations<div class="footerImage ftr-translate"></div></a></li>
+                    <li><a href="/help/">help<div class="footerImage ftr-help"></div></a></li>
+                    <li><a href="http://www.twitter.com/sloughcouncil" class="ExternalLink">twitter<div class="footerImage ftr-twitter"></div></a></li>
+                    <li><a href="https://www.scooploop.com/" class="ExternalLink">Scooploop<div class="footerImage ftr-streetlife"></div></a></li>                    
+                    <li><a href="/feeds/feeds.aspx">feeds<div class="footerImage ftr-feeds"></div></a></li>
+                </ul>
+
+
+            </div>
+        </div>
+<!-- /noindex -->
+    </div>
+</div>
+    <div id="google_translate_element" style="height:28px;"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" style="display: inline;"><select class="goog-te-combo" aria-label="Language Translate Widget"><option value="">Select Language</option><option value="af">Afrikaans</option><option value="sq">Albanian</option><option value="am">Amharic</option><option value="ar">Arabic</option><option value="hy">Armenian</option><option value="az">Azerbaijani</option><option value="eu">Basque</option><option value="be">Belarusian</option><option value="bn">Bengali</option><option value="bs">Bosnian</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="ceb">Cebuano</option><option value="ny">Chichewa</option><option value="zh-CN">Chinese (Simplified)</option><option value="zh-TW">Chinese (Traditional)</option><option value="co">Corsican</option><option value="hr">Croatian</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="eo">Esperanto</option><option value="et">Estonian</option><option value="tl">Filipino</option><option value="fi">Finnish</option><option value="fr">French</option><option value="fy">Frisian</option><option value="gl">Galician</option><option value="ka">Georgian</option><option value="de">German</option><option value="el">Greek</option><option value="gu">Gujarati</option><option value="ht">Haitian Creole</option><option value="ha">Hausa</option><option value="haw">Hawaiian</option><option value="iw">Hebrew</option><option value="hi">Hindi</option><option value="hmn">Hmong</option><option value="hu">Hungarian</option><option value="is">Icelandic</option><option value="ig">Igbo</option><option value="id">Indonesian</option><option value="ga">Irish</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="jw">Javanese</option><option value="kn">Kannada</option><option value="kk">Kazakh</option><option value="km">Khmer</option><option value="ko">Korean</option><option value="ku">Kurdish (Kurmanji)</option><option value="ky">Kyrgyz</option><option value="lo">Lao</option><option value="la">Latin</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="lb">Luxembourgish</option><option value="mk">Macedonian</option><option value="mg">Malagasy</option><option value="ms">Malay</option><option value="ml">Malayalam</option><option value="mt">Maltese</option><option value="mi">Maori</option><option value="mr">Marathi</option><option value="mn">Mongolian</option><option value="my">Myanmar (Burmese)</option><option value="ne">Nepali</option><option value="no">Norwegian</option><option value="ps">Pashto</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="pa">Punjabi</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sm">Samoan</option><option value="gd">Scots Gaelic</option><option value="sr">Serbian</option><option value="st">Sesotho</option><option value="sn">Shona</option><option value="sd">Sindhi</option><option value="si">Sinhala</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="so">Somali</option><option value="es">Spanish</option><option value="su">Sundanese</option><option value="sw">Swahili</option><option value="sv">Swedish</option><option value="tg">Tajik</option><option value="ta">Tamil</option><option value="te">Telugu</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="ur">Urdu</option><option value="uz">Uzbek</option><option value="vi">Vietnamese</option><option value="cy">Welsh</option><option value="xh">Xhosa</option><option value="yi">Yiddish</option><option value="yo">Yoruba</option><option value="zu">Zulu</option></select></div>&nbsp;&nbsp;Powered by <span style="white-space:nowrap"><a class="goog-logo-link" href="https://translate.google.com" target="_blank"><img src="https://www.gstatic.com/images/branding/googlelogo/1x/googlelogo_color_42x16dp.png" width="37px" height="14px" style="padding-right: 3px" alt="Google Translate">Translate</a></span></div></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+
+ 
+ <div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>

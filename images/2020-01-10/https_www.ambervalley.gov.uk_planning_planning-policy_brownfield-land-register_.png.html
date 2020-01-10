@@ -1,0 +1,1242 @@
+<!DOCTYPE html><html lang="en-GB"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="This is the description of Brownfield land register">
+    <!-- eGov Meta Data  -->
+    <!-- this will make your html5 page invalid! -->
+    <meta name="DC.Subject" content="">
+    <meta name="DC.Date" content="">
+    <meta name="DC.Creator" content="Amber Valley Borough Council">
+    <meta name="DC.Publisher" content="Amber Valley Borough Council">
+    <meta name="DC.Title" content="Brownfield land register ">
+    <!-- end eGov -->
+
+
+    <title>Brownfield land register</title>
+    
+    <link rel="stylesheet" href="/css/avmain.css">
+    <link rel="stylesheet" href="/css/contourForms.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+
+    <!--
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="91ff495d-2161-415f-b4a0-9f3d07ca2de0" data-blockingmode="auto"  type="text/javascript" ></script>
+    -->
+    <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NJ9C74&amp;l=baDataLayer"></script><script async="" src="//cse.google.com/adsense/search/async-ads.js"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://cse.google.com/cse.js?cx=011253090859162375191:mzr5uftn9hu"></script><script type="text/javascript" charset="UTF-8" async="" src="https://consent.cookiebot.com/91ff495d-2161-415f-b4a0-9f3d07ca2de0/cc.js?renew=false&amp;referer=www.ambervalley.gov.uk&amp;dnt=false&amp;forceshow=false&amp;cbid=91ff495d-2161-415f-b4a0-9f3d07ca2de0&amp;whitelabel=false&amp;brandid=Cookiebot&amp;framework="></script><script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="91ff495d-2161-415f-b4a0-9f3d07ca2de0" type="text/javascript" async=""></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script><style type="text/css" id="CookieConsentStateDisplayStyles">.cookieconsent-optin-preferences,.cookieconsent-optin-statistics,.cookieconsent-optin-marketing,.cookieconsent-optin{display:none;}.cookieconsent-optout-preferences,.cookieconsent-optout-statistics,.cookieconsent-optout-marketing,.cookieconsent-optout{display:block;display:initial;}</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-accessibility.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="/scripts/bootstrap-accessibility.min.js"></script>
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.15/js/dataTables.bootstrap.min.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="//cdn.datatables.net/plug-ins/1.10.19/sorting/datetime-moment.js"></script>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.1/jquery.validate.unobtrusive.min.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin="anonymous">
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin="anonymous"></script>
+      
+    <link rel="stylesheet" href="/scripts/leaflet-measure/dist/leaflet-measure.css" crossorigin="anonymous">
+
+    <script src="/scripts/dist/bundle.js"></script>
+    <script src="/scripts/leaflet-measure/dist/leaflet-measure.js"></script>
+    
+    <script src="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js" crossorigin="anonymous"></script>
+    <link href="https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css" rel="stylesheet" crossorigin="anonymous">
+
+    <script src="/scripts/leafletpip/leaflet-pip.js"></script>
+
+    <script src="/scripts/spin.js"></script><style type="text/css"></style>
+
+    <link href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
+    <script src="/js/forms-propertylookup.js"></script>
+
+    <link href="/css/glyphicons.css" rel="stylesheet">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-2965051-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-2965051-1');
+    </script>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav-icons/apple-touch-icon.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav-icons/favicon-32x32.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="194x194" href="/images/fav-icons/favicon-194x194.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/fav-icons/android-chrome-192x192.png?v=lk9w5JY0zl">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav-icons/favicon-16x16.png?v=lk9w5JY0zl">
+    <link rel="shortcut icon" href="/images/fav-icons/favicon.ico?v=lk9w5JY0zl">
+    <meta name="msapplication-TileColor" content="#008080">
+    <meta name="msapplication-TileImage" content="/images/fav-icons/mstile-144x144.png?v=lk9w5JY0zl">
+    <meta name="msapplication-config" content="/images/fav-icons/browserconfig.xml?v=lk9w5JY0zl">
+    <meta name="theme-color" content="#ffffff">
+    
+    
+    
+    
+    <script type="text/javascript" src="https://www.browsealoud.com/plus/scripts/ba.js"></script>
+    <script>
+    
+        //var avGlobalIsIntranet = window.location.hostname.toLowerCase().includes("avbc.gov.uk");
+        
+        /*#####################
+        Additional jQuery (required)
+        #####################*/
+        $(document).ready(function () {
+
+            var clickEvent = false;
+            $('#myCarousel').carousel({
+                interval: 4000
+            }).on('click', '.list-group li', function () {
+                clickEvent = true;
+                $('.list-group li').removeClass('active');
+                $(this).addClass('active');
+            }).on('slid.bs.carousel', function (e) {
+                if (!clickEvent) {
+                    var count = $('.list-group').children().length - 1;
+                    var current = $('.list-group li.active');
+                    current.removeClass('active').next().addClass('active');
+                    var id = parseInt(current.data('slide-to'));
+                    if (count == id) {
+                        $('.list-group li').first().addClass('active');
+                    }
+                }
+                clickEvent = false;
+            });
+            $('#btnA2Z').click(function () {
+                $('#searchPopout').hide();
+                $('#menuPopout').hide();
+                if ($('#a2zPopout').css('display') == 'none' || $('#a2zPopout').css("visibility") == "hidden") {
+                    $('#a2zPopout').slideDown("slow");
+                }
+                else {
+                    $('#a2zPopout').slideUp("slow");
+                }
+
+            });
+            $('#btnMenu').click(function () {
+                //closeAllPopouts();
+                $('#searchPopout').hide();
+                $('#a2zPopout').hide();
+                if ($('#menuPopout').css('display') == 'none' || $('#menuPopout').css("visibility") == "hidden") {
+                    $('#menuPopout').slideDown("slow");
+                }
+                else {
+                    $('#menuPopout').slideUp("slow");
+                }
+            });
+            $('#btnOpenSearch').click(function () {
+                $('#a2zPopout').hide();
+                $('#menuPopout').hide();
+                if ($('#searchPopout').css('display') == 'none' || $('#searchPopout').css("visibility") == "hidden") {
+                    $('#searchPopout').slideDown("slow");
+                }
+                else {
+                    $('#searchPopout').slideUp("slow");
+                }
+            });
+            $('.close').click(function () {
+                $('#searchPopout').hide();
+                $('#a2zPopout').hide();
+                $('#menuPopout').hide();
+            });
+            
+
+        })
+        $(window).load(function () {
+            var boxheight = $('#myCarousel .carousel-inner').innerHeight();
+            var itemlength = $('#myCarousel .item').length;
+            var triggerheight = Math.round(boxheight / itemlength + 1);
+
+            $('#myCarousel .list-group-item').outerHeight(triggerheight);
+        });
+        
+        $.fn.dataTable.moment( 'DD-MM-YYYY' );
+        $.fn.dataTable.moment( 'DD/MM/YYYY' );
+    </script>
+    
+<style type="text/css" id="CookiebotDialogStyle">#CybotCookiebotDialog{animation:none;animation-delay:0;animation-direction:normal;animation-duration:0;animation-fill-mode:none;animation-iteration-count:1;animation-name:none;animation-play-state:running;animation-timing-function:ease;backface-visibility:visible;background:#ffffff;background-clip:border-box;background-origin:padding-box;background-position-x:0;background-position-y:0;background-size:auto auto;border:0;border-width:medium;border-color:inherit;border-bottom:0;border-bottom-color:inherit;border-collapse:separate;border-image:none;border-left:0;border-left-color:inherit;border-radius:0;border-right:0;border-right-color:inherit;border-spacing:0;border-top:0;border-top-color:inherit;bottom:auto;box-sizing:content-box;caption-side:top;clear:none;clip:auto;columns:auto;column-count:auto;column-fill:balance;column-gap:normal;column-rule:medium none currentColor;column-rule-color:currentColor;column-rule-style:none;column-rule-width:none;column-span:1;column-width:auto;content:normal;counter-increment:none;counter-reset:none;cursor:auto;display:inline;empty-cells:show;float:none;font:400;font-style:normal;font-variant:normal;font-weight:400;hyphens:none;list-style:disc;max-height:none;max-width:none;min-height:0;min-width:0;orphans:0;outline:0;outline-width:medium;overflow:visible;overflow-x:visible;overflow-y:visible;page-break-after:auto;page-break-before:auto;page-break-inside:auto;perspective:none;perspective-origin:50% 50%;right:auto;tab-size:8;table-layout:auto;text-align-last:auto;text-decoration:none;text-decoration-color:inherit;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-shadow:none;text-transform:none;transform:none;transform-style:flat;transition:none;transition-delay:0s;transition-duration:0s;transition-property:none;transition-timing-function:ease;vertical-align:baseline;visibility:visible;white-space:normal;widows:0;word-spacing:normal;position:fixed;z-index:2147483645;top:-800px;left:0;width:100%;height:auto;opacity:1;filter:Alpha(opacity=100);color:#000000;font-family:'Segoe UI',Arial,Helvetica,Verdana,sans-serif;font-size:8pt;box-shadow:#121212 2px 2px 14px 2px;padding:0 0 8px;line-height:1.231;text-align:left;margin:0;letter-spacing:normal;text-rendering:geometricPrecision}#CybotCookiebotDialog a,#CybotCookiebotDialog div,#CybotCookiebotDialogBodyContentControls,#CybotCookiebotDialogBodyContentTitle{font-family:'Segoe UI',Arial,Helvetica,Verdana,sans-serif}#CybotCookiebotDialog::after,#CybotCookiebotDialog::before{box-sizing:content-box}#CybotCookiebotDialog[dir=rtl]{text-align:right}#CybotCookiebotDialog a{color:#000000;text-decoration:underline;line-height:1.231}#CybotCookiebotDialog a:hover{color:#000000;text-decoration:underline}#CybotCookiebotDialog br,#CybotCookiebotDialog div,#CybotCookiebotDialog td{line-height:1.231}#CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising,#CybotCookiebotDialogDetailBodyContentCookieContainerNecessary,#CybotCookiebotDialogDetailBodyContentCookieContainerPreference,#CybotCookiebotDialogDetailBodyContentCookieContainerStatistics,#CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified{margin:0}#CybotCookiebotDialogPoweredbyLink{position:absolute;z-index:2147483646;width:48px;height:36px;margin-left:6px;margin-right:0;margin-top:12px}div[dir=rtl] #CybotCookiebotDialogPoweredbyLink{margin-left:0;margin-right:6px}#CybotCookiebotDialogPoweredbyImage{border:none;padding:0;margin:2px 0 0 3px;width:46px}#CybotCookiebotDialogBody{max-width:640px;margin-left:auto;margin-right:auto;vertical-align:top;padding-right:8px;padding-left:0;overflow:hidden}div[dir=rtl] #CybotCookiebotDialogBody{padding-right:0;padding-left:8px}#CybotCookiebotDialogBodyContent{min-height:32px;font-size:9.5pt;font-weight:400;line-height:130%;padding:12px 0 8px 80px}div[dir=rtl] #CybotCookiebotDialogBodyContent,div[dir=rtl] #CybotCookiebotDialogBodyContentControls{padding-left:0;padding-right:80px}#CybotCookiebotDialogBodyContentControls{min-height:10px;font-size:9.5pt;font-weight:400;line-height:130%;padding:12px 0 8px 80px}.CybotCookiebotDialogBodyContentControlsWrapper{display:inline-block;position:relative;margin-right:14px;margin-left:0;line-height:16px}div[dir=rtl] .CybotCookiebotDialogBodyContentControlsWrapper{margin-right:0;margin-left:14px}#CybotCookiebotDialogBodyContentTitle{padding:0;font-size:12pt;font-weight:700;line-height:100%;color:#000000;display:block;visibility:visible;position:static;letter-spacing:normal;float:none;text-align:left;margin:2px 0 6px}div[dir=rtl] #CybotCookiebotDialogBodyContentText,div[dir=rtl] #CybotCookiebotDialogBodyContentTitle{text-align:right}#CybotCookiebotDialogBodyContentText{text-align:left}#CybotCookiebotDialogBodyButtons{display:block;margin:0 0 6px 6px;z-index:10;padding-left:63px;padding-right:0}div[dir=rtl] #CybotCookiebotDialogBodyButtons{margin:0 6px 6px 0;padding-left:0;padding-right:63px}#CybotCookiebotDialogBodyButtons a,#CybotCookiebotDialogBodyButtons a:hover{text-decoration:none;color:#ffffff}.CybotCookiebotDialogBodyButton{display:inline-block;padding:1px 4px 3px;z-index:10;font-size:9.5pt;font-weight:400;margin-left:12px;margin-right:0;margin-top:8px;text-align:center;white-space:nowrap;min-width:80px;box-sizing:content-box}.CybotCookiebotDialogBodyButton::after,.CybotCookiebotDialogBodyButton::before{box-sizing:content-box}div[dir=rtl] .CybotCookiebotDialogBodyButton{margin-left:0;margin-right:12px}#CybotCookiebotDialogBodyButtonAccept{background-color:#008080;border:1px solid #008080}#CybotCookiebotDialogBodyButtonDecline{background-color:#333333;border:1px solid #333333}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink,#CybotCookiebotDialogBodyLevelDetailsButton{display:inline-block;color:#000000;text-decoration:none;font-size:9pt;margin-top:8px;text-align:right;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3NDEyNDEwNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3NDEyNDExNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc0MTI0MEU3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc0MTI0MEY3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz70ohqeAAAABlBMVEVgYGAAAAAPhzbbAAAAAnRSTlP/AOW3MEoAAAAjSURBVHjaYmBkYAQBBkYGIAAxQBQcQ/ggCiLFCGFBCIAAAwADkwAg7Yr51AAAAABJRU5ErkJggg==);background-repeat:no-repeat;background-position-x:right;background-position-y:12px;background-position:right 12px;border-left:0;border-right:5px solid transparent;padding:7px 19px 0 0}div[dir=rtl] #CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink,div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsButton{padding-left:19px;padding-right:0;background-position-x:left;background-position-y:12px;background-position:left 12px;border-left:5px solid transparent;border-right:0}div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsButton,div[dir=rtl] .CybotCookiebotDialogBodyLevelDetailsButtonExpanded{background-position-x:left!important;background-position-y:5px!important;background-position:left 5px!important}#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink:hover,#CybotCookiebotDialogBodyLevelDetailsButton:hover{color:#000000;text-decoration:underline}.CybotCookiebotDialogBodyLevelDetailsButtonExpanded,.CybotCookiebotDialogBodyLinkExpanded{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU0QzAwODExNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU0QzAwODEyNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTRDMDA4MEY3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTRDMDA4MTA3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz576KdnAAAATklEQVR42kyO2xEAMQgCJZ3afxFcyGRz+uMD3EHdXbYrJSltrz4Dt4UBNfsWPG614oRwO2Q/Eg+IwvnDj8kjk+48MzmZeNYI/4jRPwEGAFy/MS7NcXxJAAAAAElFTkSuQmCC)!important}a#CybotCookiebotDialogBodyLevelDetailsButton{text-decoration:none;padding-top:0;padding-left:4px;margin:1px 0 0;background-position-x:right;background-position-y:5px;background-position:right 5px;text-align:left;color:#000000;line-height:16px}div[dir=rtl] a#CybotCookiebotDialogBodyLevelDetailsButton{text-align:right}a#CybotCookiebotDialogBodyLevelDetailsButton:hover{text-decoration:none;color:#000000}#CybotCookiebotDialogBodyButtonDetails{display:inline-block;float:right;outline:0}div[dir=rtl] #CybotCookiebotDialogBodyButtonDetails{float:left}#CybotCookiebotDialogBodyLevelWrapper{display:none;text-align:right;pointer-events:none}div[dir=rtl] #CybotCookiebotDialogBodyLevelWrapper{text-align:left}#CybotCookiebotDialogBodyLevelButtons{font-size:9pt;float:left;margin-left:8px;margin-right:0;pointer-events:auto}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtons{float:right;margin-left:0;margin-right:8px}#CybotCookiebotDialogBodyLevelButtonsTable{display:inline-table;margin:5px 0}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsTable{margin-left:16px;margin-right:0}#CybotCookiebotDialogBodyLevelButtonsRow{display:table-row}#CybotCookiebotDialogBodyLevelButtonsSelectPane{display:table-cell;border:1px solid #cccccc;padding:4px 3px 3px 9px;-webkit-border-radius:4px 0 0 4px;-moz-border-radius:4px 0 0 4px;border-radius:4px 0 0 4px;text-align:left;vertical-align:top}#CybotCookiebotDialogBodyLevelButtonAcceptWrapper{display:inline-block;float:right;margin-left:0;margin-right:0;pointer-events:auto}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonAcceptWrapper{display:inline-block;float:left;margin-left:0;margin-right:0}a#CybotCookiebotDialogBodyLevelButtonAccept{display:inline-block;background-color:#008080;border:1px solid #008080;padding:3px 10px;min-width:80px;color:#ffffff;text-decoration:none;margin-left:0;margin-top:6px;z-index:10;font-size:9.5pt;font-weight:400;margin-right:0;text-align:center;white-space:nowrap}a#CybotCookiebotDialogBodyLevelButtonAccept:hover{color:#ffffff;text-decoration:none}div[dir=rtl] #CybotCookiebotDialogBodyLevelButtonsSelectPane{text-align:right;-webkit-border-radius:0 4px 4px 0;-moz-border-radius:0 4px 4px 0;border-radius:0 4px 4px 0}.CybotCookiebotDialogBodyLevelButtonWrapper{display:inline-block;position:relative;margin-right:14px;margin-left:0;line-height:16px}div[dir=rtl] .CybotCookiebotDialogBodyLevelButtonWrapper{margin-right:0;margin-left:14px}.CybotCookiebotDialogBodyLevelButtonWrapper:last-of-type{margin-right:7px;margin-left:0}div[dir=rtl] .CybotCookiebotDialogBodyLevelButtonWrapper:last-of-type{margin-right:0;margin-left:7px}.CybotCookiebotDialogBodyLevelButtonWrapper label{white-space:nowrap}input[type=checkbox].CybotCookiebotDialogBodyLevelButton{opacity:0;position:absolute;top:0;left:0;z-index:2;cursor:pointer}input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:after,input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:before{content:normal}input [type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled{cursor:default}input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjYxNkU3NEJGQkJDMjExRTNCMzA3ODU5MUUzMDlDM0FDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjYxNkU3NEMwQkJDMjExRTNCMzA3ODU5MUUzMDlDM0FDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjE2RTc0QkRCQkMyMTFFM0IzMDc4NTkxRTMwOUMzQUMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjE2RTc0QkVCQkMyMTFFM0IzMDc4NTkxRTMwOUMzQUMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz71Yc/eAAAAOklEQVR42mL8//8/AzmAkf4aL1y4QLROfX19RjgHpBFkKyGMro6JgUwwqnFQaWQBERcvXiQ53QEEGADSSDs5lXMYKAAAAABJRU5ErkJggg==);background-repeat:no-repeat;height:auto;min-height:14px;width:auto;display:inline-block;padding:1px 0 0 17px;position:relative;top:0;left:0;z-index:1;cursor:pointer;margin-top:0;background-position:left 1px;vertical-align:top;line-height:16px;font-size:inherit;color:inherit}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked+label{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjNGMUE0MkE1QkJDMjExRTM5QUIxQzQwRjkwREYzMUIyIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjNGMUE0MkE2QkJDMjExRTM5QUIxQzQwRjkwREYzMUIyIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6M0YxQTQyQTNCQkMyMTFFMzlBQjFDNDBGOTBERjMxQjIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6M0YxQTQyQTRCQkMyMTFFMzlBQjFDNDBGOTBERjMxQjIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4IZcVrAAAA5UlEQVR42mL8//8/AyMjIwMxQHwRgwOQAuEJjMRqBGoSAFL3gRhEf2BiIB7Mh2oCgQ+MFy5c+E9Ix/o3SxlmPOtGFnJkAZEGBgaMeJyoAKTOI9k24WUcwwEmNEUGBJx4AaipEMRgQtIEUnAeSCcgiRVAQxEGEmEMsB/dLxk4Atn70RRcgDoRDGLEMxh63WfAvQSz8QIUIztvPRL/QixQIzIAawS6+wMopNA0K8CCHogD0T0O9yMOzSDQCJR7gFMjmuYFUKEDQLEJ2KKJBV0AqjkRGKILsdiOqhFv6kHSCkrXMAAQYACIkU0SIPgtxAAAAABJRU5ErkJggg==);background-repeat:no-repeat;height:auto;width:auto;min-height:14px;display:inline-block;padding:1px 0 0 17px;background-position:left 1px;vertical-align:top;line-height:16px}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjgzMjc3NEM2QkJDMjExRTNBN0ExOUJFMzFCMzdBRjdEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjgzMjc3NEM3QkJDMjExRTNBN0ExOUJFMzFCMzdBRjdEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ODMyNzc0QzRCQkMyMTFFM0E3QTE5QkUzMUIzN0FGN0QiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6ODMyNzc0QzVCQkMyMTFFM0E3QTE5QkUzMUIzN0FGN0QiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz54CbH2AAABFElEQVR42oxSLQ/CQAy9I6hZMrVgQW4aCdnvGIoER8Lm+AcbWBIcFo0cFuw0dkxMMAlyvC69y/hek6VN19e+16ssy1JIKUUTC8Owh9o+wkNbNDSADICmCA18w1ZTIEAeg8juMkmS8h+oKAqR57nIsmzD0pYVVcdx5A+KHRQuLMuaEYj0+b5/br0UdT9QHANgcJwGQbCjWAOjKPKoM/yglhvB9dTW0WCrG5LGOI77SM5rz0IFKXILniRs2564rqsL2tzpQjQQKqoectdao9Q0zScJFVXwvsGteIr612F/Q279ql1rxKYqME8WNV17NL5+BSowCmnykUFngA6fnunt5Jj2Fhs9wV++XlKTy1GGzeptPQQYAF1/e0nsKZ1HAAAAAElFTkSuQmCC);background-repeat:no-repeat;height:auto;width:auto;min-height:14px;display:inline-block;padding:1px 0 0 17px;position:relative;top:0;left:0;z-index:1;cursor:default;background-position:left 1px;vertical-align:top;line-height:16px}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:focus+label{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkUwQkVDMzlCQkQ4NTExRTM5RTEwRUIwNUNENTg2N0Q4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkUwQkVDMzlDQkQ4NTExRTM5RTEwRUIwNUNENTg2N0Q4Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTBCRUMzOTlCRDg1MTFFMzlFMTBFQjA1Q0Q1ODY3RDgiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTBCRUMzOUFCRDg1MTFFMzlFMTBFQjA1Q0Q1ODY3RDgiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7Y0XwIAAAAOElEQVR42mL8//8/AzmAiYFMQLZGxtLSUqLd2tXVxQhjs8AMIELf/4H146hGWmhkwRa5xACAAAMAL2gJGKxaSssAAAAASUVORK5CYII=);background-repeat:no-repeat;height:auto;width:auto;min-height:14px;display:inline-block;padding:1px 0 0 17px;background-position:left 1px;vertical-align:top;line-height:16px}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:focus+label{background-position:right 1px;padding:2px 17px 0 0}input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked:focus+label{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjk3MjVBRTM5QkQ4MDExRTM4RDBEOTEzMTQxN0RDRjc0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjk3MjVBRTNBQkQ4MDExRTM4RDBEOTEzMTQxN0RDRjc0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTcyNUFFMzdCRDgwMTFFMzhEMEQ5MTMxNDE3RENGNzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6OTcyNUFFMzhCRDgwMTFFMzhEMEQ5MTMxNDE3RENGNzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7V1txIAAAA6UlEQVR42mL8//8/AyMjIwMxQHwRgwOQAuEJjMRqBGoSAFL3gRhEf2BiIB7Mh2oCgQ+MpaWl/wnpuC5yluG05D5kIUcWENnd3c2Ix4kKQOo8km0TXsYxHGBCU2RAwIkXgJoKQQwmJE0gBeeBdAKSWAE0FGEgEcZgQQpmmIb5QD7YdCDuhynUf2XFsKvk2AUYH2bjBShGdt56JP4F/ZfWKO4HawS6+wMopNA0K8CCHogD0T0O9yMOzSDQCJR7gFMjmuYFUKEDQLEJ2KKJBV0AqjkRGEALsdiOqhFr6rkMpUsRQqB0DQMAAQYAX31KK0vr8I0AAAAASUVORK5CYII=);background-repeat:no-repeat;height:auto;width:auto;min-height:14px;display:inline-block;padding:1px 0 0 17px;background-position:left 1px;vertical-align:top;line-height:16px}.CybotCookiebotDialogDetailBodyContentTabsItem,.CybotCookiebotDialogDetailBodyContentTabsItemSelected{top:1px;z-index:10;line-height:100%;display:inline-block;border-top:1px solid #cccccc;font-weight:400}div[dir=rtl] input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked:focus+label{background-position:right 1px;padding:2px 17px 0 0}#CybotCookiebotDialogBodyLevelDetailsWrapper{display:table-cell;background-color:#f5f5f5;border:1px solid #cccccc;border-left:none;height:14px;padding:4px 0 4px 4px;text-align:left;vertical-align:top;cursor:pointer}div[dir=rtl] #CybotCookiebotDialogBodyLevelDetailsWrapper{border:1px solid #cccccc;border-right:none;text-align:right;padding:4px 4px 4px 0}#CybotCookiebotDialogDetail{display:none;background-color:#ffffff;padding-top:0;padding-bottom:1px;overflow:auto}#CybotCookiebotDialogDetailBody{width:100%;max-width:632px;margin-left:auto;margin-right:auto;vertical-align:top}div[dir=rtl] #CybotCookiebotDialogDetailBody{text-align:right}#CybotCookiebotDialogDetailBodyContent{background-color:#ffffff;color:#000000;border:1px solid #cccccc;border-bottom:4px solid #cccccc;height:170px}#CybotCookiebotDialogDetailBodyContent a{font-size:9pt}#CybotCookiebotDialogDetailBodyContentTabs a{font-size:10.5pt}#CybotCookiebotDialogDetailBodyContentText{padding:8px;font-size:10pt}#CybotCookiebotDialogDetailBodyContentTabs{position:relative;height:auto;display:inline-block;white-space:nowrap}a.CybotCookiebotDialogDetailBodyContentTabsItem{text-decoration:none!important;margin:0}a.CybotCookiebotDialogDetailBodyContentTabsItem:hover{text-decoration:none!important;background-color:#ffffff!important;color:#000000!important;opacity:.9}a.CybotCookiebotDialogDetailBodyContentTabsItemSelected{margin:0;text-decoration:none!important;color:#000000!important;opacity:1}a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:hover{text-decoration:none!important;color:#000000!important;cursor:default}.CybotCookiebotDialogDetailBodyContentTabsItem{background:#f5f5f5;color:#000000!important;opacity:.85;font-size:10.5pt;border-right:1px solid #cccccc;position:relative;white-space:normal;margin:1px 0 0;cursor:pointer;padding:7px 18px 5px}.CybotCookiebotDialogDetailBodyContentTabsItem:first-of-type{border-left:1px solid #cccccc}.CybotCookiebotDialogDetailBodyContentTabsItemSelected{background:#ffffff;color:#000000;font-size:10.5pt;border-right:1px solid #cccccc;position:relative;white-space:normal;opacity:1;padding:8px 18px 6px}.CybotCookiebotDialogDetailBodyContentTab:first-child{border-left:1px solid #cccccc;-webkit-border-radius:4px 0 0 0;-moz-border-radius:4px 0 0;border-radius:4px 0 0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentTab:first-child{border-left:none;-webkit-border-radius:0 4px 0 0;-moz-border-radius:0 4px 0 0;border-radius:0 4px 0 0}.CybotCookiebotDialogDetailBodyContentTab{border-left:none}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentTab{border-left:1px solid #cccccc}#CybotCookiebotDialogDetailFooter{padding-top:4px;padding-right:2px;color:#000000;text-align:right;opacity:.85;background-color:#ffffff}div[dir=rtl] #CybotCookiebotDialogDetailFooter{text-align:left}#CybotCookiebotDialogDetailFooter a{color:#000000}#CybotCookiebotDialogDetailBodyContentTextAbout,#CybotCookiebotDialogDetailBodyContentTextIAB{padding:18px 12px 12px;font-size:9pt;height:140px;overflow:auto;display:none}#CybotCookiebotDialogDetailBodyContentTextOverview{display:inline-block}#CybotCookiebotDialogDetailBodyContentTabsIAB,#CybotCookiebotDialogDetailBodyContentTextIAB{display:none}#CybotCookiebotDialogDetailBodyContentCookieContainerTypes{float:left;white-space:nowrap;padding:0;background-color:#f5f5f5;font-size:9pt}.CybotCookiebotDialogBodyLevelButtonIABHeaderToggle,div[dir=rtl] #CybotCookiebotDialogDetailBodyContentCookieContainerTypes{float:right}#CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails{padding:12px;font-size:9pt;overflow:auto;height:146px;max-height:146px}.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected{padding:8px;background-color:#ffffff;border-bottom:1px solid #cccccc;border-left:none;border-right:1px solid #ffffff;display:block;text-decoration:none!important;color:#000000!important}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected{border-left:1px solid #ffffff;border-right:none}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes{padding:8px;cursor:pointer;background-color:#f5f5f5;border-bottom:1px solid #cccccc;border-right:1px solid #cccccc;border-left:none;display:block;text-decoration:none!important;color:#000000!important;opacity:1}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:first-child{border-top:1px solid #cccccc}.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:first-child{border-top:1px solid #ffffff}.CybotCookiebotDialogDetailBodyContentCookieContainerTypes label,.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected label{cursor:pointer;display:none;margin:0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieContainerTypes{border-left:1px solid #cccccc;border-right:none}a.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:hover{text-decoration:none!important;background:#ffffff!important;color:#000000!important;opacity:1}a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:hover{text-decoration:none!important;color:#000000!important;cursor:default}#CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising,#CybotCookiebotDialogDetailBodyContentCookieTabsPreference,#CybotCookiebotDialogDetailBodyContentCookieTabsStatistics,#CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified{display:none}.CybotCookiebotDialogDetailBodyContentCookieTypeTable{padding:0;margin:8px 0 0;font-size:9pt;border-spacing:0;border-collapse:collapse;width:100%}.CybotCookiebotDialogDetailBodyContentCookieTypeTable thead td,.CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th{background-color:#f5f5f5!important;color:#000000!important;text-align:left;vertical-align:top;padding:2px;border-bottom:1px solid #cccccc;font-weight:400}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable thead td,div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th{text-align:right}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td{border-bottom:1px solid #cccccc;border-right:1px solid #f5f5f5;text-align:left;vertical-align:top;padding:4px;max-width:72px;overflow:hidden;font-size:9pt;color:#000000!important}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td:last-child{border-right:0}div[dir=rtl] .CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td{text-align:right}.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td.CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty{border:none;border-top:1px solid #cccccc;padding:4px 0 0}#CybotCookiebotDialogBodyIABIntro{margin-bottom:12px}.CybotCookiebotDialogBodyLevelButtonIABHeader{font-weight:700;margin-top:2px;margin-bottom:12px;padding-top:8px;border-top:1px solid #cccccc;text-transform:uppercase}.CybotCookiebotDialogBodyLevelButtonIABDescription{margin-top:2px;margin-bottom:12px}.CybotCookiebotDialogBodyContentLabelPersonalInformation{font-weight:400!important}</style><script src="https://www.google.com/cse/static/element/8b2252448421acb3/cse_element__en.js?usqp=CAI%3D" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/element/8b2252448421acb3/default+en.css"><link type="text/css" rel="stylesheet" href="https://www.google.com/cse/static/style/look/v3/default.css"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#F8F8F8;background-color:#F8F8F8}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#777777}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#777777;background-color:#FFFFFF;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#777777}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover,.gsc-imageResult:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#777777}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#777777}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#777777}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#777777}.gsc-cursor-page{color:#777777}a.gsc-trailing-more-results:link{color:#777777}.gs-webResult .gs-snippet,.gs-imageResult .gs-snippet,.gs-fileFormatType{color:#777777}.gs-webResult div.gs-visibleUrl,.gs-imageResult div.gs-visibleUrl{color:#777777}.gs-webResult div.gs-visibleUrl-short{color:#777777}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-webResult.gsc-result.gsc-promotion{border-color:#336699;background-color:#FFFFFF}.gsc-completion-title{color:#777777}.gsc-completion-snippet{color:#777777}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#0000CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#0000CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#0000CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#0000CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#000000}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#008000}.gcsc-find-more-on-google{color:#777777}.gcsc-find-more-on-google-magnifier{fill:#777777}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+
+    <body bgcolor="white"><div id="CybotCookiebotDialog" name="CybotCookiebotDialog" role="alertdialog" aria-describedby="CybotCookiebotDialogBodyContentTitle" lang="en" dir="ltr" ng-non-bindable="" style="display: block; padding-bottom: 18px; opacity: 1; top: 514px; width: 100%; height: auto;"><div id="CybotCookiebotDialogBody"><div id="CybotCookiebotDialogPoweredbyLink"><img id="CybotCookiebotDialogPoweredbyImage" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAArCSURBVGhD7VkJbJRlGv7V1TVmMe7GVTcbNGY3bkzWuJvNZnU17K6ICngLqHgBpZWrBbQtFCxHOUVLEVCUQ+Sq0IsWWgrWlpaWtvScXjO96D2ddkqn18z07rPv+/7/dApMK63GpIkP+fL/87/f8bzn931FGbcYGBiYPB6bgnGKX4j/3BiReGF7LRbk7oFb7ldw0+2FW/Zu7KmKE9nW5CS4hYVgflQE3EKPI7W2Wr4Ph/6BAfh8dxZuEaHSfM7ForuvT5OOHiMSn5b+MZTg/0IJe0FtIdOgnHwVDb0WTP76IJQlC6D4LIey2ANvh4doo1wjp94IxXsZlA+XQvFahImBH6O3v1+Tjh7DEr/S3YE7z8yFEjkLyqnZzhY6HccakhBVUEKkl+GmtauhrPLFxO3b0NXXq42+HhsSE4j4UrU/Pdee/16TjA3DEj9hTIUSTlYeSppb+EuYmrEFbbZu3BGwFspHK6GsWQXFzwfJ1VXa6Ovxr317oKz8UO1LY3Smek0yNgxL/M3sXWp4MFmx+pvqe9TruD36XbT2d+ClY8egrPhAs+IyrIw7p42+GhUWC25dR338/UTBv36+E1SLNenY4JJ4R28n7j7rQYRnUky/hilpm3DPOYrnqDdU8mHPI7IpHWF5BiEsxP288egXu7QZrsYXGenOfvT8KF5N8B8Dl8RjGnMlJMTKES8joakQU9O3yrsaLi9iZnYQ2qzduH29v2pJCoGbqRmazNosTkw98g0U3w/UMFm9AlnGOk0ydrgk7k6lj63KIfLbWDcM0L/NpZH0bbpKnL7fEfMebLDjuUOH1ErBpMiaQakp2iwqzDYrJmwKUHOBwuTh3TukNN4I2nrsSLpShIPVCdh1+Qy+rU2Bta9LZNcR7+rvxcS4JRQiM4joi5iV9Zl8N3QYcQvHehTH+xuYQN7IaC9FnKES96zjJCWrL1mIv+/ZLf0dOFGQr1r7B/LAgU5aP7g2GS+lbcHjiSsxL+dzIZ7XVgVLj1WMyLiOeNIVPYXEK2qYhL8Mz/yDSG4uRnxTAe6KdcddMXPgU3QUX1XGIbohmxSqQ6HFiEu1NQjOysPy6LOwdfVoswFvhJ5Qaz17hMpmOvVzBWtfN7aWROD3Me/iPirDAcUhqLU3a9LrcR3x5YWHnSFx6i01Idn6kdTo2y2n36YwmYObTpOMk5esf+93Hnj84ip4GQ4guP4CSsg7AjLO3Vs2QfnAS5L3LzuD0Odi04moz8D9sfOhnJgC78JD6NDCYSRcRbx/oB8PJVCtpUqiEierM/HBxiWRv2lPh5z7czLT5sS5cRuNfSZ1Aw5XJyGmrBizg0OgeC7C0thobSUV/aQZe1Q5Phl3Rb+NRPL2jeIq4lktFZplmRQRZ0ufeh1KNP3mxhaWmk7W1hT7FXngN+SBCbFzcceZd+kbyTmxv32KCE3BP5N98W19MkILClBmtmgrUSz39dCRgipV8H8wkUpvmbVBk9wYriK+pjjUGSZEem/194hv1COiOhsna3JxyVKOJ1LWaTlAfUgRru8VtkYYWk3Is9Qgo6Uc0U1Z2FoZgWczNpJHSPngSZiUuhqZbeWyDu8Tz6ZtJsWexgRSvKh99OXxKuJ/S6LKwKSI0L1EiDH7eBjuC9iAP6wPQF51E46YEtWQ0CyunHwFBnsNQnR6PLhpI574ai/eCwnHzgtpuFBRgczmCnxefQZ/lBh+BusMISixmvBr9iTF9GGqIGPBIHE9VYebHbFMW/07ul2w2ftwK28wq3wkwbxOx6Cxrxk30bYv/Zg8hYVfSTDqLVap03Ie4fJHpY9/PxQYiNXn4tFo68CeinP4HSX1MxfXI8KUAY+8fdrqo8cg8U/KTzvDhMhENV3CWcNlKWWOE+CfdmyXSvFo0gryzKtqX0rMPycslzke2/slEfeW/jKGm+9y3Lk5AF096tm7tdeOuXQOeuS8N6rtV+TbWDBI/EmOXarbbMnbKO7aBjrgERnlJC7btS8qza1YW0ZVghPQES6kRHmXEbsuOs8kg+Tp95KY09oqTvDp87Fkf9pYRr6ADAchXmEz41auy+z+8Ffw75S1YtkHtn8ilh5KYnfqJehs5IkI7SzD5CnmN5SHwdRiGzzmSn9WljyQWFkhi12LIrphzcn9EqUU86OFEA8sj4ZybJLENj+3VUZCV9MIZekiNVZ55+PmuQCP7N6JPvrH5U858aw6hqrDA3GeMuE/vvyCbjgL1f5LF+N+umCMdEUzdbUg6HIMmuniMhoIcS5h28uiaIIz8mzosUDfYEbghUTsSEuldlEaH6D4iEr7FCIbMhFYdkrGBFJ+fFOTRDMNoJhOh0EpFxDE/eleyle2H4KdtnsukaPBYIyPBsNdAkb6PlJzwJXs2uaAELdarWhvb0dHRwfa2tqGbTfS59o2dAw/+fe1fRxylrmSO1prayu6uoY51v7U6L/mUNX3I/4kMRSDxI8ePoKF76u7pQPdmna9vertPT8/Hzu2b0d3d7f8ZrD7hpJhog6rMJqbm+Hr7SPvWzZtQn5enryzlxncf/PGjfJ+KioKkREn5Z3hWNfxZDjWEuL8w3PxEkx/bipKS0pE8Om2bXjf3R3LvLywwN0Dxro6GPQG6vMclnl6ITcnFzabDb4femPRgoUwNzbK2OenTkNCfLzM4cAiMkhEWDjc3eaL0rExZzDztRkIDwsTufs8N3ke2L8fXx84IIqvWumH9+e7w2g04vz58zhx/LjIdbm50leIpyQnY9ITT+KFadOxzn+NCJYu8cT+ffuw1t+fLLUZ338XB32RHit8fHHsyFF8FhQkikx5ajIp6IGc7ByaJwWLFy6U8UPBYx+ceD/27d0rvz8L2oFZM2Zgtd8q+T1/7jx58nrHjh5FdVUVnv7fU2KwpMRE8c4sUnQ+Kdhpt0tfIb6fJmQ3VdGANR/5i/sO7NsvC4aGhIi1WNMGU4N4xouUYtJ2moQXX+3nJwmm0+lw+JtDMvFQdHZ24p3Zb6GCDl2MgHXrsZi85Ogb+Mmn8mRPnI2NlRBlg60kIzU0qMfdee/NEQM64DI5h5YdV7hWPpaE6+8feQ2GY97L5eXwIoM5lGAI8TpjPfT6YjQ1jf3Q40Bzs/Oy4EBXVzf0hmIUF5egp8d5H71RcF60t3egh5K0paVFvgnxS5eykJGpNkZxSakowhoXFRlgrK+nGtqGbErIlpZWqakWSwvM5ibJeIOhBLq8fHlPuZiG3Nw8CQ8HdHkFlGT1qK83SUI3NpqRk6MTMhYi4pirs7NLvpeVlUu4ll+uoPX1sNNcbFweV1JSJnMK8cxMuq3T4unpGWT1JiFdUlomi2Vm5QghnpAXzs8vRHV1DcVrJVmwFCaTSSzJC7BSeop9nquqynmbz8zKFkW4MXE2AM/NRqmorMJlmovf2eMFBUUoKCwSkmwAVoq9WKjJS0vVW5QQZzfm0wAmwpPzYLagjZKvsko9dtbWGpGRkSXkOcvT0jKErM1mF6XiExLFgiznRc1m51+0mq5cQRYZgJvVakNNbR15NxtmMhLvhhdT08RQHTSvqaERtXVG4aHyKpR5eQx7nS3PGEzOoUWe4SpBhyahY0fkcawoW8zxzRV47NA5Xc3lCsPJBomPNwhxdl9rGx9uxtLogESulOZS/tM1DhWuUIPExyN+If5zQ6FM3zYem/Y/+uMNivJ/GmuYc0C2uE8AAAAASUVORK5CYII=" alt="logo"></div><div id="CybotCookiebotDialogBodyContent"><h2 id="CybotCookiebotDialogBodyContentTitle" lang="en">This website uses cookies</h2><div id="CybotCookiebotDialogBodyContentText" lang="en"><p style="">We use cookies to analyse our traffic, personalise content and ads, and to provide social media features. We also share information about your use of our site with our social media, advertising and analytics partners who may combine it with other information that you’ve provided to them or that they’ve collected from your use of their services. You consent to our cookies if you continue to use our website.</p><p style="">&nbsp;</p><p style="">Learn more about how we process personal data in our <a href="https://www.ambervalley.gov.uk/council/data-protection/" style="">privacy policy</a>.</p><p style="">&nbsp;</p></div></div><div id="CybotCookiebotDialogBodyContentControls" style="display: none;"><div class="CybotCookiebotDialogBodyContentControlsWrapper"><input type="checkbox" id="CybotCookiebotDialogBodyContentCheckboxPersonalInformation" class="CybotCookiebotDialogBodyLevelButton" tabindex="0"><label class="CybotCookiebotDialogBodyContentLabelPersonalInformation" for="CybotCookiebotDialogBodyContentCheckboxPersonalInformation"></label></div></div><div id="CybotCookiebotDialogBodyButtons" style="display: none;"><a id="CybotCookiebotDialogBodyButtonDecline" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en"> Use necessary cookies only </a><a id="CybotCookiebotDialogBodyButtonAccept" class="CybotCookiebotDialogBodyButton" href="javascript: void(0);" tabindex="0" lang="en"> Allow all cookies </a><a id="CybotCookiebotDialogBodyButtonDetails" class="CybotCookiebotDialogBodyLink" href="javascript: void(0);" tabindex="0" lang="en"> Show details </a></div><div id="CybotCookiebotDialogBodyLevelWrapper" style="display: block;"><div id="CybotCookiebotDialogBodyLevelButtonAcceptWrapper"><a id="CybotCookiebotDialogBodyLevelButtonAccept" href="javascript: void(0);" tabindex="0" lang="en"> OK </a></div><div id="CybotCookiebotDialogBodyLevelButtons" style="float: left; pointer-events: auto; margin-left: 8px; margin-right: 0px;"><div id="CybotCookiebotDialogBodyLevelButtonsTable" style="width: auto;"><div id="CybotCookiebotDialogBodyLevelButtonsRow"><div id="CybotCookiebotDialogBodyLevelButtonsSelectPane"><div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Mandatory - can not be deselected. Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies."><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonNecessary" class="CybotCookiebotDialogBodyLevelButton CybotCookiebotDialogBodyLevelButtonDisabled" disabled="disabled" checked="checked"><label for="CybotCookiebotDialogBodyLevelButtonNecessary">Necessary</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in."><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonPreferences" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonPreferences">Preferences</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously."><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonStatistics" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonStatistics">Statistics</label></div><div class="CybotCookiebotDialogBodyLevelButtonWrapper" title="Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers."><input type="checkbox" id="CybotCookiebotDialogBodyLevelButtonMarketing" class="CybotCookiebotDialogBodyLevelButton" checked="checked" tabindex="0"><label for="CybotCookiebotDialogBodyLevelButtonMarketing">Marketing</label></div></div><div id="CybotCookiebotDialogBodyLevelDetailsWrapper"><a id="CybotCookiebotDialogBodyLevelDetailsButton" class="CybotCookiebotDialogBodyLink" href="javascript: void(0);" tabindex="0" lang="en"> Show details </a></div></div></div></div></div></div><div id="CybotCookiebotDialogDetail"><div id="CybotCookiebotDialogDetailBody"><div id="CybotCookiebotDialogDetailBodyContentTabs"><a id="CybotCookiebotDialogDetailBodyContentTabsOverview" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItemSelected" href="javascript: CookieConsent.dialog.showDetailPane('overview');" lang="en"> Cookie declaration </a><a id="CybotCookiebotDialogDetailBodyContentTabsIAB" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('iab');" lang="en"> [#IABSETTINGS#] </a><a id="CybotCookiebotDialogDetailBodyContentTabsAbout" class="CybotCookiebotDialogDetailBodyContentTab CybotCookiebotDialogDetailBodyContentTabsItem" href="javascript: CookieConsent.dialog.showDetailPane('about');" lang="en"> About cookies </a></div><div id="CybotCookiebotDialogDetailBodyContent"><div id="CybotCookiebotDialogDetailBodyContentTextOverview" lang="en"><div id="CybotCookiebotDialogDetailBodyContentCookieContainer"><div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypes"><a id="CybotCookiebotDialogDetailBodyContentCookieContainerNecessary" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('necessary');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected" lang="en" style="border-top-width: 0px;"><label>&nbsp;</label>Necessary (13)</a><a id="CybotCookiebotDialogDetailBodyContentCookieContainerPreference" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('preference');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en"><label>&nbsp;</label>Preferences (0)</a><a id="CybotCookiebotDialogDetailBodyContentCookieContainerStatistics" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('statistics');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en"><label>&nbsp;</label>Statistics (2)</a><a id="CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('advertising');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en"><label>&nbsp;</label>Marketing (15)</a><a id="CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified" href="javascript: CookieConsent.dialog.showCookieContainerDetailPane('unclassified');" class="CybotCookiebotDialogDetailBodyContentCookieContainerTypes" lang="en"><label>&nbsp;</label>Unclassified (3)</a></div><div id="CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails"><div id="CybotCookiebotDialogDetailBodyContentCookieTabsNecessary"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Necessary cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function properly without these cookies.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"> <table id="CybotCookiebotDialogDetailTableNecessary" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="__lc_cid">__lc_cid</td><td><a href="https://www.livechatinc.com/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Necessary for the functionality of the website's chat-box function. ">Necessary for the functionality of the website's chat-box function. </td><td title="3 years">3 years</td><td title="HTTP">HTTP</td></tr><tr><td title="__lc_cst">__lc_cst</td><td><a href="https://www.livechatinc.com/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Necessary for the functionality of the website's chat-box function. ">Necessary for the functionality of the website's chat-box function. </td><td title="3 years">3 years</td><td title="HTTP">HTTP</td></tr><tr><td title="__lc2_cid">__lc2_cid</td><td><a href="https://www.livechatinc.com/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Stores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter. ">Stores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter. </td><td title="3 years">3 years</td><td title="HTTP">HTTP</td></tr><tr><td title="__lc2_cst">__lc2_cst</td><td><a href="https://www.livechatinc.com/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Stores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter. ">Stores a unique ID string for each chat-box session. This allows the website-support to see previous issues and reconnect with the previous supporter. </td><td title="3 years">3 years</td><td title="HTTP">HTTP</td></tr><tr><td title="__oauth_redirect_detector">__oauth_redirect_detector</td><td><a href="https://www.livechatinc.com/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. ">Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. </td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="__RequestVerificationToken">__RequestVerificationToken</td><td><a href="http://www.ambervalley.gov.uk" target="_blank" rel="noopener noreferrer nofollow" title="Amber Valley County Counsil's privacy policy">Amber Valley County Counsil</a></td><td title="Helps prevent Cross-Site Request Forgery (CSRF) attacks.">Helps prevent Cross-Site Request Forgery (CSRF) attacks.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="_ga">_ga</td><td><a href="http://www.ambervalley.gov.uk" target="_blank" rel="noopener noreferrer nofollow" title="Amber Valley County Counsil's privacy policy">Amber Valley County Counsil</a></td><td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td><td title="2 years">2 years</td><td title="HTTP">HTTP</td></tr><tr><td title="ASP.NET_SessionId">ASP.NET_SessionId</td><td><a href="http://www.ambervalley.gov.uk" target="_blank" rel="noopener noreferrer nofollow" title="Amber Valley County Counsil's privacy policy">Amber Valley County Counsil</a></td><td title="Preserves the visitor's session state across page requests.">Preserves the visitor's session state across page requests.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="CookieConsent">CookieConsent</td><td><a href="https://www.cookiebot.com/goto/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Cookiebot's privacy policy">Cookiebot</a></td><td title="Stores the user's cookie consent state for the current domain">Stores the user's cookie consent state for the current domain</td><td title="1 year">1 year</td><td title="HTTP">HTTP</td></tr><tr><td title="CASID">CASID</td><td><a href="https://www.livechatinc.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. ">Allows the website to recoqnise the visitor, in order to optimize the chat-box functionality. </td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="CONSENT">CONSENT</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  ">Used to detect if the visitor has accepted the marketing category in the cookie banner. This cookie is necessary for GDPR-compliance of the website.  </td><td title="18 years">18 years</td><td title="HTTP">HTTP</td></tr><tr><td title="rc::c">rc::c</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used in context with video-advertisement. The cookie limits the number of times a visitor is shown the same advertisement-content. The cookie is also used to ensure relevance of the video-advertisement to the specific visitor.  ">Used in context with video-advertisement. The cookie limits the number of times a visitor is shown the same advertisement-content. The cookie is also used to ensure relevance of the video-advertisement to the specific visitor.  </td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="__livechat">__livechat</td><td><a href="https://www.livechatinc.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Used to hide the user's personal customisation of LiveChat.">Used to hide the user's personal customisation of LiveChat.</td><td title="3 years">3 years</td><td title="HTTP">HTTP</td></tr></tbody></table> </div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsPreference"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Preference cookies enable a website to remember information that changes the way the website behaves or looks, like your preferred language or the region that you are in.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"> <table id="CybotCookiebotDialogDetailTablePreference" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><tbody><tr><td class="CybotCookiebotDialogDetailBodyContentCookieTypeTableEmpty">We do not use cookies of this type</td></tr></tbody></table> </div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsStatistics"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Statistic cookies help website owners to understand how visitors interact with websites by collecting and reporting information anonymously.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"> <table id="CybotCookiebotDialogDetailTableStatistics" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="_gat">_gat</td><td><a href="http://www.ambervalley.gov.uk" target="_blank" rel="noopener noreferrer nofollow" title="Amber Valley County Counsil's privacy policy">Amber Valley County Counsil</a></td><td title="Used by Google Analytics to throttle request rate">Used by Google Analytics to throttle request rate</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="_gid">_gid</td><td><a href="http://www.ambervalley.gov.uk" target="_blank" rel="noopener noreferrer nofollow" title="Amber Valley County Counsil's privacy policy">Amber Valley County Counsil</a></td><td title="Registers a unique ID that is used to generate statistical data on how the visitor uses the website.">Registers a unique ID that is used to generate statistical data on how the visitor uses the website.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr></tbody></table> </div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Marketing cookies are used to track visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"> <table id="CybotCookiebotDialogDetailTableAdvertising" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="IDE">IDE</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.">Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an ad and to present targeted ads to the user.</td><td title="1 year">1 year</td><td title="HTTP">HTTP</td></tr><tr><td title="test_cookie">test_cookie</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used to check if the user's browser supports cookies.">Used to check if the user's browser supports cookies.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="1P_JAR">1P_JAR</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Collects information on visitor behaviour on multiple websites. This information is used on the website, in order to optimize the relevance of advertisement.">Collects information on visitor behaviour on multiple websites. This information is used on the website, in order to optimize the relevance of advertisement.</td><td title="29 days">29 days</td><td title="HTTP">HTTP</td></tr><tr><td title="ads/ga-audiences">ads/ga-audiences</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor's online behaviour across websites.">Used by Google AdWords to re-engage visitors that are likely to convert to customers based on the visitor's online behaviour across websites.</td><td title="Session">Session</td><td title="Pixel">Pixel</td></tr><tr><td title="NID">NID</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="Google's privacy policy">Google</a></td><td title="Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.">Registers a unique ID that identifies a returning user's device. The ID is used for targeted ads.</td><td title="6 months">6 months</td><td title="HTTP">HTTP</td></tr><tr><td title="GPS">GPS</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.">Registers a unique ID on mobile devices to enable tracking based on geographical GPS location.</td><td title="1 day">1 day</td><td title="HTTP">HTTP</td></tr><tr><td title="PREF">PREF</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.">Registers a unique ID that is used by Google to keep statistics of how the visitor uses YouTube videos across different websites.</td><td title="8 months">8 months</td><td title="HTTP">HTTP</td></tr><tr><td title="VISITOR_INFO1_LIVE">VISITOR_INFO1_LIVE</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Tries to estimate the users' bandwidth on pages with integrated YouTube videos.">Tries to estimate the users' bandwidth on pages with integrated YouTube videos.</td><td title="179 days">179 days</td><td title="HTTP">HTTP</td></tr><tr><td title="YSC">YSC</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Registers a unique ID to keep statistics of what videos from YouTube the user has seen.">Registers a unique ID to keep statistics of what videos from YouTube the user has seen.</td><td title="Session">Session</td><td title="HTTP">HTTP</td></tr><tr><td title="yt-remote-cast-installed">yt-remote-cast-installed</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-connected-devices">yt-remote-connected-devices</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-device-id">yt-remote-device-id</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-fast-check-period">yt-remote-fast-check-period</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-session-app">yt-remote-session-app</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr><tr><td title="yt-remote-session-name">yt-remote-session-name</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer nofollow" title="YouTube's privacy policy">YouTube</a></td><td title="Stores the user's video player preferences using embedded YouTube video">Stores the user's video player preferences using embedded YouTube video</td><td title="Session">Session</td><td title="HTML">HTML</td></tr></tbody></table> </div></div><div id="CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified"><div class="CybotCookiebotDialogDetailBodyContentCookieTypeIntro">Unclassified cookies are cookies that we are in the process of classifying, together with the providers of individual cookies.</div><div class="CybotCookiebotDialogDetailBodyContentCookieTypeTableContainer"> <table id="CybotCookiebotDialogDetailTableUnclassified" class="CybotCookiebotDialogDetailBodyContentCookieTypeTable"><thead><tr><th scope="col">Name</th><th scope="col">Provider</th><th scope="col">Purpose</th><th scope="col">Expiry</th><th scope="col">Type</th></tr></thead><tbody><tr><td title="@@lc_auth_token:5092731">@@lc_auth_token:5092731</td><td><a href="https://www.livechatinc.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Pending">Pending</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="5092731:state">5092731:state</td><td><a href="https://www.livechatinc.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Pending">Pending</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr><tr><td title="side_storage_5092731">side_storage_5092731</td><td><a href="https://www.livechatinc.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer nofollow" title="Livechat's privacy policy">Livechat</a></td><td title="Pending">Pending</td><td title="Persistent">Persistent</td><td title="HTML">HTML</td></tr></tbody></table> </div></div></div></div></div><div id="CybotCookiebotDialogDetailBodyContentTextIAB" lang="en"> [#COOKIESIABCONTENT#] </div><div id="CybotCookiebotDialogDetailBodyContentTextAbout" lang="en"> Cookies are small text files that can be used by websites to make a user's experience more efficient.<br style=""><br style="">The law states that we can store cookies on your device if they are strictly necessary for the operation of this site. For all other types of cookies we need your permission.<br style=""><br style="">This site uses different types of cookies. Some cookies are placed by third party services that appear on our pages.<br style=""><br style="">You can at any time change or withdraw your consent from the Cookie Declaration on our website.<br style=""><br style="">Learn more about who we are, how you can contact us and how we process personal data in our Privacy Policy. </div></div><div id="CybotCookiebotDialogDetailFooter" lang="en"> Cookie declaration last updated on 18/12/2019 by <a href="https://www.cookiebot.com" target="_blank" rel="noopener" title="Cookiebot">Cookiebot</a> </div></div></div></div>
+
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+		                <a href="/Default.aspx"><p style="display:none">home link</p><img src="/images/logo.jpg" alt="council logo" style="width:277px;height:69px"></a>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>    
+                </div>
+            </div>
+        </header>
+
+        <div class="navigationMenu" style="">
+            <nav class="navbar navbar-default" style="text-align:right">
+                <div class="container-fluid" style="text-align:right; ">
+                    <div class="navbar-header" style="text-align:right;width:100%; ">
+                            <div style="float:left;" class="hidden-sm hidden-xs">
+                                    <ul class="breadcrumb" aria-label="Breadcrumb">
+        <li><a href="/"><span class="forceBlack">Home</span></a></li>
+            <li class=""><a href="/planning/"><span class="forceBlack">Planning</span></a></li>
+            <li class=""><a href="/planning/planning-policy/"><span class="forceBlack">Planning policy</span></a></li>
+            <li class="current"><a href="/planning/planning-policy/brownfield-land-register/"><span class="forceBlack">Brownfield land register</span></a></li>
+    </ul>
+
+                            </div>
+                            
+                            <div class="form-group navbar-right" style="text-align:right">
+                                <button id="btnOpenSearch" type="submit" style="padding-top:5px; padding-bottom:5px" aria-label="Search" title="Search Button" class="navbar-toggle collapse in">
+                                    <span class="sr-only forceBlack">Search Button</span>
+                                    <span class="glyphicon glyphicon-search forceBlack"></span>
+                                </button>
+
+                                <button id="btnA2Z" type="button" class="navbar-toggle collapse in" style="padding-top:5px; padding-bottom:5px">
+                                    <span class="forceBlack">A - Z</span>
+                                </button> 
+                                
+                                <button id="btnMenu" type="button" style="padding-top:5px; padding-bottom:5px" class="navbar-toggle collapse in">
+                                    <span class="sr-only forceBlack">Toggle navigation</span>
+                                    <span class="hidden-sm hidden-xs forceBlack">Menu</span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                    <span style="margin-top:4px;margin-bottom:4px" class="icon-bar hidden-lg hidden-md forceBlack"></span>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+                
+                <div id="a2zPopout" class="popoutContainerAZ">
+                    <script>
+
+        $(document).ready(function () {
+            $(".a2zItem").click(function (event) {
+                event.preventDefault();
+                GetA2ZItems($(this).children('a').text(), function(data){
+                    populateA2Z(data);
+                });
+            });
+        });
+        
+        function GetA2ZItems(firstLetter, callback) {
+            $.ajax({
+                url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/TaxonomyJSON.asmx/GetA2ZByFirstLetter',
+                type: 'POST',
+                data: {"firstLetter": firstLetter},
+                dataType: 'json',
+                success: function (data) {
+                    callback(data);
+                }
+            });
+            
+        }
+        
+        function populateA2Z(data){
+            var html1 = '';
+            var html2 = '';
+             $.each(data, function (index, value) {
+                if(index < data.length / 2){
+                    html1 += '<p class="a2zResult"><a href="' + data[index].url + '"';
+                    if(data[index].ext != "0"){html1 += ' target="_blank"';}
+                    html1 += '>' + data[index].term + '</a></p>';
+                }
+                else{
+                    html2 += '<p class="a2zResult"><a href="' + data[index].url + '"';
+                    if(data[index].ext != "0"){html2 += ' target="_blank"';}
+                    html2 += '>' + data[index].term + '</a></p>';
+                }
+            });
+            $("#a2zcol1").html(html1);
+            $("#a2zcol2").html(html2);
+
+        }
+        
+        function isEven(n) {
+          return n == parseFloat(n)? !(n%2) : void 0;
+        }
+        
+</script>
+
+<div style="margin: 0 auto;">
+    <div class="a2zmenu">
+	    <div class="a2zItem" aria-label="Open A to Z items starting with A" tabindex="0"><a class="a2zLetter">A</a></div><div class="a2zItem" aria-label="Open A to Z items starting with B" tabindex="0"><a class="a2zLetter">B</a></div><div class="a2zItem" aria-label="Open A to Z items starting with C" tabindex="0"><a class="a2zLetter">C</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with D" tabindex="0"><a class="a2zLetter">D</a></div><div class="a2zItem" aria-label="Open A to Z items starting with E" tabindex="0"><a class="a2zLetter">E</a></div><div class="a2zItem" aria-label="Open A to Z items starting with F" tabindex="0"><a class="a2zLetter">F</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with G" tabindex="0"><a class="a2zLetter">G</a></div><div class="a2zItem" aria-label="Open A to Z items starting with H" tabindex="0"><a class="a2zLetter">H</a></div><div class="a2zItem" aria-label="Open A to Z items starting with I" tabindex="0"><a class="a2zLetter">I</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with J" tabindex="0"><a class="a2zLetter">J</a></div><div class="a2zItem" aria-label="Open A to Z items starting with K" tabindex="0"><a class="a2zLetter">K</a></div><div class="a2zItem" aria-label="Open A to Z items starting with L" tabindex="0"><a class="a2zLetter">L</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with M" tabindex="0"><a class="a2zLetter">M</a></div><div class="a2zItem" aria-label="Open A to Z items starting with N" tabindex="0"><a class="a2zLetter">N</a></div><div class="a2zItem" aria-label="Open A to Z items starting with O" tabindex="0"><a class="a2zLetter">O</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with P" tabindex="0"><a class="a2zLetter">P</a></div><div class="a2zItem" aria-label="Open A to Z items starting with Q" tabindex="0"><a class="a2zLetter">Q</a></div><div class="a2zItem" aria-label="Open A to Z items starting with R" tabindex="0"><a class="a2zLetter">R</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with S" tabindex="0"><a class="a2zLetter">S</a></div><div class="a2zItem" aria-label="Open A to Z items starting with T" tabindex="0"><a class="a2zLetter">T</a></div><div class="a2zItem" aria-label="Open A to Z items starting with U" tabindex="0"><a class="a2zLetter">U</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with V" tabindex="0"><a class="a2zLetter">V</a></div><div class="a2zItem" aria-label="Open A to Z items starting with W" tabindex="0"><a class="a2zLetter">W</a></div><div class="a2zItem" aria-label="Open A to Z items starting with X" tabindex="0"><a class="a2zLetter">X</a></div>
+        <div class="a2zItem" aria-label="Open A to Z items starting with Y" tabindex="0"><a class="a2zLetter">Y</a></div><div class="a2zItem" aria-label="Open A to Z items starting with Z" tabindex="0"><a class="a2zLetter">Z</a></div>
+    </div>
+    <br class="brclear">
+    <div class="a2zResultContainer">
+        <div id="a2zcol1" class="col-sm-6">
+        </div>
+        <div id="a2zcol2" class="col-sm-6">
+        </div>
+    </div>
+</div>
+                </div>                
+                <div id="menuPopout" class="popoutContainerMenu">
+                        <div class="topLevelBackground">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/benefits" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Benefits
+                    </span>                       
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/business" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Business
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/community" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Community
+                    </span> 
+                </a>
+            </div>
+
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/council" class="tmlink">
+            		<span aria-hidden="true" class="tmchevron">
+            	        &gt;
+                    </span>
+                    <span class="tmtext">
+                        Council
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/council-tax" class="tmlink">
+                	<span aria-hidden="true" class="tmchevron">
+            	        &gt;
+                    </span>
+                    <span class="tmtext">
+                        Council tax
+                    </span>
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/councillors-and-elections" class="tmlink">
+            		<span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span>   
+                    <span class="tmtext">
+                        Councillors and elections
+                    </span>             
+                </a>
+            </div>    
+    
+
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/environment" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Environment
+                    </span>                       
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/housing" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Housing
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/licensing" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Licensing
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/planning" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Planning
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/roads-and-parking" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Roads and parking
+                    </span> 
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4 tmitem">
+                <a href="/rubbish-waste-and-recycling" class="tmlink">
+                    <span aria-hidden="true" class="tmchevron">
+        		        &gt;
+                    </span> 
+                    <span class="tmtext">
+                        Rubbish, waste and recycling
+                    </span> 
+                </a>
+            </div>            
+        </div>
+    
+    </div>
+                </div>            
+                <div id="searchPopout" class="popoutContainerSearch">
+                    <script>
+
+    var imgAltTagsFix = function() {
+        //customSearchControl.setSearchCompleteCallback(this,function(){ alert("search completed");});
+        //google.load("search", "1", {"callback" : onLoadCallback});
+        //console.log("hello" + $('.gsc-adBlock'));
+        $('.gsc-adBlock').hide();
+        $('img.gsc-branding-img').attr("alt", "Google Custom Search Branding");
+        $('input.gsc-search-button').attr('alt', "Google Custom Search Button");
+        $('.gsc-thumbnail-inside').css("padding", "0");
+        
+        $('table.gstl_50').attr('role', "presentation");
+        $('table.gstl_50').removeAttr('cellpadding');
+        $('table.gstl_50').removeAttr('cellspacing');
+        $('table.gstl_50').attr('style', "padding:0;");   
+        
+        $('table.gsc-above-wrapper-area-container').attr('role', "presentation");
+        $('table.gsc-above-wrapper-area-container').removeAttr('cellpadding');
+        $('table.gsc-above-wrapper-area-container').removeAttr('cellspacing');
+        $('table.gsc-above-wrapper-area-container').attr('style', "padding:0;");
+        
+        $('table.gsc-resultsHeader').attr('role', "presentation");
+        $('table.gsc-resultsHeader').removeAttr('cellpadding');
+        $('table.gsc-resultsHeader').removeAttr('cellspacing');
+        $('table.gsc-resultsHeader').attr('style', "padding:0;");
+        
+        $('table.gsc-search-box').attr('role', "presentation");
+        $('table.gsc-search-box').removeAttr('cellpadding');
+        $('table.gsc-search-box').removeAttr('cellspacing');
+        $('table.gsc-search-box').attr('style', "padding:0;");
+        $('table.gsc-search-box').attr('title', "Site Search");
+        
+        //$('td.gsc-search-button').html('<button type="button" class="gsc-search-button gsc-search-button-v2">search</button>');
+
+    };
+    
+    function onLoadCallback(){
+        //console.log("hello2" + $('.gsc-adBlock'));
+    }
+    
+    window.__gcse = {
+        callback: imgAltTagsFix
+    };
+
+    (function() {
+        var cx = '011253090859162375191:mzr5uftn9hu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+    })();
+    
+</script>
+
+    <div style="margin: 0 auto;">
+        If you cannot see the search box you will need to <a href="/our-website/cookies" style="color: #008080 !important;">amend your cookie consent</a> to allow marketing cookies.
+        <div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table class="gsc-search-box" role="presentation" style="padding:0;" title="Site Search"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table id="gs_id50" class="gstl_50 gsc-input" role="presentation" style="padding:0;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" placeholder="Custom Search" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background-image: url(https://www.google.com/cse/static/images/1x/googlelogo_lightgrey_46x16dp.png); background-color: rgb(255, 255, 255); text-indent: 48px; outline: none; background-position: 0% 50%; background-repeat: no-repeat no-repeat;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-nooverlay"><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><table class="gsc-above-wrapper-area-container" role="presentation" style="padding:0;"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Sort by:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div></div></div></div>
+    </div>
+                </div> 
+                
+            </nav>
+        </div>
+        
+        
+
+
+    <div class="container">
+        <div class="row row-fluid">
+        
+            <div class="col-md-9 col-md-push-3">
+
+                    <div>
+        <h1>Brownfield land register
+        </h1>
+    </div>
+            
+                <div class="bodyText">
+                    
+                    <p>Amber Valley Borough Council is required to prepare, maintain and publish a register of previously developed (brownfield) land within the borough which they consider appropriate for residential development.&nbsp;</p>
+<p>The Town and Country Planning (brownfield land register) Regulations 2017 sets out criteria which local authorities should follow in preparing and publishing their registers.</p>
+<p>For sites to be included on the register they must be categorised as previously developed land as defined by the government in annex 2 of the<span>&nbsp;</span><a rel="noopener" href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/6077/2116950.pdf" target="_blank">national planning policy framework</a><span>&nbsp;</span>and that are considered by the council to be suitable, available and achievable for residential development.</p>
+<p>Definitions of suitable, available and achievable are provided within the regulations.&nbsp;</p>
+<p>The register must be published in two parts:-</p>
+<ul>
+<li>Part 1 - should include the sites and land which is appropriate for residential development as defined above; and</li>
+<li>Part 2 - will comprise only those sites in part 1 that the borough council has decided are suitable for a grant of permission in principle for residential development.</li>
+</ul>
+<p>Further information on the requirements for brownfield land registers can be found on the governments planning practice guidance website at&nbsp;<a rel="noopener" href="https://www.gov.uk/guidance/brownfield-land-registers" target="_blank">www.gov.uk/guidance/brownfield-land-registers</a>&nbsp;</p>
+<p>View the full register below, select a site reference to view a pop up containing further information and a map. Alternatively you can view a <a data-udi="umb://document/b950f672bbc1426193274e7ddeff7334" href="/planning/planning-policy/brownfield-land-register/all-sites-on-brownfield-land-register/" title="All sites">map that shows all sites on the 2019 register</a>.</p>
+<p>The below data is also available to <a href="http://info.ambervalley.gov.uk/shareddatasets/brownfieldlandregister/Amber%20Valley%20Brownfield%20Land%20Register%202019.csv">download in CSV format</a>.</p>
+<script>
+
+    //CREATED BY SIMON SHEPHERD
+    
+    var selectedSite = {};
+
+    function getBrownfieldSite(SiteReference, callback) {
+        $.ajax({
+            url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/GazetteerJSON.asmx/GetBrownfieldData',
+            data: {
+                "SiteReference": SiteReference
+            },
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                callback(data);
+            }
+        });
+    }
+
+    function getBrownfieldSiteList(callback) {
+        $.ajax({
+            url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/GazetteerJSON.asmx/GetBrownfieldDataList',
+            type: 'POST',
+            dataType: 'json',
+            success: function (data) {
+                callback(data);
+            }
+        });
+    }
+    
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    };
+
+    $(document).ready(function () {
+        if(getUrlParameter("reference") != ''){
+            var SiteReference = getUrlParameter("reference").replace(/\-/g, '/');
+            DataPopup(SiteReference);
+        }
+        var target = document.getElementById('simonBrownfieldDetails');
+        getBrownfieldSiteList(function (a) {
+            $('#simonBrownfieldDetails').DataTable({
+                data: a,
+                destroy: true,
+                select: true,
+                ordering: false,
+                iDisplayLength: -1,
+                bPaginate: false,
+                autoWidth: false,
+                columns: [
+                    {
+                        data: "SiteReference",
+                        mRender: function (data, type, row) {
+                            var h = '<a href="Javascript:DataPopup(\'' + row.SiteReference + '\')">' + row.SiteReference + '</a>';
+                            return h;
+                        }
+                    },
+                    { data: "SiteNameAddress" }
+                ],
+                columnDefs: [
+                    { title: 'Site reference', className: 'dt-head-left dt-body-left', targets: [0], width: '25%' },
+                    { title: 'Location', className: 'dt-head-left dt-body-left', targets: [1], width: '75%' }
+                ],
+                language: {
+                    emptyTable: 'There are no brownfield sites to display. If you believe this to be in error, please contact us on 01773 570222.'
+                }
+            });
+        });
+        
+        $('#infoPop').on('shown.bs.modal', function (e) {
+            if(mymap == undefined){
+                setupMap(initialGeoName);
+            }
+            GoToMaplocation(selectedSite.Lat, selectedSite.Lng, 16, true);
+        })
+    });
+
+    function DataPopup(SiteReference) {
+        getBrownfieldSite(SiteReference, function (rec) {
+            selectedSite = rec;
+            $('#lblSiteReference').text(rec.SiteReference);
+            $('#lblSiteNameAddress').text(rec.SiteNameAddress);
+            $('#lblLat').text(rec.Lat);
+            $('#lblLng').text(rec.Lng);
+            $('#lblHectares').text(rec.Hectares);
+            $('#lblOwnershipStatus').text(rec.OwnershipStatus);
+            $('#lblDeliverable').text(rec.Deliverable);
+            $('#lblPlanningStatus').text(rec.PlanningStatus);
+            $('#lblPermissionType').text(rec.PermissionType);
+            $('#lblPermissionDate').text(rec.PermissionDate);
+            if (rec.PlanningHistory == '') {
+                $('#lblPlanningHistory').html('N/A');    
+            }
+            else {
+                $('#lblPlanningHistory').html('<a href="' + rec.PlanningHistory + '" target="_blank">Click here to view');
+            }
+            $('#lblMinNetDwellings').text(rec.MinNetDwellings);
+            $('#lblDevelopmentDescription').text(rec.DevelopmentDescription);
+            $('#lblNonHousingDevelopment').text(rec.NonHousingDevelopment);
+            $('#lblNetDwellingsRangeFrom').text(rec.NetDwellingsRangeFrom);
+            $('#lblNetDwellingsRangeTo').text(rec.NetDwellingsRangeTo);
+            $('#lblNotes').text(rec.Notes);
+            if (rec.mapURL == '') {
+                $('#omap').html('Not available to view in Google Maps');
+            }
+            else {
+                $('#omap').html('<a href=\"' + rec.mapURL + '\" target=\"_blank\">Click here to view in Google Maps</a>');
+            }
+            $('#infoPop').modal('show');
+            //GoToMaplocation(rec.Lat, rec.Lng);
+        });
+    }
+
+</script>
+
+<div id="divBrownfield">
+    <p>Click on any record below to view more information about the site:</p>
+    <div id="simonBrownfieldDetails_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><div class="row"><div class="col-sm-6"></div><div class="col-sm-6"><div id="simonBrownfieldDetails_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="simonBrownfieldDetails"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="simonBrownfieldDetails" class="simonDatatable table table-striped table-bordered dataTable no-footer" role="grid" aria-describedby="simonBrownfieldDetails_info">
+        <thead>
+            <tr role="row"><th class="sorting_disabled dt-head-left dt-body-left" rowspan="1" colspan="1" style="width: 25%;">Site reference</th><th class="sorting_disabled dt-head-left dt-body-left" rowspan="1" colspan="1" style="width: 75%;">Location</th></tr>
+        </thead>
+    <tbody><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0001')">BFLR0001</a></td><td class=" dt-head-left dt-body-left">Spring Road Riddings</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0002')">BFLR0002</a></td><td class=" dt-head-left dt-body-left">Land at Greenhill Lane Leabrooks</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0005')">BFLR0005</a></td><td class=" dt-head-left dt-body-left">John Smedley Ltd Lea Road Lea Bridge</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0007')">BFLR0007</a></td><td class=" dt-head-left dt-body-left">Land at Salcombe Road Alfreton</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0010')">BFLR0010</a></td><td class=" dt-head-left dt-body-left">Bradshaw Avenue Ridding</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0014')">BFLR0014</a></td><td class=" dt-head-left dt-body-left">Land to rear of 27-41 Main Road Leabrooks</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0017')">BFLR0017</a></td><td class=" dt-head-left dt-body-left">17 King Street Alfreton</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0018')">BFLR0018</a></td><td class=" dt-head-left dt-body-left">Former American Adventure Theme Park Pit Lane Shipley</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0021')">BFLR0021</a></td><td class=" dt-head-left dt-body-left">Marehay Garage Derby Road Marehay</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0023')">BFLR0023</a></td><td class=" dt-head-left dt-body-left">Memory Lane Inn 72 Derby Road Heanor</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0024')">BFLR0024</a></td><td class=" dt-head-left dt-body-left">Land West of Old Coppice Side Heanor</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0025')">BFLR0025</a></td><td class=" dt-head-left dt-body-left">Labour Club Lander Lane Belper</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0026')">BFLR0026</a></td><td class=" dt-head-left dt-body-left">Land at 34 Greenhill Lane Leabrooks</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0027')">BFLR0027</a></td><td class=" dt-head-left dt-body-left">Land at Bullbridge Hill Ambergate</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0030')">BFLR0030</a></td><td class=" dt-head-left dt-body-left">Land adj 30 Cromford Road Langley Mill</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0034')">BFLR0034</a></td><td class=" dt-head-left dt-body-left">All Saints Church Hall Site Moseley Street Ripley</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0035')">BFLR0035</a></td><td class=" dt-head-left dt-body-left">Duffield Depot Derby Road Duffield</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0039')">BFLR0039</a></td><td class=" dt-head-left dt-body-left">Former Anchor Inn Chesterfield Road Oakerthorpe</td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0040')">BFLR0040</a></td><td class=" dt-head-left dt-body-left">Firs Works Car Park Spanker Lane Nether Heage</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0041')">BFLR0041</a></td><td class=" dt-head-left dt-body-left">Newlands Inn Golden Valley Riddings </td></tr><tr role="row" class="odd"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0042')">BFLR0042</a></td><td class=" dt-head-left dt-body-left">Firs Works Spanker Lane Nether Heage</td></tr><tr role="row" class="even"><td class=" dt-head-left dt-body-left"><a href="Javascript:DataPopup('BFLR0043')">BFLR0043</a></td><td class=" dt-head-left dt-body-left">Land west of Aeromatic Co Ltd Derby Road Marehay</td></tr></tbody></table></div></div><div class="row"><div class="col-sm-5"><div class="dataTables_info" id="simonBrownfieldDetails_info" role="status" aria-live="polite">Showing 1 to 22 of 22 entries</div></div><div class="col-sm-7"></div></div></div>
+</div>
+
+<div id="infoPop" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="color:#FFFFFF;background-color:#008080;">
+                <button type="button" class="close" title="Close" data-dismiss="modal">×</button>
+                <div class="simonPopHeading">Site details</div>
+            </div>
+            <div class="modal-body">
+                <table id="pop" role="presentation">
+                    <tbody><tr>
+                        <td class="simonPopTitle">Site reference:</td>
+                        <td class="simonPopDescription"><div id="lblSiteReference"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Site location:</td>
+                        <td class="simonPopDescription"><div id="lblSiteNameAddress"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Latitude:</td>
+                        <td class="simonPopDescription"><div id="lblLat"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Longtitude:</td>
+                        <td class="simonPopDescription"><div id="lblLng"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Hectares:</td>
+                        <td class="simonPopDescription"><div id="lblHectares"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Ownership status:</td>
+                        <td class="simonPopDescription"><div id="lblOwnershipStatus"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Deliverable:</td>
+                        <td class="simonPopDescription"><div id="lblDeliverable"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Planning status:</td>
+                        <td class="simonPopDescription"><div id="lblPlanningStatus"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Permission type:</td>
+                        <td class="simonPopDescription"><div id="lblPermissionType"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Permission date:</td>
+                        <td class="simonPopDescription"><div id="lblPermissionDate"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Planning history:</td>
+                        <td class="simonPopDescription"><div id="lblPlanningHistory"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Min. net dwellings:</td>
+                        <td class="simonPopDescription"><div id="lblMinNetDwellings"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Development description:</td>
+                        <td class="simonPopDescription"><div id="lblDevelopmentDescription"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Non-housing development:</td>
+                        <td class="simonPopDescription"><div id="lblNonHousingDevelopment"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Net dwellings range from:</td>
+                        <td class="simonPopDescription"><div id="lblNetDwellingsRangeFrom"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Net dwellings range to:</td>
+                        <td class="simonPopDescription"><div id="lblNetDwellingsRangeTo"></div></td>
+                    </tr>
+                    <tr>
+                        <td class="simonPopTitle">Notes:</td>
+                        <td class="simonPopDescription"><div id="lblNotes"></div></td>
+                    </tr>
+                </tbody></table>
+                <br>
+
+            
+                <script>
+        var mymap;
+        var geodataDefinitions = [];
+        var layers = [];
+        var initialGeoName = 'BLR';
+        var initialLat = '53.0505';
+        var initialLng = '-1.4089';
+        var autoInitialiseMap = "0";
+        
+        $(document).ready(function () {
+            $("#map").css("width", "100%");
+            //$("#map").css("height", $("#map").css("width"));
+            $("#map").css("height", "800px");
+            getGeoDataDefinitions(initialGeoName, function () {
+                if(autoInitialiseMap != "0"){
+                    setupMap(initialGeoName);
+                }
+            });
+        });
+
+        function getGeoDataDefinitions(geoName, callback) {
+            $.ajax({
+                url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/GeographyJSON.asmx/GetAVBCMappingConfig',
+                type: 'POST',
+                data: { "geoName": geoName },
+                dataType: 'json',
+                success: function (returnedData) {
+                    geodataDefinitions = returnedData;
+                    callback();
+                    //console.log(geodataDefinitions);
+                }
+            });
+        }
+
+        function GoToMaplocation(lat, lng, zoomLevel, addMarker) {
+            if(addMarker){
+                var marker = L.marker([lat, lng]).addTo(mymap);
+            }
+            if(zoomLevel != null){
+                mymap.setView([lat, lng], zoomLevel);
+            }
+            else{
+                mymap.setView([lat, lng], initialZoom);
+            }
+            $('html, body').animate({
+                scrollTop: $("#map").offset().top
+            }, 1000);
+        }
+
+        function setupMap(geoName) {
+            mymap = L.map('map').setView([initialLat, initialLng], "11");
+            
+            var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+            var osmAttrib = 'Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+            var bm_Osm = new L.tileLayer(osmUrl, {
+                minZoom: 4,
+                maxZoom: 22,
+                attribution: osmAttrib
+            });
+            //bm_Osm.addTo(mymap);
+
+            var bm_Ariel = new L.tileLayer.wms("https://www.getmapping.com/GmWMS/55fc2717-8ff9-477a-bf58-5c46e5d3f864/GB.wmsx", {
+                //loadedLayers: 'Getmapping',
+                layers: 'composite_best_UK_250mm',
+                format: 'image/png',
+                transparent: true,
+                maxZoom: 23
+                //attribution: "Weather data © 2012 IEM Nexrad"
+            });
+
+            var bm_GoogleSat = L.tileLayer('https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+              maxZoom: 25,
+              subdomains: ['mt0', 'mt1', 'mt2', 'mt3']
+            });
+
+            var bm_osmm = L.tileLayer('https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Road 3857/{z}/{x}/{y}.png?key=aKLrzGD1nhPr8A0gAWGO902rwmi5cti8', {
+			    maxZoom: 20,
+			    minZoom: 7
+			})
+            bm_osmm.addTo(mymap);
+                        
+            var bm_osmm_light = L.tileLayer('https://api2.ordnancesurvey.co.uk/mapping_api/v1/service/zxy/EPSG%3A3857/Light 3857/{z}/{x}/{y}.png?key=aKLrzGD1nhPr8A0gAWGO902rwmi5cti8', {
+			    maxZoom: 20,
+			    minZoom: 7
+			})
+
+            var baseMaps = {
+              "googleSat": bm_GoogleSat,
+              "osm": bm_Osm,
+              "ariel": bm_Ariel,
+              "OSMM": bm_osmm,
+              "OSMM Light": bm_osmm_light
+            };
+
+            L.control.layers(baseMaps).addTo(mymap);
+            
+            
+            bounds = mymap.getBounds();
+
+            addlayer(bounds, geoName, "blue");
+            
+            mymap.on('moveend', function (e) {
+                loadLayers(geoName);
+            });
+        }
+        
+        function loadLayers(geoName) {
+
+			for (var i = 0; i < layers.length; i++) {
+			    console.log(layers[i]);
+			    mymap.removeLayer(layers[i]);
+		    }
+		    layers = [];
+
+            addlayer(mymap.getBounds(), geoName, "blue");
+
+
+        }
+
+        function addlayer(bounds, gnv, colour) {
+            //alert(gnv);
+            var myStyle = {
+                "color": colour,
+                "weight": 3,
+                "opacity": 1.0
+            };
+
+            var SWVal = bounds.getSouthWest().lat + ", " + bounds.getSouthWest().lng;
+            var NEVal = bounds.getNorthEast().lat + ", " + bounds.getNorthEast().lng;
+
+            var geoData = {};
+            geoData.geoname = gnv;
+            geoData.SW = SWVal;
+            geoData.NE = NEVal;
+
+            $.ajax({
+                dataType: "json",
+                type: 'POST',
+                //data: { geoname: gnv, SW: SWVal, NE: NEVal, uId: uIdVal, csvOfKeyValues: csvOfKeyValuesVal },
+                data: geoData,
+                url: "https://info.ambervalley.gov.uk/geofeeds/geojsonfeed.aspx",
+                //url: "geojsonfeed.aspx",
+                success: function (data) {
+                    //console.log(data);
+                    //on success create layer from json data
+                    //if (data.features.length == 0) { $('#map').waitMe('hide'); }
+                    myLayer = L.geoJson(data, {
+                        style: myStyle,
+                        onEachFeature: popUp,
+                        //complete: TurnOffWaiteMe()
+                    }).addTo(mymap);
+                    //loadedLayers.push(myLayer);
+                    layers.push(myLayer);
+
+                }
+            }).error(function () {
+                //$('#map').waitMe('hide');
+            });
+        }
+
+        function popUp(feature, layer) {
+            layer.on('click', function (e) {
+                //console.log(feature)
+                handleClick(e)
+            });
+        }
+
+        function ShowDetails(gnv, uniqueId, furtherInfoURL, mainIdFieldName) {
+            //var url = "GetFile.aspx" + "?doctype=" + gnv + "&" + mainIdFieldName + "=" + uniqueId;
+            url = furtherInfoURL + "?doctype=" + gnv + "&" + mainIdFieldName.toLowerCase() + "=" + uniqueId;
+            window.open(url, '_blank', 'location=yes,height=800,width=1000,scrollbars=yes,status=yes');
+        }
+
+        function handleClick(e) {
+            //console.log(e);
+            //var html = 'Selected Feature(s)<br />';
+            var html = '';
+            var affectedFeatures = [];
+            for (var i = 0; i < layers.length; i++) {
+                try {
+                    for (var j = 0; j < leafletPip.pointInLayer(e.latlng, layers[i]).length; j++) {
+                        //get basic geoname from map feature
+                        var gn = leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties['geoName'];
+                        var siteDetails = leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties
+                        console.log(gn);
+                        console.log(leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties);
+                        console.log(geodataDefinitions);
+                        //use geoname to get full geodataDefinition from geodataDefinitions[] array of objects
+                        //remember: geodataDefinition contains names of data fields cos each dataset has different types of data, hence different 'field' names
+                        //use field names from geodataDefinition to look the actual values (i.e. geodataDefinitions.fieldName)
+                        //html += '<a href="#' + leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.mainIdFieldName] + '">' + leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.mainIdFieldName] + '</a><br /><br />';
+                        
+                        //html += '<a href="#" onclick="ShowDetails(\'' + e.target.feature.properties.geoName + '\', \'' + e.target.feature.properties[selectedGDD.mainIdFieldName] + '\', \'' + selectedGDD.furtherInfoURL + '\', \'' + selectedGDD.mainIdFieldName + '\')">' + e.target.feature.properties[selectedGDD.mainIdFieldName] + '</a><br />';
+                        html += '<a href="#" onclick="ShowDetails(\'' + gn + '\', \'' + siteDetails[geodataDefinitions.mainIdFieldName] + '\', \'' + geodataDefinitions.furtherInfoURL + '\', \'' + geodataDefinitions.mainIdFieldName + '\')">' + siteDetails[geodataDefinitions.mainIdFieldName] + '</a><br />';
+
+                        //GetSHLLDetails(leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.mainIdFieldName], function (sHLLADetails) {
+                        //    html += sHLLADetails.siteAddressDescription + '<br /><br />' + sHLLADetails.notes;
+                            //console.log(sHLLADetails);
+                        //});
+
+                        if (geodataDefinitions.geoRSSTitleField != '' && geodataDefinitions.geoRSSTitleField != geodataDefinitions.mainIdFieldName) {
+                            html += '<strong>' + leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.geoRSSTitleField] + '</strong><br /><br />';
+                        }
+                        //if (geodataDefinitions.additionalInfo != '') {
+                        //    html += leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.additionalInfo] + '<br /><br />';
+                        //}
+                        if (geodataDefinitions.geoRSSDescriptionField != '' && geodataDefinitions.geoRSSTitleField != geodataDefinitions.geoRSSDescriptionField) {
+                            html += leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.geoRSSDescriptionField] + '<br /><br />';
+                        }
+                        if (geodataDefinitions.geoRSSDescriptionField2 != '') {
+                            html += leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.geoRSSDescriptionField2] + '<br /><br />';
+                        }
+                        if (geodataDefinitions.geoRSSDescriptionField3 != '') {
+                            html += leafletPip.pointInLayer(e.latlng, layers[i])[j].feature.properties[geodataDefinitions.geoRSSDescriptionField3] + '<br /><br />';
+                        }
+                        //html += '<strong>' + '<a href="#" onclick="highlightMatch(this)" data-layer="' + i +
+                        //'" data-latlng="' +
+                        //[e.latlng.lat, e.latlng.lng] +
+                        //'">highlight</a></strong><hr />';
+                        html += '<hr />';
+                    }
+                }
+                catch (err) {
+                    console.log(err);
+                }
+            }
+            mymap.openPopup(html, e.latlng);
+        }
+
+        function GetLatLng(easting, northing) {
+            //var padTarget = document.getElementById('listOfCarParks')
+            //var padSpinner = new Spinner().spin(padTarget);
+            console.log(easting);
+            console.log(easting);
+            $.ajax({
+                url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/GazetteerJSON.asmx/GetLatLngFromEastNorth',
+                dataType: 'json',
+                data: { "easting": easting, "northing": northing },
+                success: function (coords) {
+                    console.log(coords);
+                    GoToMaplocation(coords.lat, coords.lng, 16, true)
+                }
+            });
+        }
+
+        function GetSimpleUKDate(rawDateString, isAbbreviated) {
+            var dte = new Date(rawDateString);
+            var formattedDate = dte.getDate() + "-" + GetAlphaMonth(dte.getMonth(), isAbbreviated) + "-" + dte.getFullYear();
+            return formattedDate;
+        }
+
+        function GetAlphaMonth(monthNumeric, isAbbreviated) {
+            var month = new Array();
+            month[0] = "January";
+            month[1] = "February";
+            month[2] = "March";
+            month[3] = "April";
+            month[4] = "May";
+            month[5] = "June";
+            month[6] = "July";
+            month[7] = "August";
+            month[8] = "September";
+            month[9] = "October";
+            month[10] = "November";
+            month[11] = "December";
+            if (isAbbreviated) {
+                return month[monthNumeric].substring(0, 3);
+            }
+            else {
+                return month[monthNumeric]
+            }
+        }
+
+    </script>
+
+    <style>
+        #map {
+            margin-bottom: 15px;
+        }
+
+    </style>
+
+
+    <div id="map" style="width: 100%; height: 800px;"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" title="Close" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="lgLinkContainer">
+                        
+
+
+                    </div>
+                    
+                    <div class="furtherHelp">Need further help or information?</div>
+                    <p>Contact the team directly on 01773 841584 or email <a href="mailto:ldf@ambervalley.gov.uk">ldf@ambervalley.gov.uk</a></p>
+
+                </div>
+          
+            </div>
+
+            <div class="col-md-3 col-md-pull-9">
+
+                <div class="hidden-sm hidden-lg hidden-md">
+                    
+
+                
+
+                </div>
+                    <div class="sideNavigation hidden-print">
+        <span class="list-group-item list-group-header">Pages in Brownfield land register</span>
+            <span class="hidden-lg hidden-md"><a href="/planning/planning-policy/" class="list-group-item list-group-item-action"><span aria-hidden="true">&lt; </span>Back to Planning policy</a></span>
+            <a href="/planning/planning-policy/brownfield-land-register/all-sites-on-brownfield-land-register/" class="list-group-item list-group-item-action">All sites on brownfield land register</a>
+    </div>
+                
+                <div class="hidden-xs">
+                    
+
+                
+
+                </div>
+                    
+            </div>
+
+        </div>
+    </div>
+
+        <footer class="footer .hidden-print">
+            <div class="container">
+                <div class="row">
+
+<script>
+    $(document).ready(function () {
+        $('.feedbackOption').on('click', function(){
+            //console.log($(this).data
+            $("#feedbackOption").val($(this).data("option"));
+            console.log(window.location.pathname);
+            $(".feedbackInitiallyHidden").show();
+        });
+        $('#rateThisPage').on('click', openFeedbackDlg);
+        $('#btnSubmitFeedback').on('click', submitPageFeedback);
+    })
+ 
+    function openFeedbackDlg(){
+        $('#dlgFeedback').modal('show');
+    }
+
+    function submitPageFeedback() {
+        console.log("submit page feedback");
+        var data = {};
+        data['pageUrl'] = window.location.pathname;
+        data['rating'] = $('#feedbackOption').val();
+        data['pageName'] = "";
+        data['comments'] = $('#feedbackExplanation').val();
+        data['personName'] = "";
+        data['personAddress'] = "";
+        data['personEmail'] = $('#feedbackEmail').val();
+        data['personTelNum'] = "";
+
+        $.ajax({
+            url: 'https://info.ambervalley.gov.uk/WebServices/AVBCFeeds/ComplaintsJSON.asmx/SubmitPageFeedback',
+            type: 'POST',
+            data: {
+                "data": JSON.stringify(data)
+            },
+            dataType: 'json',
+            success: function (rdata) {
+                console.log(rdata)
+                //callback(rdata);
+            }
+            //error: function(xhr, ajaxOptions, thrownError) {
+            //    alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+            //}
+        });
+
+    }
+
+</script>
+
+ <div class="hidden-print">
+     
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Contact us</div>
+        <ul>
+            <li>
+                <a href="/contact-us/">How to get in touch</a>
+            </li>
+            <li>
+                <a href="#" id="rateThisPage">Rate this page</a>
+            </li>
+        </ul>   
+    </div> 
+    
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Corporate</div>
+        <ul>
+            <li>
+                <a href="/our-website/accessibility/">Accessibility</a>
+            </li>
+            <li>
+                <a href="/council/data-protection/">Data protection</a>
+            </li>
+            <li>
+                <a href="/our-website/">Our website</a>
+            </li>    
+            <li>
+                <a href="/council/budgets-and-spending/transparency/">Transparency</a>
+            </li>             
+        </ul>
+    </div> 
+    
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">News</div>
+        <ul>
+            <li>
+                <a href="/council/news/">News releases</a>
+            </li>
+            <li>
+                <a href="/council/public-notices/">Public notices</a>
+            </li>
+        </ul>
+        <br>
+        <a href="https://twitter.com/AmberValleyBC" target="_blank"><img src="/images/twitter_logo.png" alt="Twitter" style="width: 30px; height: 30px;"></a>
+        <a href="http://www.facebook.com/AmberValleyBC" target="_blank"><img src="/images/facebook_logo.png" alt="Facebook" style="margin-left: 5px; width: 30px; height: 30px;"></a>
+    </div>
+     
+    <div class="col-xs-6 col-sm-3">
+        <div class="subHeading">Login</div>
+        <ul>
+            <li>
+                <a href="/councillors-area/">Councillor's area</a>
+            </li>
+        </ul>
+        <ul>
+        </ul>
+    </div>
+    
+</div>
+
+    <div id="dlgFeedback" class="modal fade" role="dialog">
+		<div class="modal-dialog" id="dlgModalFeedback">
+			<div class="modal-content">
+				<div class="modal-header" style="color: #FFFFFF; background-color:#008080;">
+					<button type="button" class="close" data-dismiss="modal">×</button>
+					<p class="modal-title" style="color: #FFFFFF !important;background-color:#008080;text-align:center !important">Page feedback</p>
+				</div>
+				<div class="modal-body">
+					<div id="pnlFeedback">
+						<div class="dataListContainer">
+							<div class="dataItemRow">
+							    <p>Did this page help you with your query or service request?</p>
+                                <div class="feedbackChoice">
+                                    <div class="feedbackOption" data-option="Good"><img src="/images/feedbackGood.jpg" width="60" height="60" alt="Page Feedback Good"><p>Yes</p></div>
+                                    <div class="feedbackOption" data-option="Partial"><img src="/images/feedbackNeutral.jpg" width="60" height="60" alt="Page Feedback Neutral"><p>Partially</p></div>
+                                    <div class="feedbackOption" data-option="Poor"><img src="/images/feedbackPoor.jpg" width="60" height="60" alt="Page Feedback Poor"><p>No</p></div>
+                                </div>	
+                                <input type="hidden" id="feedbackOption" name="feedbackOption" aria-hidden="true">
+                            </div>
+ 							<div class="dataItemRow feedbackInitiallyHidden">	
+								<p><label for="feedbackExplanation">To help us improve our site please give a brief explanation of your rating:</label></p>
+								<textarea id="feedbackExplanation" style="width:100%" rows="5"></textarea>									 
+							</div>
+							<div class="dataItemRow feedbackInitiallyHidden">
+								 <p><label for="feedbackEmail">Email address:</label></p>
+								 <input type="text" id="feedbackEmail" style="width:100%">
+							</div>
+							<div class="dataItemRow feedbackInitiallyHidden">
+							    <p>If you have a general comment or complaint about the council's services, please visit our 
+							    <a href="/council/comments-and-complaints/comments-and-compliments/">comments</a> or <a href="/council/comments-and-complaints/complaints/">complaints</a> page.</p>
+							</div>
+                        </div>
+					</div>
+				</div>
+				<div class="modal-footer feedbackInitiallyHidden">
+					<button type="button" class="btn btn-default" data-dismiss="modal" id="btnSubmitFeedback">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+                </div>
+                <div class="row">
+		            <div class="copyright">© Amber Valley Borough Council 2019</div>
+                </div>
+            </div>
+        </footer>
+        
+        <div id="__ba_panel" class="topRight _launchpad ba-fixed" style="top: 7px; left: 1121px;"><div id="_ba_corner" class="orange"><a href="#!" title="Listen with browsealoud"><img src="https://plus.browsealoud.com/modules/2.6.1/images/launchpads/0/orange-fg.gif" alt="Listen with browsealoud"></a></div></div><script>
+            $(document).ready(function () {
+                $('select option').filter(function() {
+                    return !this.value || $.trim(this.value).length == 0 ;
+                }).text("Please select");
+                
+                $(".umbraco-forms-form * input[type=text]").each(function(){
+                    if($('label[for="' + $(this).attr('name') + '"]').length == 0 && !$(this).attr('title')){
+                        !$(this).attr('title', 'hidden system field - please ignore');
+                        !$(this).attr('aria-hidden', 'true');
+                    }
+                });
+                $('a[title="View Fullscreen"]').html("-");
+                $('a[title="Layers"]').html("-");
+                //console.log($(".umbraco-forms-form * input[type=checkbox]").parent().parent());
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().parent().css("float", "left !important");
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().css("border", "1px solid blue");
+                //$(".umbraco-forms-form * input[type=checkbox]").parent().css("height", "30");
+            });
+        </script>
+    
+
+
+<script src="https://plus.browsealoud.com/modules/2.6.1/ba-library.min.js"></script><script src="https://plus.browsealoud.com/modules/2.6.1/ba-library-ui.min.js"></script><table class="gstl_50 gssb_c" role="presentation" style="padding: 0px; width: 2px; top: 3px; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table><script type="text/javascript">(function (w, d, s, l, i) {w[l] = w[l] || []; w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'}); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);})(window, document, 'script', 'baDataLayer', 'GTM-NJ9C74');</script><link rel="stylesheet" type="text/css" href="https://plus.browsealoud.com/modules/2.6.1/css/browsealoud.css?v=2.6.1"><link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"></body></html>

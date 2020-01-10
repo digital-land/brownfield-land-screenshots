@@ -1,0 +1,541 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" style="height: 100%;"><head>
+	<title>
+		Reading Borough Council	</title>
+	<link rel="shortcut icon" type="image/ico" href="~/images/favicon.ico">
+	
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<meta http-equiv="Content-Style-Type" content="text/css">
+			<meta http-equiv="Content-Script-Type" content="text/javascript">
+			
+			<meta name="generator" content="GOSS iCM - Intelligent Content Management">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=yes">
+
+			<base href="https://www.reading.gov.uk/">
+
+			<!-- Google Web Fonts -->
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+			
+				<link rel="canonical" href="https://www.reading.gov.uk/planningpolicy">
+				<!--  Font Awesome  -->				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+				<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-WH2B4K"></script><script type="text/javascript">
+					var _gaq = _gaq || [];
+					_gaq.push (['_gat._anonymizeIp']);
+				</script>
+
+				
+
+
+				
+				<script type="text/javascript">
+					var SITE_THEME = "readingrefresh";
+					var GOOGLE_MAPS_KEY = "";
+				</script>
+
+				
+				
+					<script type="text/javascript">
+						var LLPG_LOCATION_SEARCH_URL = "http://beta.reading.gov.uk/WebServices/form/nlpgsearch.cfm";
+					</script>
+				
+
+				
+						<link href="./themes/readingrefresh/css/editor.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/jquery-ui/css/theme/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/style.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/desktop.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/colours.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/styleprint.css" rel="stylesheet" type="text/css" media="print">
+<!--[if IE 9]> 
+<link href="./themes/readingrefresh/css/ie9.css" rel="stylesheet" type="text/css" media="all" />
+ <![endif]-->
+<link href="./themes/readingrefresh/css/eventstyles.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/magnific-popup.css" rel="stylesheet" type="text/css" media="all">
+<link href="./themes/readingrefresh/css/extra.css" rel="stylesheet" type="text/css" media="all">
+
+						<script type="text/javascript" src="./themes/readingrefresh/scripts/javascripts.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/jquery/jquery.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/jquery/jquery-ui.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/jquery/jquery.qtip-2.2.1.min.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/json.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/jquery/json-rpc.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/analytics.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/magnificpopup.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/findmynearest.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/embeddedsearch/embeddedsearch.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/maps/mapscript.js"></script><script type="text/javascript" src="./themes/readingrefresh/scripts/extra.js"></script>
+					
+			
+		
+
+	
+
+	<link href="https://customer.cludo.com/css/templates/v1.1/essentials/cludo-search.min.css" type="text/css" rel="stylesheet">
+	<!--[if lte IE 9]>
+		<script src="https://api.cludo.com/scripts/xdomain.js" slave="https://api.cludo.com/proxy.html" type="text/javascript"></script>
+	<![endif]-->
+
+	
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/translate_static/js/element/main.js"></script><script type="text/javascript" src="//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js"></script><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/element/TE_20190916_00/e/js/element/element_main.js"></script><script type="text/javascript" src="https://ws.sessioncam.com/Record/config.aspx?url=https%3A%2F%2Fwww.reading.gov.uk%2Fplanningpolicy&amp;ae=1&amp;sse=1578659604281&amp;urlnc=https%3A%2F%2Fwww.reading.gov.uk%2Fplanningpolicy"></script></head>
+
+		
+			<body onload="pageLoaded();" bgcolor="white" style="position: relative; min-height: 100%; top: 0px;">
+
+			<!--  Google Tag Manager  -->			<noscript>
+				&lt;iframe src="//www.googletagmanager.com/ns.html?id=GTM-WH2B4K"
+						height="0" width="0" style="display: none; visibility: hidden"&gt;
+				&lt;/iframe&gt;
+			</noscript>
+			<script>
+				(function(w, d, s, l, i) {
+					w[l] = w[l] || [];
+					w[l].push({
+						'gtm.start':
+							new Date().getTime(),
+						event: 'gtm.js'
+					});
+					var f = d.getElementsByTagName(s)[0],
+						j = d.createElement(s),
+						dl = l != 'dataLayer' ? '&l=' + l : '';
+					j.async = true;
+					j.src =
+						'//www.googletagmanager.com/gtm.js?id=' + i + dl;
+					f.parentNode.insertBefore(j, f);
+				})(window, document, 'script', 'dataLayer', 'GTM-WH2B4K');
+			</script>
+			<!--  End Google Tag Manager  -->			<div id="pagewrapper">
+
+			<div class="reading-purple" id="topbanner">
+				<div class="container">
+					<div id="toplogo">
+						
+						
+							<h1>
+								<a href="https://www.reading.gov.uk/home">reading.gov.uk</a>
+							</h1>
+						
+						
+					</div>
+
+					<div id="navtrigger">
+						<span class="fa fa-bars" tabindex="2"></span>
+					</div>
+
+					<div id="toplevel" class="horizontal-rule">
+						
+
+
+
+		<div id="toputilnav">
+			<ul>
+				<li class="even first skipnavigation">
+					<a accesskey="s" href="https://www.reading.gov.uk/planningpolicy#centrecolumn">Skip Navigation</a>
+				</li>
+		
+		<li class="even">
+			
+
+			
+					<a href="https://www.reading.gov.uk/article/11041/Jobs">
+						Jobs						
+					</a>
+				
+		</li>
+	
+		<li class="odd last">
+			
+
+			
+					<a href="https://www.reading.gov.uk/article/8634/My-accounts">
+						My accounts						
+							<span class="fa fa-sign-out"></span>
+						
+					</a>
+				
+		</li>
+	
+			</ul>
+		</div>
+	
+						
+
+
+	<div id="toplevelsearch" class="horizontal-rule">
+
+		
+		<form id="cludo-search-form" action="https://www.reading.gov.uk/search" method="get">
+			<fieldset>
+				<legend>Search site</legend>
+				<label for="q">Search</label>
+				<div class="input-group">
+					<input type="text" name="q" id="q" class="searchkeyword form-control" value="Enter a keyword..." autocomplete="off">
+
+					<button name="go" id="go" title="Search for entered keyword">
+						<span class="fa fa-search"></span><span class="screenread">Search</span>
+					</button>
+				</div>
+
+				
+			</fieldset>
+		</form>
+	</div>
+
+						<div class="horizontal-rule"></div>
+					</div>
+				</div>
+			</div>
+
+		
+	
+<div id="maincolumnwrapper">
+	<div class="container">
+		<div id="centrecolumn">
+			
+
+
+
+	
+			<div id="breadcrumb">
+				<ol>
+					<li>
+						You are in:&nbsp;
+					</li>
+                    <li>
+                        <a href="home">Home</a>
+                    </li>
+        
+            			    
+                  			    
+			    
+				    <li class="separator">/</li>
+			    
+            	
+            
+		
+            			    
+                
+                    <li>  
+						
+						
+							<a href="https://www.reading.gov.uk/planning">Planning</a>								
+							
+                    </li>					
+                  			    
+			    
+				    <li class="separator">/</li>
+			    
+            	
+            
+		
+            			    
+                
+                    <li>  
+						
+							<span>Planning policy </span>
+						
+							
+                    </li>					
+                  			    
+			    
+            	
+            
+		
+				</ol>
+			</div>
+		
+
+
+
+			<!-- Carousel Start -->
+			
+			<!-- Carousel End -->
+
+			
+					
+						
+					
+
+					
+						
+							
+
+<div class="textblock newsflash">
+	
+			<p class="alert-info"><a href="https://www.reading.gov.uk/cravenroad">Article 4 Directions</a></p>
+		
+</div>
+						
+					
+
+
+					
+						
+							
+							
+								<div class="row">
+								<div class="col-75">
+							
+						
+					
+
+					
+
+
+
+<div id="headingtext">
+    
+	<h1>Planning policy </h1>
+</div>
+
+					
+						
+					
+
+				
+
+			
+			
+
+
+		
+		
+
+<div class="textblock ">
+	
+			
+		    
+			    <div id="bodytext">
+				    
+				    <p>We consider all planning applications against our planning policies. Policies are reviewed frequently, so please check this list for the latest version.</p><h2>Local Plan</h2><div class="tableoverflow"><table border="1" cellpadding="1" cellspacing="0" style="width:100%" summary="Local Plan documents"><caption>Main policies for deciding planning applications</caption><thead><tr><th>Document</th><th style="width: 40%">Description</th><th style="width: 20%">Status</th></tr></thead><tbody><tr><td><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10410 typepdf" href="https://www.reading.gov.uk/media/10410/Reading-Borough-Council-Local-Plan/pdf/Local_Plan_Adopted_November_2019.pdf" rel="external" title="Reading Borough Council Local Plan : Opens in a new browser window or tab" target="_blank">Local Plan [5Mb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>Contains planning policies to manage development in Reading up to 2036. This is the main document which is used to decide planning applications. More information can be found on the&nbsp;<a href="https://www.reading.gov.uk/newlocalplan">New Local Plan</a>&nbsp;page.</td><td>Adopted November 2019</td></tr><tr><td><p>Proposals map</p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10416 typepdf" href="https://www.reading.gov.uk/media/10416/Adoption-Proposals-Map-Nov19-Overview-and-Key/pdf/Adoption_Proposals_Map_Nov19_Overview_and_Key.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Overview and key [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10411 typepdf" href="https://www.reading.gov.uk/media/10411/Adoption-Proposals-Map-Nov19-A-to-D/pdf/Adoption_Proposals_Map_Nov19_A_to_D.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Pages A to D [11Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10412 typepdf" href="https://www.reading.gov.uk/media/10412/Adoption-Proposals-Map-Nov19-E-to-G/pdf/Adoption_Proposals_Map_Nov19_E_to_G.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Pages E to G [9Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10413 typepdf" href="https://www.reading.gov.uk/media/10413/Adoption-Proposals-Map-Nov19-H-to-K/pdf/Adoption_Proposals_Map_Nov19_H_to_K.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Pages H to K [11Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10414 typepdf" href="https://www.reading.gov.uk/media/10414/Adoption-Proposals-Map-Nov19-L-to-N/pdf/Adoption_Proposals_Map_Nov19_L_to_N.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Pages L to N [6Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10415 typepdf" href="https://www.reading.gov.uk/media/10415/Adoption-Proposals-Map-Nov19-O-to-R/pdf/Adoption_Proposals_Map_Nov19_O_to_R.pdf" rel="external" title="local plan Reading Borough Council : Opens in a new browser window or tab" target="_blank">Pages O to R [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>Identifies designations from the Local Plan in map format.</td><td>Adopted November 2019</td></tr><tr><td><p><a href="https://www.reading.gov.uk/mineralsandwaste">The Central and Eastern Berkshire Minerals and Waste Plan</a></p></td><td>Bracknell Forest Council, Reading Borough Council, the Royal Borough of Windsor &amp; Maidenhead, and Wokingham Borough Council (collectively referred to as 'Central &amp; Eastern Berkshire Authorities') are working in partnership to produce a Joint Minerals &amp; Waste Plan which will guide minerals and waste decision-making in the Plan area.</td><td>Consultation on a Draft Plan took place between August and October 2018</td></tr></tbody></table></div><h2><br>Other main planning policy documents</h2><div class="tableoverflow"><table border="1" cellpadding="1" cellspacing="0" style="width:100%" summary="Other main planning policy documents links"><caption>Planning policy documents not part of the Local Plan on specific topics</caption><thead><tr><th>Document</th><th style="width: 40%">Description</th><th style="width: 20%">Status</th></tr></thead><tbody><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2594 typepdf" href="https://www.reading.gov.uk/media/2594/Community-Infrastructure-Levy-Charging-Schedule/pdf/Community-Infrastructure-Levy-Charging-Schedule-20151.pdf" rel="external" title="Community Infrastructure Levy Charging Schedule : Opens in a new browser window or tab" target="_blank">Community Infrastructure Levy Charging Schedule [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Information on the charge imposed on new developments to support the provision of infrastructure.&nbsp;</td><td>Approved January 2015</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1051 typepdf" href="https://www.reading.gov.uk/media/1051/Statement-of-Community-Involvement-Adopted-March-2014/pdf/Statement-Of-Community-Involvement-Mar14.pdf" rel="external" title="Sets out how we intend to consult on planning policy documents, and how developers should consult on major planning applications. : Opens in a new browser window or tab" target="_blank">Statement of Community Involvement [966kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out how we intend to consult on planning policy documents, and how developers should consult on major planning applications.</td><td>Adopted March 2014</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id4412 typepdf" href="https://www.reading.gov.uk/media/4412/Duty-to-cooperate-scoping-strategy/pdf/RBC_Duty_to_Cooperate_Scoping_Strategy_1215.pdf" rel="external" title="Duty to cooperate scoping strategy : Opens in a new browser window or tab" target="_blank">Duty to cooperate scoping strategy [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Deals with how we intend to fulfil our 'duty to co-operate' in plan-making with key partners under the Localism Act 2011.</td><td>Latest version December 2015</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1052 typepdf" href="https://www.reading.gov.uk/media/1052/Sustainability-Appraisal-Scoping-Report-Revised-September-2014/pdf/Sustainability-Appraisal-Scoping-Report-Sep14.pdf" rel="external" title="Sets out how we assess what the environmental, social and economic effects of our plans and policies would be. : Opens in a new browser window or tab" target="_blank">Sustainability Appraisal Scoping Report [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out how we assess what the environmental, social and economic effects of our plans and policies would be.</td><td>Revised September 2014</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1053 typepdf" href="https://www.reading.gov.uk/media/1053/Local-Development-Scheme/pdf/Local_Development_Scheme_November_2016.pdf" rel="external" title="Sets out the programme for producing planning policy documents.  : Opens in a new browser window or tab" target="_blank">Local Development Scheme [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out the programme for producing planning policy documents.</td><td>Amended November 2016</td></tr><tr><td>Annual Monitoring Report (AMR):&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10481 typepdf" href="https://www.reading.gov.uk/media/10481/Annual-Monitoring-Report-2019/pdf/Annual_Monitoring_Report_2018-19.pdf" rel="external" title="Annual Monitoring Report 2019 : Opens in a new browser window or tab" target="_blank">2019 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9866 typepdf" href="https://www.reading.gov.uk/media/9866/Annual-Monitoring-Report-2018/pdf/Annual_Monitoring_Report_2017-18.pdf" rel="external" title="Annual Monitoring Report 2018 : Opens in a new browser window or tab" target="_blank">2018 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8135 typepdf" href="https://www.reading.gov.uk/media/8135/Annual-Monitoring--Report-2017/pdf/Annual_Monitoring_Report_2016-17.pdf" rel="external" title="Annual Monitoring Report 2017 : Opens in a new browser window or tab" target="_blank">2017 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id6537 typepdf" href="https://www.reading.gov.uk/media/6537/Annual-Monitoring-Report-2016/pdf/Annual_Monitoring_Report_2016.pdf" rel="external" title="Annual Monitoring Report 2016 : Opens in a new browser window or tab" target="_blank">2016 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id4419 typepdf" href="https://www.reading.gov.uk/media/4419/Annual-Monitoring-Report-2015/pdf/Annual_Monitoring_Report_2014-15.pdf" rel="external" title="Annual Monitoring Report 2015 : Opens in a new browser window or tab" target="_blank">2015 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2320 typepdf" href="https://www.reading.gov.uk/media/2320/Annual-Monitoring-Report-2014/pdf/Annual-Monitoring-Report-2014.pdf" rel="external" title="Annual Monitoring Report 2014 : Opens in a new browser window or tab" target="_blank">2014 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1062 typepdf" href="https://www.reading.gov.uk/media/1062/Annual-Monitoring-Report-2013/pdf/Annual-Monitoring-Report-2013.pdf" rel="external" title="Annual Monitoring Report 2013 : Opens in a new browser window or tab" target="_blank">2013 [771kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1061 typepdf" href="https://www.reading.gov.uk/media/1061/Annual-Monitoring-Report-2012/pdf/Annual-Monitoring-Report-2012.pdf" rel="external" title="Annual Monitoring Report 2012 : Opens in a new browser window or tab" target="_blank">2012 [4Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1060 typepdf" href="https://www.reading.gov.uk/media/1060/Annual-Monitoring-Report-2011/pdf/Annual-Monitoring-Report-2011.pdf" rel="external" title="Annual Monitoring Report 2011 : Opens in a new browser window or tab" target="_blank">2011 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1059 typepdf" href="https://www.reading.gov.uk/media/1059/Annual-Monitoring-Report-2010/pdf/Annual-Monitoring-Report-2010.pdf" rel="external" title="Annual Monitoring Report 2010 : Opens in a new browser window or tab" target="_blank">2010 [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1058 typepdf" href="https://www.reading.gov.uk/media/1058/Annual-Monitoring-Report-2009/pdf/Annual-Monitoring-Report-2009.pdf" rel="external" title="Annual Monitoring Report 2009 : Opens in a new browser window or tab" target="_blank">2009 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1057 typepdf" href="https://www.reading.gov.uk/media/1057/Annual-Monitoring-Report-2008/pdf/Annual-Monitoring-Report-2008.pdf" rel="external" title="Annual Monitoring Report 2008 : Opens in a new browser window or tab" target="_blank">2008 [4Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1056 typepdf" href="https://www.reading.gov.uk/media/1056/Annual-Monitoring-Report-2007/pdf/Annual-Monitoring-Report-2007.pdf" rel="external" title="Annual Monitoring Report 2007 : Opens in a new browser window or tab" target="_blank">2007 [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1055 typepdf" href="https://www.reading.gov.uk/media/1055/Annual-Monitoring-Report-2006/pdf/Annual-Monitoring-Report-2006.pdf" rel="external" title="Annual Monitoring Report 2006 : Opens in a new browser window or tab" target="_blank">2006 [4Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>AMRs report on the production of policy documents. They also report on the effect the policies are having.</td><td>New reports produced every December</td></tr></tbody></table></div><h2><br>Supplementary planning documents - topics</h2><div class="tableoverflow"><table border="1" cellpadding="1" cellspacing="0" style="width:100%" summary="Supplementary planning documents links"><caption>Guidance for Local Plan documents</caption><thead><tr><th>Document</th><th style="width: 40%">Description</th><th style="width: 20%">Status</th></tr></thead><tbody><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1063 typepdf" href="https://www.reading.gov.uk/media/1063/Affordable-Housing-Supplementary-Planning-Document-Adopted-July-2013/pdf/Affordable-Housing-Supplementary-Planning-DocumentJul13.pdf" rel="external" title="Provides developers with guidance on the policy and explains how we expect you to contribute to affordable housing when making a planning application. : Opens in a new browser window or tab" target="_blank">Affordable Housing Supplementary Planning Document [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides developers with guidance on the policy and explains how we expect you to contribute to affordable housing when making a planning application.</td><td>Adopted July 2013</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id4569 typepdf" href="https://www.reading.gov.uk/media/4569/Design-Guide-to-House-Extensions/pdf/DesignGuidetoHouseExtns.pdf" rel="external" title="Design Guide to House Extensions : Opens in a new browser window or tab" target="_blank">Design Guide to House Extensions [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides guidance on how extensions to houses should be designed.</td><td>Adopted May 2003</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1064 typepdf" href="https://www.reading.gov.uk/media/1064/Employment-Skills-and-Training-Supplementary-Planning-Document-Adopted-April-2013/pdf/Employment-Skills-And-Training-Supplementary-Planning-DocumentApr13.pdf" rel="external" title="Provides detailed guidance on how we expect developers to contribute to employment initiatives, such as creating apprenticeship, employment and training opportunities for the local workforce. : Opens in a new browser window or tab" target="_blank">Employment, Skills and Training Supplementary Planning Document [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides detailed guidance on how we expect developers to contribute to employment initiatives, such as creating apprenticeship, employment and training opportunities for the local workforce.</td><td>Adopted April 2013</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1065 typepdf" href="https://www.reading.gov.uk/media/1065/Revised-Parking-Standards-and-Design-Supplementary-Planning-Document-Adopted-October-2011/pdf/Revised-Parking-Standards-And-Design-Supplementary-Planning-DocumentOct11.pdf" rel="external" title="Provides guidance on the levels of parking required as part of new developments.  : Opens in a new browser window or tab" target="_blank">Revised Parking Standards and Design Supplementary Planning Document [4Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides guidance on the levels of parking required as part of new developments.</td><td>Adopted October 2011</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1066 typepdf" href="https://www.reading.gov.uk/media/1066/Residential-Conversions-Supplementary-Planning-Document-Adopted-November-2013/pdf/Residential-Conversions-Supplementary-Planning-DocumentNov13.pdf" rel="external" title="Sets out detailed policy on converting houses to flats or houses in multiple occupation. This includes things like assessing the character of the area, loss of privacy and the impact it would have on the community. : Opens in a new browser window or tab" target="_blank">Residential Conversions Supplementary Planning Document [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out detailed policy on converting houses to flats or houses in multiple occupation. This includes things like assessing the character of the area, loss of privacy and the impact it would have on the community.</td><td>Adopted November 2013</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1067 typepdf" href="https://www.reading.gov.uk/media/1067/Draft-Section-106-Planning-Obligations/pdf/S106-Planning-Obligations-SPD-Adopted-April-2015.pdf" rel="external" title="Draft Section 106 Planning Obligations  : Opens in a new browser window or tab" target="_blank">Planning Obligations under Section 106 Supplementary Planning Document [565kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out how planning obligations under Section 106 for new development will be secured, in the context of the Community Infrastructure Levy. See our <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3103 typepdf" href="https://www.reading.gov.uk/media/3103/Section-106-Adoption-Statement/pdf/S106-SPD-Adoption-Statement-0415.pdf" rel="external" title="Section 106 Adoption Statement : Opens in a new browser window or tab" target="_blank">Section 106 Adoption Statement [253kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;for more information or read our <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3108 typepdf" href="https://www.reading.gov.uk/media/3108/Section-106-Consultation-Report/pdf/S106-SPD-Consultation-Report-April-2015.pdf" rel="external" title="Section 106 Consultation Report : Opens in a new browser window or tab" target="_blank">Consultation Report [171kb]<span class="tooltip"><span>Opens new window</span></span></a>.</td><td>Adopted April 2015</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1069 typepdf" href="https://www.reading.gov.uk/media/1069/Sustainable-Design-and-Construction-Supplementary-Planning-Document-Adopted-July-2011/pdf/Sustainable_Design_and_Construction_SPD_Adopted_1219.pdf" rel="external" title="Sets out our commitment to producing sustainable buildings. It also interprets existing policy on things like climate change, energy efficiency and renewable energy.  : Opens in a new browser window or tab" target="_blank">Sustainable Design and Construction Supplementary Planning Document [1Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Contains further guidance on the sustainability policies in the Reading Borough Local Plan. Please also see the <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10478 typepdf" href="https://www.reading.gov.uk/media/10478/SDC-SPD-Adoption-Statement-December-2019/pdf/SDC_SPD_Adoption_Statement_December_2019.pdf" rel="external" title="Sustainable design and construction supplementary planning document : Opens in a new browser window or tab" target="_blank">Adoption Statement [208kb]<span class="tooltip"><span>Opens new window</span></span></a> for details of its adoption, and the&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10477 typepdf" href="https://www.reading.gov.uk/media/10477/SDC-SPD-Statement-of-Consultation-1219/pdf/SDC_SPD_Statement_of_Consultation_1219.pdf" rel="external" title="Sustainable design and construction supplementary planning document : Opens in a new browser window or tab" target="_blank">Statement of Consultation [196kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;for the results of consultation on the draft during 2019.</td><td>Adopted December 2019</td></tr></tbody></table></div><h2>Supplementary planning documents - sites</h2><div class="tableoverflow"><table border="1" cellpadding="1" cellspacing="0" style="width:100%" summary="Supplementary Planning Documents - Sites"><caption>Guidance to Local Plan documents on specific sites</caption><thead><tr><th>Document</th><th style="width: 40%">Description</th><th style="width: 20%">Status</th></tr></thead><tbody><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1666 typepdf" href="https://www.reading.gov.uk/media/1666/Battle-Hospital-Planning-Brief/pdf/Battle-Hospital-Planning-Brief.pdf" rel="external" title="Battle Hospital Planning Brief : Opens in a new browser window or tab" target="_blank">Battle Hospital Planning Brief [7Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Development principles for the former Battle Hospital site. Much of the development has now been completed, but there are still parts of the site where development may come forward.</td><td>Adopted October 2005</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1667 typepdf" href="https://www.reading.gov.uk/media/1667/Caversham-Lock-Development-Principles/pdf/Caversham-Lock-Development-Principles.pdf" rel="external" title="Caversham Lock Development Principles : Opens in a new browser window or tab" target="_blank">Caversham Lock Development Principles [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Contains planning guidance for the future of one of Reading's most important riverside areas.</td><td>Adopted March 2006</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1669 typepdf" href="https://www.reading.gov.uk/media/1669/Dee-Park-Planning-Brief/pdf/Dee-Park-Planning-Brief.pdf" rel="external" title="Dee Park Planning Brief : Opens in a new browser window or tab" target="_blank">Dee Park Planning Brief [3Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides guidance on the major&nbsp;regeneration of the Dee Park area.</td><td>Adopted December 2008</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1671 typepdf" href="https://www.reading.gov.uk/media/1671/Kenavon-Drive-Urban-Design-Concept-Statement/pdf/Kenavon-Drive-Urban-Design-Concept-Statement.pdf" rel="external" title="Kenavon Drive Urban Design Concept Statement : Opens in a new browser window or tab" target="_blank">Kenavon Drive Urban Design Concept Statement [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Seeks to guide the form of any development of the Kenavon Drive area.</td><td>Adopted July 2004</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1672 typepdf" href="https://www.reading.gov.uk/media/1672/Meadway-Centre-Planning-Brief/pdf/Meadway-Centre-Planning-Brief.pdf" rel="external" title="Meadway Centre Planning Brief : Opens in a new browser window or tab" target="_blank">Meadway Centre Planning Brief [6Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides guidance on the future of the Meadway Centre on Honey End Land.</td><td>Adopted November 2013</td></tr><tr><td><p><a id="MinsterQuarter"></a><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9963 typepdf" href="https://www.reading.gov.uk/media/9963/Minster-Quarter-Area-Development-Framework-Part-1/pdf/Minster_Quarter_Area_Development_Framework_Part_1.pdf" rel="external" title="Planning - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Part 1 [8Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9968 typepdf" href="https://www.reading.gov.uk/media/9968/Minster-Quarter-Area-Development-Framework-Part-2/pdf/Minster_Quarter_Area_Development_Framework_Part_2.pdf" rel="external" title="Planning policy - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Part 2 [8Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9967 typepdf" href="https://www.reading.gov.uk/media/9967/Minster-Quarter-Area-Development-Framework-Part-3/pdf/Minster_Quarter_Area_Development_Framework_Part_3.pdf" rel="external" title="Planning policy - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Part 3 [9Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9964 typepdf" href="https://www.reading.gov.uk/media/9964/Minster-Quarter-Area-Development-Framework-Note-on-Sustainability-Appraisal/pdf/Minster_Quarter_Area_Development_Framework_Note_on_Sustainability_Appraisal.pdf" rel="external" title="Planning - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Note on Sustainability Appraisal [272kb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9965 typepdf" href="https://www.reading.gov.uk/media/9965/Minster-Quarter-Area-Development-Framework-Adoption-Statement/pdf/Minster_Quarter_Area_Development_Framework_Adoption_Statement.pdf" rel="external" title="Planning - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Adoption Statement [250kb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9966 typepdf" href="https://www.reading.gov.uk/media/9966/Minster-Quarter-Area-Development-Framework-Equality-Scoping/pdf/Minster_Quarter_Area_Development_Framework_Equality_Scoping.pdf" rel="external" title="Planning - sites : Opens in a new browser window or tab" target="_blank">Minster Quarter Area Development Framework Equality Scoping [158kb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>Provides development principles for the Minster Quarter Area</td><td>Adopted December 2018</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1673 typepdf" href="https://www.reading.gov.uk/media/1673/Reading-Prison-Framework/pdf/Outline-Development-Framework-Reading-Prison-Adopted-March20151.pdf" rel="external" title="Reading Prison Framework : Opens in a new browser window or tab" target="_blank">Reading Prison Framework [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out guidelines on the future of this important site in central Reading - in particular the vital heritage issues. Download our&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3104 typepdf" href="https://www.reading.gov.uk/media/3104/Reading-Prison-Framework-Adoption-Statement/pdf/Prison-Framework-Adoption-Statement-March-2015.pdf" rel="external" title="Reading Prison Framework Adoption Statement : Opens in a new browser window or tab" target="_blank">Prison Framework Adoption Statement [65kb]<span class="tooltip"><span>Opens new window</span></span></a> for more information and see the <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3109 typepdf" href="https://www.reading.gov.uk/media/3109/Prison-Framework-Consultation-Report/pdf/Prison-Framework-Consultation-Report-March-2015.pdf" rel="external" title="Prison Framework Consultation Report : Opens in a new browser window or tab" target="_blank">Consultation Report [95kb]<span class="tooltip"><span>Opens new window</span></span></a>.</td><td>Adopted March 2015</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1674 typepdf" href="https://www.reading.gov.uk/media/1674/Reading-Station-Area-Framework/pdf/Reading-Station-Area-Framework.pdf" rel="external" title="Reading Station Area Framework : Opens in a new browser window or tab" target="_blank">Reading Station Area Framework [19Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out principles and guidelines for how development around the station should take shape.</td><td>Adopted December 2010</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1675 typepdf" href="https://www.reading.gov.uk/media/1675/Revised-Planning-Brief-For-South-West-Reading/pdf/Revised-Planning-Brief-For-South-West-Reading.pdf" rel="external" title="Revised Planning Brief for South West Reading : Opens in a new browser window or tab" target="_blank">South West Reading Planning Brief [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out planning guidelines for the South West Reading Area.</td><td>Approved April 2000</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1676 typepdf" href="https://www.reading.gov.uk/media/1676/Station-Hill-South-Planning-and-Urban-Design-Brief/pdf/Station-Hill-South-Planning-and-Urban-Design-Brief.pdf" rel="external" title="Station Hill South Planning and Urban Design Brief : Opens in a new browser window or tab" target="_blank">Station Hill South Planning and Urban Designs Brief [12Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Provides development principles for the area bounded by Station Road, Reading Station, Greyfriars Road and Friar Street.</td><td>Adopted March 2007</td></tr></tbody></table></div><h2><br>Technical reports and background evidence</h2><div class="tableoverflow"><table border="1" cellpadding="1" cellspacing="0" style="width:100%" summary="Technical Reports and Background Evidence"><caption>Research or technical information used in drawing up planning policy</caption><thead><tr><th>Document</th><th style="width: 40%">Description</th><th style="width: 20%">Status</th></tr></thead><tbody><tr><td><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1070 typepdf" href="https://www.reading.gov.uk/media/1070/Aggregates-Monitoring-Survey-2011/pdf/Aggregates-Monitoring-Survey-2011.pdf" rel="external" title="Aggregates Monitoring Survey 2011 : Opens in a new browser window or tab" target="_blank">Aggregates Monitoring Survey 2011 [436kb]<span class="tooltip"><span>Opens new window</span></span></a></p><p>Joint Minerals and Waste Annual Monitoring Report: <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1071 typepdf" href="https://www.reading.gov.uk/media/1071/Joint-Minerals-and-Waste-Annual-Monitoring-Report-2010/pdf/Joint-Minerals-And-Waste-Annual-Monitoring-Report-2010.pdf" rel="external" title="Joint Minerals and Waste Annual Monitoring Report 2010 : Opens in a new browser window or tab" target="_blank">2010 [300kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1072 typepdf" href="https://www.reading.gov.uk/media/1072/Joint-Minerals-and-Waste-Annual-Monitoring-Report-2009/pdf/Joint-Minerals-And-Waste-Annual-Monitoring-Report-2009.pdf" rel="external" title="Joint Minerals and Waste Annual Monitoring Report 2009 : Opens in a new browser window or tab" target="_blank">2009 [325kb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>The six Berkshire authorities used to produce these joint reports. They are no longer produced separately.</td><td>Now incorporated into Annual Monitoring Reports</td></tr><tr><td><img src="./images/media/default.gif" style="border: none; vertical-align: middle;" alt="excel_file icon" title="">&nbsp;<a class="inlinemedia id8111 typeexcel_file" href="https://www.reading.gov.uk/media/8111/Brownfield-Land-Register/xls/2019_Brownfield_Land_Register_Part_1.xls" rel="external" title="Brownfield Land Register part 1 : Opens in a new browser window or tab" target="_blank">Brownfield Land Register [230kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td><p>An annual register of brownfield land suitable for housing development. Includes maps (sites&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8109 typepdf" href="https://www.reading.gov.uk/media/8109/Brownfield-Register-Maps-BL1001-1052/pdf/Brownfield_Land_Register_Maps_2019_1001_to_1052.pdf" rel="external" title="Brownfield Land Register : Opens in a new browser window or tab" target="_blank">BL1001-1052 [612kb]<span class="tooltip"><span>Opens new window</span></span></a>,&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8107 typepdf" href="https://www.reading.gov.uk/media/8107/Brownfield-Register-Maps-BL2001-2051/pdf/Brownfield_Land_Register_Maps_2019_2001_to_2051.pdf" rel="external" title="Brownfield Land Register : Opens in a new browser window or tab" target="_blank">BL2001-2051 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>,&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8106 typepdf" href="https://www.reading.gov.uk/media/8106/Brownfield-Register-Maps-BL3001-3026/pdf/Brownfield_Land_Register_Maps_2019_3001_to_3026.pdf" rel="external" title="Brownfield Land Register : Opens in a new browser window or tab" target="_blank">BL3001-3026 [4Mb]<span class="tooltip"><span>Opens new window</span></span></a>,&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8108 typepdf" href="https://www.reading.gov.uk/media/8108/Brownfield-Register-Maps-BL4001-4025/pdf/Brownfield_Land_Register_Maps_2019_4001_to_4025.pdf" rel="external" title="Brownfield Land Register : Opens in a new browser window or tab" target="_blank">BL4001-4025 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>,&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8110 typepdf" href="https://www.reading.gov.uk/media/8110/Brownfield-Register-Maps-BL5001-5012/pdf/Brownfield_Land_Register_Maps_2019_5001_to_5012.pdf" rel="external" title="Brownfield Land Register : Opens in a new browser window or tab" target="_blank">BL5001-5012 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>.</p><p>This relates only to Part 1 of the Register, as no sites have been placed on Part 2.</p></td><td>December 2019</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2857 typepdf" href="https://www.reading.gov.uk/media/2857/City-Centre-Framework-2008/pdf/City-Centre-Framework-2008.pdf" rel="external" title="City-Centre-Framework-2008 : Opens in a new browser window or tab" target="_blank">City Centre Framework [6Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>An urban design strategy for central Reading, produced to inform the Reading Central Area Action Plan.</td><td>Published March 2008</td></tr><tr><td><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2858 typepdf" href="https://www.reading.gov.uk/media/2858/Employment-Land-Review-Final-Oct06/pdf/Employment-Land-Review-Final-Oct06.pdf" rel="external" title="Employment-Land-Review-Final-Oct06 : Opens in a new browser window or tab" target="_blank">Employment Land Review Report [2Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2859 typepdf" href="https://www.reading.gov.uk/media/2859/Employment-Land-Review-Site-Specific-0210/pdf/Employment-Land-Review-Site-Specific-0210.pdf" rel="external" title="Employment-Land-Review-Site-Specific-0210 : Opens in a new browser window or tab" target="_blank">Site-specific analysis 2009 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>A study of the need for new employment floorspace, published in 2006.&nbsp; Further work was carried out in 2009 on the future specific employment land.</td><td>Report published 2006, analysis 2009</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id5059 typepdf" href="https://www.reading.gov.uk/media/5059/Berkshire-Functional-Economic-Market-Area-Study/pdf/Berkshire_FEMA_Study_Report_Feb16.pdf" rel="external" title="Berkshire Functional Economic Market Area Study : Opens in a new browser window or tab" target="_blank">Berkshire Functional Economic Market Area Study [9Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>This study is the result of co-operation between the six Berkshire unitary authorities and Thames Valley Berkshire LEP to examine what the economic market areas that exist within Berkshire are.</td><td>Published February 2016</td></tr><tr><td><p><br><a class=" inlinelink id5329" href="http://thamesvalleyberkshire.co.uk/Strategic_Economic_Plan" rel="external" title="Central Berkshire Economic Development Needs Assessment : Opens in a new browser window or tab" target="_blank">Central Berkshire Economic Development Needs Assessment<span class="tooltip"><span>Opens new window</span></span></a><br>&nbsp;</p></td><td>A study examining the need for land for economic development use in Central Berkshire.</td><td>Published November 2016</td></tr><tr><td>Gypsy and Traveller Accommodation Background Information</td><td>A <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7692 typepdf" href="https://www.reading.gov.uk/media/7692/Reading-Gypsy-and-Traveller-Accommodation-Assessment/pdf/Reading_Gypsy_and_Traveller_Accommodation_Assessment_Sept_2017.pdf" rel="external" title="Reading Gypsy and Traveller Accommodation Assessment - September 2017 : Opens in a new browser window or tab" target="_blank">Gypsy and Traveller, Travelling Showperson and Houseboat Dweller Accommodation Assessment [775kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;was published in June 2017 to assess accommodation needs. A <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7691 typepdf" href="https://www.reading.gov.uk/media/7691/Gypsy-and-Traveller-Accommodation-Background-Information/pdf/Gypsy_and_Traveller_Provision_Background_Document.pdf" rel="external" title="Gypsy and Traveller Accommodation Background Information : Opens in a new browser window or tab" target="_blank">​Gypsy and Traveller Provision Background Document [6Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;sets out the work that has been undertaken in looking for sites to meet this need.</td><td>September 2017</td></tr><tr><td><p>Housing and Economic Land Availability Assessment, May 2017</p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8052 typepdf" href="https://www.reading.gov.uk/media/8052/HELAA-November-2017-Volume-I/pdf/HELAA_November_2017_Volume_I.pdf" rel="external" title="New Local Plan : Opens in a new browser window or tab" target="_blank">Volume I Main Report [5Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8060 typepdf" href="https://www.reading.gov.uk/media/8060/HELAA-November-2017-Volume-II/pdf/HELAA_November_2017_Volume_II.pdf" rel="external" title="New Local Plan : Opens in a new browser window or tab" target="_blank">Volume II Detailed tables [404kb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>A Housing and Economic Land Availability Assessment (HELAA) has been undertaken to feed into the Local Plan. This is based on a methodology agreed with five of the six Berkshire authorities.</td><td>November 2017</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7157 typepdf" href="https://www.reading.gov.uk/media/7157/Infrastructure-Delivery-Plan-May-2017/pdf/Infrastructure_Delivery_Plan_May_2017.pdf" rel="external" title="local plan : Opens in a new browser window or tab" target="_blank">Infrastructure Delivery Plan [448kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Sets out what will be needed to carry out proposals in the development plan</td><td>Published May 2017</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id1070 typepdf" href="https://www.reading.gov.uk/media/1070/Aggregates-Monitoring-Survey-2011/pdf/Aggregates-Monitoring-Survey-2011.pdf" rel="external" title="Aggregates Monitoring Survey 2011 : Opens in a new browser window or tab" target="_blank">Local Aggregates Assessment [436kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Examines trends in the production of aggregates in Berkshire and looks at potential future demand and supply.</td><td>Published annually - latest version published in 2014</td></tr><tr><td><p>Monitoring of commitments (non-residential):&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10202 typepdf" href="https://www.reading.gov.uk/media/10202/Non-residential-commitments-18-19/pdf/Non_Residential_Commitments_18-19.pdf" rel="external" title="Planning policy - technical reports and background evidence : Opens in a new browser window or tab" target="_blank">2019 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9169 typepdf" href="https://www.reading.gov.uk/media/9169/Non-residential-planning-commitments-March-2018/pdf/Non-Residential_Commitments_17-18.pdf" rel="external" title="Non-residential planning commitments March 2018 : Opens in a new browser window or tab" target="_blank">2018 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7260 typepdf" href="https://www.reading.gov.uk/media/7260/Non-residential-commitments-2017/pdf/Non_Residential__Commitments_16_17.pdf" rel="external" title="Non-residential commitments 2017 : Opens in a new browser window or tab" target="_blank">2017 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id5442 typepdf" href="https://www.reading.gov.uk/media/5442/Non-residential-commitments-2015-16/pdf/Non-Residential_Commitments_15-16.pdf" rel="external" title="Non-residential commitments 2015-16 : Opens in a new browser window or tab" target="_blank">2016 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3922 typepdf" href="https://www.reading.gov.uk/media/3922/Non-Residential-Commitments-2015/pdf/Non_Residential_Commitments_14_15.pdf" rel="external" title="Non Residential Commitments 2015 : Opens in a new browser window or tab" target="_blank">2015 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2869 typepdf" href="https://www.reading.gov.uk/media/2869/Non-Residential-Commitments-2014/pdf/Non-Residential-Commitments-2014.pdf" rel="external" title="Non-Residential-Commitments-2014 : Opens in a new browser window or tab" target="_blank">2014 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2868 typepdf" href="https://www.reading.gov.uk/media/2868/Non-Residential-Commitments-2013/pdf/Non-Residential-Commitments-2013.pdf" rel="external" title="Non-Residential-Commitments-2013 : Opens in a new browser window or tab" target="_blank">2013 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2867 typepdf" href="https://www.reading.gov.uk/media/2867/Non-Residential-Commitments-2012/pdf/Non-Residential-Commitments-2012.pdf" rel="external" title="Non-Residential-Commitments-2012 : Opens in a new browser window or tab" target="_blank">2012 [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2866 typepdf" href="https://www.reading.gov.uk/media/2866/Non-Residential-Commitments-2011/pdf/Non-Residential-Commitments-2011.pdf" rel="external" title="Non-Residential-Commitments-2011 : Opens in a new browser window or tab" target="_blank">2011 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2865 typepdf" href="https://www.reading.gov.uk/media/2865/Non-Residential-Commitments-2010/pdf/Non-Residential-Commitments-2010.pdf" rel="external" title="Non-Residential-Commitments-2010 : Opens in a new browser window or tab" target="_blank">2010 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2864 typepdf" href="https://www.reading.gov.uk/media/2864/Non-Residential-Commitments-2009/pdf/Non-Residential-Commitments-2009.pdf" rel="external" title="Non-Residential-Commitments-2009 : Opens in a new browser window or tab" target="_blank">2009 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2863 typepdf" href="https://www.reading.gov.uk/media/2863/Non-Residential-Commitments-2008/pdf/Non-Residential-Commitments-2008.pdf" rel="external" title="Non-Residential-Commitments-2008 : Opens in a new browser window or tab" target="_blank">2008 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2861 typepdf" href="https://www.reading.gov.uk/media/2861/Non-ResidentialCommitments2007/pdf/Non-Residential_Commitments_2007.pdf" rel="external" title="Non-Residential_Commitments_2007 : Opens in a new browser window or tab" target="_blank">2007 [15Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2862 typepdf" href="https://www.reading.gov.uk/media/2862/Non-Residential-Commitments-2006/pdf/Non-Residential-Commitments-2006.pdf" rel="external" title="Non-Residential-Commitments-2006 : Opens in a new browser window or tab" target="_blank">2006 [9Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;</p></td><td>Annual monitoring of the progress of non-residential planning permissions.</td><td>Published annually, covering year 1 April-31 March</td></tr><tr><td><p>Monitoring of commitments (residential):&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id10203 typepdf" href="https://www.reading.gov.uk/media/10203/Residential-commitments-18-19/pdf/Residential_Commitments_18-19.pdf" rel="external" title="Planning policy - technical reports and background evidence : Opens in a new browser window or tab" target="_blank">2019 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id9168 typepdf" href="https://www.reading.gov.uk/media/9168/Residential-planning-commitments-March-2018/pdf/Residential_Commitments_17-18.pdf" rel="external" title="Residential planning commitments March 2018 : Opens in a new browser window or tab" target="_blank">2018 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7259 typepdf" href="https://www.reading.gov.uk/media/7259/Residential-Commitments-2017/pdf/Residential__Commitments_16_17.pdf" rel="external" title="Residential Commitments 2017 : Opens in a new browser window or tab" target="_blank">2017 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id5443 typepdf" href="https://www.reading.gov.uk/media/5443/Residential-commitments-2015-16/pdf/Residential_Commitments_15-16.pdf" rel="external" title="Residential commitments 2015-16 : Opens in a new browser window or tab" target="_blank">2016 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id3923 typepdf" href="https://www.reading.gov.uk/media/3923/Residential-Commitments-2015/pdf/Residential_Commitments_14_15.pdf" rel="external" title="Residential Commitments 2015 : Opens in a new browser window or tab" target="_blank">2015 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2878 typepdf" href="https://www.reading.gov.uk/media/2878/Residential-Commitments-2014/pdf/Residential-Commitments-2014.pdf" rel="external" title="Residential-Commitments-2014 : Opens in a new browser window or tab" target="_blank">2014 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2877 typepdf" href="https://www.reading.gov.uk/media/2877/Residential-Commitments-2013/pdf/Residential-Commitments-2013.pdf" rel="external" title="Residential-Commitments-2013 : Opens in a new browser window or tab" target="_blank">2013 [917kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2876 typepdf" href="https://www.reading.gov.uk/media/2876/Residential-Commitments-2012/pdf/Residential-Commitments-2012.pdf" rel="external" title="Residential-Commitments-2012 : Opens in a new browser window or tab" target="_blank">2012 [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2875 typepdf" href="https://www.reading.gov.uk/media/2875/Residential-Commitments-2011/pdf/Residential-Commitments-2011.pdf" rel="external" title="Residential-Commitments-2011 : Opens in a new browser window or tab" target="_blank">2011 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2874 typepdf" href="https://www.reading.gov.uk/media/2874/Residential-Commitments-2010/pdf/Residential-Commitments-2010.pdf" rel="external" title="Residential-Commitments-2010 : Opens in a new browser window or tab" target="_blank">2010 [3Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2873 typepdf" href="https://www.reading.gov.uk/media/2873/Residential-Commitments-2009/pdf/Residential-Commitments-2009.pdf" rel="external" title="Residential-Commitments-2009 : Opens in a new browser window or tab" target="_blank">2009 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2882 typepdf" href="https://www.reading.gov.uk/media/2882/Residential-Commitments-2008/pdf/Residential-Commitments-2008.pdf" rel="external" title="Residential Commitments 2008 : Opens in a new browser window or tab" target="_blank">2008 [1Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2872 typepdf" href="https://www.reading.gov.uk/media/2872/Residential-Commitments-2007/pdf/Residential-Commitments-2007.pdf" rel="external" title="Residential-Commitments-2007 : Opens in a new browser window or tab" target="_blank">2007 [7Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp; |&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2871 typepdf" href="https://www.reading.gov.uk/media/2871/Residential-Commitments-2006/pdf/Residential-Commitments-2006.pdf" rel="external" title="Residential-Commitments-2006 : Opens in a new browser window or tab" target="_blank">2006 [5Mb]<span class="tooltip"><span>Opens new window</span></span></a></p></td><td>Annual monitoring of the progress of planning permissions for housing.</td><td>Published annually, covering year 1 April-31 March</td></tr><tr><td>Strategic Flood Risk Assessment:&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7330 typepdf" href="https://www.reading.gov.uk/media/7330/Main-report/pdf/SFRA_main_June_17.pdf" rel="external" title="SFRA main report : Opens in a new browser window or tab" target="_blank">Main report [4Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7331 typepdf" href="https://www.reading.gov.uk/media/7331/Appendix-A/pdf/SFRA_Appendix_A_June_17.pdf" rel="external" title="SFRA appx A : Opens in a new browser window or tab" target="_blank">Appendix A [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7332 typepdf" href="https://www.reading.gov.uk/media/7332/Appendix-B/pdf/SFRA_Appendix_B_June_17.pdf" rel="external" title="SFRA appx B : Opens in a new browser window or tab" target="_blank">Appendix B [2Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7333 typepdf" href="https://www.reading.gov.uk/media/7333/Appendix-C-part-1/pdf/SFRA_Appendix_C_part_1_June_17.pdf" rel="external" title="SFRA appx C pt 1 : Opens in a new browser window or tab" target="_blank">Appendix C part 1 [10Mb]<span class="tooltip"><span>Opens new window</span></span></a>|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7334 typepdf" href="https://www.reading.gov.uk/media/7334/Appendix-C-part-2/pdf/SFRA_Appendix_C_part_2_June_17.pdf" rel="external" title="SFRA appx C pt 2 : Opens in a new browser window or tab" target="_blank">Appendix C part 2 [7Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7335 typepdf" href="https://www.reading.gov.uk/media/7335/Appendix-D/pdf/SFRA_Appendix_D_June_17.pdf" rel="external" title="SFRA appx D : Opens in a new browser window or tab" target="_blank">Appendix D [163kb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>A document assessing flood risk in Reading to inform planning policy and decisions.</td><td>Published June 2017</td></tr><tr><td>Strategic Flood Risk Assessment Level 2 | <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8140 typepdf" href="https://www.reading.gov.uk/media/8140/27560RBCL2SFRAReportDec17/pdf/27560_RBC_L2_SFRA_Report_Dec17.pdf" rel="external" title="Strategic Flood Risk Assessment Level 2 : Opens in a new browser window or tab" target="_blank">Main report [804kb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;| <img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8138 typepdf" href="https://www.reading.gov.uk/media/8138/27560-4009-001RBCL2SFRADec17AppA/pdf/27560-4009-001_RBC_L2_SFRA_Dec17_AppA.pdf" rel="external" title="Strategic Flood Risk Assessment Level 2 : Opens in a new browser window or tab" target="_blank">Appendix A [8Mb]<span class="tooltip"><span>Opens new window</span></span></a>&nbsp;|&nbsp;<img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id8139 typepdf" href="https://www.reading.gov.uk/media/8139/27560RBCL2SFRAReportDec17AppB/pdf/27560_RBC_L2_SFRA_Report_Dec17_AppB.pdf" rel="external" title="Strategic Flood Risk Assessment Level 2 : Opens in a new browser window or tab" target="_blank">Appendix B [4Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Detailed flood risk assessment work on individual sites.</td><td>Published December 2017</td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2959 typepdf" href="https://www.reading.gov.uk/media/2959/Housing-Market-Assessment/pdf/Berkshire_Strategic_Housing_Market_Assessment_Feb_2016.pdf" rel="external" title="Housing Market Assessment : Opens in a new browser window or tab" target="_blank">Strategic Housing Market Assessment [5Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>The six Berkshire unitary authorities and the Thames Valley Berkshire LEP have co-operated on a Strategic Housing Market Assessment, which examines the need for housing in the area, including affordable housing.&nbsp; The final SHMA was published in February 2016.</td><td>Published February 2016</td></tr><tr><td><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2870 typepdf" href="https://www.reading.gov.uk/media/2870/Reading-Tall-Buildings-Strategy-0308/pdf/Reading-Tall-Buildings-Strategy-0308.pdf" rel="external" title="Reading-Tall-Buildings-Strategy-0308 : Opens in a new browser window or tab" target="_blank">Tall Buildings Strategy [16Mb]<span class="tooltip"><span>Opens new window</span></span></a></p><p><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id2881 typepdf" href="https://www.reading.gov.uk/media/2881/Tall-Buildings-Market-Analysis-1107/pdf/Tall-Buildings-Market-Analysis-1107.pdf" rel="external" title="Tall-Buildings-Market-Analysis-1107 : Opens in a new browser window or tab" target="_blank">Tall Buildings Market Analysis [534kb]<span class="tooltip"><span>Opens new window</span></span></a></p><p>&nbsp;</p></td><td>A study looking at the scope for tall buildings in central Reading.&nbsp; This study, along with the accompanying market analysis, informed the policy in the Reading Central Area Action Plan. A study looking at the scope for tall buildings in central Reading.&nbsp; This study, along with the accompanying market analysis, informed the policy in the Reading Central Area Action Plan.</td><td>Strategy published January 2008<p>&nbsp;</p><p>Market Analysis published November 2007</p></td></tr><tr><td><img src="./images/media/pdficon.gif" style="border: none; vertical-align: middle;" alt="pdf icon" title="">&nbsp;<a class="inlinemedia id7160 typepdf" href="https://www.reading.gov.uk/media/7160/Western-Berkshire-Retail-and-Leisure-Study-2017/pdf/Western_Berkshire_Retail_and_Leisure_Study_2017.pdf" rel="external" title="local plan : Opens in a new browser window or tab" target="_blank">Western Berkshire Retail and Leisure Study [16Mb]<span class="tooltip"><span>Opens new window</span></span></a></td><td>Assesses whether there is a need for additional retail and leisure provision in Reading, West Berkshire, Wokingham and Bracknell Forest</td><td>Published May 2017</td></tr></tbody></table></div><h2>&nbsp;</h2><p>&nbsp;</p>
+			    </div>
+		    
+		    
+		    
+		
+</div>
+	
+
+
+			
+			
+			
+
+			
+		</div>
+		<!-- Close Md 8 -->
+		<div class="col-25">
+
+			
+				
+
+
+			
+
+			
+				
+
+
+	
+
+	
+			<div id="areapanel">
+				<p class="panel-heading">In this area</p>
+				<ul>
+		
+			<li>
+				<a href="https://www.reading.gov.uk/planningadvice">Help with planning</a>
+			</li>
+		
+			<li>
+				<a href="https://www.reading.gov.uk/buildingcontrol">Building control</a>
+			</li>
+		
+			<li>
+				<a href="https://www.reading.gov.uk/article/7972/Search-planning-applications">Search planning applications</a>
+			</li>
+		
+			<li>
+				<span>Planning policy </span>
+			</li>
+		
+			<li>
+				<a href="https://www.reading.gov.uk/planningenforcement">Planning enforcement</a>
+			</li>
+		
+			<li>
+				<a href="https://www.reading.gov.uk/article/10313/More-planning">More planning</a>
+			</li>
+		
+			</ul>
+			</div>
+		
+
+
+			
+
+
+			
+				
+						<div id="related">
+					
+
+	
+			
+
+
+		
+
+
+
+		
+
+
+
+
+
+
+
+
+	
+
+
+
+
+		
+
+
+
+
+
+
+		
+	
+
+		
+
+
+
+
+
+
+
+
+
+	
+
+
+		
+		
+	
+
+
+
+		
+
+
+
+
+
+
+	
+
+					</div>
+					
+			
+
+		</div>
+	</div>
+	<!-- Close Row-->
+
+	
+	
+	
+</div>
+</div>
+</div>
+<div class="contrast">
+	<a href="https://www.reading.gov.uk/planningpolicy?mode=1" class="HS.css">Switch To High Contrast Mode</a>
+</div>
+
+		
+			<div id="footer" class="reading-purple">
+				<div class="container">
+					
+
+
+<div id="bottomutilnav">
+			
+
+		<ul>
+	
+				<li class="even first">
+					<a href="https://www.reading.gov.uk/article/8686/Accessibility">Accessibility</a>
+				</li>
+	
+				<li class="odd">
+					<a href="https://www.reading.gov.uk/sitemap">Sitemap</a>
+				</li>
+	
+				<li class="even">
+					<a href="https://www.reading.gov.uk/aboutoursite">About our site</a>
+				</li>
+	
+				<li class="odd">
+					<a href="https://www.reading.gov.uk/socialmedia">Social media</a>
+				</li>
+	
+				<li class="even last">
+					<a href="https://www.reading.gov.uk/article/11042/Data-protection">Data protection</a>
+				</li>
+	
+		</ul>
+	
+
+
+		<div id="google_translate_element"><div class="skiptranslate goog-te-gadget" dir="ltr" style=""><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(https://translate.googleapis.com/translate_static/img/te_ctrl3.gif); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="goog-te-menu-value" href="javascript:void(0)"><span>Select Language</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span style="border-left-width: 1px; border-left-style: solid; border-left-color: rgb(187, 187, 187);">​</span><img src="https://www.google.com/images/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
+</div>
+					
+					<div id="footerlogo">
+						
+								<img id="headerlogo" alt="Link to homepage" src="./themes/readingrefresh/images/toplogo.png">
+							
+					</div>
+					
+						<p id="copyright">
+							©
+							2020							Reading Borough Council						</p>
+					
+				</div>
+
+			</div>
+		
+	
+
+<div id="responsivediv"></div>
+<script type="text/javascript">
+	function googleTranslateElementInit() {
+		new google.translate.TranslateElement({
+				pageLanguage: 'en',
+				layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+				gaTrack: true,
+				gaId: ''
+			},
+			'google_translate_element');
+	}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+
+
+<script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script>
+<script type="text/javascript" id="">var scRec=document.createElement("SCRIPT");scRec.type="text/javascript";scRec.src="//d2oh4tlt9mrke9.cloudfront.net/Record/js/sessioncam.recorder.js";document.getElementsByTagName("head")[0].appendChild(scRec);</script>
+
+<script>
+	var CludoSearch;
+	(function() {
+		var cludoSettings = {
+			customerId: 1996,
+			engineId: 9551,
+			searchUrl: 'https://www.reading.gov.uk/search',
+			language: 'en',
+			searchInputs: ['cludo-search-form'],
+			type: 'inline',
+			searchApiUrl: 'https://api-eu1.cludo.com/api/v3'
+		};
+		CludoSearch = new Cludo(cludoSettings);
+		CludoSearch.init();
+	})();
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google Translate"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div><iframe frameborder="0" class="goog-te-menu-frame skiptranslate" title="Language Translate Widget" style="visibility: visible; box-sizing: content-box; width: 1148px; height: 285px; display: none;"></iframe></body></html>

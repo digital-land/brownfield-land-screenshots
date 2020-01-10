@@ -1,0 +1,832 @@
+<!DOCTYPE html><html class="no-js" lang="en"><head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="Find out information about Brownfield Sites available for housing on our up to date register">
+        <meta property="og:title" content="Brownfield Sites Register | South Somerset District Council">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">
+<meta property="og:image" content="https://www.southsomerset.gov.uk/assets/img/ssdc-logo.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128">
+<meta name="application-name" content="South Somerset Disctrict Council">
+<meta name="msapplication-TileColor" content="#FFFFFF">
+<meta name="msapplication-TileImage" content="mstile-144x144.png">
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png">
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png">
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png">
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png">
+
+        <meta property="og:description" content="Find out information about Brownfield Sites available for housing on our up to date register">
+        <title>Brownfield Sites Register | South Somerset District Council</title>
+        <link rel="stylesheet" href="/assets/css/app.css" media="screen">
+        <link rel="stylesheet" href="/assets/css/print.css" media="print" type="text/css">
+        
+
+<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.5.2/bluebird.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/url-search-params/1.1.0/url-search-params.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/nodelist-foreach-polyfill@1.2.0/index.min.js"></script>
+<script src="/umbraco/Surface/Lists/AutoCompleteAz" type="text/javascript"></script>
+
+
+
+        
+        <script type="text/javascript" src="/assets/js/yall.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="civica.common" src="/civica/Bundles/civica.common.js"></script></head>
+    <body class="generic-a" bgcolor="white">
+
+<header>
+    <div class="head__alerts">
+<div class="callout alert" data-closable="" id="cookie-consent">
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell">
+                <strong>South Somerset District Council Cookie Policy</strong>
+                <p>We use cookies to give you the best possible experience on our website. By continuing to browse this
+                    site, you agree to our use of cookies. For more information, including how you can amend your
+                    preferences, please read our <strong><a href="/cookies/">Cookie Policy</a></strong>.</p>
+                
+                <button class="button tiny" data-close="" id="allow-cookies" aria-label="Allow cookies">Okay</button>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+    </div>
+
+    <div class="head__top green">
+        <div class="grid-container">
+            <div class="grid-x">
+                <div class="auto cell align-self-middle text-left">
+                    <div class="auto cell align-self-middle text-left">
+                        <h1><a href="/" aria-label="">
+                            <svg data-src="/assets/img/ssdc-logo.svg" aria-label="Go back to home page" data-inline-svg="" alt="South Somerset District Council Logo"></svg>
+                        </a></h1>
+                    </div>
+                </div>
+                <div class="shrink cell">
+                    <div class="login-wrap">
+                        <a href="/login/" class="button magenta hidden-authenticated">Sign-in</a>
+                        <a href="/my-account/" class="button magenta hidden-anonymous">My Account</a>
+                        <div class="civica-authentication"><div><!--ko if: Authenticated() && Loaded()--><!--/ko--> <!--ko ifnot: Authenticated() && Loaded()--><div class="civica-login"><a data-bind="click: OnLogin, sitelink: LoginUrl" class="btn primary-btn" href="https://www.southsomerset.gov.uk/login?ReturnUrl=/your-council%2Fyour-council-plan-and-strategies%2Fplanning-policy%2Fbrownfield-sites-register%2F"> <i class="fa fa-sign-in"></i><span data-bind="msg: 'widget.authentication.login', msgapp: 'Core'">Sign in</span> </a></div><!--/ko--></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dark-green head__bottom">
+        <div class="grid-container">
+            <div class="grid-x desktop-navigation">
+                <div class="cell">
+                    <ul class="dropdown menu">
+
+                        <li><a href="/residents/">Residents</a></li>
+                        <li><a href="/business/">Business</a></li>
+                        <li class="selected"><a href="/your-council/">Your council</a></li>
+                        <li><a href="/discover-more/">Discover more</a></li>
+                        <li><a href="/news/">News</a></li>
+                    </ul>
+                </div>
+                <div class="auto cell align-self-middle text-right">
+                    <div class="grid-container search-area">
+                        <div class="grid-x">
+                            <div class="cell align-self-middle text-right">
+                                <a href="/a-z/" class="button darkest-grey a-z" style="height: 50px;">A-Z</a>
+                                or
+                            </div>
+                            <div class="cell align-self-middle text-right">
+                                <form action="/search" method="get" role="search" id="auto-complete-app">
+                                    <input type="text" v-model="input" placeholder="Search" name="q" id="desktop-search" aria-labelledby="desktop-search" autocomplete="off" v-bind:class="{ active: isOpen }">
+                                    <button type="submit" class="button darkest-grey" aria-label="Search" v-on:click="triggerSearch">
+                                        <img src="/assets/icons/search-white.svg" alt="Search icon" class="icon-white">
+                                        <span class="show-for-sr">Search</span>
+                                    </button>
+                                    <ul class="auto-complete hide">
+                                        <li v-for="searchResult in filteredItems">
+                                            <a :href="searchResult.url" v-on:click="triggerGA"> {{searchResult.name}}</a>
+                                        </li>
+                                    </ul>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-container mobile-area">
+                        <div class="grid-x">
+                            <div class="cell">
+                                <button class="menu-icon" type="button" aria-label="Toggle mobile menu" id="menu-icon"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container mobile-navigation hide" id="mobile-navigation">
+            <div class="grid-x">
+                <div class="cell">
+                    <ul class="dropdown menu mobile">
+                        <li class="mobile-residents"><a href="/residents/">Residents</a></li>
+                        <li class="mobile-business"><a href="/business/">Business</a></li>
+                        <li class="mobile-your-council"><a href="/your-council/">Your council</a></li>
+                        <li class="mobile-discover-more"><a href="/discover-more/">Discover more</a></li>
+                        <li class="mobile-news"><a href="/news/">News</a></li>
+                        <li class="mobile-a-z"><a href="/a-z/">A-Z</a></li>
+                        <li class="my-account"><a href="/login/">My account</a></li>
+                        <li class="hidden-anonymous"><div class="civica-authentication"><div><!--ko if: Authenticated() && Loaded()--><!--/ko--> <!--ko ifnot: Authenticated() && Loaded()--><div class="civica-login"><a data-bind="click: OnLogin, sitelink: LoginUrl" class="btn primary-btn" href="https://www.southsomerset.gov.uk/login?ReturnUrl=/your-council%2Fyour-council-plan-and-strategies%2Fplanning-policy%2Fbrownfield-sites-register%2F"> <i class="fa fa-sign-in"></i><span data-bind="msg: 'widget.authentication.login', msgapp: 'Core'">Sign in</span> </a></div><!--/ko--></div></div></li>
+
+                        <li class="mobile-search">
+                            <form action="/search" method="get" role="search">
+                                <input type="text" v-model="input" placeholder="Search" name="q" autocomplete="off" aria-labelledby="mobile-search">
+                                <button type="submit" class="button darkest-grey" aria-label="Search" id="mobile-search">
+                                    <img src="/assets/icons/search-white.svg" alt="Search icon" class="icon-white">
+                                    <span class="show-for-sr">Search</span>
+                                </button>
+                            </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</header>
+
+
+        
+<div class="head__nav">
+    <div class="grid-container">
+
+<div class="do-it-online__container">
+    <nav>
+        <ul class="do-it-online grid-x grid-margin-x">
+            <li class="cell small-12 medium-6 large-3">
+                <a href="/make-a-payment/" class="make-a-payment">
+                    Make a payment
+                </a>
+            </li>
+            <li class="cell small-12 medium-6 large-3">
+                <a href="/make-a-booking/" class="make-a-booking">
+                    Make a booking
+                </a>
+            </li>
+            <li class="cell small-12 medium-6 large-3">
+                <a href="/apply-for-something/" class="apply-for-something">
+                    Apply for something
+                </a>
+            </li>
+            <li class="cell small-12 medium-6 large-3">
+                <a href="/report-it/" class="report-an-issue">
+                    Report it
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+     
+<nav aria-label="Breadcrumb">
+    <ol class="breadcrumbs">
+        <li><a href="/">Home</a></li>
+                 <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/">Planning Policy</a></li>
+            <li>
+                <span class="show-for-sr" aria-current="page">Current: </span> Brownfield Sites Register
+            </li>
+      
+    </ol>
+</nav> 
+    </div>
+</div>
+
+        
+<main>
+
+    <div class="grid-container">
+        <div class="grid-x">
+            <div class="cell small-12 large-4 small-order-2 large-order-1">
+                <section class="grid-container sidebar">
+                    <div class="grid-x grid-margin-x">
+                        <div class="cell small-12 medium-6 large-12">
+
+<aside class="buttons-list-dropdown">
+    <ul class="accordion" data-accordion="" data-allow-all-closed="true">
+        <li class="accordion-item is-active" data-accordion-item="">
+            <a href="#"><h1>Planning Policy</h1><span></span></a>
+            <div class="accordion-content" data-tab-content="">
+                <ul>
+                            <li> Brownfield Sites Register</li>
+                                <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/community-infrastructure-levy-cil/">Community Infrastructure Levy (CIL)</a></li>
+                                <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/local-plan/">Local Plan</a></li>
+                                <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/local-plan-review-2016-2036/">Local Plan Review 2016-2036</a></li>
+                                <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/neighbourhood-planning/">Neighbourhood Planning</a></li>
+                                <li><a href="/your-council/your-council-plan-and-strategies/planning-policy/self-build-and-custom-build-houses/">Self-build and Custom-build Houses</a></li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+</aside>
+
+
+                        </div>
+                        
+    
+                        
+                    </div>
+                </section>
+            </div>
+            <div class="cell small-12 large-8 small-order-1 large-order-2">
+                <article>
+                    <h1>Brownfield Sites Register</h1>
+                    <p>This register is designed to provide house builders with up-to-date and publically available information on all brownfield sites available for housing.</p>
+<p>Brownfield register (<a data-udi="umb://media/3ffed98ec6164f73a0688486d5b59d0f" href="/media/2550/j-plan_pol-web-site-2019-brownfield-register-interim-csv.csv" title="Brownfield Register CSV">cvs</a>) (<a data-udi="umb://media/068a1584f751490d9250417770fa56f4" href="/media/2549/j-plan_pol-web-site-2019-brownfield-brownfield-register-interim-xls.xlsm" title="Brownfield Register xlsm">xlsm</a>)</p>
+<table border="0" style="height: 2479px; width: 412px;">
+<tbody>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p><strong>Ref</strong></p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><strong>Site Plan</strong></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/YEOV/0005</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/9d9c35559dab47b4aad2e5370823577b" href="/media/1609/yeov0005.pdf" target="_blank" title="Yeov0005 Land at Eastville Road"><u>Land at Eastville Road</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/YEOV/0008</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/892075c35a27463cbc14666b3154ad9f" href="/media/1610/yeov0008.pdf" target="_blank" title="Yeov0008 Former Bus Depot"><u>Former Bus Depot</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>S/YEOV/1300</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/b62ca5b56a2545cab7f18bb9173cdf14" href="/media/1611/yeov1300.pdf" target="_blank" title="YEOV1300 Former Box Factory South Street Yeovil"><u>Former Box Factory South Street Yeovil</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/YEOV/B001</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/736b628e66ff4320ad34a46ec72ce6cc" href="/media/1614/yeovb001.pdf" target="_blank" title="YEOVB001 Former Cattle Market Yeovil"><u>Former Cattle Market Yeovil</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/YEOV/1303</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/c96b27890b1a40a49231fb9b2cba8ce8" href="/media/1613/yeov1303.pdf" target="_blank" title="Yeov1303 Petters Way Car Park Yeovil"><u>Petters Way Car Park Yeovil</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/YEOV/B002</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/0996eedd3d1b410f88f3af667a1a52b3" href="/media/1576/yeovb002.pdf" target="_blank" title="YEOVB002 108/110 West Coker Road Yeovil"><u>108/110 West Coker Road Yeovil</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/BRYM/0004</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/b8037b757a0646ba8c7d0f8f2f303230" href="/media/1580/brym0004.pdf" target="_blank" title="BRYM0004 Land off George Smith Way Yeovil"><u>Land off George Smith Way Yeovil</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/BRYM/0501</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/24c2aab1f2de45fb8294cc9f447861b7" href="/media/1581/brym0501.pdf" target="_blank" title="Brym0501 Land at Yeovil Town FC"><u>Land at Yeovil Town FC</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CHAR/0019</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/a29fc36118044bd3be19e3be93929ceb" href="/media/1584/char0019-b002.pdf" target="_blank" title="CHAR0019 Land off Boden Street and Silver Street Chard"><u>Land off Boden Street and Silver Street Chard</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CHAR/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/1c7b5fed2cd64442bdec3b17f29b32b1" href="/media/1585/charb001.pdf" target="_blank" title="CHARB001 Slades Garage, Touchstone Lane Chard"><u>Slades Garage, Touchstone Lane Chard</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CHAR/B002</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/a29fc36118044bd3be19e3be93929ceb" href="/media/1584/char0019-b002.pdf" target="_blank" title="CHARB002 Former Tyre Depot, Silver Street Chard"><u>Former Tyre Depot, Silver Street Chard</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>W/CHAR/B003</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/b0aa1c20340f475b89f3190aab615038" href="/media/1586/charb003.pdf" target="_blank" title="CHARB003 Church Hall, East Street Chard"><u>Church Hall, East Street Chard</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CREW/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/6489e902329a4b10a434a123901ea5c1" href="/media/1587/crewb001.pdf" target="_blank" title="CREWB001 Viney Bridge Mills, South Street Crewkerne"><u>Viney Bridge Mills, South Street Crewkerne</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CREW/B002</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/0519081032a34fb3a0364ac1a493a984" href="/media/1588/crewb002.pdf" target="_blank" title="CREWB002 The Shirt Factory, Abbey Street Crewkerne"><u>The Shirt Factory, Abbey Street Crewkerne</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/CREW/B003</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/cd4a712730924b38acb6d18f5c35daf3" href="/media/1589/crewb003.pdf" target="_blank" title="CREWB003 Builder's Yard, Dairy Court Crewkerne"><u>Builder's Yard, Dairy Court Crewkerne</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>W/ILMI/B001</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/5c81a866f49c40f19e1fad15c6c24885" href="/media/1593/ilmib001-b003.pdf" target="_blank" title="ILMIB001 Police Station, Butts Ilminster"><u>Police Station, Butts Ilminster</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/ILMI/0016</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/ea804ab648034e0c9ac92cdfd4fd0954" href="/media/1591/ilmi0016.pdf" target="_blank" title="ILMI0016 Former Powrmatic Winterhay Lane Ilminster"><u>Former Powrmatic Winterhay Lane Ilminster</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>W/ILMI/0022</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/3c0f6179916d4abaa961d65da6f12765" href="/media/1592/ilmi0022.pdf" target="_blank" title="Ilmi0022 Land north of Station Road"><u>Land north of Station Road</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/ILMI/B002</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/151f6ef0cfbc4ab49d1b53363c1d8373" href="/media/1594/ilmib002.pdf" target="_blank" title="ILMIB002 Former Cheese Factory Site Station Road"><u>Former Cheese Factory Site Station Road</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>W/ILMI/B003</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/5c81a866f49c40f19e1fad15c6c24885" href="/media/1593/ilmib001-b003.pdf" target="_blank" title="ILMIB003 Gooch &amp; Housego Cornhill, Ilminster"><u>Gooch &amp; Housego Cornhill, Ilminster</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/WINC/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/c91948991ea54849864f7f7b07f89ae9" href="/media/1608/wincb001.pdf" target="_blank" title="WINCB001 Former Works Southgate Road, Wincanton"><u>Former Works Southgate Road, Wincanton</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/WINC/0007</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/a4658ae53f7c49ffa254f0c8f19cd270" href="/media/1607/winc0007-b001.pdf" target="_blank" title="WINC0007 The Tythings Southgate Road, Wincanton"><u>The Tythings Southgate Road, Wincanton</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/ANSF/0010</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/3806662b893e438c9479deab8ef00ef8" href="/media/1579/ansf0010.pdf" target="_blank" title="ANSF0010 Land at Ansford Farm Cumnock Road Castle Cary"><u>Land at Ansford Farm Cumnock Road Castle Cary</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/CACA/1101</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/9ce211c260af4d2d8d6ad6030f326a72" href="/media/1582/caca1101.pdf" target="_blank" title="CACA1101 BMI Site Cumnock Road, Castle Cary"><u>BMI Site Cumnock Road, Castle Cary</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/CACA/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/0cf89d75e15a449081191265364ba13d" href="/media/1583/cacab001.pdf" target="_blank" title="CACAB001 Constitutional Club Station Road Castle Cary"><u>Constitutional Club Station Road Castle Cary</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>N/SOME/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/ec411cdaf2d14cc9be973af84f36e758" href="/media/1604/someb001.pdf" target="_blank" title="SOMEB001 Former Garage Site West Street, Somerton"><u>Former Garage Site West Street, Somerton</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>N/SOME/0800</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/56b69bfef30b4f82a4dd968d4691274b" href="/media/1603/some0800.pdf" target="_blank" title="SOME0800 Land at Etsome Terrace Somerton"><u>Land at Etsome Terrace Somerton</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>N/MART/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/4fe6f264c5bf40a5a8d720a82163a3dd" href="/media/1597/martb001.pdf" target="_blank" title="MARTB001 Burfield Gloves Manor Road, Martock"><u>Burfield Gloves Manor Road, Martock</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>N/MART/0005</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/4de1571c77c348eb9907de3dbe8150cd" href="/media/1596/mart0005.pdf" target="_blank" title="MART0005 Rear of the Rose &amp; Crown Hurst Bower Hinton"><u>Rear of the Rose &amp; Crown Hurst Bower Hinton</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>N/SOPE/0013</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/fabe50e4f5eb4cdd8fde0309ced18093" href="/media/1605/sope0013.pdf" target="_blank" title="SOPE0013 Parkway Farm West Street South Pertherton"><u>Parkway Farm West Street South Pertherton</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>W/MERR/B001</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/6eef900c1ce3407dab2c7311a363c8af" href="/media/1598/merrb001.pdf" target="_blank" title="MERRB001 Tail Mill Tail Mill Lane Merriot"><u>Tail Mill Tail Mill Lane Merriot</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">W/MIST/1200</td>
+<td style="width: 193px; height: 64px;"><a rel="noopener" data-udi="umb://media/c61f872b99814b0ba2669d8f306b4fbf" href="/media/1599/mist1200.pdf" target="_blank" title="MIST1200 Former Coal Yard Station Road Misterton"><u>Former Coal Yard Station Road Misterton</u></a></td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>E/LIMI/B001</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/391f40a9319c464bb138ddbbe56bcea7" href="/media/1595/limib001.pdf" target="_blank" title="LIMIB001 The Old Forge Limington"><u>The Old Forge Limington</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/NOCA/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/69dc9a000a284a9bb6863831c668dcdd" href="/media/1600/nocab001.pdf" target="_blank" title="NOCAB001 Harvester Works Mayfield Close Galhampton"><u>Harvester Works Mayfield Close Galhampton</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>E/SPAR/0005</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/11e15f35985944cf89ad2d00b429ea71" href="/media/1606/spar0005.pdf" target="_blank" title="SPAR0005 Haynes Publishing High Street Sparkford"><u>Haynes Publishing High Street Sparkford</u></a></p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">
+<p>N/HUEP/B001</p>
+</td>
+<td style="width: 193px; height: 64px;">
+<p><a rel="noopener" data-udi="umb://media/22d3f0fff4714b5eb208846bf6a4fad4" href="/media/1590/huepb001.pdf" target="_blank" title="HUEPB001 Great Orchard Stores Brookland Road Huish Episcopi"><u>Great Orchard Stores Brookland Road Huish Episcopi</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">
+<p>S/ODCO/1101</p>
+</td>
+<td style="width: 193px; height: 43px;">
+<p><a rel="noopener" data-udi="umb://media/ff75138926bf4dde9b89042b8872eb92" href="/media/1601/odco1101.pdf" target="_blank" title="ODCO1101 Manor Farm Street Lane Odcombe"><u>Manor Farm Street Lane Odcombe</u></a></p>
+</td>
+</tr>
+<tr style="height: 43px;">
+<td width="113" style="width: 221px; height: 43px;">&nbsp;</td>
+<td style="width: 193px; height: 43px;">&nbsp;</td>
+</tr>
+<tr style="height: 64px;">
+<td width="113" style="width: 221px; height: 64px;">&nbsp;</td>
+<td style="width: 193px; height: 64px;">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Map layers</p>
+<p>ESPG: OSGB 1936 British national grid <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=SSDC:BROWNFIELD_BNG&amp;styles=&amp;bbox=331706.117781513,108430.098246958,371487.548349434,132833.765684766&amp;width=537&amp;height=330&amp;srs=EPSG:27700&amp;format=application/openlayers">Openlayers</a></u> <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/wms/kml?layers=SSDC:BROWNFIELD_BNG">KML</a></u> <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=SSDC:BROWNFIELD_BNG&amp;maxFeatures=50">GML</a></u></p>
+<p>ESPG: ETRS 89 LAEA Euroope <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/wms?service=WMS&amp;version=1.1.0&amp;request=GetMap&amp;layers=SSDC:BROWNFIELD_ETRS89&amp;styles=&amp;bbox=3413476.16531441,3162978.5687053,3455500.24443249,3184028.76908976&amp;width=658&amp;height=330&amp;srs=EPSG:3035&amp;format=application/openlayers">Openlayers</a></u> <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/wms/kml?layers=SSDC:BROWNFIELD_ETRS89">KML</a></u> <u><a href="http://gis.southsomerset.gov.uk/geoserver/SSDC/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=SSDC:BROWNFIELD_ETRS89&amp;maxFeatures=50">GML</a></u></p>
+
+
+                </article>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<div class="grid-container">
+    <div class="grid-x">
+        <div class="cell small-12 large-4">
+        </div>
+        <div class="cell small-12 large-8"> 
+            <section class="page-helpful">
+                <p class="hide" id="form-helpful-response">Thank you. You response is appreciated.</p>
+                <form action="/Umbraco/Api/Page/AddComment" method="Post" name="commentForm">
+                    <input value="GOzUhD-gi8rvBbHT3XkRehFajJwfh5NBc02eIih0tMa8EALAo3xlzMk8mlZrIHNfPbm4SShGVXktK64_KEvO0LoLDPfj1TbP2e0SYiwsuA81:zMkkiY5TILNXmA4VAMLaGSE5Cj3vK_j2vCuDkMp_oAtpDHptSWqAj7kYqlqPigDBR1uPMEuQx3r5nxzqkSglV6gKEXRtAWCcdcxOdSylNdI1" id="likeModel_ValidationToken" name="likeModel.ValidationToken" type="hidden">
+                    <fieldset role="radiogroup">
+                        <legend>Was this page helpful?</legend>
+                        <input type="radio" name="helpful" value="1" id="pageHelpfulYes" required="" aria-checked="false"><label for="pageHelpfulYes">Yes</label>
+                        <input type="radio" name="helpful" value="0" id="pageHelpfulNo" aria-checked="false" data-open="form-callout" required=""><label for="pageHelpfulNo">No <span class="hide">(Use <a href="/forms/contact-us/">Enquiry form</a> if a response is required)</span></label>
+                    </fieldset>
+
+                    <div id="form-helpful">
+                        <input value="1698" id="likeModel_PageId" name="likeModel.PageId" type="hidden">
+
+                        <label class="show-for-sr" for="likeModel_Comment">Comment</label>
+                        <textarea cols="20" id="likeModel_Comment" name="likeModel.Comment" placeholder="Page not helpful?  Help us to improve it with your feedback" rows="2"></textarea>
+                        
+                        <button class="button" id="submitComment" type="submit">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+                
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+
+        <footer>
+    <div class="darkest-grey">
+        <div class="grid-container">
+            <h2>Ways of keeping in touch with us</h2>
+            <nav>
+
+                <ul class="footer__social">
+                    <li>
+                        <a href="https://www.youtube.com/user/southsomersetdc" target="_blank" rel="noopener">
+                            <svg data-src="/assets/icons/youtube.svg" class="icon-white" data-inline-svg="" aria-label="Find us on YouTube"></svg>
+                            <span>YouTube</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/southsomersetdc" target="_blank" rel="noopener">
+                            <svg data-src="/assets/icons/twitter.svg" class="icon-white" data-inline-svg="" aria-label="Find us on Twitter"></svg>
+                            <span>Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en-gb.facebook.com/SouthSomersetDistrictCouncil/" target="_blank" rel="noopener">
+                            <svg data-src="/assets/icons/facebook.svg" class="icon-white" data-inline-svg="" aria-label="Find us on Facebook"></svg>
+                            <span>Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/forms/contact-us/">
+                            <svg data-src="/assets/icons/mail.svg" class="icon-white" data-inline-svg="" aria-label="Link to our Enquiry form"></svg>
+                            <span>Enquiry form</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+441935462462">
+                            <svg data-src="/assets/icons/phone.svg" class="icon-white" data-inline-svg="" aria-label="Telephone"></svg>
+                            <span>01935 462462</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sms://66777?body=SSDC">
+                            <svg data-src="/assets/icons/text-message.svg" class="icon-white" data-inline-svg="" aria-label="Text message"></svg>
+                            <span>Text SSDC to 66777</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+
+<div class="footer__carousel">
+    <div>
+        <section class="footer__carousel-item green">
+            <h1>Octagon Theatre</h1>
+            <a href="https://www.octagon-theatre.co.uk/" target="_blank" rel="noopener">Find out more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Octagon Theatre"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item blue">
+            <h1>Yeovil Innovation Centre</h1>
+            <a href="http://www.yeovilinnovationcentre.co.uk/" target="_blank" rel="noopener">Learn more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Yeovil Innovation Centre"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item magenta">
+            <h1>Visit and explore South Somerset</h1>
+            <a href="http://www.discoversouthsomerset.com/" target="_blank" rel="noopener">Explore more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Visit and explore South Somerset"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item white">
+            <h1>Westlands Yeovil</h1>
+            <a href="https://www.westlandsyeovil.co.uk/" target="_blank" rel="noopener">Find out more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Westlands Yeovil"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item indigo">
+            <h1>Careline</h1>
+            <a href="http://www.carelinesouthsomerset.co.uk/" target="_blank" rel="noopener">Find out more
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Careline"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item green">
+            <h1>Countryside</h1>
+            <a href="https://www.southsomersetcountryside.com/" target="_blank" rel="noopener">Discover more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Countryside"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item blue">
+            <h1>Yeovil  Rec</h1>
+            <a href="http://yeovilrec.co.uk/" target="_blank" rel="noopener">Explore more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, Yeovil  Rec"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item magenta">
+            <h1>South Somerset Heritage</h1>
+            <a href="http://www.southsomersetheritage.org.uk/" target="_blank" rel="noopener">Learn more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, South Somerset Heritage"></svg>
+            </a>
+        </section>
+    </div>
+    <div>
+        <section class="footer__carousel-item white">
+            <h1>LED Leisure</h1>
+            <a href="https://www.ledleisure.co.uk/" target="_blank" rel="noopener">Find out more...
+                <svg data-src="/assets/icons/pagination-arrow.svg" role="presentation" class="icon-white" data-inline-svg="" alt="Next Page, LED Leisure"></svg>
+            </a>
+        </section>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+    <div class="even-darkest-grey">
+        <div class="grid-container">
+            <div class="footer__links">
+                <div class="grid-x">
+                    <div class="cell small-12 large-9">
+                        <nav>
+    <ul>
+            <li><a href="/news/">News</a></li>
+            <li><a href="/your-council/data-protection-and-freedom-of-information/privacy-and-data-protection/">Privacy and data protection</a></li>
+            <li><a href="/accessibility/">Accessibility</a></li>
+            <li><a href="/cookies/" target="_blank">Cookies</a></li>
+            <li><a href="/jobs/" target="_blank">Jobs</a></li>
+            <li><a href="/forms/contact-us/" target="_blank">Contact us</a></li>
+            <li><a href="/news-updates/">News updates</a></li>
+    </ul>
+
+                        </nav>
+                        <p class="copyright__desktop">
+                            All content © 2020 South Somerset District Council.
+                            <br>
+                            All rights reserved
+                        </p>
+                    </div>
+                    <div class="cell  small-12 large-3 text-center">
+    <form id="translatePage">
+        <select id="language" aria-labelledby="translateButton">
+                <option value="PL|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Polish</option>
+                <option value="PT|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Portuguese</option>
+                <option value="BE|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Bengali</option>
+                <option value="BG|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Bulgarian</option>
+                <option value="ZH|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Chinese</option>
+                <option value="CS|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Czech</option>
+                <option value="FR|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">French</option>
+                <option value="DE|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">German</option>
+                <option value="EL|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Greek</option>
+                <option value="GU|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Gujarati</option>
+                <option value="HI|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Hindi</option>
+                <option value="HU|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Hungarian</option>
+                <option value="IT|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Italian</option>
+                <option value="LV|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Latvian</option>
+                <option value="LT|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Lithuanian</option>
+                <option value="PA|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Punjabi</option>
+                <option value="RO|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Romanian</option>
+                <option value="ES|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Spanish</option>
+                <option value="TL|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Tagalog</option>
+                <option value="UR|https://www.southsomerset.gov.uk/your-council/your-council-plan-and-strategies/planning-policy/brownfield-sites-register/">Urdu</option>
+        </select>
+        <a href="" id="translateButton" class="button magenta tiny" target="_blank" rel="noopener">Translate</a>
+    </form>
+
+                    </div>
+                </div>
+                <p class="copyright__mobile">
+                    All content ©2020 South Somerset District Council.
+                    <br>
+                    All rights reserved
+                    <br>/
+                          
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        <script src="/assets/js/app.js"></script>
+        <script src="/assets/js/cookies.min.js"></script>
+        
+        <script src="/assets/js/vue.autocomplete.min.js" defer=""></script>
+    <script type="text/javascript" src="/assets/js/civica.main.min.js" defer=""></script>
+    <script type="text/javascript" src="/civica/Bundles/civica.loader.js?t=-1431100639" defer=""></script>
+        <script src="/assets/js/civica.footer.min.js" defer=""></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-132033143-1"></script>
+    <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                     dataLayer.push(arguments);
+                }
+                var gtagCode = 'UA-132033143-1';
+                gtag('js', new Date());
+                gtag('config', gtagCode, { 'anonymize_ip': true });
+    </script>
+
+    
+<style>.hidden-authenticated { display: block !important; } .hidden-anonymous {display: none !important;}</style><style> .authenticating {display: block} !important</style></body></html>

@@ -1,0 +1,618 @@
+<!DOCTYPE html><html lang="en"><head>
+
+		<!-- Google Analytics -->
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script><script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-102097679-1', 'auto');
+			ga('set', 'anonymizeIp', true);
+			ga('set', 'location', 'https:\/\/chiltern.gov.uk\/planning\/brownfieldregister');
+			ga('send', 'pageview');
+		</script>
+		<!-- End Google Analytics -->
+
+
+	<base href="https://chiltern.gov.uk/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>Chiltern District Council - Brownfield Land Register</title>
+		<link href="https://chiltern.gov.uk/dynamic.css?v=88E7A75E254E02C0933589C74608A22A" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="https://chiltern.gov.uk/dynamic.js?v=081575D0567BBE8DC61ED407358E4BB4"></script>
+
+
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+	
+		<link rel="shortcut icon" href="https://chiltern.gov.uk/image/9420/Chiltern-Logo/favicon.jpg?m=636372697373330000">
+
+		<link rel="apple-touch-icon" href="https://chiltern.gov.uk/image/11222/CDC-Apple-touch-icon/appletouchiconsmall.png?m=636385776785270000">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://chiltern.gov.uk/image/11222/CDC-Apple-touch-icon/appletouchiconmedium.png?m=636385776785270000">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://chiltern.gov.uk/image/11222/CDC-Apple-touch-icon/appletouchiconlarge.png?m=636385776785270000">
+
+
+	
+
+</head>
+<body data-template="default" class="template template--default pageload pageload--loaded" data-id="7083" style="padding-top: 0px;" bgcolor="white"><div id="responsiveindex"></div>
+<a class="skip-link" href="https://chiltern.gov.uk/planning/brownfieldregister#maincontent">Skip to main content</a>
+
+
+
+	<div class="cookiemessage">
+		<div class="container">
+			<p class="cookiemessage__message">
+We use cookies to help us improve this website. We don't track or gather personal information. To find out more about how we use them, read our cookie page.			</p>
+			<div class="cookiemessage__buttons">
+<a class="cta-link cta-link--cookiemessage" href="https://chiltern.gov.uk/use-of-cookies">Use of Cookies</a>				<button aria-label="Hide this message button" class="btn btn--cancel btn--contrast btn--cookiemessage">Hide this message<span class="accessibility"> about cookies</span></button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//Controls logic for cookie message display
+		if (Cookies.get('euLaw') !== undefined) {
+			// Cookie exists, previously accepted, no action required.
+		} else {
+			// Show cookie message
+			$('.cookiemessage--NoJSOrHidden').removeAttr("aria-hidden").removeClass("cookiemessage--NoJSOrHidden");
+
+			$('.btn--cookiemessage').on("click", function (event) {
+				event.preventDefault();
+
+				//Set cookie and hide message
+				Cookies.set('euLaw', 'true', { expires: 364, secure: true });
+				$('.cookiemessage').slideUp("slow", function () {
+					$('.cookiemessage').attr("aria-hidden", "true");
+				});
+			});
+		}
+	</script>
+
+
+
+<div class="header header--nosticky" role="banner">
+	<div class="container">
+
+
+
+
+<div class="logo">
+<a class="logo__link" href="https://chiltern.gov.uk/" title="Link to homepage">		<img class="logo__image" src="https://chiltern.gov.uk/image/10783/Chiltern-New-Logo/logo.png?m=636380639325530000" alt="Link to homepage">
+</a></div>
+
+		<div class="header__menu" id="navigation">
+
+
+	<ol class="utilitymenu utilitymenu--top">
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/login">Login</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/register-me">Register</a>			</li>
+	</ol>
+
+
+
+	<form class="searchform searchform--top" action="https://chiltern.gov.uk/article/6369/Search" method="get" role="search" id="search">
+		<div class="searchform__container">
+			
+			<div class="searchform__close">
+				<div class="btn btn--close">
+					<span class="btn__text">
+						<img src="images/cross.png" alt="Close Icon">
+					</span>
+				</div>
+			</div>
+			
+			<div class="searchform__input">
+				
+
+				<label class="searchform__label" for="topsearch">Enter your keyword(s):</label>
+<input data-dataurl="https://chiltern.gov.uk/article/6369/Search" id="topsearch" class="searchform__inputtxt" placeholder="Search Chiltern District Council" name="q" value="" type="text" maxlength="100" autocomplete="off">
+
+<script>
+	var autocomplete = new SearchSuggestion({
+		element: 'input[id="topsearch"]',
+		minimum: 1,
+		modifier: "",
+		select: function (value, element, item) {
+			var link = item.getAttribute('data-link');
+			if (link) {
+				window.location = link;
+			} else {
+				window.location = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + item.getAttribute("data-val");
+			}
+		},
+		source: function (value, element, render) {
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == XMLHttpRequest.DONE) {
+					if (this.status == 200) {
+						var data = JSON.parse(this.responseText);
+						if (data) {
+							render(data.results.splice(0, 5));
+						}
+					}
+				}
+			};
+
+			var url = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + value + "&amp;ajax=true&amp;t=" + new Date().getTime();
+			xhr.open("GET", url, true);
+			xhr.setRequestHeader("Content-type", "application/json");
+			xhr.setRequestHeader("Accept", "application/json");
+			xhr.send();
+		}
+	});
+</script>
+			</div>
+			
+			<div class="searchform__button">
+				<button class="btn btn--search">
+					<span class="btn__text">
+						<img src="images/button/search.png" alt="Search Icon">
+					</span>
+				</button>
+			</div>
+		</div>
+	</form>
+
+
+
+	<ol class="sitemenu sitemenu--desktop sitemenu--hassearch">
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6375/All-Services">All Services</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/pay">Pay</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6492/Apply">Apply</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/7717/Report">Report</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6376/Find">Find</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/7743/Partner-organisations">Partner organisations</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/8020/News">News</a>				
+			</li>
+	</ol>
+
+		</div>
+		<button class="mobilebutton">
+			<span class="mobilebutton__container">
+				<span class="mobilebutton__rotate">
+					<span class="mobilebutton__topbar"></span>
+					<span class="mobilebutton__middlebar"></span>
+					<span class="mobilebutton__bottombar"></span>
+				</span>
+			</span>
+			<span class="accessibility">
+					Toggle Mobile Menu Visibility
+			</span>
+		</button>
+		<div class="mobilemenu" style="">
+
+
+	<form class="searchform searchform--mobile" action="https://chiltern.gov.uk/article/6369/Search" method="get" role="search" id="search">
+		<div class="searchform__container">
+			
+			<div class="searchform__close">
+				<div class="btn btn--close">
+					<span class="btn__text">
+						<img src="images/cross.png" alt="Close Icon">
+					</span>
+				</div>
+			</div>
+			
+			<div class="searchform__input">
+				
+
+				<label class="searchform__label" for="mobilesearch">Enter your keyword(s):</label>
+<input data-dataurl="https://chiltern.gov.uk/article/6369/Search" id="mobilesearch" class="searchform__inputtxt" placeholder="Search Chiltern District Council" name="q" value="" type="text" maxlength="100" autocomplete="off">
+
+<script>
+	var autocomplete = new SearchSuggestion({
+		element: 'input[id="mobilesearch"]',
+		minimum: 1,
+		modifier: "",
+		select: function (value, element, item) {
+			var link = item.getAttribute('data-link');
+			if (link) {
+				window.location = link;
+			} else {
+				window.location = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + item.getAttribute("data-val");
+			}
+		},
+		source: function (value, element, render) {
+			var xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState == XMLHttpRequest.DONE) {
+					if (this.status == 200) {
+						var data = JSON.parse(this.responseText);
+						if (data) {
+							render(data.results.splice(0, 5));
+						}
+					}
+				}
+			};
+
+			var url = element.getAttribute('data-dataurl') + "?" + element.getAttribute("name") + "=" + value + "&amp;ajax=true&amp;t=" + new Date().getTime();
+			xhr.open("GET", url, true);
+			xhr.setRequestHeader("Content-type", "application/json");
+			xhr.setRequestHeader("Accept", "application/json");
+			xhr.send();
+		}
+	});
+</script>
+			</div>
+			
+			<div class="searchform__button">
+				<button class="btn btn--search">
+					<span class="btn__text">
+						<img src="images/button/search.png" alt="Search Icon">
+					</span>
+				</button>
+			</div>
+		</div>
+	</form>
+
+
+
+	<ol class="utilitymenu utilitymenu--mobile">
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/login">Login</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/register-me">Register</a>			</li>
+	</ol>
+
+
+
+	<ol class="sitemenu sitemenu--mobile sitemenu--hassearch">
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6375/All-Services">All Services</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/pay">Pay</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6492/Apply">Apply</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/7717/Report">Report</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/6376/Find">Find</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/7743/Partner-organisations">Partner organisations</a>				
+			</li>
+			<li class="sitemenu__item">
+				
+
+<a class="sitemenu__link" href="https://chiltern.gov.uk/article/8020/News">News</a>				
+			</li>
+	</ol>
+
+		</div>
+	</div>
+</div><div class="search-suggestion" style="left: 0px; top: 0px; width: 0px;"></div><div class="search-suggestion" style="left: 0px; top: 0px; width: 0px;"></div>
+
+
+	<div class="sitealert" role="dialog" aria-label="side wide alert">
+		<div class="container">
+			<div class="sitealert__heading">
+				Have you created your customer account yet? 
+			</div>
+			<div class="sitealert__content">
+Creating your own My Account will provide you with a safe, quick and easy way to access your Council Services. All in a few clicks. 			</div>
+
+<a aria-label="Have you created your customer account yet? " class="sitealert__link" href="https://chiltern.gov.uk/create-your-customer-account" title="Have you created your customer account yet? ">                 Read More
+</a>		</div>
+	</div>
+
+
+	
+	
+
+
+	<div class="breadcrumb__nav">
+		<div class="container">
+			<ol class="breadcrumb">
+					<li class="breadcrumb__crumb">
+<a class="breadcrumb__link" href="https://chiltern.gov.uk/">Home</a>					</li>
+					<li class="breadcrumb__crumb">
+<a class="breadcrumb__link" href="https://chiltern.gov.uk/article/6375/All-Services">All Services</a>					</li>
+					<li class="breadcrumb__crumb">
+<a class="breadcrumb__link" href="https://chiltern.gov.uk/planning">Planning</a>					</li>
+					<li class="breadcrumb__crumb">
+<a class="breadcrumb__link" href="https://chiltern.gov.uk/planning/policy">Planning Policy</a>					</li>
+			</ol>
+		</div>
+	</div>
+
+
+	
+	<div class="maincontent" role="main" id="maincontent">
+			<div class="container">
+
+	<div class="a-heading a-heading--default">
+		<h1 class="a-heading__title">Brownfield Land Register</h1>
+	</div>
+
+
+	<div class="a-relimage a-relimage--default">
+		<img alt="Planning" src="https://chiltern.gov.uk/image/9509/Planning/standard.png?m=636328592389900000" title="Planning">
+	</div>
+
+
+	<div class="a-body a-body--default">
+
+<p>The Town and Country Planning (Brownfield Land Register) Regulations 2017 ('the Regulations') place a responsibility on the Council to prepare and maintain a register of brownfield* sites.</p><p>The Regulations required the Council's first Brownfield Land Register to be published by 31st December 2017. The Council is then required to review the Register at least once a year after this.</p><p>&nbsp;</p><p>The register may consist of two parts:</p><ul><li><p>Part 1 - all sites which are 'suitable', 'available', and 'achievable' for residential development which could be delivered within 15 years; and</p></li><li><p>Part 2 - any sites which are given 'permission in principle'. Inclusion on part 2 would grant permission in principle for residential development (the scale to be determined by the Council) and the land owner/developer would have to apply for 'technical details consent' before any development could commence.</p></li></ul><p>There is no requirement to place any sites on Part 2 of the Register. At this point in time the Council does not intend to produce a Part 2 Register.</p><p>For further information, please see our <span class="embeddoc"><img class="embeddoc__image" src="images/media/pdficon.gif" alt="Icon for pdf">
+<a class="embeddoc__link" href="https://chiltern.gov.uk/media/12643/Brownfield-Land-Register-FAQ/pdf/Brownfield_Land_Register_FAQ_-_December_2018.pdf?m=636800575768000000" target="_blank" title="Brownfield Land Register FAQ : opens on new browser window or tab">Brownfield Land Register FAQ [112.76KB]</a></span></p><p><br>&nbsp;</p><p>Nominating a site to be on the Brownfield Land Register</p><p>You may nominate a site to be considered for Part 1 of the Register at any time, although we may not consider the site until the next review of the Register takes place.</p><p>The eligibility of sites to be on the register will be determined against a specific methodology.<br>&nbsp;</p><p><span class="embeddoc"><img class="embeddoc__image" src="images/media/pdficon.gif" alt="Icon for pdf">
+<a class="embeddoc__link" href="https://chiltern.gov.uk/media/12401/Brownfield-Land-Register-Methodology-for-Adding-Sites/pdf/Brownfield_Land_Register_-_Methodology_for_Adding_Sites.pdf?m=636701032110570000" target="_blank" title="Brownfield Land Register - Methodology for Adding Sites : opens on new browser window or tab">Brownfield Land Register - Methodology for Adding Sites [256.13KB]</a></span></p><p><span class="embeddoc"><img class="embeddoc__image" src="images/media/pdficon.gif" alt="Icon for pdf">
+<a class="embeddoc__link" href="https://chiltern.gov.uk/media/12400/Brownfield-Land-Register-Methodology-Flowchart/pdf/Brownfield_Land_Register_-_methodology_flowchart_August_2018.pdf?m=636701025631170000" target="_blank" title="Brownfield Land Register Methodology - Flowchart : opens on new browser window or tab">Brownfield Land Register - Methodology Flowchart [99.28KB]</a></span><br><br>To nominate a site, please complete our <span class="embeddoc"><img class="embeddoc__image" src="images/media/wordicon.gif" alt="Icon for word">
+<a class="embeddoc__link" href="https://chiltern.gov.uk/media/12605/Brownfield-Land-Register-Site-Nomination-Form/doc/Brownfield_Land_Register_Site_Nomination_Form.docx?m=636777261601600000" target="_blank" title="Brownfield Land Register Site Nomination Form : opens on new browser window or tab">Site Nomination Form [611.69KB]</a></span>&nbsp;and return to the planning policy team at <a href="mailto:ldf@chilternandsouthbucks.gov.uk"><strong>planning.policy@chilternandsouthbucks.gov.uk</strong></a></p><p><br>&nbsp;</p><p>Brownfield Land Register (Review 2018)</p><p>&nbsp;</p><p>The council has reviewed its Brownfield Land Register (Part 1). The review consisted of removing sites which were no longer available for development, reviewing which permissions had been granted in the last monitoring year (April 2017 - March 2018), and determining whether nominated sites were eligible for inclusion. Sites which have received planning permission since 31 March 2018 have not been reviewed.<br>&nbsp;</p><p>A document outlining the reasons for inclusion and exclusion of site nominations can be found below. This document excludes nominations which did not provide enough detail e.g. a site plan, as well as those which have already been assessed as part of the HELAA.</p><p>The Final Part 1 Brownfield Land Register, including accompanying maps, can be found below.</p><p>&nbsp;</p><p>Any queries relating to the Brownfield Register can be directed to the planning policy team at: 01494 586 678 or <a href="mailto:ldf@chilternandsouthbucks.gov.uk"><strong>planning.policy@chilternandsouthbucks.gov.uk</strong></a></p>
+	</div>
+
+ 			</div>
+			</div>
+
+	
+
+
+
+	
+
+
+	
+
+
+			<div class="relateditem">
+			<div class="container">
+
+<div class="panel panel--relmedia">
+		<div class="panel__heading">
+			<div class="panel__headingtext">Downloads</div>
+		</div>
+	<div class="panel__content">
+
+		<ul class="panel__list panel__list--relmedia">
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12400/Brownfield-Land-Register-Methodology-Flowchart/pdf/Brownfield_Land_Register_-_methodology_flowchart_August_2018.pdf?m=636701025631170000" target="_blank" title="Brownfield Land Register Methodology Flowchart : opens on new browser window or tab">	<span class="media-link__text">Brownfield Land Register Methodology - Flowchart</span>
+	<span class="media-link__filesize">[99.28KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12401/Brownfield-Land-Register-Methodology-for-Adding-Sites/pdf/Brownfield_Land_Register_-_Methodology_for_Adding_Sites.pdf?m=636701032110570000" target="_blank" title="Brownfield Land Register Methodology for Adding Sites : opens on new browser window or tab">	<span class="media-link__text">Brownfield Land Register - Methodology for Adding Sites</span>
+	<span class="media-link__filesize">[256.13KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--word">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12605/Brownfield-Land-Register-Site-Nomination-Form/doc/Brownfield_Land_Register_Site_Nomination_Form.docx?m=636777261601600000" target="_blank" title="Brownfield Land Register Site Nomination Form : opens on new browser window or tab">	<span class="media-link__text">Brownfield Land Register Site Nomination Form</span>
+	<span class="media-link__filesize">[611.69KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12643/Brownfield-Land-Register-FAQ/pdf/Brownfield_Land_Register_FAQ_-_December_2018.pdf?m=636800575768000000" target="_blank" title="Brownfield Land Register FAQ : opens on new browser window or tab">	<span class="media-link__text">Brownfield Land Register FAQ</span>
+	<span class="media-link__filesize">[112.76KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12644/Chiltern-Brownfield-Land-Register-Part-1-Site-Maps/pdf/Chiltern_-_Brownfield_Register_Part_1_Site_Maps.pdf?m=636800585055030000" target="_blank" title="Chiltern Brownfield Land Register Part 1 Site Maps : opens on new browser window or tab">	<span class="media-link__text">Chiltern Brownfield Land Register Part 1 Site Maps</span>
+	<span class="media-link__filesize">[2.14MB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12647/Chiltern-site-nominations-inclusions-and-exclusions/pdf/Chiltern_Site_Nominations_-_inclusions_and_exclusions.pdf?m=636800578276930000" target="_blank" title="Chiltern site nominations - inclusions and exclusions : opens on new browser window or tab">	<span class="media-link__text">Chiltern site nominations - inclusions and exclusions</span>
+	<span class="media-link__filesize">[70.35KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--pdf">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12646/Chiltern-sites-being-removed-from-Register/pdf/Chiltern_-_sites_being_removed_from_Register.pdf?m=636800577676870000" target="_blank" title="Chiltern sites being removed from Register : opens on new browser window or tab">	<span class="media-link__text">Chiltern sites being removed from Register</span>
+	<span class="media-link__filesize">[77.37KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--csv">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12650/Chiltern-Brownfield-Land-Register-Part-1/CSV/Chiltern_Brownfield_Register_-_Part_1.csv?m=636800580942630000" target="_blank" title="Chiltern Brownfield Land Register Part 1 : opens on new browser window or tab">	<span class="media-link__text">Chiltern Brownfield Land Register Part 1</span>
+	<span class="media-link__filesize">[17.19KB]</span>
+</a></div>
+
+
+				</li>
+				<li class="panel__item panel__item--excel">
+
+
+<div class="media-links media-links--related">
+
+<a class="media-link media-link--external" href="https://chiltern.gov.uk/media/12651/Chiltern-Brownfield-Land-Register-Part-1/xls/Chiltern_Brownfield_Register_-_Part_1.xlsx?m=636800581365870000" target="_blank" title="Chiltern Brownfield Land Register Part 1 : opens on new browser window or tab">	<span class="media-link__text">Chiltern Brownfield Land Register Part 1</span>
+	<span class="media-link__filesize">[15.99KB]</span>
+</a></div>
+
+
+				</li>
+		</ul>
+
+</div></div>
+			</div>
+		</div>
+	
+
+<div class="a-share">
+	<p class="a-share__label">Share this page</p>
+	<a class="a-share__link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fchiltern.gov.uk%2fplanning%2fbrownfieldregister">
+		<img class="a-share__image" src="images/facebook.png" alt="Facebook icon">
+	</a>
+	<a class="a-share__link" target="_blank" href="https://twitter.com/share?url=https%3a%2f%2fchiltern.gov.uk%2fplanning%2fbrownfieldregister">
+		<img class="a-share__image" src="images/twitter.png" alt="Twitter icon">
+	</a>
+	<a class="a-share__link" href="mailto:?to=&amp;Subject=Brownfield+Land+Register&amp;Body=I%20thought%20you%20might%20be%20interested%20in%20this%20web%20page%20-%20https%3a%2f%2fchiltern.gov.uk%2fplanning%2fbrownfieldregister">
+		<img class="a-share__image" src="images/email.png" alt="email icon">
+	</a>
+	<p class="a-share__label">Print</p>
+	<a class="a-share__link" href="javascript:window.print();">
+		<img class="a-share__image" src="images/print.png" alt="print icon">
+	</a>
+</div>
+
+<div class="footer" role="contentinfo" id="footer" aria-label="footer section">
+	<div class="container">
+
+
+	<div class="grid grid--4col grid--footer">
+
+<div class="grid__cell grid__cell--cols1 grid__cell--utilities" data-grid-colspan="1">
+	<div class="grid__cellwrap">
+
+	<ul class="utilitymenu utilitymenu--bottom">
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/contact-us">Contact Us</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/privacy">Terms and Disclaimer</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/use-of-cookies">Use of Cookies</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/location-map">How to find us</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/accessibility">Accessibility</a>			</li>
+			<li class="utilitymenu__item">
+<a class="utilitymenu__link" href="https://chiltern.gov.uk/privacy-notice">Privacy Notice</a>			</li>
+	</ul>
+
+</div></div>
+<div class="grid__cell grid__cell--cols1 grid__cell--about" data-grid-colspan="1">
+	<div class="grid__cellwrap">
+
+
+	<div class="footer__about">
+		<div class="footer__heading">How to find us</div>
+		<div class="footer__summary">
+King George V Road, Amersham, Buckinghamshire HP6 5AW		</div>
+	</div>
+
+</div></div>
+<div class="grid__cell grid__cell--cols1 grid__cell--social" data-grid-colspan="1">
+	<div class="grid__cellwrap">
+
+	<div class="socialmedia">
+		<span class="socialmedia__title">Follow us</span>
+		<ol class="socialmedia__list">
+				<li class="socialmedia__item">
+						<a href="https://www.chiltern.gov.uk/your-council-on-social-media" title="Your Council on Social Media" target="_blank">
+							<img src="https://chiltern.gov.uk/image/10785/Facebook-new/footerIcon.png?m=636898889113700000" alt="Facebook new">
+						</a>
+				</li>
+				<li class="socialmedia__item">
+						<a href="https://www.chiltern.gov.uk/your-council-on-social-media" title="Your Council on Social Media" target="_blank">
+							<img src="https://chiltern.gov.uk/image/10786/Twitter-New/footerIcon.png?m=636898890074070000" alt="Twitter New">
+						</a>
+				</li>
+				<li class="socialmedia__item">
+						<a href="https://www.chiltern.gov.uk/your-council-on-social-media" title="Your Council on Social Media" target="_blank">
+							<img src="https://chiltern.gov.uk/image/11859/Linkedin/footerIcon.png?m=636898890449700000" alt="Linkedin">
+						</a>
+				</li>
+				<li class="socialmedia__item">
+						<a href="https://www.southbucks.gov.uk/your-council-on-social-media" title="Your Council on Social Media" target="_blank">
+							<img src="https://chiltern.gov.uk/image/12281/Instagram/footerIcon.png?m=636898895538230000" alt="Instagram">
+						</a>
+				</li>
+		</ol>
+	</div>
+
+</div></div>
+<div class="grid__cell grid__cell--cols1 grid__cell--copyright" data-grid-colspan="1">
+	<div class="grid__cellwrap">				<div class="footer__copy">© 2020 - Chiltern District Council</div>
+				<div class="bygoss">
+					<a class="bygoss__link" href="https://www.gossinteractive.com" target="_blank" title="Web content management by GOSS iCM">Powered by GOSS iCM</a>
+				</div>
+
+</div></div>
+</div>	</div>
+</div>
+
+
+</body></html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html><html xml:lang="en-gb" lang="en-gb"><head>
+		<base href="https://www.wychavon.gov.uk/planning/planning-policy/brownfield-land-register">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="generator" content="South Worcestershire ICT Shared Service">
+	<title>Brownfield Land Register - Wychavon District Council</title>
+	<link href="https://www.wychavon.gov.uk/planning/planning-policy/brownfield-land-register" rel="canonical">
+	<link href="/media/koowa/com_files/css/plyr.css" rel="stylesheet" type="text/css">
+	<link href="/media/modals/css/bootstrap.min.css?v=11.5.7.p" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/media/plg_jchoptimize/cache/css/3b7ad3fb5323d15c889bd2e16c13c848_0.css">
+	<link href="/media/com_finder/css/finder.css?631e457b72470bf271212fe4499c0980" rel="stylesheet" type="text/css">
+	<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//siteimproveanalytics.com/js/siteanalyze_298491.js"></script><script type="application/json" class="joomla-script-options loaded">{"csrf.token":"4d19217ef120ab36eb9b10f3e456aab7","system.paths":{"root":"","base":""},"rl_modals":{"class":"modal_link","defaults":{"opacity":"0.8","maxWidth":"95%","maxHeight":"95%","current":"{current} \/ {total}","previous":"previous","next":"next","close":"close","xhrError":"This content failed to load.","imgError":"This image failed to load."},"auto_correct_size":1,"auto_correct_size_delay":0,"disable_background_scrolling":0,"disable_on_mobile":0,"disable_on_mobile_splash":0,"mobile_max_width":767,"open_by_url":null}}</script>
+	
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/71e78e8760c01085e19aa5559b09b7bb_0.js"></script>
+	<script src="/media/koowa/framework/js/koowa.kquery.js?04e0c297" type="text/javascript"></script>
+	<script src="/media/koowa/framework/js/min/koowa.js?04e0c297" type="text/javascript"></script>
+	<script src="/media/koowa/com_files/js/plyr/plyr.js" type="text/javascript"></script>
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/71e78e8760c01085e19aa5559b09b7bb_1.js"></script>
+	<script src="/media/modals/js/jquery.touchSwipe.min.js" type="text/javascript"></script>
+	<script src="/media/modals/js/jquery.modals.min.js?v=11.5.7.p" type="text/javascript"></script>
+	<script src="/media/modals/js/script.min.js?v=11.5.7.p" type="text/javascript"></script>
+	
+	
+	
+	<script type="application/javascript" src="/media/plg_jchoptimize/cache/js/71e78e8760c01085e19aa5559b09b7bb_2.js"></script>
+	<script type="text/javascript">
+kQuery(function($){
+        var recorded_plays = [];
+
+        plyr.setup();
+
+        $(document).on('playing', function(event) {
+            if (typeof event.detail !== 'undefined' && typeof event.detail.plyr !== 'undefined') {
+                var plyr = event.detail.plyr;
+
+                // If they've played over 3 seconds, then consider it played
+                // This is the same timing convention used by Facebook, Instagram, and Twitter
+                setTimeout(function() {
+                    if (!plyr.isPaused()) {
+                        var media = $(plyr.getMedia());
+
+                        var category = media.data('category');
+                        var action = 'Play ' + plyr.getType();
+
+                        var title = media.data('title') || '';
+                        var id = parseInt(media.data('media-id'), 10) || 0;
+
+                        if (recorded_plays.indexOf(title) === -1) {
+                            recorded_plays.push(title);
+
+                            if (typeof window.GoogleAnalyticsObject !== 'undefined' && typeof window[window.GoogleAnalyticsObject] !== 'undefined') {
+                                window[window.GoogleAnalyticsObject]('send', 'event', category, action, title, id);
+                            }
+                            else if (typeof _gaq !== 'undefined' && typeof _gat !== 'undefined') {
+                                if (_gat._getTrackers().length) {
+                                    _gaq.push(function () {
+                                        var tracker = _gat._getTrackers()[0];
+                                        tracker._trackEvent(category, action, title, id);
+                                    });
+                                }
+                            }
+                        }
+                    }
+                }, 3000);
+            }
+        });
+    });
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+	jQuery(function ($) {
+		initChosen();
+		$("body").on("subform-row-add", initChosen);
+
+		function initChosen(event, container)
+		{
+			container = container || document;
+			$(container).find(".advancedSelect").chosen({"disable_search_threshold":10,"search_contains":true,"allow_single_deselect":true,"placeholder_text_multiple":"Type or select some options","placeholder_text_single":"Select an option","no_results_text":"No results match"});
+		}
+	});
+	
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+jQuery(document).ready(function() {
+	var value, searchword = jQuery('#mod-finder-searchword110');
+
+		// Get the current value.
+		value = searchword.val();
+
+		// If the current value equals the default value, clear it.
+		searchword.on('focus', function ()
+		{
+			var el = jQuery(this);
+
+			if (el.val() === 'Search ...')
+			{
+				el.val('');
+			}
+		});
+
+		// If the current value is empty, set the previous value.
+		searchword.on('blur', function ()
+		{
+			var el = jQuery(this);
+
+			if (!el.val())
+			{
+				el.val(value);
+			}
+		});
+
+		jQuery('#mod-finder-searchform110').on('submit', function (e)
+		{
+			e.stopPropagation();
+			var advanced = jQuery('#mod-finder-advanced110');
+
+			// Disable select boxes with no value selected.
+			if (advanced.length)
+			{
+				advanced.find('select').each(function (index, el)
+				{
+					var el = jQuery(el);
+
+					if (!el.val())
+					{
+						el.attr('disabled', 'disabled');
+					}
+				});
+			}
+		});
+	var suggest = jQuery('#mod-finder-searchword110').devbridgeAutocomplete({
+		serviceUrl: '/component/finder/?task=suggestions.suggest&amp;format=json&amp;tmpl=component',
+		paramName: 'q',
+		minChars: 1,
+		maxHeight: 400,
+		zIndex: 9999,
+		deferRequestBy: 500,
+        triggerSelectOnValidInput: false,
+        onSelect: function (suggestion) {
+       		jQuery('#mod-finder-searchform110').submit();
+   		}	
+	});});
+	</script>
+
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Shortcut Icon" href="/templates/wdc_theme/images/logo/wdc-favicon.ico">
+        <link rel="stylesheet" type="text/css" href="/media/plg_jchoptimize/cache/css/3b7ad3fb5323d15c889bd2e16c13c848_1.css">
+        <!--[if lt IE 9]>
+        	<script src="/templates/wdc_theme/js/html5shiv.js"></script>
+        	<script src="/templates/wdc_theme/js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="static" bgcolor="white">
+        <div class="holder">
+            <div id="header" class="block">
+                <div class="header-background max-height-banner col-xs-12">
+                     <div class="container">
+                    	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 nopadding">
+                        	<a href="/"> <img class="main-logo top-margin" src="/templates/wdc_theme/images/logo/wdc-logo.png" alt="Wychavon District Council logo"> </a>
+                        </div>
+          				<div class="col-lg-4 col-md-4 hidden-xs hidden-sm nopadding">
+							<a href="https://public.govdelivery.com/accounts/UKWYCHAVON/subscriber/new" target="_blank"> <img class="gdcalltoaction" src="/templates/wdc_theme/images/logo/gov-delivery.jpg" alt="Sign up for email alerts from Wychavon District Council"> </a>
+						</div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 hidden-xs nopadding">
+							<a href="/"> <img class="main-logo pull-right" src="/templates/wdc_theme/images/logo/wdc-logo2.png" alt="Wychavon District Council. Good Services, Good Value"> </a>
+						</div>
+                    </div>
+                </div>
+                <div id="main-nav-wrapper" class="nav-wrapper" style="height: 41px;">
+          			<div id="menus-con" class="full-width navbar-static-top z-index-5 affix-top" style="top:0px;">
+          				                        <nav id="nav" class="navbar navbar-default navbar-static-top full-width z-index-5" style="top:0px;">
+                            <div class="navbar-header">
+                                <button type="button" id="mobile-menu-button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="navbar-brand mobile-link-colour visible-xs">
+                                    <a href="/">
+                                        <strong>Navigation Menu</strong>
+                                    </a>
+                                </div>
+                            </div>
+                                                                <div class="container">
+                                        <div id="mob-menu" class="collapse navbar-collapse navbar-ex1-collapse nav-item-align">
+                                              <ul id="navbar" class="nav  mod-list navbar-nav navbar-left">
+  <li class="item-101 default"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li><li class="item-686"><a href="/about-wychavon-district-council" class="hidden-md hidden-sm">About us</a></li><li class="item-687"><a href="/pay-it">Pay it</a></li><li class="item-688"><a href="/report-it">Report it</a></li><li class="item-689"><a href="/request-it">Request it</a></li><li class="item-690"><a href="http://www.wmjobs.co.uk/our-employers/wychavon-district-council/" class="hidden-md hidden-sm" target="_blank" rel="noopener noreferrer">Jobs</a></li><li class="item-691"><a href="/news-and-alerts">News &amp; Alerts</a></li><li class="item-693"><a href="/contact-us">Contact us</a></li><li class="item-694 dropdown parent"><a href="/information">More services <span class="caret more-caret-icon"></span></a><ul class="dropdown-menu" role="menu"><li class="item-695"><a href="/benefits-and-council-tax">Benefits and Council Tax</a></li><li class="item-696"><a href="/business">Business</a></li><li class="item-697"><a href="/community-and-living">Community and Living</a></li><li class="item-698"><a href="/community-safety">Community Safety</a></li><li class="item-699"><a href="/councillors-democracy-and-elections">Councillors and Democracy</a></li><li class="item-700"><a href="/engineering-services">Engineering Services</a></li><li class="item-701"><a href="http://www.worcestershire.gov.uk/info/20006/schools_education_and_learning" target="_blank" rel="noopener noreferrer">Education</a></li><li class="item-702"><a href="/elections">Elections</a></li><li class="item-703"><a href="/emergency-flooding-advice">Emergency Flooding Advice</a></li><li class="item-704"><a href="http://www.worcsregservices.gov.uk/" target="_blank" rel="noopener noreferrer">Environmental Services</a></li><li class="item-705"><a href="/housing">Housing</a></li><li class="item-706"><a href="/jobs-and-careers">Jobs and Careers</a></li><li class="item-707"><a href="/parking-and-fines">Parking and Fines</a></li><li class="item-708"><a href="/park-and-open-spaces">Parks and Open Spaces</a></li><li class="item-709 alias-parent-active"><a href="/planning">Planning</a></li><li class="item-710"><a href="/public-transport-and-streets">Public Transport and Streets</a></li><li class="item-711"><a href="https://www.valeandspa.co.uk/" target="_blank" rel="noopener noreferrer">Tourism and Travel</a></li><li class="item-712"><a href="/waste-and-recycling">Waste and Recycling</a></li></ul></li></ul>
+
+
+ 
+                                            
+<div class="finder pull-right navbar-search hidden-xs hidden-sm">
+	<form id="mod-finder-searchform110" action="/search" method="get" class="form-search" role="search">
+  		<div class="input-group">
+          <input type="text" class="form-control" name="q" aria-label="Search" id="mod-finder-searchword110" value="" placeholder="Search ..." autocomplete="off"><span class="input-group-btn"><button class="btn btn-success finder" type="submit" title="Go"><span class="glyphicon glyphicon-search"></span></button></span>        </div>
+
+							</form>
+</div>
+ 
+                                        </div>
+                                    </div>
+                                                    </nav>
+                	</div>
+                </div>
+            </div>
+            <div class="block push">
+                <div class="container app_holder">
+
+        <div class="col-md-9 col-md-push-3 main-col-right">
+          <div aria-label="breadcrumbs" role="navigation">
+	<ul itemscope="" itemtype="https://schema.org/BreadcrumbList" class="breadcrumb">
+					<li>
+				You are here: &nbsp;
+			</li>
+		
+						<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/" class="pathway"><span itemprop="name">Wychavon District Council</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="1">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/planning" class="pathway"><span itemprop="name">Planning</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="2">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
+											<a itemprop="item" href="/planning/planning-policy" class="pathway"><span itemprop="name">Planning Policy</span></a>
+					
+											<span class="divider">
+							<img src="/media/system/images/arrow.png" alt="">						</span>
+										<meta itemprop="position" content="3">
+				</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="active">
+					<span itemprop="name">
+						Brownfield Land Register					</span>
+					<meta itemprop="position" content="4">
+				</li>
+				</ul>
+</div>
+
+          <div id="system-message-container">
+	</div>
+
+          <div class="item-page" itemscope="" itemtype="https://schema.org/Article">
+	<meta itemprop="inLanguage" content="en-GB">
+	
+		
+			<div class="page-header">
+					<h1 itemprop="headline">
+				Brownfield Land Register			</h1>
+									</div>
+					
+		
+	
+	
+		
+					<!--  -->
+			<div itemprop="articleBody">
+		<p>The&nbsp;<a href="http://www.legislation.gov.uk/uksi/2017/403/contents/made" target="_blank" rel="noopener noreferrer"><strong>Town and Country Planning (Brownfield Land Register) Regulations 2017</strong></a>, which came into force on 16 April 2017, require Local Planning Authorities to prepare, maintain and publish registers of previously developed (brownfield) land. &nbsp;Brownfield land registers are intended to provide up-to-date and consistent information on sites that local authorities consider to be appropriate for residential development.</p>
+<p>The Register can consist of two parts:</p>
+<ul>
+<li>part 1 is a list of all sites considered to be appropriate for residential development</li>
+<li>part 2 is made up of sites which have been taken forward from Part 1 of the Register and given Planning Permission in Principle (PIP)</li>
+</ul>
+<p>The Council is required to publish Part 1 of its Register by 31 December 2017.</p>
+<p>In order for sites to be included in Part 1 of the Register, i.e. appropriate for residential development, they must meet the following criteria:</p>
+<ul>
+<li>the site must be classified as Previously Developed Land, as defined by the glossary to the&nbsp;<a href="https://www.gov.uk/government/publications/national-planning-policy-framework--2" target="_blank" rel="noopener noreferrer"><strong>National Planning Policy Framework</strong></a> (NPPF)</li>
+<li>the site should be at least 0.25 hectares in size or capable of supporting at least 5 dwellings</li>
+<li>the land is suitable for residential development;</li>
+<li>the land is available for residential development</li>
+<li>residential development of the land is achievable within 15 years</li>
+</ul>
+<p>Detailed guidance on brownfield land registers was published on 28 July 2017 through&nbsp;<a href="https://www.gov.uk/government/collections/planning-practice-guidance" target="_blank" rel="noopener noreferrer"><strong>National Planning Practice Guidance</strong>&nbsp;</a>(NPPG). The format of the brownfield land register is set out in the&nbsp;<a href="https://www.gov.uk/government/publications/brownfield-land-registers-data-standard" target="_blank" rel="noopener noreferrer"><strong>Brownfield Land Registers Data Standard</strong></a>&nbsp;published by the Department for Communities and Local Government (DCLG).</p>
+<p>To view the sites on our Brownfield Register, please view the links below:</p>
+<p><a title="Wychavon District Brownfield Land Register (Excel Spreadsheet)" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=Wychavon%20District%20Brownfield%20Land%20Register%20-%20Spreadsheet.xls&amp;folder=Documents%2FPlanning&amp;container=fileman-files">Wychavon District Brownfield Land Register (Excel Spreadsheet)</a></p>
+<p>Sites that have been included on Wychavon District Council’s Brownfield Land Register can be viewed or downloaded in PDF format: &nbsp;</p>
+<p><a title="WDCBLR/0001 - Garage, High Street, Pershore" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0001%20Garage%2C%20High%20Street%2C%20Pershore.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0001 - Garage, High Street, Pershore</a></p>
+<p><a title="WDCBLR/0002 - Garage Court, Abbots Road, Pershore" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0002%20Garage%20Court%2C%20Abbots%20Road%2C%20Pershore.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0002 - Garage Court, Abbots Road, Pershore</a></p>
+<p><a title="WDCBLR/0003 - Boxing Club, Kidderminster Road, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0003%20Boxing%20Club%2C%20Kidderminster%20Road%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0003 - Boxing Club, Kidderminster Road, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0004 - Acre Lane, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0004%20Acre%20Lane%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0004 - Acre Lane, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0005 - Willow Court, Westwood Road, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0005%20Willow%20Court%2C%20Westwood%20Road%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0005 - Willow Court, Westwood Road, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0006 - Canal Basin (Netherwich), Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0006%20Canal%20Basin%20(Netherwich)%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0006 - Canal Basin (Netherwich), Droitwich Spa</a></p>
+<p><a title="WDCBLR/0011 - Raven Hotel, St Andrews Street, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0011%20Raven%20Hotel%2C%20St%20Andrews%20Street%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0011 - Raven Hotel, St Andrews Street, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0012 - Garage Blocks &amp; Vacant Land, Drovers Way, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0012%20Garage%20Blocks%20%26%20Vacant%20Land%2C%20Drovers%20Way%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0012 - Garage Blocks &amp; Vacant Land, Drovers Way, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0017 - Land off Blake Avenue and, Long Sling, Droitwich Spa" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0017%20Land%20off%20Blake%20Avenue%20and%2C%20Long%20Sling%2C%20Droitwich%20Spa.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0017 - Land off Blake Avenue and, Long Sling, Droitwich Spa</a></p>
+<p><a title="WDCBLR/0007 - Employment site, top of Kings Road, Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0007%20Employment%20site%2C%20top%20of%20Kings%20Road%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0007 - Employment site, top of Kings Road, Evesham</a></p>
+<p><a title="WDCBLR/0008 - Land off Davies Road, (former leisure centre), Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0008%20Land%20off%20Davies%20Road%2C%20(former%20leisure%20centre)%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0008 - Land off Davies Road, (former leisure centre), Evesham</a></p>
+<p><a title="WDCBLR/0013 - Former Gas Depot, Common Road, Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0013%20Former%20gas%20Depo%2C%20Common%20Road%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0013 - Former Gas Depot, Common Road, Evesham</a></p>
+<p><a title="WDCBLR/0018 - Land adjoining and including, 1 Castle Street, Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0018%20Land%20adjoining%20and%20including%2C%201%20Castle%20Street%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0018 - Land adjoining and including, 1 Castle Street, Evesham</a></p>
+<p><a title="WDCBLR/0019 - Bear Garage, Burford Road, Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0019%20Bear%20Garage%2C%20Burford%20Road%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0019 - Bear Garage, Burford Road, Evesham</a></p>
+<p><a title="WDCBLR/0020 - 1 Chapel Street, Evesham" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0020%201%20Chapel%20Street%2C%20Evesham.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0020 - 1 Chapel Street, Evesham</a></p>
+<p><a title="WDCBLR/0021 - 50 High Street, Evesham (Barclays Bank)" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0021%2050%20High%20Street%2C%20Evesham%20(Barclays%20Bank).pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0021 - 50 High Street, Evesham (Barclays Bank)</a></p>
+<p><a title="WDCBLR/0009 - Garage site off A422 and land to the rear, Upton Snodsbury" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0009%20Garage%20Site%20Upton%20Snodsbury.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0009 - Garage site off A422 and land to the rear, Upton Snodsbury</a></p>
+<p><a title="WDCBLR/0014 - Fancutts Garage, High Street, Honeybourne" href="/?option=com_fileman&amp;view=file&amp;routed=1&amp;name=WDCBLR0014%20Fancutts%20Garage%2C%20High%20Street%2C%20Honeybourne.pdf&amp;folder=Documents%2FPlanning%2FBrownfield%20Land%20Register%20Sites&amp;container=fileman-files">WDCBLR/0014 - Fancutts Garage, High Street, Honeybourne</a></p>
+<p>Under legislative instruction the register will be reviewed annually. In the meantime if you wish to see a site included onto the Brownfield Land Register or have any other queries please contact: <span id="cloakf622af786c06b03f87215cdda003cfaa"><a href="mailto:policy.plans@wychavon.gov.uk">policy.plans@wychavon.gov.uk</a></span><script type="text/javascript">
+				document.getElementById('cloakf622af786c06b03f87215cdda003cfaa').innerHTML = '';
+				var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+				var path = 'hr' + 'ef' + '=';
+				var addyf622af786c06b03f87215cdda003cfaa = 'p&#111;l&#105;cy.pl&#97;ns' + '&#64;';
+				addyf622af786c06b03f87215cdda003cfaa = addyf622af786c06b03f87215cdda003cfaa + 'wych&#97;v&#111;n' + '&#46;' + 'g&#111;v' + '&#46;' + '&#117;k';
+				var addy_textf622af786c06b03f87215cdda003cfaa = 'p&#111;l&#105;cy.pl&#97;ns' + '&#64;' + 'wych&#97;v&#111;n' + '&#46;' + 'g&#111;v' + '&#46;' + '&#117;k';document.getElementById('cloakf622af786c06b03f87215cdda003cfaa').innerHTML += '<a ' + path + '\'' + prefix + ':' + addyf622af786c06b03f87215cdda003cfaa + '\'>'+addy_textf622af786c06b03f87215cdda003cfaa+'<\/a>';
+		</script></p> 	</div>
+
+	
+							</div>    
+        </div>
+        <div class="col-md-3 col-md-pull-9 main-col-left">
+                      <div class="sidenav-panel panel panel-default">
+<ul id="sidenav" class="nav menu mod-list">
+  <li class="catItem">
+  	<a href="/planning">Planning</a>
+  </li>
+<li class="item-530"><a href="https://plan.wychavon.gov.uk" target="_blank" rel="noopener noreferrer">Search For Applications</a></li><li class="item-540"><a href="/planning/planning-application-forms">Planning Application Forms</a></li><li class="item-535"><a href="/planning/making-a-planning-application">Making A Planning Application</a></li><li class="item-549"><a href="/planning/amending-your-planning-application">Amending Your Planning Application</a></li><li class="item-626"><a href="/planning/planning-weekly-list">Planning Weekly List</a></li><li class="item-752"><a href="/planning/planning-history-search">Planning History Search</a></li><li class="item-753"><a href="/planning/how-planning-decisions-are-made">The Planning Process</a></li><li class="item-546"><a href="/planning/community-infrastructure-levy">Community Infrastructure Levy</a></li><li class="item-548"><a href="/planning/section-106-obligations">Section 106 Obligations</a></li><li class="item-555"><a href="/planning/planning-conditions">Planning Conditions</a></li><li class="item-620"><a href="/planning/advice-and-guidance">Advice and Guidance</a></li><li class="item-623"><a href="/planning/planning-appeals">Planning Appeals</a></li><li class="item-628"><a href="/planning/planning-committee-and-meetings">Planning Committee and Meetings</a></li><li class="item-635"><a href="/planning/planning-enforcement">Planning Enforcement</a></li><li class="item-638 deeper parent"><a href="/planning/heritage-and-conservation">Heritage and Conservation</a><ul class="side-sub-menu"><li class="item-641"><a href="/planning/heritage-and-conservation/historic-parks-and-gardens">Historic Parks and Gardens</a></li><li class="item-643"><a href="/planning/heritage-and-conservation/conservation-areas">Conservation Areas</a></li><li class="item-645"><a href="/planning/heritage-and-conservation/listed-buildings">Listed Buildings</a></li><li class="item-647"><a href="/planning/heritage-and-conservation/biodiversity">Biodiversity</a></li></ul></li><li class="item-653 deeper parent"><a href="/planning/local-land-charges">Local Land Charges</a><ul class="side-sub-menu"><li class="item-665"><a href="/planning/local-land-charges/submission-of-searches">Submission of Searches</a></li><li class="item-668"><a href="/planning/local-land-charges/personal-search">Personal Search</a></li><li class="item-670"><a href="/planning/local-land-charges/fees">Fees</a></li><li class="item-678"><a href="/planning/local-land-charges/frequently-asked-questions">Frequently Asked Questions</a></li></ul></li><li class="item-681"><a href="/planning/landscape-high-hedges-and-hedgerows">Landscape, High Hedges and Hedgerows</a></li><li class="item-685 active deeper parent"><a href="/planning/planning-policy">Planning Policy</a><ul class="side-sub-menu"><li class="item-732 current active"><a href="/planning/planning-policy/brownfield-land-register">Brownfield Land Register</a></li><li class="item-733"><a href="/planning/planning-policy/self-build-register">Self Build Register</a></li><li class="item-734 deeper parent"><a href="/planning/planning-policy/planning-policy-monitoring">Planning Policy Monitoring</a><ul class="side-sub-menu"><li class="item-792"><a href="/planning/planning-policy/planning-policy-monitoring/supplementary-planning-guidance-and-documents">Supplementary Planning Guidance and Documents</a></li></ul></li><li class="item-735 deeper parent"><a href="/planning/planning-policy/neighbourhood-planning">Neighbourhood Planning</a><ul class="side-sub-menu"><li class="item-791"><a href="/planning/planning-policy/neighbourhood-planning/ashton-under-hill-neighbourhood-plan">Ashton under Hill Neighbourhood Plan</a></li><li class="item-743"><a href="/planning/planning-policy/neighbourhood-planning/beckford-parish-neighbourhood-plan">Beckford Parish Neighbourhood Plan</a></li><li class="item-736"><a href="/planning/planning-policy/neighbourhood-planning/bredon-bredon-s-norton-and-westmancote-neighbourhood-plan-bredon-parish">Bredon, Bredon’s Norton and Westmancote Neighbourhood Plan (Bredon Parish)</a></li><li class="item-744"><a href="/planning/planning-policy/neighbourhood-planning/cleeve-prior-neighbourhood-plan">Cleeve Prior Neighbourhood Plan</a></li><li class="item-741"><a href="/planning/planning-policy/neighbourhood-planning/dodderhill-neighbourhood-plan">Dodderhill Neighbourhood Plan</a></li><li class="item-746"><a href="/planning/planning-policy/neighbourhood-planning/drakes-broughton-and-wadborough-with-pirton-neighbourhood-plan">Drakes Broughton and Wadborough with Pirton Neighbourhood Plan</a></li><li class="item-797"><a href="/planning/planning-policy/neighbourhood-planning/droitwich-spa-neighbourhood-plan">Droitwich Spa Neighbourhood Plan</a></li><li class="item-738"><a href="/planning/planning-policy/neighbourhood-planning/eckington-neighbourhood-plan">Eckington Neighbourhood Plan</a></li><li class="item-781"><a href="/planning/planning-policy/neighbourhood-planning/elmley-castle-bricklehampton-and-netherton-neighbourhood-plan">Elmley Castle, Bricklehampton and Netherton Neighbourhood Plan</a></li><li class="item-739"><a href="/planning/planning-policy/neighbourhood-planning/harvington-neighbourhood-plan">Harvington Neighbourhood Plan</a></li><li class="item-737"><a href="/planning/planning-policy/neighbourhood-planning/honeybourne-neighbourhood-plan">Honeybourne Neighbourhood Plan</a></li><li class="item-742"><a href="/planning/planning-policy/neighbourhood-planning/inkberrow-neighbourhood-plan">Inkberrow Neighbourhood Plan</a></li><li class="item-745"><a href="/planning/planning-policy/neighbourhood-planning/north-claines-neighbourhood-plan">North Claines Neighbourhood Plan</a></li><li class="item-799"><a href="/planning/planning-policy/neighbourhood-planning/norton-juxta-kempsey-neighbourhood-plan">Norton-juxta-Kempsey Neighbourhood Plan</a></li><li class="item-798"><a href="/planning/planning-policy/neighbourhood-planning/ombersley-and-doverdale-neighbourhood-plan">Ombersley and Doverdale Neighbourhood Plan</a></li><li class="item-740"><a href="/planning/planning-policy/neighbourhood-planning/pebworth-parish-neighbourhood-plan">Pebworth Parish Neighbourhood Plan</a></li><li class="item-782"><a href="/planning/planning-policy/neighbourhood-planning/sedgeberrow-neighbourhood-plan">Sedgeberrow Neighbourhood Plan</a></li><li class="item-800"><a href="/planning/planning-policy/neighbourhood-planning/south-lenches-neighbourhood-plan">South Lenches Neighbourhood Plan</a></li></ul></li></ul></li><li class="item-648"><a href="/planning/protected-trees">Tree Preservation Orders (TPO)</a></li><li class="item-520"><a href="/planning/street-naming-and-numbering">Street Naming and Numbering</a></li></ul>
+</div>
+
+                  </div>
+        
+			</div>
+			</div>
+			<div id="footer" class="block">
+				<div class="tile-5">
+                  	<div class="container">
+                        <div class="visible-xs">
+                            <h4 class="spaced-text footer-heading-pad white-text"><strong>Follow us on...</strong></h4>
+                                
+  <ul id="social-bottom-nav" class="nav  mod-list ">
+  <li class="item-134"><a href="https://public.govdelivery.com/accounts/UKWYCHAVON/subscriber/new" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/email-icon.jpg" alt="govdelivery-sm" class="social-logos-navbar"></a></li><li class="item-119"><a href="https://www.facebook.com/wychavon" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/facebook-logo.png" alt="facebook-sm" class="social-logos-navbar"></a></li><li class="item-122"><a href="https://twitter.com/Wychavon" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/twitter-logo.png" alt="twitter-sm" class="social-logos-navbar"></a></li><li class="item-123"><a href="http://www.youtube.com/user/wychavonvideo" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/youtube-logo.png" alt="youtube-sm" class="social-logos-navbar"></a></li><li class="item-121"><a href="https://www.instagram.com/wychavondc/" class=" nopadding" target="_blank" rel="noopener noreferrer"><img src="/files/instagram-sq-logo.png" alt="instagram-sm" class="social-logos-navbar"></a></li></ul>
+
+
+                             
+                        </div>
+                            
+  <ul id="footer-nav" class="spaced-text list-inline mobile-inline-menu no-left-margin ">
+  <li class="item-724"><a href="/privacy-policy" class="white-link white-text">Privacy</a></li><li class="item-725"><a href="/disclaimer" class="white-link white-text">Disclaimer</a></li><li class="item-726"><a href="/contact-us" class="white-link white-text">Contact Us</a></li><li class="item-727"><a href="/sitemap" class="white-link white-text">Sitemap</a></li></ul>
+
+
+
+
+<div class="custom">
+	<p><!-- START: Modals --><a href="#modal-login" class="modal_link rl_modals_element" data-modal-inline="true" data-modal-class-name="no_title" data-modal-done="1">Login</a><!-- END: Modals --> <!-- START: Modals --></p><div style="display:none;"><div id="modal-login"> <!-- START: Modules Anywhere --><form action="/planning/planning-policy/brownfield-land-register" method="post" id="login-form" class="form-inline">
+		<div class="userdata">
+		<div id="form-login-username" class="control-group">
+			<div class="controls">
+									<label for="modlgn-username">Username</label>
+					<input id="modlgn-username" type="text" name="username" class="input-small" tabindex="0" size="18" placeholder="Username">
+							</div>
+		</div>
+		<div id="form-login-password" class="control-group">
+			<div class="controls">
+									<label for="modlgn-passwd">Password</label>
+					<input id="modlgn-passwd" type="password" name="password" class="input-small" tabindex="0" size="18" placeholder="Password">
+							</div>
+		</div>
+						<div id="form-login-remember" class="control-group checkbox">
+			<label for="modlgn-remember" class="control-label">Remember Me</label> <input id="modlgn-remember" type="checkbox" name="remember" class="inputbox" value="yes">
+		</div>
+				<div id="form-login-submit" class="control-group">
+			<div class="controls">
+				<button type="submit" tabindex="0" name="Submit" class="btn btn-primary login-button">Log in</button>
+			</div>
+		</div>
+					<ul class="unstyled">
+							<li>
+					<a href="/component/users/?view=remind&amp;Itemid=101">
+					Forgot your username?</a>
+				</li>
+				<li>
+					<a href="/component/users/?view=reset&amp;Itemid=101">
+					Forgot your password?</a>
+				</li>
+			</ul>
+		<input type="hidden" name="option" value="com_users">
+		<input type="hidden" name="task" value="user.login">
+		<input type="hidden" name="return" value="aHR0cHM6Ly93d3cud3ljaGF2b24uZ292LnVrL3BsYW5uaW5nL3BsYW5uaW5nLXBvbGljeS9icm93bmZpZWxkLWxhbmQtcmVnaXN0ZXI=">
+		<input type="hidden" name="4d19217ef120ab36eb9b10f3e456aab7" value="1">	</div>
+	</form>
+<!-- END: Modules Anywhere --> </div></div><!-- END: Modals --><p></p></div>
+
+                    </div>
+               </div>
+        	</div>
+          </div>
+        <script src="/templates/wdc_theme/js/bootstrap.min.js"></script>
+        <script src="/templates/wdc_theme/js/jquery-ui.min.js"></script>
+        <script src="/templates/wdc_theme/js/custom.js"></script>
+        		
+		<!-- Anayltics code goes here -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-141488549-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'UA-141488549-1');
+		</script>
+
+                      
+        <!-- Siteimprove -->
+        <script type="text/javascript">
+		/*<![CDATA[*/
+        (function() {
+         var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;
+         sz.src = '//siteimproveanalytics.com/js/siteanalyze_298491.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);
+        })();
+        /*]]>*/
+        </script>
+
+	
+<div id="rl_modals_overlay" style="display: none;"></div><div id="rl_modals" role="dialog" aria-hidden="true" aria-labelledby="rl_modals_title" aria-describedby="rl_modals_current" style="display: none;"><div id="rl_modals_wrapper"><div><div id="rl_modals_top_left" style="float: left;"></div><div id="rl_modals_top_center" style="float: left;"></div><div id="rl_modals_top_right" style="float: left;"></div></div><div style="clear: left;"><div id="rl_modals_middle_left" style="float: left;"></div><div id="rl_modals_content" style="float: left;"><div id="rl_modals_title" aria-live="polite" style="float: left;"></div><div id="rl_modals_current" style="float: left;"></div><button type="button" id="rl_modals_previous" aria-hidden="true">previous</button><button type="button" id="rl_modals_next" aria-hidden="true">next</button><button type="button" id="rl_modals_slideshow" aria-hidden="true">start slideshow</button><div id="rl_modals_loading_overlay" style="float: left;"></div><div id="rl_modals_loading_graphic" style="float: left;"></div></div><div id="rl_modals_middle_right" style="float: left;"></div></div><div style="clear: left;"><div id="rl_modals_bottom_left" style="float: left;"></div><div id="rl_modals_bottom_center" style="float: left;"></div><div id="rl_modals_bottom_right" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 400px; z-index: 9999;"></div></body></html>
